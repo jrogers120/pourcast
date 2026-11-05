@@ -114,7 +114,7 @@
  {
   "id": "corner-pub-green-hills",
   "name": "Corner Pub Green Hills",
-  "area": "",
+  "area": "Green Hills",
   "teams": [
    "University of Tennessee",
    "Tennessee Titans"
@@ -220,7 +220,7 @@
  {
   "id": "fogg-street",
   "name": "Fogg Street Lawn Club",
-  "area": "",
+  "area": "The Gulch",
   "teams": [
    "University of Florida"
   ]
@@ -438,7 +438,7 @@
  {
   "id": "maggie-s-place",
   "name": "Maggie's Place",
-  "area": "",
+  "area": "The Nations",
   "teams": []
  },
  {
@@ -468,7 +468,7 @@
  {
   "id": "nobles",
   "name": "Noble's",
-  "area": "",
+  "area": "East Nashville",
   "teams": [
    "Kansas State University"
   ]
@@ -625,7 +625,7 @@
  {
   "id": "sidecar-bar",
   "name": "Sidecar Bar",
-  "area": "",
+  "area": "Germantown",
   "teams": [
    "Auburn University"
   ]
@@ -653,7 +653,7 @@
  {
   "id": "sonny-s-patio-pub-refuge",
   "name": "Sonny's Patio Pub & Refuge",
-  "area": "",
+  "area": "Germantown",
   "teams": []
  },
  {
@@ -726,7 +726,7 @@
  {
   "id": "teddys",
   "name": "Teddy's Tavern",
-  "area": "",
+  "area": "East Nashville",
   "teams": [
    "University of Central Florida"
   ]
@@ -814,7 +814,7 @@
  {
   "id": "tin-roof-broadway",
   "name": "Tin Roof Broadway",
-  "area": "",
+  "area": "Broadway",
   "teams": [
    "University of Iowa"
   ]
@@ -852,12 +852,6 @@
   "teams": []
  },
  {
-  "id": "whiskey-kitchen",
-  "name": "Whiskey Kitchen",
-  "area": "The Gulch",
-  "teams": []
- },
- {
   "id": "white-alligator",
   "name": "The White Alligator",
   "area": "Franklin",
@@ -867,6 +861,168 @@
   "id": "winners-bar",
   "name": "Winners Bar",
   "area": "Midtown",
+  "teams": []
+ },
+ {
+  "id": "neighbors-germantown",
+  "name": "Neighbors",
+  "area": "Germantown",
+  "teams": []
+ },
+ {
+  "id": "neighbors-sylvan-park",
+  "name": "Neighbors",
+  "area": "Sylvan Park",
+  "teams": []
+ },
+ {
+  "id": "neighbors-franklin",
+  "name": "Neighbors",
+  "area": "Franklin",
+  "teams": []
+ },
+ {
+  "id": "streetcar-germantown",
+  "name": "Streetcar Taps & Garden",
+  "area": "Germantown",
+  "teams": []
+ },
+ {
+  "id": "streetcar-nations",
+  "name": "Streetcar Taps & Garden",
+  "area": "The Nations",
+  "teams": []
+ },
+ {
+  "id": "never-never",
+  "name": "Never Never",
+  "area": "Wedgewood-Houston",
+  "teams": []
+ },
+ {
+  "id": "bottle-cap",
+  "name": "Bottle Cap",
+  "area": "12 South",
+  "teams": []
+ },
+ {
+  "id": "embers-ski-lodge",
+  "name": "Embers Ski Lodge",
+  "area": "12 South",
+  "teams": []
+ },
+ {
+  "id": "12-south-taproom",
+  "name": "12 South Taproom",
+  "area": "12 South",
+  "teams": []
+ },
+ {
+  "id": "jaspers",
+  "name": "Jasper's",
+  "area": "West End",
+  "teams": []
+ },
+ {
+  "id": "aladdins",
+  "name": "Aladdin's",
+  "area": "West End",
+  "teams": []
+ },
+ {
+  "id": "ottos-bar",
+  "name": "Otto's Bar",
+  "area": "Sylvan Park",
+  "teams": []
+ },
+ {
+  "id": "big-machine-distillery",
+  "name": "Big Machine Distillery & Tavern",
+  "area": "Berry Hill",
+  "teams": []
+ },
+ {
+  "id": "game-terminal",
+  "name": "Game Terminal",
+  "area": "South Nashville",
+  "teams": []
+ },
+ {
+  "id": "pucketts-downtown",
+  "name": "Puckett's",
+  "area": "Downtown",
+  "teams": []
+ },
+ {
+  "id": "commons-club",
+  "name": "Commons Club",
+  "area": "Music Row",
+  "teams": []
+ },
+ {
+  "id": "dawghouse-saloon",
+  "name": "Dawghouse Saloon",
+  "area": "Midtown",
+  "teams": []
+ },
+ {
+  "id": "black-rabbit",
+  "name": "Black Rabbit",
+  "area": "Printers Alley",
+  "teams": []
+ },
+ {
+  "id": "garage-sale-bar",
+  "name": "Garage Sale Bar",
+  "area": "East Nashville",
+  "teams": []
+ },
+ {
+  "id": "the-treehouse",
+  "name": "The Treehouse",
+  "area": "East Nashville",
+  "teams": []
+ },
+ {
+  "id": "strega",
+  "name": "Strega",
+  "area": "East Nashville",
+  "teams": []
+ },
+ {
+  "id": "crazy-gnome",
+  "name": "Crazy Gnome Brewery",
+  "area": "East Nashville",
+  "teams": []
+ },
+ {
+  "id": "martha-my-dear",
+  "name": "Martha My Dear",
+  "area": "East Nashville",
+  "teams": []
+ },
+ {
+  "id": "ml-rose-inglewood",
+  "name": "M.L.Rose",
+  "area": "East Nashville",
+  "teams": []
+ },
+ {
+  "id": "ml-rose-sylvan-park",
+  "name": "M.L.Rose",
+  "area": "Sylvan Park",
+  "teams": []
+ },
+ {
+  "id": "ml-rose-melrose",
+  "name": "M.L.Rose",
+  "area": "Melrose",
+  "teams": []
+ },
+ {
+  "id": "ml-rose-gulch",
+  "name": "M.L.Rose",
+  "area": "The Gulch",
   "teams": []
  }
 ]
