@@ -1101,5 +1101,19 @@
   "area": "Capitol View",
   "teams": [],
   "address": "431 11th Ave N, Nashville, TN 37203"
+ },
+ {
+  "id": "loves-alibi",
+  "name": "Love's Alibi",
+  "area": "The Gulch",
+  "teams": [],
+  "address": "901 Gleaves St, Nashville, TN 37203"
+ },
+ {
+  "id": "barrel-proof",
+  "name": "Barrel Proof",
+  "area": "Germantown",
+  "teams": [],
+  "address": "1010 4th Ave N, Nashville, TN 37219"
  }
 ]
