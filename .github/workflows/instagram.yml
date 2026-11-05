@@ -1,4 +1,4 @@
-name: Post to Instagram
+name: Post to Instagram and Facebook
 on:
   schedule:
     - cron: "7 16 * * *"   # daily ~10:07 AM Central (11:07 AM during daylight time)
@@ -27,8 +27,9 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
         run: |
-          if [ -z "$IG_TOKEN" ] || [ -z "$IG_USER_ID" ]; then
+          if [ -z "$IG_TOKEN" ]; then
             echo "Instagram secrets not set yet; skipping."; exit 0
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then

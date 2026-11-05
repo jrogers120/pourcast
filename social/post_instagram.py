@@ -1,8 +1,10 @@
-"""Post today's Pourcast graphic to Instagram via the Instagram Graph API.
+"""Post today's Pourcast graphic to Instagram and the Facebook Page via Meta's Graph API.
 
-Needs two GitHub secrets (never commit them):
-  IG_TOKEN    long-lived Page access token with instagram_basic + instagram_content_publish
+GitHub secrets (never commit them):
+  IG_TOKEN    long-lived Page access token (instagram_basic, instagram_content_publish,
+              pages_manage_posts, pages_read_engagement, pages_show_list)
   IG_USER_ID  the Instagram Business account ID linked to the Pourcast Facebook Page
+  FB_PAGE_ID  (optional) the Pourcast Facebook Page ID; if set, also posts to Facebook
 
 Run: python3 social/post_instagram.py [--dry-run]
 """
@@ -62,9 +64,27 @@ def main():
         print("DRY RUN. Would post", image_url, "\n\n" + caption)
         return
 
-    token, user = os.environ.get("IG_TOKEN"), os.environ.get("IG_USER_ID")
-    if not token or not user:
-        sys.exit("IG_TOKEN and IG_USER_ID secrets are not set yet.")
+    token, user, page = os.environ.get("IG_TOKEN"), os.environ.get("IG_USER_ID"), os.environ.get("FB_PAGE_ID")
+    if not token or not (user or page):
+        sys.exit("IG_TOKEN plus IG_USER_ID and/or FB_PAGE_ID secrets are not set yet.")
+
+    failed = []
+    if page:
+        try:
+            fb = call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=token)
+            print(f"Posted to Facebook for {today}: post id {fb.get('post_id') or fb.get('id')}")
+        except SystemExit as err:
+            print(err); failed.append("Facebook")
+    if user:
+        try:
+            post_instagram(user, token, image_url, caption, today)
+        except SystemExit as err:
+            print(err); failed.append("Instagram")
+    if failed:
+        sys.exit("Failed: " + ", ".join(failed))
+
+
+def post_instagram(user, token, image_url, caption, today):
 
     container = call("POST", f"{user}/media", image_url=image_url, caption=caption, access_token=token)["id"]
     for _ in range(30):
