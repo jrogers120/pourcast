@@ -1,0 +1,67 @@
+/* Pourcast: local TV news look. Station masthead, red ticker, white section nav, story cards. */
+:root{
+  --bg:#EEF1F6; --surface:#FFFFFF; --ink:#0A1A33; --muted:#4A5568; --line:#D5DCE6;
+  --blue:#0B3D91; --blue-deep:#071E4A; --red:#C8202A; --sun:#FFC53D; --chip:#E8EDF5; --turf:#1E7A46; --purple:#5B2A86;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#08111F;--surface:#111D31;--ink:#EEF2F8;--muted:#A3B0C4;--line:#22324D;--chip:#1A2943;--turf:#4FC98A;--red:#E5434C;color-scheme:dark}
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;font-weight:500}
+a{color:var(--blue)}
+@media (prefers-color-scheme: dark){a{color:#8FB4FF}}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.masthead{background:linear-gradient(160deg,var(--blue) 0%,var(--blue-deep) 100%);color:#fff}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.logo b{font-style:italic;font-weight:900;font-size:40px;line-height:.9;letter-spacing:-1px;text-transform:uppercase}
+.logo b span{color:var(--sun)}
+.strap{display:flex}
+.strap b{background:var(--red);color:#fff;font-style:italic;font-weight:800;font-size:14px;letter-spacing:1.5px;padding:5px 10px;text-transform:uppercase}
+.strap i{background:#fff;color:var(--blue);font-style:normal;font-weight:800;font-size:14px;letter-spacing:1.5px;padding:5px 10px;text-transform:uppercase}
+.ticker{background:var(--red);color:#fff;display:flex;overflow:hidden;font-weight:700;font-size:15px}
+.ticker .lbl{background:#7E1016;padding:8px 14px;font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:1px;flex:0 0 auto}
+.ticker .track{overflow:hidden;flex:1}
+.ticker .run{display:inline-block;white-space:nowrap;padding:8px 0}
+@media (prefers-reduced-motion:no-preference){.ticker .run{animation:tick 70s linear infinite;padding-left:100%}}
+@keyframes tick{to{transform:translateX(-100%)}}
+.secnav{background:var(--surface);border-bottom:1px solid var(--line)}
+.secnav .wrap{display:flex;gap:2px;overflow-x:auto}
+.secnav a{font:800 15px var(--display);letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:13px 12px;border-bottom:4px solid transparent;text-decoration:none;white-space:nowrap}
+.secnav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--red)}
+main{padding:8px 0 40px}
+h1{font-family:var(--body);font-weight:900;font-style:italic;font-size:40px;line-height:1.05;margin:24px 0 6px;text-wrap:balance}
+.dek{color:var(--muted);font-size:19px;margin:0 0 8px;max-width:65ch}
+h2{font-family:var(--display);font-weight:800;font-size:24px;text-transform:uppercase;letter-spacing:1px;margin:30px 0 10px;padding-top:8px;border-top:4px solid var(--ink);text-wrap:balance}
+h3{font-size:20px;margin:0}
+.grid{display:grid;gap:10px}
+.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:4px;box-shadow:0 1px 2px rgba(10,26,51,.06)}
+.ev{border-top:4px solid var(--blue)}
+.ev.college{border-top-color:var(--red)} .ev.music,.ev.karaoke{border-top-color:var(--turf)} .ev.happy{border-top-color:var(--sun)} .ev.special{border-top-color:var(--purple)}
+.meta{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.badge{display:inline-block;background:var(--blue);color:#fff;font:800 12px var(--display);text-transform:uppercase;letter-spacing:1.5px;padding:3px 8px;border-radius:2px}
+.college .badge{background:var(--red)} .music .badge,.karaoke .badge{background:var(--turf)} .happy .badge{background:var(--sun);color:#0A1A33} .special .badge{background:var(--purple)}
+.when{font:800 18px var(--display);letter-spacing:.5px;font-variant-numeric:tabular-nums}
+.title{font-weight:800;font-size:21px;line-height:1.2}
+.where a{font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:4px;padding:2px 8px;font-size:14px;font-weight:600}
+.day{font:900 italic 22px var(--body);text-transform:uppercase;margin:22px 0 8px;color:var(--blue)}
+@media (prefers-color-scheme: dark){.day{color:#8FB4FF}}
+.empty{border:1px dashed var(--line);border-radius:6px;padding:14px;color:var(--muted);background:var(--surface)}
+.alert{display:flex;flex-direction:column;margin:18px 0}
+.alert b{align-self:flex-start;background:var(--red);color:#fff;font-style:italic;font-weight:900;text-transform:uppercase;padding:5px 12px;font-size:15px}
+.alert span{background:var(--surface);border:1px solid var(--line);padding:10px 12px;font-weight:700}
+.ad{margin:22px 0;min-height:90px;display:flex;align-items:center;justify-content:center}
+.ad-label{font:700 11px var(--body);letter-spacing:1px;text-transform:uppercase;color:var(--muted);text-align:center}
+.src{font-size:13px;color:var(--muted)}
+footer{background:var(--blue-deep);color:#C9D6F0;padding:24px 0;font-size:15px}
+footer a{color:#fff}
+footer .wrap{display:grid;gap:6px}
+.list{columns:2 240px;gap:24px;padding-left:18px}
+.list li{margin:2px 0}
