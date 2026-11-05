@@ -1,12 +1,12 @@
 {
   "site_name": "Pourcast Nashville",
   "city": "Nashville",
-  "base_url": "https://jrogers120.github.io/pourcast",
+  "base_url": "https://pourcastapp.com",
   "contact_email": "pourcastapp@gmail.com",
   "instagram": "pourcast.nashville",
   "timezone": "America/Chicago",
   "adsense_client": "",
   "adsense_slot": "",
-  "base_path": "/pourcast",
-  "custom_domain": ""
+  "base_path": "",
+  "custom_domain": "pourcastapp.com"
 }
