@@ -1141,7 +1141,10 @@
   "id": "heartbreakers-hideaway",
   "name": "Heartbreakers Hideaway",
   "area": "Midtown",
-  "teams": [],
+  "teams": [
+   "Mississippi State University",
+   "Pittsburgh Steelers"
+  ],
   "address": "1903 Division St, Nashville, TN 37203"
  }
 ]

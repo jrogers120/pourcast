@@ -2471,5 +2471,16 @@
   "time": "19:00",
   "deals": "Prizes: $75 / $50 / $25 gift cards",
   "source": "https://www.happydoesnash.com/specials"
+ },
+ {
+  "id": "g-2026-11-07-heartbreakers-hideaway-0",
+  "barId": "heartbreakers-hideaway",
+  "type": "college",
+  "title": "Vanderbilt at Mississippi State",
+  "team": "Mississippi State University",
+  "weekly": false,
+  "date": "2026-11-07",
+  "time": "15:15",
+  "tv": "SECN"
  }
 ]
