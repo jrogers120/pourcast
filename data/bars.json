@@ -1136,5 +1136,12 @@
   "area": "Downtown",
   "teams": [],
   "address": "212 Commerce St (at 2nd Ave), Nashville, TN 37201"
+ },
+ {
+  "id": "heartbreakers-hideaway",
+  "name": "Heartbreakers Hideaway",
+  "area": "Midtown",
+  "teams": [],
+  "address": "1903 Division St, Nashville, TN 37203"
  }
 ]

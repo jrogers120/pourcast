@@ -93,7 +93,7 @@ def sort_key(ev):
 
 # ---------- page shell ----------
 NAV = [("/", "Forecast"), ("/tonight/college-football/", "College football"), ("/tonight/nfl/", "NFL"),
-       ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/bars/", "Bars"), ("/submit/", "Post an event")]
+       ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/christmas/", "Christmas pop-ups"), ("/bars/", "Bars"), ("/submit/", "Post an event")]
 LOGO_SVG = ('<svg width="48" height="48" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#fff"/><circle cx="100" cy="100" r="86" fill="#0B3D91"/>'
             '<circle cx="132" cy="70" r="30" fill="#FFC53D"/><path d="M132 26 L132 14 M166 36 L175 27 M176 70 L188 70" stroke="#FFC53D" stroke-width="7" stroke-linecap="round"/>'
             '<rect x="56" y="82" width="70" height="82" rx="8" fill="#F5B12E"/><path d="M126 98 h14 a16 16 0 0 1 16 16 v14 a16 16 0 0 1 -16 16 h-14" fill="none" stroke="#fff" stroke-width="10"/>'
@@ -285,6 +285,35 @@ def build_types():
              f"{heading} at {CITY}-area bars this week, with times, deals and where to go.", "".join(parts), f"/tonight/{s}/")
 
 
+def build_popups():
+    pf = os.path.join(ROOT, "data", "popups.json")
+    pops = json.load(open(pf)) if os.path.exists(pf) else []
+    t = TODAY.isoformat()
+    live = [p for p in pops if not p.get("end") or p["end"] >= t]
+    live.sort(key=lambda p: p["start"])
+    md = lambda iso: fmt_date(date.fromisoformat(iso))
+    parts = [f'<h1>Christmas pop-up bars in {e(CITY)}</h1><p class="dek">Holiday pop-ups for {TODAY.year}, with dates, age rules and whether you need a reservation. These stay off the daily forecast. Check each bar before you go; dates can shift.</p>']
+    def block(title, items):
+        if not items:
+            return
+        parts.append(f'<h2>{e(title)}</h2><div class="grid">')
+        for p in items:
+            end = p.get("endLabel") or (md(p["end"]) if p.get("end") else "the holidays")
+            status = "Open now" if p["start"] <= t else f"Opens {md(p['start'])}"
+            chips = f'<span class="chip">{e(p["notes"])}</span>' if p.get("notes") else ""
+            parts.append(f'<article class="card"><div class="when">{e(status)}</div><h3>{e(p["name"])}</h3>'
+                         f'<p class="muted">{e(p["host"])}{" · " + e(p["area"]) if p.get("area") else ""}</p>'
+                         f'<p>{md(p["start"])} through {e(end)}</p><div class="chips">{chips}</div>'
+                         f'<p class="small"><a href="{e(p["source"])}" target="_blank" rel="noopener">Details</a></p></article>')
+        parts.append('</div>')
+    block("Open now", [p for p in live if p["start"] <= t])
+    block("Coming soon", [p for p in live if p["start"] > t])
+    if not live:
+        parts.append('<div class="empty">No holiday pop-ups posted right now.</div>')
+    page("/christmas/", f"Christmas Pop-Up Bars in {CITY} {TODAY.year} | Pourcast",
+         f"Every holiday and Christmas pop-up bar in {CITY} this season, with dates and reservation info.", "".join(parts), "/christmas/")
+
+
 def build_bars():
     by_area = {}
     for b in BARS.values():
@@ -390,7 +419,7 @@ if __name__ == "__main__":
         shutil.rmtree(OUT)
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
-    build_home(); build_types(); build_bars(); build_teams(); build_static(); build_meta()
+    build_home(); build_types(); build_popups(); build_bars(); build_teams(); build_static(); build_meta()
     try:
         sys.path.insert(0, os.path.join(ROOT, "social"))
         import graphic
