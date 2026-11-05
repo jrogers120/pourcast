@@ -1750,5 +1750,137 @@
   "deals": "2-for-1 on featured drinks",
   "source": "https://nashvillego.com/happy-hours",
   "timeLabel": "All day"
+ },
+ {
+  "id": "k-aj-s-good-time-bar-0",
+  "barId": "aj-s-good-time-bar",
+  "type": "karaoke",
+  "title": "Karaoke all night (11 AM–2:30 AM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-ms-kellis-1",
+  "barId": "ms-kellis",
+  "type": "karaoke",
+  "title": "Karaoke all night (7 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "time": "19:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-ms-kellis-2",
+  "barId": "ms-kellis",
+  "type": "karaoke",
+  "title": "Karaoke all night (6 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "18:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-lonnies-3",
+  "barId": "lonnies",
+  "type": "karaoke",
+  "title": "Karaoke all night (7:30 PM–1 AM)",
+  "weekly": true,
+  "days": [
+   3,
+   4
+  ],
+  "time": "19:30",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-lonnies-4",
+  "barId": "lonnies",
+  "type": "karaoke",
+  "title": "Karaoke all night (6 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "18:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-wild-beaver-5",
+  "barId": "wild-beaver",
+  "type": "karaoke",
+  "title": "Karaoke all night (5 PM–1 AM)",
+  "weekly": true,
+  "days": [
+   2,
+   4
+  ],
+  "time": "17:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-wild-beaver-6",
+  "barId": "wild-beaver",
+  "type": "karaoke",
+  "title": "Karaoke all night (7 PM–1 AM)",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-wild-beaver-7",
+  "barId": "wild-beaver",
+  "type": "karaoke",
+  "title": "Karaoke all night (5 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   5,
+   0
+  ],
+  "time": "17:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "k-wild-beaver-8",
+  "barId": "wild-beaver",
+  "type": "karaoke",
+  "title": "Karaoke all night (1 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "13:00",
+  "deals": "Karaoke the whole time they're open",
+  "source": "Google Maps hours, checked 2026-11-05"
  }
 ]
