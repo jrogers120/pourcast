@@ -120,7 +120,7 @@ REGIONS = [
     ("East Nashville", ["East Nashville"]),
     ("Germantown & West", ["Germantown", "North Nashville", "The Nations", "Sylvan Park", "Bellevue"]),
     ("South Nashville", ["12 South", "8th Ave", "Melrose", "Wedgewood-Houston", "Berry Hill", "Green Hills", "South Nashville"]),
-    ("Donelson, Hermitage & north", ["Donelson", "Music Valley", "Hermitage", "Goodlettsville", "Hendersonville"]),
+    ("Donelson, Hermitage & north", ["Donelson", "Music Valley", "Hermitage", "Old Hickory", "Goodlettsville", "Hendersonville"]),
     ("Franklin", ["Franklin"]),
     ("Spring Hill", ["Spring Hill"]),
 ]

@@ -82,7 +82,7 @@
  {
   "id": "brotherly-love",
   "name": "Brotherly Love",
-  "area": "",
+  "area": "The Nations",
   "teams": [
    "James Madison University"
   ]
@@ -361,14 +361,6 @@
   "teams": []
  },
  {
-  "id": "kings",
-  "name": "Kings",
-  "area": "",
-  "teams": [
-   "University of Oklahoma"
-  ]
- },
- {
   "id": "l-a-jackson",
   "name": "L.A. Jackson",
   "area": "The Gulch",
@@ -534,7 +526,7 @@
  {
   "id": "pooky-jane-s-kitchen-pub",
   "name": "Pooky Jane's Kitchen & Pub",
-  "area": "",
+  "area": "Old Hickory",
   "teams": []
  },
  {
@@ -681,7 +673,7 @@
  {
   "id": "standard-proof-whiskey-co",
   "name": "Standard Proof Whiskey Co.",
-  "area": "",
+  "area": "Downtown",
   "teams": []
  },
  {
@@ -798,7 +790,7 @@
  {
   "id": "tin-roof",
   "name": "Tin Roof",
-  "area": "",
+  "area": "Midtown",
   "teams": [
    "University of Georgia"
   ]
@@ -806,7 +798,7 @@
  {
   "id": "tin-roof-2",
   "name": "The Rafters",
-  "area": "",
+  "area": "Franklin",
   "teams": [
    "University of Nebraska"
   ]

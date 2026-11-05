@@ -617,17 +617,6 @@
   "id": "g-2026-11-07-lost-paddy-21"
  },
  {
-  "barId": "kings",
-  "type": "college",
-  "title": "Oklahoma at Florida",
-  "team": "University of Oklahoma",
-  "weekly": false,
-  "date": "2026-11-07",
-  "time": "18:45",
-  "tv": "SECN",
-  "id": "g-2026-11-07-kings-22"
- },
- {
   "barId": "crows-nest",
   "type": "college",
   "title": "Oregon at Ohio State",
