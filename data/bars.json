@@ -74,7 +74,7 @@
  {
   "id": "bringles",
   "name": "Bringle's Smoking Oasis",
-  "area": "",
+  "area": "East Nashville",
   "teams": [
    "Clemson University"
   ]
@@ -123,7 +123,7 @@
  {
   "id": "crows-nest",
   "name": "Crow's Nest",
-  "area": "",
+  "area": "Green Hills",
   "teams": [
    "University of Oregon",
    "University of Texas"
@@ -176,7 +176,7 @@
  {
   "id": "duck-blind",
   "name": "Duck Blind Nashville",
-  "area": "",
+  "area": "Midtown",
   "teams": [
    "University of Alabama"
   ]
@@ -292,7 +292,7 @@
  {
   "id": "happy-does",
   "name": "Happy Does",
-  "area": "",
+  "area": "Midtown",
   "teams": [
    "Indiana University",
    "Louisiana State University"
@@ -496,7 +496,7 @@
  {
   "id": "odies",
   "name": "Odie's",
-  "area": "",
+  "area": "Midtown",
   "teams": [
    "University of Mississippi"
   ]
@@ -596,7 +596,7 @@
  {
   "id": "sanders-ferry",
   "name": "Sanders Ferry Pizza & Pub",
-  "area": "",
+  "area": "Hendersonville",
   "teams": [
    "Tampa Bay Buccaneers"
   ]
@@ -693,7 +693,7 @@
  {
   "id": "tailgate",
   "name": "TailGate Brewery",
-  "area": "",
+  "area": "Bellevue",
   "teams": [
    "Texas A&M University",
    "University of South Carolina"

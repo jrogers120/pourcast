@@ -114,6 +114,47 @@ def ticker_text():
     return "   •   ".join(f"{when(x)}  {x['title']} at {bar_label(x['barId'])}" for x in evs)
 
 
+REGIONS = [
+    ("Downtown & Broadway", ["Broadway", "Downtown", "Printers Alley", "Rutledge Hill", "The Gulch"]),
+    ("Midtown & Music Row", ["Midtown", "Demonbreun", "Music Row", "West End", "Hillsboro Village", "Edgehill"]),
+    ("East Nashville", ["East Nashville"]),
+    ("Germantown & West", ["Germantown", "North Nashville", "The Nations", "Sylvan Park", "Bellevue"]),
+    ("South Nashville", ["12 South", "8th Ave", "Melrose", "Wedgewood-Houston", "Berry Hill", "Green Hills", "South Nashville"]),
+    ("Donelson, Hermitage & north", ["Donelson", "Music Valley", "Hermitage", "Goodlettsville", "Hendersonville"]),
+    ("Franklin", ["Franklin"]),
+    ("Spring Hill", ["Spring Hill"]),
+]
+
+
+def area_filter():
+    used = {b.get("area") for b in BARS.values() if b.get("area")}
+    known = {a for _, al in REGIONS for a in al}
+    regions = REGIONS + ([("Other areas", sorted(used - known))] if used - known else [])
+    opts = ['<option value="">All areas</option>']
+    for r, al in regions:
+        al = [a for a in al if a in used]
+        if not al:
+            continue
+        opts.append(f'<option value="r:{e(r)}">{e(r)}{" (all)" if len(al) > 1 else ""}</option>')
+        if len(al) > 1:
+            opts.append(f'<optgroup label="{e(r)}">' + "".join(f'<option value="a:{e(a)}">{e(a)}</option>' for a in al) + "</optgroup>")
+    rmap = {a: r for r, al in regions for a in al}
+    return ('<div class="areafilter"><label for="areaSel">Area</label><select id="areaSel">' + "".join(opts) + "</select>"
+            '<span class="areacount" id="areaCount"></span></div>'
+            "<script>(function(){var R=" + json.dumps(rmap) + r""";
+var sel=document.getElementById('areaSel'),cnt=document.getElementById('areaCount');
+function apply(v){var cards=document.querySelectorAll('article.card.ev'),shown=0;
+ cards.forEach(function(c){var a=c.getAttribute('data-area')||'',ok=!v||(v.slice(0,2)=='a:'?a==v.slice(2):R[a]==v.slice(2));c.hidden=!ok;if(ok)shown++;});
+ document.querySelectorAll('.grid').forEach(function(g){if(!g.querySelector('article.card.ev'))return;var any=g.querySelector('article.card.ev:not([hidden])'),n=g.nextElementSibling;
+  if(!n||!n.classList.contains('areaempty')){n=document.createElement('div');n.className='empty areaempty';n.textContent='Nothing posted in this area. Try another area or All areas.';g.after(n);}
+  n.hidden=!!any;});
+ cnt.textContent=v?shown+' events':'';}
+var v=new URLSearchParams(location.search).get('area');if(v===null){try{v=localStorage.getItem('pourcastArea')||'';}catch(e){v='';}}
+if(v&&![].some.call(sel.options,function(o){return o.value==v}))v='';sel.value=v;apply(v);
+sel.addEventListener('change',function(){apply(sel.value);try{localStorage.setItem('pourcastArea',sel.value);}catch(e){}});
+})();</script>""")
+
+
 TICKER = ticker_text()
 # constant, slow reading speed (~40 px/sec) no matter how long the ticker is
 TICKER_SECS = max(60, round((len(TICKER) * 8.5 + 1200) / 40))
@@ -125,6 +166,7 @@ def page(path, title, desc, body, current="", jsonld=None):
                 if CFG.get("adsense_client") else "")
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if h == current else ""}>{e(t)}</a>' for h, t in NAV)
     ld = f'<script type="application/ld+json">{json.dumps(jsonld)}</script>' if jsonld else ""
+    filt = area_filter() if ('class="card ev' in body and not path.startswith(("/bars/", "/areas/"))) else ""
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,7 +189,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 <div class="ticker" aria-label="Today's highlights"><span class="lbl">Today</span><span class="track"><span class="run" style="animation-duration:{TICKER_SECS}s">{e(TICKER)}</span></span></div>
 <nav class="secnav" aria-label="Sections"><div class="wrap">{nav}</div></nav>
 <main><div class="wrap">
-{body}
+{filt}{body}
 </div></main>
 <footer><div class="wrap">
 <div><b>{e(CFG["site_name"])}</b>: game watches, trivia, karaoke and happy hours at {e(CITY)}-area bars. Updated {fmt_date(TODAY)}, {TODAY.year}.</div>
@@ -186,7 +228,8 @@ def card(ev, d=None, show_day=False):
         sched = ("Every " + ", ".join(DOW[x] for x in sorted(ev["days"])) if ev.get("weekly")
                  else f"{DOW[pydow(date.fromisoformat(ev['date']))]}, {fmt_date(date.fromisoformat(ev['date']))}") + " · "
     host = f' · Hosted by {e(ev["host"])}' if ev.get("host") else ""
-    return (f'<article class="card ev {e(t)}"><div class="meta"><span class="badge">{e(label)}</span><span class="when">{e(sched)}{e(when(ev))}</span></div>'
+    area = (BARS.get(ev["barId"]) or {}).get("area") or ""
+    return (f'<article class="card ev {e(t)}" data-area="{e(area)}"><div class="meta"><span class="badge">{e(label)}</span><span class="when">{e(sched)}{e(when(ev))}</span></div>'
             f'<div class="title">{e(ev["title"])}</div><div class="where"><a href="{bar_url(ev["barId"])}">{e(bar_label(ev["barId"]))}</a>{host}</div>'
             f'{"<div class=chips>" + "".join(chips) + "</div>" if chips else ""}</article>')
 
