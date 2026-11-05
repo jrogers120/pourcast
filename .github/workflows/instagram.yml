@@ -5,9 +5,9 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Dry run (build the post but don't publish)"
+        description: "Test only (tick to build the post without publishing)"
         type: boolean
-        default: true
+        default: false
 permissions:
   contents: read
 concurrency:
