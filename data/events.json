@@ -160,19 +160,6 @@
   "source": "https://nashvillego.com/happy-hours/friday"
  },
  {
-  "id": "hh-hopsmith-tavern-11",
-  "barId": "hopsmith-tavern",
-  "type": "happy",
-  "title": "Brunch special (10 AM–3 PM)",
-  "weekly": true,
-  "days": [
-   6
-  ],
-  "time": "10:00",
-  "deals": "2-for-1 bottles of bubbles",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
   "id": "hh-germantown-pub-12",
   "barId": "germantown-pub",
   "type": "happy",
@@ -188,7 +175,7 @@
  },
  {
   "id": "hh-tin-roof-demonbreun-13",
-  "barId": "tin-roof-demonbreun",
+  "barId": "tin-roof",
   "type": "happy",
   "title": "Sunday songwriters brunch (11 AM–3 PM)",
   "weekly": true,
@@ -764,7 +751,7 @@
   "id": "g-2026-11-08-tailgate-germantown-36"
  },
  {
-  "barId": "tin-roof-demonbreun",
+  "barId": "tin-roof",
   "type": "game",
   "title": "Panthers vs. Broncos",
   "team": "Carolina Panthers",
@@ -1420,23 +1407,6 @@
   "source": "https://nashvillego.com/happy-hours"
  },
  {
-  "id": "hh-12-south-taproom-0",
-  "barId": "12-south-taproom",
-  "type": "happy",
-  "title": "Happy hour (2–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:00",
-  "deals": "$1 off drafts, wine, cocktails & wells",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
   "id": "hh-jaspers-0",
   "barId": "jaspers",
   "type": "happy",
@@ -1557,23 +1527,6 @@
   ],
   "time": "17:00",
   "deals": "$1 oysters, $7 wine, $5 drafts, $10 margaritas & Aperol spritzes",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-dawghouse-saloon-0",
-  "barId": "dawghouse-saloon",
-  "type": "happy",
-  "title": "Happy hour (11 AM–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "11:00",
-  "deals": "$3 domestic beers, $5 wells",
   "source": "https://nashvillego.com/happy-hours"
  },
  {

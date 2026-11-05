@@ -118,7 +118,7 @@ REGIONS = [
     ("Downtown & Broadway", ["Broadway", "Downtown", "Printers Alley", "Rutledge Hill", "The Gulch"]),
     ("Midtown & Music Row", ["Midtown", "Demonbreun", "Music Row", "West End", "Hillsboro Village", "Edgehill"]),
     ("East Nashville", ["East Nashville"]),
-    ("Germantown & West", ["Germantown", "North Nashville", "The Nations", "Sylvan Park", "Bellevue"]),
+    ("Germantown & West", ["Germantown", "North Nashville", "Capitol View", "The Nations", "Sylvan Park", "Bellevue"]),
     ("South Nashville", ["12 South", "8th Ave", "Melrose", "Wedgewood-Houston", "Berry Hill", "Green Hills", "South Nashville"]),
     ("Donelson, Hermitage & north", ["Donelson", "Music Valley", "Hermitage", "Old Hickory", "Goodlettsville", "Hendersonville"]),
     ("Franklin", ["Franklin"]),

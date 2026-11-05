@@ -46,12 +46,6 @@
   ]
  },
  {
-  "id": "bleachers-sports-grill",
-  "name": "Bleachers Sports Grill",
-  "area": "Franklin",
-  "teams": []
- },
- {
   "id": "bobby-s-idle-hour",
   "name": "Bobby's Idle Hour",
   "area": "Music Row",
@@ -74,7 +68,7 @@
  {
   "id": "bringles",
   "name": "Bringle's Smoking Oasis",
-  "area": "East Nashville",
+  "area": "The Nations",
   "teams": [
    "Clemson University"
   ]
@@ -86,12 +80,6 @@
   "teams": [
    "James Madison University"
   ]
- },
- {
-  "id": "bunganut-pig-pub-eatery",
-  "name": "Bunganut Pig Pub & Eatery",
-  "area": "Franklin",
-  "teams": []
  },
  {
   "id": "canvas",
@@ -154,12 +142,6 @@
   "teams": []
  },
  {
-  "id": "dottie-s-speakeasy",
-  "name": "Dottie's Speakeasy",
-  "area": "Franklin",
-  "teams": []
- },
- {
   "id": "double-dogs-hillsboro-village",
   "name": "Double Dogs Hillsboro Village",
   "area": "Hillsboro Village",
@@ -197,12 +179,6 @@
   "id": "edleys-east",
   "name": "Edley's Bar-B-Que",
   "area": "East Nashville",
-  "teams": []
- },
- {
-  "id": "fgl-house",
-  "name": "FGL House",
-  "area": "Downtown",
   "teams": []
  },
  {
@@ -251,8 +227,8 @@
  },
  {
   "id": "garage-bar-at-bobby-hotel",
-  "name": "Garage Bar at Bobby Hotel",
-  "area": "Downtown",
+  "name": "Bobby's Garage",
+  "area": "Printers Alley",
   "teams": []
  },
  {
@@ -314,12 +290,6 @@
   "id": "hops-and-crafts",
   "name": "Hops & Crafts",
   "area": "The Gulch",
-  "teams": []
- },
- {
-  "id": "hopsmith-tavern",
-  "name": "Hopsmith Tavern",
-  "area": "Midtown",
   "teams": []
  },
  {
@@ -468,7 +438,7 @@
  {
   "id": "nobles-central",
   "name": "Noble's Central",
-  "area": "Germantown",
+  "area": "North Nashville",
   "teams": [
    "University of Southern California"
   ]
@@ -515,12 +485,6 @@
   "id": "pinewood-social",
   "name": "Pinewood Social",
   "area": "Rutledge Hill",
-  "teams": []
- },
- {
-  "id": "piranha-s-bar-grill",
-  "name": "Piranha's Bar & Grill",
-  "area": "Downtown",
   "teams": []
  },
  {
@@ -718,7 +682,7 @@
  {
   "id": "teddys",
   "name": "Teddy's Tavern",
-  "area": "East Nashville",
+  "area": "Downtown",
   "teams": [
    "University of Central Florida"
   ]
@@ -792,6 +756,7 @@
   "name": "Tin Roof",
   "area": "Midtown",
   "teams": [
+   "Carolina Panthers",
    "University of Georgia"
   ]
  },
@@ -809,14 +774,6 @@
   "area": "Broadway",
   "teams": [
    "University of Iowa"
-  ]
- },
- {
-  "id": "tin-roof-demonbreun",
-  "name": "Tin Roof",
-  "area": "Demonbreun",
-  "teams": [
-   "Carolina Panthers"
   ]
  },
  {
@@ -847,12 +804,6 @@
   "id": "white-alligator",
   "name": "The White Alligator",
   "area": "Franklin",
-  "teams": []
- },
- {
-  "id": "winners-bar",
-  "name": "Winners Bar",
-  "area": "Midtown",
   "teams": []
  },
  {
@@ -904,12 +855,6 @@
   "teams": []
  },
  {
-  "id": "12-south-taproom",
-  "name": "12 South Taproom",
-  "area": "12 South",
-  "teams": []
- },
- {
   "id": "jaspers",
   "name": "Jasper's",
   "area": "West End",
@@ -949,12 +894,6 @@
   "id": "commons-club",
   "name": "Commons Club",
   "area": "Music Row",
-  "teams": []
- },
- {
-  "id": "dawghouse-saloon",
-  "name": "Dawghouse Saloon",
-  "area": "Midtown",
   "teams": []
  },
  {
@@ -1013,8 +952,8 @@
  },
  {
   "id": "ml-rose-gulch",
-  "name": "M.L.Rose",
-  "area": "The Gulch",
+  "name": "M.L.Rose (Capitol View)",
+  "area": "Capitol View",
   "teams": []
  }
 ]
