@@ -1,139 +1,5 @@
 [
  {
-  "id": "hh-edleys-east-0",
-  "barId": "edleys-east",
-  "type": "happy",
-  "title": "Happy hour (2–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:00",
-  "deals": "$3 Busch Light, $4 Evan Williams, $5 Hap & Harry lager",
-  "source": "https://nashvilleguru.com/neighborhoods/east-nashville/happy-hours"
- },
- {
-  "id": "hh-five-points-pizza-east-1",
-  "barId": "five-points-pizza-east",
-  "type": "happy",
-  "title": "Happy hour (2–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:00",
-  "deals": "Slice + draft for $8, or slice + High Life/PBR for $5",
-  "source": "https://nashvilleguru.com/neighborhoods/east-nashville/happy-hours"
- },
- {
-  "id": "hh-cherries-2",
-  "barId": "cherries",
-  "type": "happy",
-  "title": "Happy hour",
-  "weekly": true,
-  "days": [
-   1,
-   2
-  ],
-  "time": "",
-  "deals": "$8 cocktails, $6 wines, $4 Tecate",
-  "source": "https://nashvilleguru.com/businesses/cherries",
-  "timeLabel": "Until 8 PM"
- },
- {
-  "id": "hh-folk-3",
-  "barId": "folk",
-  "type": "happy",
-  "title": "Apero hour (2–6 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   4
-  ],
-  "time": "14:00",
-  "deals": "$10 wines and cocktails, $4 select drafts",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-lockeland-table-4",
-  "barId": "lockeland-table",
-  "type": "happy",
-  "title": "Happy hour (4–6 PM)",
-  "weekly": true,
-  "days": [
-   6
-  ],
-  "time": "16:00",
-  "deals": "$8 cocktails, $6 wines, $4 drafts (at the bar)",
-  "source": "https://nashvillego.com/happy-hours/saturday"
- },
- {
-  "id": "hh-neighbors-gulch-5",
-  "barId": "neighbors-gulch",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "Half off drafts, bottles, wine and wells",
-  "source": "https://nashvilleguru.com/neighborhoods/gulch/happy-hours"
- },
- {
-  "id": "hh-hops-and-crafts-6",
-  "barId": "hops-and-crafts",
-  "type": "happy",
-  "title": "Happy hour (5–8 PM)",
-  "weekly": true,
-  "days": [
-   1
-  ],
-  "time": "17:00",
-  "deals": "$5 pints from a featured brewery",
-  "source": "https://nashvilleguru.com/businesses/hops-and-crafts-gulch-nashville"
- },
- {
-  "id": "hh-hops-and-crafts-7",
-  "barId": "hops-and-crafts",
-  "type": "happy",
-  "title": "Happy hour (5–8 PM)",
-  "weekly": true,
-  "days": [
-   2
-  ],
-  "time": "17:00",
-  "deals": "$5 wine and $5 cider",
-  "source": "https://nashvilleguru.com/businesses/hops-and-crafts-gulch-nashville"
- },
- {
-  "id": "hh-hops-and-crafts-8",
-  "barId": "hops-and-crafts",
-  "type": "happy",
-  "title": "Sunday beer special",
-  "weekly": true,
-  "days": [
-   0
-  ],
-  "time": "",
-  "deals": "$1 off all beer",
-  "source": "https://nashvilleguru.com/?p=21819",
-  "timeLabel": "All day"
- },
- {
   "id": "hh-golden-sound-9",
   "barId": "golden-sound",
   "type": "happy",
@@ -145,33 +11,6 @@
   "time": "17:00",
   "deals": "25% off all drinks",
   "source": "https://nashvillego.com/happy-hours/friday"
- },
- {
-  "id": "hh-marsh-house-10",
-  "barId": "marsh-house",
-  "type": "happy",
-  "title": "Happy hour (5–7 PM)",
-  "weekly": true,
-  "days": [
-   5
-  ],
-  "time": "17:00",
-  "deals": "$1.50 oysters, $3 High Life ponies, $11 cocktails",
-  "source": "https://nashvillego.com/happy-hours/friday"
- },
- {
-  "id": "hh-germantown-pub-12",
-  "barId": "germantown-pub",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2
-  ],
-  "time": "15:00",
-  "deals": "Half off select drafts and wells, BOGO cocktails, 6 wings $8.95",
-  "source": "https://nashvillego.com/happy-hours/tuesday"
  },
  {
   "id": "hh-dolans-14",
@@ -1004,25 +843,6 @@
   "id": "w-union-hill-trading-post-15"
  },
  {
-  "id": "hh-pinewood-social-0",
-  "barId": "pinewood-social",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "15:00",
-  "deals": "$8 cocktails, $6 wine, $25 bottles, $5 drafts & bottled beer, discounted bites",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
   "id": "hh-fogg-street-0",
   "barId": "fogg-street",
   "type": "happy",
@@ -1037,108 +857,6 @@
   ],
   "time": "15:00",
   "deals": "$6.95 pints, $12.95 cocktail specials, $8.95 Jack & Coke, $5 off wonton rolls",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-von-elrod-s-beer-hall-kitchen-0",
-  "barId": "von-elrod-s-beer-hall-kitchen",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "$5 half-liter steins, $5 wine & cocktails, $5 select food",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-sidecar-bar-0",
-  "barId": "sidecar-bar",
-  "type": "happy",
-  "title": "Happy hour (4–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "$2 off wine, wells & drafts",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-sonny-s-patio-pub-refuge-0",
-  "barId": "sonny-s-patio-pub-refuge",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 Good Mood Food",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-maggie-s-place-0",
-  "barId": "maggie-s-place",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "$7 margaritas, $5 drafts, $5 16oz Montucky, $7 select wine, $8 mini tacos",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-tin-roof-broadway-0",
-  "barId": "tin-roof-broadway",
-  "type": "happy",
-  "title": "Happy hour (11 AM–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "11:00",
-  "deals": "$6 domestic drafts & bottles, $25 beer buckets, $10 well drinks",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-slider-house-0",
-  "barId": "slider-house",
-  "type": "happy",
-  "title": "Happy hour (11 AM–7 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "11:00",
-  "deals": "$1 off wells, painkillers, mimosas, wine, cans & drafts; weekdays 2–6 PM 30% off apps",
   "source": "https://nashvillego.com/happy-hours"
  },
  {
@@ -1174,20 +892,6 @@
   "time": "11:00",
   "deals": "2-for-1 drafts, wells & wines",
   "source": "https://styleblueprint.com/nashville/everyday/best-happy-hours/"
- },
- {
-  "id": "hh-teddys-0",
-  "barId": "teddys",
-  "type": "happy",
-  "title": "Thursday happy hour (all day)",
-  "weekly": true,
-  "days": [
-   4
-  ],
-  "time": "11:00",
-  "deals": "$5 drafts, $9 cocktails, $2 Music City tallboys",
-  "source": "https://nashvilleguru.com/?p=20739",
-  "timeLabel": "All day"
  },
  {
   "id": "hh-sports-social-0",
@@ -1255,40 +959,6 @@
   "timeLabel": "All day"
  },
  {
-  "id": "hh-neighbors-germantown-0",
-  "barId": "neighbors-germantown",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "Half off drafts, bottles, wine & wells; late night 10 PM–close half-off pints",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-neighbors-sylvan-park-0",
-  "barId": "neighbors-sylvan-park",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "Half off drafts, bottles, wine & wells; late night 10 PM–close half-off pints",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
   "id": "hh-neighbors-franklin-0",
   "barId": "neighbors-franklin",
   "type": "happy",
@@ -1304,147 +974,6 @@
   "time": "15:00",
   "deals": "Half off drafts, bottles, house wine & wells",
   "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-streetcar-germantown-0",
-  "barId": "streetcar-germantown",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "Half-price beer, $5 margaritas & espresso martinis, $10 wine, $10 wings",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-streetcar-nations-0",
-  "barId": "streetcar-nations",
-  "type": "happy",
-  "title": "Happy hour (2:30–5:30 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:30",
-  "deals": "Half-price beer, $5 margaritas, $10 wine, $10 wings",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-never-never-0",
-  "barId": "never-never",
-  "type": "happy",
-  "title": "Happy hour (4–8 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "2-for-1 domestic beer, $2 off wells, shot-and-beer special",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-bottle-cap-0",
-  "barId": "bottle-cap",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "15:00",
-  "deals": "$1 off drafts, $15 domestic buckets, $7 mules & crushes",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-embers-ski-lodge-0",
-  "barId": "embers-ski-lodge",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "15:00",
-  "deals": "2-for-1 drafts & bottles, $6 wine, big whiskey pours",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-jaspers-0",
-  "barId": "jaspers",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "$3 domestics, $4 drafts, $5 wine, $8 cocktails, $6–$8 bar bites",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-aladdins-0",
-  "barId": "aladdins",
-  "type": "happy",
-  "title": "Happy hour (3–8 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "15:00",
-  "deals": "$3 beer, $5–$6 wine, $15 hookahs",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-ottos-bar-0",
-  "barId": "ottos-bar",
-  "type": "happy",
-  "title": "Happy hour (4–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "$5 house wine, $1 off drafts & wells",
-  "source": "https://nashvillego.com/happy-hours"
  },
  {
   "id": "hh-big-machine-distillery-0",
@@ -1464,110 +993,6 @@
   "source": "https://nashvillego.com/happy-hours"
  },
  {
-  "id": "hh-game-terminal-0",
-  "barId": "game-terminal",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "$6 drafts, $6 wells, $10 select cocktails",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-pucketts-downtown-0",
-  "barId": "pucketts-downtown",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "$2 off beer, wine & cocktails, $8 bar bites",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-commons-club-0",
-  "barId": "commons-club",
-  "type": "happy",
-  "title": "Happy hour (5–7 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "17:00",
-  "deals": "$1 oysters, $7 wine, $5 drafts, $10 margaritas & Aperol spritzes",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-black-rabbit-0",
-  "barId": "black-rabbit",
-  "type": "happy",
-  "title": "Happy hour (4–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "$6 cocktails, $6 wine, $2 off beer, select food discounts",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-garage-sale-bar-0",
-  "barId": "garage-sale-bar",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "Half off all food, $8 domestic beer + shot",
-  "source": "https://nashvilleguru.com/neighborhoods/east-nashville/happy-hours"
- },
- {
-  "id": "hh-the-treehouse-0",
-  "barId": "the-treehouse",
-  "type": "happy",
-  "title": "Happy hour (4–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "$8 cocktails, 2-for-1 beer, $8 house wine",
-  "source": "https://nashvilleguru.com/neighborhoods/east-nashville/happy-hours"
- },
- {
   "id": "hh-strega-0",
   "barId": "strega",
   "type": "happy",
@@ -1583,160 +1008,6 @@
   "time": "17:00",
   "deals": "$1 pizza slices, $3 select drafts",
   "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-crazy-gnome-0",
-  "barId": "crazy-gnome",
-  "type": "happy",
-  "title": "Happy hour (4–7 PM)",
-  "weekly": true,
-  "days": [
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "$5 pints",
-  "source": "https://nashvilleguru.com/neighborhoods/east-nashville/happy-hours"
- },
- {
-  "id": "hh-martha-my-dear-0",
-  "barId": "martha-my-dear",
-  "type": "happy",
-  "title": "Happy hour (5–7 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "17:00",
-  "deals": "$10 select cocktails, $2 off wine, $1 off beer",
-  "source": "https://nashvilleguru.com/neighborhoods/east-nashville/happy-hours"
- },
- {
-  "id": "hh-ml-rose-inglewood-0",
-  "barId": "ml-rose-inglewood",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   5
-  ],
-  "time": "15:00",
-  "deals": "2-for-1 beer, wine & wells; half-price cheeseburgers & tenders",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-ml-rose-inglewood-1",
-  "barId": "ml-rose-inglewood",
-  "type": "happy",
-  "title": "Thursday 2-for-1 (all day)",
-  "weekly": true,
-  "days": [
-   4
-  ],
-  "time": "11:00",
-  "deals": "2-for-1 on featured drinks",
-  "source": "https://nashvillego.com/happy-hours",
-  "timeLabel": "All day"
- },
- {
-  "id": "hh-ml-rose-sylvan-park-0",
-  "barId": "ml-rose-sylvan-park",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   5
-  ],
-  "time": "15:00",
-  "deals": "2-for-1 beer, wine & wells; half-price cheeseburgers & tenders",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-ml-rose-sylvan-park-1",
-  "barId": "ml-rose-sylvan-park",
-  "type": "happy",
-  "title": "Thursday 2-for-1 (all day)",
-  "weekly": true,
-  "days": [
-   4
-  ],
-  "time": "11:00",
-  "deals": "2-for-1 on featured drinks",
-  "source": "https://nashvillego.com/happy-hours",
-  "timeLabel": "All day"
- },
- {
-  "id": "hh-ml-rose-melrose-0",
-  "barId": "ml-rose-melrose",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   5
-  ],
-  "time": "15:00",
-  "deals": "2-for-1 beer, wine & wells; half-price cheeseburgers & tenders",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-ml-rose-melrose-1",
-  "barId": "ml-rose-melrose",
-  "type": "happy",
-  "title": "Thursday 2-for-1 (all day)",
-  "weekly": true,
-  "days": [
-   4
-  ],
-  "time": "11:00",
-  "deals": "2-for-1 on featured drinks",
-  "source": "https://nashvillego.com/happy-hours",
-  "timeLabel": "All day"
- },
- {
-  "id": "hh-ml-rose-gulch-0",
-  "barId": "ml-rose-gulch",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   5
-  ],
-  "time": "15:00",
-  "deals": "2-for-1 beer, wine & wells; half-price cheeseburgers & tenders",
-  "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-ml-rose-gulch-1",
-  "barId": "ml-rose-gulch",
-  "type": "happy",
-  "title": "Thursday 2-for-1 (all day)",
-  "weekly": true,
-  "days": [
-   4
-  ],
-  "time": "11:00",
-  "deals": "2-for-1 on featured drinks",
-  "source": "https://nashvillego.com/happy-hours",
-  "timeLabel": "All day"
  },
  {
   "id": "k-aj-s-good-time-bar-0",
@@ -1965,5 +1236,1240 @@
   "barId": "tin-roof",
   "weekly": true,
   "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "hh2-game-terminal-0",
+  "barId": "game-terminal",
+  "weekly": true,
+  "days": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "$4–$5 drafts, $8 canned beer, $9–$11 cocktails, $3 Jell-O shots",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-bottle-cap-0",
+  "barId": "bottle-cap",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-bottle-cap-1",
+  "barId": "bottle-cap",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "title": "Wednesday all-day happy hour",
+  "deals": "$1 off drafts, $15 domestic buckets, $7 mules & crushes; Ballad Bingo 7:30 PM",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-bottle-cap-2",
+  "barId": "bottle-cap",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "19:00",
+  "title": "Monday Dive Burger night (7 PM–close)",
+  "deals": "$10 Dive Burger combo",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-bottle-cap-3",
+  "barId": "bottle-cap",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "title": "Thursday late deal (7 PM–close)",
+  "deals": "2-for-1 bottles & cans",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-germantown-pub-0",
+  "barId": "germantown-pub",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "Half off select drafts & wells, BOGO select cocktails, 6 wings $8.95",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-germantown-pub-1",
+  "barId": "germantown-pub",
+  "weekly": true,
+  "days": [
+   5
+  ],
+  "time": "14:00",
+  "title": "Friday happy hour (2–6 PM)",
+  "deals": "Half off select drafts & well liquors",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-germantown-pub-2",
+  "barId": "germantown-pub",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "title": "Beer & shot special",
+  "deals": "$8 beer and shot all day",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-germantown-pub-3",
+  "barId": "germantown-pub",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "21:00",
+  "title": "Late-night happy hour (9 PM–midnight)",
+  "deals": "$7–$20 select drinks, 25% off signature cocktails",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-germantown-pub-4",
+  "barId": "germantown-pub",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "11:00",
+  "title": "Weekend brunch drinks (11 AM–3 PM)",
+  "deals": "$5 mimosas, $5 Bloody Marys",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-germantown-pub-5",
+  "barId": "germantown-pub",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "title": "Trivia night deal (7–9 PM)",
+  "deals": "Half off drafts and cans/bottles",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-embers-ski-lodge-0",
+  "barId": "embers-ski-lodge",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "2-for-1 drafts & bottles, $6 select wines, big whiskey pours",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-embers-ski-lodge-1",
+  "barId": "embers-ski-lodge",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "11:00",
+  "title": "Monday mules",
+  "deals": "$5 mules all day until 10 PM",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-hops-and-crafts-0",
+  "barId": "hops-and-crafts",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–8 PM)",
+  "deals": "$5 pints from a featured brewery",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-hops-and-crafts-1",
+  "barId": "hops-and-crafts",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–8 PM)",
+  "deals": "$6 well shots",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-hops-and-crafts-2",
+  "barId": "hops-and-crafts",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–8 PM)",
+  "deals": "$5 select pints until the keg kicks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-hops-and-crafts-3",
+  "barId": "hops-and-crafts",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–8 PM)",
+  "deals": "$9 specialty cocktails, half-off pub grub",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-hops-and-crafts-4",
+  "barId": "hops-and-crafts",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–8 PM)",
+  "deals": "$5 wine, $5 cider",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ottos-bar-0",
+  "barId": "ottos-bar",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–6 PM)",
+  "deals": "$7 teeny martinis, $5 house wine, $1 off drafts & wells",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ottos-bar-1",
+  "barId": "ottos-bar",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "21:00",
+  "title": "Sunday late happy hour (9–11 PM)",
+  "deals": "$7 teeny martinis, $5 house wine, $1 off drafts & wells",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ottos-bar-2",
+  "barId": "ottos-bar",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "11:00",
+  "title": "Taco Tuesday",
+  "deals": "Half-off margaritas, 2 tacos for $5",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-slider-house-0",
+  "barId": "slider-house",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "title": "Happy hour (11 AM–7 PM)",
+  "deals": "$1 off wells, painkillers, mimosas, wine, domestic cans & drafts; weekdays 2–6 PM 30% off apps",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-five-points-pizza-east-0",
+  "barId": "five-points-pizza-east",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "14:00",
+  "title": "Happy hour (2–6 PM)",
+  "deals": "Any slice + any draft (or NA Thirst Mutilator) $8, or cheese/pepperoni slice + High Life, Bud or PBR $5",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-aladdins-0",
+  "barId": "aladdins",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–8 PM)",
+  "deals": "$3 beer, $5–$6 select wine, $15 hookahs, $14 refills",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-aladdins-1",
+  "barId": "aladdins",
+  "weekly": true,
+  "days": [
+   1,
+   2
+  ],
+  "time": "20:00",
+  "title": "Late deal (8 PM–close)",
+  "deals": "$3 domestic bottles",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-commons-club-0",
+  "barId": "commons-club",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "$2 oysters, $8 wine, $5 drafts, $10 classic cocktails, $9 bites",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-garage-sale-bar-0",
+  "barId": "garage-sale-bar",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "Half off all food, $8 domestic beer + shot",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-jaspers-0",
+  "barId": "jaspers",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "$4 drafts, $5 house wine, $8 draft & frozen cocktails, $6 snacks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-jaspers-1",
+  "barId": "jaspers",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "16:00",
+  "title": "Monday pizza deal (4 PM–close)",
+  "deals": "BOGO pizza",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-jaspers-2",
+  "barId": "jaspers",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "16:00",
+  "title": "Wednesday burger deal (4 PM–close)",
+  "deals": "Any burger + side $10",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-jaspers-3",
+  "barId": "jaspers",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "11:00",
+  "title": "Sunday 2-for-1 beers",
+  "deals": "2-for-1 beers all day",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-maggie-s-place-0",
+  "barId": "maggie-s-place",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "$2 off drafts, $5 16oz Montucky, $7 wine, $20/$36 margarita pitchers, 5 mini tacos $8",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-maggie-s-place-1",
+  "barId": "maggie-s-place",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "11:00",
+  "title": "Taco Tuesday",
+  "deals": "BOGO tacos, $5 select drafts, $18 32oz / $34 60oz margarita pitchers",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-pinewood-social-0",
+  "barId": "pinewood-social",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–5 PM)",
+  "deals": "$8–$10 cocktails, $6 wine, $25 bottles, $5 drafts & bottled beer, discounted bites",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-pucketts-downtown-0",
+  "barId": "pucketts-downtown",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "$2 off drafts, bottled beer, cocktails & most wines; $7 A. Marshall wines; $8 bar bites",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-sonny-s-patio-pub-refuge-0",
+  "barId": "sonny-s-patio-pub-refuge",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-sonny-s-patio-pub-refuge-1",
+  "barId": "sonny-s-patio-pub-refuge",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "11:00",
+  "title": "Tequila Tuesday",
+  "deals": "$6 margaritas, $6 beer, half-off tacos",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-sonny-s-patio-pub-refuge-2",
+  "barId": "sonny-s-patio-pub-refuge",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Weekend brunch drinks (10 AM–2 PM)",
+  "deals": "$6 mimosas, $6 spritzes, $6 Bloody Marys",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-streetcar-germantown-0",
+  "barId": "streetcar-germantown",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "Half-price drafts, $5 Garden Maggies, $5 espresso martinis, $10 wine, $10 wings",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-streetcar-nations-0",
+  "barId": "streetcar-nations",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "Half-price beers, $5 Garden Maggies, $10 wine, $10 wings",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-black-rabbit-0",
+  "barId": "black-rabbit",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–6 PM)",
+  "deals": "$6 cocktails, $6 wine, $2 off beer, select food discounts",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-black-rabbit-1",
+  "barId": "black-rabbit",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "10:00",
+  "title": "Saturday happy hour (10 AM–6 PM)",
+  "deals": "$6 cocktails, $6 wine, $2 off beer; food discounts 4–6 PM",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-crazy-gnome-0",
+  "barId": "crazy-gnome",
+  "weekly": true,
+  "days": [
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–7 PM)",
+  "deals": "$5 pints",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-lockeland-table-0",
+  "barId": "lockeland-table",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "16:00",
+  "title": "Community Hour (4–6 PM)",
+  "deals": "$8 cocktails, $8 wine, $6–$8 beer, $8 snacks; proceeds help local school PTOs",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-never-never-0",
+  "barId": "never-never",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–8 PM)",
+  "deals": "2-for-1 domestic beers, $2 off wells, shot-and-beer special",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-sidecar-bar-0",
+  "barId": "sidecar-bar",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–7 PM)",
+  "deals": "$2 off wine, wells & drafts",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-sidecar-bar-1",
+  "barId": "sidecar-bar",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "title": "Tuesday martini night",
+  "deals": "$10 martinis and fries all night",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-sidecar-bar-2",
+  "barId": "sidecar-bar",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "title": "Wednesday late deal (7 PM–close)",
+  "deals": "$4–$5 drinks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-standard-proof-whiskey-co-0",
+  "barId": "standard-proof-whiskey-co",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–7 PM)",
+  "deals": "$9 Old Fashioned, espresso martini or whiskey sour; $5 shots & picklebacks; $17 flights",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-the-treehouse-0",
+  "barId": "the-treehouse",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–6 PM)",
+  "deals": "$8 cocktails, 2-for-1 beers, $8 house wine",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-folk-0",
+  "barId": "folk",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "17:00",
+  "title": "Apéro Hour (5–6 PM)",
+  "deals": "$10 wine by the glass, $40 bottles, $10 cocktails, $4 drafts, $4–$12 food",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-marsh-house-0",
+  "barId": "marsh-house",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–7 PM)",
+  "deals": "$1.50 oysters, $5–$9 wine, $3 High Life ponies, $11 cocktails, discounted bites",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-martha-my-dear-0",
+  "barId": "martha-my-dear",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–7 PM)",
+  "deals": "$10 select cocktails, $2 off wine, $1 off beer",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-cherries-0",
+  "barId": "cherries",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "",
+  "title": "Happy hour",
+  "deals": "$8 cocktails, $6 wine, $4 Cold Snack, discounted bites",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "Open–8 PM"
+ },
+ {
+  "id": "hh2-von-elrod-s-beer-hall-kitchen-0",
+  "barId": "von-elrod-s-beer-hall-kitchen",
+  "weekly": true,
+  "days": [
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "$5 half-liter steins, $5 wine, $5 cocktails, $5 food; Thursday any big beer $10",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-tin-roof-broadway-0",
+  "barId": "tin-roof-broadway",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "title": "Day happy hour (11 AM–4 PM)",
+  "deals": "50% off appetizers, select beers, well & call liquor",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-tin-roof-broadway-1",
+  "barId": "tin-roof-broadway",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "time": "22:00",
+  "title": "Late-night happy hour (10 PM–close)",
+  "deals": "$5 house liquors, $5 domestic beers, $5 Sun Cruisers",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-tin-roof-broadway-2",
+  "barId": "tin-roof-broadway",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Weekend brunch (10 AM–3 PM)",
+  "deals": "$20 mimosa buckets; Sunday 2-for-1 Bloody Marys & screwdrivers",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-odies-0",
+  "barId": "odies",
+  "weekly": true,
+  "days": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–7 PM)",
+  "deals": "$5 domestic beer, $5 wine, $7 house margaritas, $7 Holler & Swaller hard tea, half-off loaded fries",
+  "type": "happy",
+  "source": "Odie's (via Google), shared by Pourcast"
+ },
+ {
+  "id": "hh2-happy-does-0",
+  "barId": "happy-does",
+  "weekly": true,
+  "days": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "17:00",
+  "title": "Happy hour (5–7 PM)",
+  "deals": "Happy hour drink specials",
+  "type": "happy",
+  "source": "https://www.happydoesnash.com/specials"
+ },
+ {
+  "id": "hh2-happy-does-1",
+  "barId": "happy-does",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "title": "$1 Wing Wednesday",
+  "deals": "$1 wings all day (min. 6); karaoke 8 PM",
+  "type": "happy",
+  "source": "https://www.happydoesnash.com/specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-happy-does-2",
+  "barId": "happy-does",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "title": "Thursday draft deal",
+  "deals": "$5 all draft beer + free play games",
+  "type": "happy",
+  "source": "https://www.happydoesnash.com/specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-happy-does-3",
+  "barId": "happy-does",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Weekend game day specials",
+  "deals": "$30–$35 buckets of 5, $20–$25 pitchers, $9 team spirits, $10 Tito's Bloody Mary",
+  "type": "happy",
+  "source": "https://www.happydoesnash.com/specials",
+  "timeLabel": "Game days"
+ },
+ {
+  "id": "hh2-neighbors-gulch-0",
+  "barId": "neighbors-gulch",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "Half off bottles, pints, pilsners, well drinks, seltzers & house wine",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-neighbors-germantown-0",
+  "barId": "neighbors-germantown",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "Half off bottles, pints, pilsners, well drinks, seltzers & house wine",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-neighbors-sylvan-park-0",
+  "barId": "neighbors-sylvan-park",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–7 PM)",
+  "deals": "Half off bottles, pints, pilsners, well drinks, seltzers & house wine",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-inglewood-0",
+  "barId": "ml-rose-inglewood",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-inglewood-1",
+  "barId": "ml-rose-inglewood",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "title": "Thursday 2-for-1",
+  "deals": "2-for-1 on everything on the drink menu",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-ml-rose-inglewood-2",
+  "barId": "ml-rose-inglewood",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Brunch 2-for-1 (until 2 PM)",
+  "deals": "2-for-1 select brunch drinks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-sylvan-park-0",
+  "barId": "ml-rose-sylvan-park",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-sylvan-park-1",
+  "barId": "ml-rose-sylvan-park",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "title": "Thursday 2-for-1",
+  "deals": "2-for-1 on everything on the drink menu",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-ml-rose-sylvan-park-2",
+  "barId": "ml-rose-sylvan-park",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Brunch 2-for-1 (until 2 PM)",
+  "deals": "2-for-1 select brunch drinks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-melrose-0",
+  "barId": "ml-rose-melrose",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-melrose-1",
+  "barId": "ml-rose-melrose",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "title": "Thursday 2-for-1",
+  "deals": "2-for-1 on everything on the drink menu",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-ml-rose-melrose-2",
+  "barId": "ml-rose-melrose",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Brunch 2-for-1 (until 2 PM)",
+  "deals": "2-for-1 select brunch drinks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-gulch-0",
+  "barId": "ml-rose-gulch",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "id": "hh2-ml-rose-gulch-1",
+  "barId": "ml-rose-gulch",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "title": "Thursday 2-for-1",
+  "deals": "2-for-1 on everything on the drink menu",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh2-ml-rose-gulch-2",
+  "barId": "ml-rose-gulch",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "title": "Brunch 2-for-1 (until 2 PM)",
+  "deals": "2-for-1 select brunch drinks",
+  "type": "happy",
+  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+ },
+ {
+  "barId": "happy-does",
+  "weekly": true,
+  "id": "w-happy-does-k",
+  "type": "karaoke",
+  "title": "Karaoke",
+  "days": [
+   0,
+   3,
+   4
+  ],
+  "time": "20:00",
+  "source": "https://www.happydoesnash.com/specials"
+ },
+ {
+  "barId": "happy-does",
+  "weekly": true,
+  "id": "w-happy-does-t",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "deals": "Prizes: $75 / $50 / $25 gift cards",
+  "source": "https://www.happydoesnash.com/specials"
  }
 ]
