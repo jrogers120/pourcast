@@ -8,6 +8,11 @@ on:
         description: "Test only (tick to build the post without publishing)"
         type: boolean
         default: false
+      only:
+        description: "Where to post"
+        type: choice
+        options: [both, facebook, instagram]
+        default: both
 permissions:
   contents: read
 concurrency:
@@ -28,7 +33,10 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          ONLY: ${{ inputs.only || 'both' }}
         run: |
+          if [ "$ONLY" = "facebook" ]; then unset IG_USER_ID; fi
+          if [ "$ONLY" = "instagram" ]; then unset FB_PAGE_ID; fi
           if [ -z "$IG_TOKEN" ]; then
             echo "Instagram secrets not set yet; skipping."; exit 0
           fi

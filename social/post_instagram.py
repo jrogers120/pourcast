@@ -35,7 +35,7 @@ def call(method, path, **params):
     except urllib.error.HTTPError as err:
         body = err.read().decode(errors="replace")
         # never print the token
-        sys.exit(f"Instagram API error {err.code} on {path}: {body}")
+        sys.exit(f"Meta API error {err.code} on {path}: {body}")
 
 
 def main():
@@ -74,7 +74,10 @@ def main():
             fb = call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=token)
             print(f"Posted to Facebook for {today}: post id {fb.get('post_id') or fb.get('id')}")
         except SystemExit as err:
-            print(err); failed.append("Facebook")
+            print(err)
+            if "publish_actions" in str(err):
+                print("Hint: IG_TOKEN is a user token. Save the PAGE access token instead.")
+            failed.append("Facebook")
     if user:
         try:
             post_instagram(user, token, image_url, caption, today)
