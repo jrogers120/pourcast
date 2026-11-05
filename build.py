@@ -114,6 +114,11 @@ def ticker_text():
     return "   •   ".join(f"{when(x)}  {x['title']} at {bar_label(x['barId'])}" for x in evs)
 
 
+TICKER = ticker_text()
+# constant, slow reading speed (~40 px/sec) no matter how long the ticker is
+TICKER_SECS = max(60, round((len(TICKER) * 8.5 + 1200) / 40))
+
+
 def page(path, title, desc, body, current="", jsonld=None):
     canon = BASE + path
     ads_head = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={e(CFG["adsense_client"])}" crossorigin="anonymous"></script>'
@@ -139,7 +144,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 </head>
 <body>
 <header class="masthead"><div class="wrap"><a class="logo" href="/">{LOGO_SVG}<b>Pour<span>cast</span></b></a><div class="strap"><b>{e(CITY)}</b><i>7-Day Bar Forecast</i></div></div></header>
-<div class="ticker" aria-label="Today's highlights"><span class="lbl">Today</span><span class="track"><span class="run">{e(ticker_text())}</span></span></div>
+<div class="ticker" aria-label="Today's highlights"><span class="lbl">Today</span><span class="track"><span class="run" style="animation-duration:{TICKER_SECS}s">{e(TICKER)}</span></span></div>
 <nav class="secnav" aria-label="Sections"><div class="wrap">{nav}</div></nav>
 <main><div class="wrap">
 {body}
