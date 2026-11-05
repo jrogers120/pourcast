@@ -5,6 +5,7 @@ Usage: python3 build.py [--today YYYY-MM-DD]
 No third-party packages needed.
 """
 import json, os, re, shutil, sys, html
+from urllib.parse import quote_plus
 from datetime import datetime, date, timedelta
 from zoneinfo import ZoneInfo
 
@@ -157,7 +158,7 @@ sel.addEventListener('change',function(){apply(sel.value);try{localStorage.setIt
 
 TICKER = ticker_text()
 # constant, slow reading speed (~40 px/sec) no matter how long the ticker is
-TICKER_SECS = max(60, round((len(TICKER) * 8.5 + 1200) / 40))
+TICKER_SECS = max(45, round((len(TICKER) * 8.5 + 1200) / 55))
 
 
 def page(path, title, desc, body, current="", jsonld=None):
@@ -310,6 +311,9 @@ def build_bars():
         once = sorted([x for x in evs if not x.get("weekly") and x.get("date", "") >= TODAY.isoformat()], key=lambda x: (x["date"], sort_key(x)))
         loc = b.get("area") or CITY
         p = [f'<h1>{e(b["name"])}</h1><p class="dek">{e(loc)} · Events, game watches and happy hours this week.</p>']
+        if b.get("address"):
+            maps = "https://www.google.com/maps/search/?api=1&query=" + quote_plus(b["name"] + ", " + b["address"])
+            p.append(f'<p class="addr"><span>📍 {e(b["address"])}</span> <a class="dir" href="{maps}" target="_blank" rel="noopener">Directions</a></p>')
         if b["teams"]:
             p.append('<div class="alert"><b>Home bar for</b><span>' + ", ".join(f'<a href="{team_url(t)}">{e(t)}</a>' for t in b["teams"]) + " fans</span></div>")
         p.append('<h2>Coming up</h2>' + ('<div class="grid">' + "".join(card(x, show_day=True) for x in once) + '</div>' if once else '<div class="empty">No one-time events posted yet.</div>'))
