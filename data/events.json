@@ -174,19 +174,6 @@
   "source": "https://nashvillego.com/happy-hours/tuesday"
  },
  {
-  "id": "hh-tin-roof-demonbreun-13",
-  "barId": "tin-roof",
-  "type": "happy",
-  "title": "Sunday songwriters brunch (11 AM–3 PM)",
-  "weekly": true,
-  "days": [
-   0
-  ],
-  "time": "11:00",
-  "deals": "$4 Busch Light and PBR, $3 mimosas, $5 Fireball",
-  "source": "https://nashvillego.com/happy-hours/sunday"
- },
- {
   "id": "hh-dolans-14",
   "barId": "dolans",
   "type": "happy",
@@ -1882,5 +1869,101 @@
   "time": "13:00",
   "deals": "Karaoke the whole time they're open",
   "source": "Google Maps hours, checked 2026-11-05"
+ },
+ {
+  "id": "hh-tin-roof-0",
+  "type": "happy",
+  "title": "Happy hour (2–7 PM)",
+  "days": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "14:00",
+  "deals": "$3 domestics, $4 wells, $5 Green Tea/White Tea/Lemon Drop/Fireball shots, $6 calls, $6 chicken & jack quesadillas",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "hh-tin-roof-1",
+  "type": "happy",
+  "title": "All-day happy hour Monday",
+  "days": [
+   1
+  ],
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$3 domestics, $4 wells, $5 Green Tea/White Tea/Lemon Drop/Fireball shots, $6 calls, $6 chicken & jack quesadillas",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "hh-tin-roof-2",
+  "type": "happy",
+  "title": "Taco Tuesday drinks",
+  "days": [
+   2
+  ],
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$5 margaritas, $6 Modelo drafts",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "hh-tin-roof-3",
+  "type": "happy",
+  "title": "Seltzer Wednesday",
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$5 seltzers (White Claw, High Noon, Nutrl, Sun Cruiser, Super Lyte)",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "hh-tin-roof-4",
+  "type": "happy",
+  "title": "Cup Night (9 PM–close)",
+  "days": [
+   4
+  ],
+  "time": "21:00",
+  "deals": "$3 liquor, 2-for-1 domestic beers & select seltzers",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "hh-tin-roof-5",
+  "type": "happy",
+  "title": "Saturday buckets (11 AM–6 PM)",
+  "days": [
+   6
+  ],
+  "time": "11:00",
+  "deals": "$20 domestic buckets, $25 premium buckets, $30 seltzer buckets",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
+ },
+ {
+  "id": "w-tin-roof-6",
+  "type": "music",
+  "title": "Sunday Day Party: DJ in the Green Room (4–9 PM)",
+  "days": [
+   0
+  ],
+  "time": "16:00",
+  "barId": "tin-roof",
+  "weekly": true,
+  "source": "https://theoriginaltinroof.com"
  }
 ]
