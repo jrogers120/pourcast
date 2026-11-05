@@ -59,6 +59,65 @@ def _matchup(title):
     return tuple(sorted(p.strip().lower() for p in parts))
 
 
+SEC = ["alabama", "arkansas", "auburn", "florida", "georgia", "kentucky", "lsu", "mississippi state", "missouri",
+       "oklahoma", "ole miss", "south carolina", "tennessee", "texas", "texas a&m", "vanderbilt"]
+LOCAL = ["tennessee", "vanderbilt", "titans"]
+BIG_TV = ["abc", "cbs", "nbc", "fox", "espn"]
+
+
+def _score(game, bars):
+    """Rough 'how much will Nashville care' score, used when no editor pick exists."""
+    teams = [t.strip() for t in _matchup(game["title"])]
+    sc = 0
+    sc += 6 * sum(1 for t in teams if any(t == l or t.endswith(" " + l) or t == l + "s" for l in LOCAL))
+    sc += 3 * sum(1 for t in teams if t in SEC)
+    sc += min(len(bars), 6)
+    tv = (game.get("tv") or "").lower()
+    sc += 3 if any(tv.startswith(n) for n in BIG_TV) else 0
+    sc += 2 if (game.get("time") or "") >= "18:00" else 0
+    return sc
+
+
+def headliners(games, picks_for_day):
+    """(good, bad) as (event, bars, blurb), or None. Editor picks in data/picks.json win."""
+    if not games:
+        return None, None
+    by_key = {_matchup(g["title"]): (g, b) for g, b in games}
+    good = bad = None
+    p = picks_for_day or {}
+    if p.get("good") and _matchup(p["good"]) in by_key:
+        good = by_key[_matchup(p["good"])] + (p.get("goodWhy") or "",)
+    if p.get("bad") and _matchup(p["bad"]) in by_key:
+        bad = by_key[_matchup(p["bad"])] + (p.get("badWhy") or "",)
+    # Without today's betting lines we can't call a game close or a blowout, so:
+    # fall back to the game Nashville cares most about, and skip the bad game.
+    if not good:
+        good = sorted(games, key=lambda gb: _score(*gb), reverse=True)[0] + ("",)
+    if bad and _matchup(bad[0]["title"]) == _matchup(good[0]["title"]):
+        bad = None
+    return good, bad
+
+
+def _sun(d, cx, cy, r):
+    import math
+    for i in range(12):
+        a = math.radians(i * 30)
+        d.line([cx + math.cos(a) * r * 1.25, cy + math.sin(a) * r * 1.25, cx + math.cos(a) * r * 1.65, cy + math.sin(a) * r * 1.65],
+               fill=GOLD, width=max(4, int(r * .16)))
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=GOLD, outline=AMBER, width=4)
+
+
+def _storm(d, cx, cy, r):
+    cloud = "#5B6475"
+    for dx, dy, rr in [(-.55, .1, .55), (0, -.25, .7), (.6, .1, .5)]:
+        d.ellipse([cx + dx * r - rr * r, cy + dy * r - rr * r, cx + dx * r + rr * r, cy + dy * r + rr * r], fill=cloud)
+    d.rounded_rectangle([cx - 1.05 * r, cy - .05 * r, cx + 1.05 * r, cy + .62 * r], radius=int(.3 * r), fill=cloud)
+    d.polygon([(cx + .05 * r, cy + .45 * r), (cx - .35 * r, cy + 1.15 * r), (cx - .02 * r, cy + 1.1 * r),
+               (cx - .2 * r, cy + 1.65 * r), (cx + .38 * r, cy + .85 * r), (cx + .05 * r, cy + .88 * r), (cx + .28 * r, cy + .45 * r)], fill=GOLD)
+    for x in (-.75, .7):
+        d.line([cx + x * r, cy + .8 * r, cx + (x - .15) * r, cy + 1.2 * r], fill="#6FA8FF", width=6)
+
+
 def pick(today_events, bar_label):
     """Group today's events into the sections shown on the graphic."""
     games, seen = [], set()
@@ -77,8 +136,9 @@ def pick(today_events, bar_label):
     return games, happy, nights
 
 
-def make(out_dir, today, today_events, bar_label, when, base_url, pydow):
+def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=None):
     games, happy, nights = pick(today_events, bar_label)
+    good, bad = headliners(games, (picks or {}).get(today.isoformat()))
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
 
@@ -86,7 +146,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow):
     d.rectangle([0, 0, W, 190], fill=BLUE)
     _logo(d, 105, 95, 68)
     d.text((195, 38), "POURCAST", font=FONT(WIDE, 74), fill=WHITE)
-    d.text((199, 124), "NASHVILLE  ·  WHAT'S POURING TONIGHT", font=FONT(BOLD, 30), fill=GOLD)
+    d.text((199, 124), "NASHVILLE, TN  ·  WHAT'S POURING TONIGHT", font=FONT(BOLD, 30), fill=GOLD)
     # red date bar
     d.rectangle([0, 190, W, 262], fill=RED)
     date_txt = f"TONIGHT'S FORECAST  ·  {DOW[pydow(today)]}, {MON[today.month - 1]} {today.day}"
@@ -94,6 +154,33 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow):
 
     y = 292
     L, R = 48, W - 48
+
+    def hero(item, kind):
+        nonlocal y
+        g, bars, why = item
+        good_kind = kind == "good"
+        h = 196
+        d.rounded_rectangle([L, y, R, y + h], radius=14, fill=WHITE if good_kind else "#E9ECF3",
+                            outline=GOLD if good_kind else "#9AA3B5", width=5)
+        (_sun if good_kind else _storm)(d, L + 92, y + h // 2 - (0 if good_kind else 22), 46 if good_kind else 50)
+        tx = L + 190
+        tag = "GAME OF THE DAY  ·  CLEAR SKIES" if good_kind else "BAD GAME OF THE DAY  ·  BLOWOUT WARNING"
+        d.text((tx, y + 18), tag, font=FONT(BOLD, 30), fill=RED if good_kind else GREY)
+        d.text((tx, y + 56), _clip(d, g["title"], FONT(BOLD, 46), R - tx - 20), font=_fit(d, g["title"], BOLD, 46, R - tx - 20), fill=INK)
+        line = when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "") + f"  ·  {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else "")
+        d.text((tx, y + 114), _clip(d, line, FONT(REG, 28), R - tx - 20), font=FONT(REG, 28), fill=GREY)
+        blurb = why or ("Full bars, loud crowds, perfect watching weather." if good_kind else "Lopsided line. Good time to hit happy hour instead.")
+        d.text((tx, y + 150), _clip(d, blurb, FONT(BOLD, 27), R - tx - 20), font=FONT(BOLD, 27), fill=INK if good_kind else GREY)
+        y += h + 16
+
+    if good:
+        hero(good, "good")
+    if bad:
+        hero(bad, "bad")
+    if good or bad:
+        y += 8
+    featured = {_matchup(i[0]["title"]) for i in (good, bad) if i}
+    games = [gb for gb in games if _matchup(gb[0]["title"]) not in featured]
 
     def section(title, count=None):
         nonlocal y
@@ -120,9 +207,9 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow):
     budget = H - 150  # keep room for footer
 
     if games:
-        section("GAME DAY", f"{len(games)} GAMES")
+        section("MORE GAMES" if featured else "GAME DAY", f"{len(games)} GAMES")
         for x, bars in games:
-            if y > budget - 230:
+            if y > budget - (230 if (nights or happy) else 110):
                 break
             more = f" + {len(bars) - 2} more" if len(bars) > 2 else ""
             row(when(x), x["title"] + (f"  ·  {x['tv']}" if x.get("tv") else ""), "Home bars: " + ", ".join(bars[:2]) + more)
@@ -157,9 +244,17 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow):
 
     # caption
     dayname = DOW[pydow(today)].title()
-    lines = [f"🍺 Tonight in Nashville: {dayname}, {MON[today.month - 1].title()} {today.day}", ""]
+    lines = [f"🍺 Tonight in Nashville: {dayname}, {MON[today.month - 1].title()} {today.day}", "📍 Nashville, TN", ""]
+    for item, icon, label in ((good, "☀️", "GAME OF THE DAY"), (bad, "⛈️", "BAD GAME OF THE DAY")):
+        if item:
+            g, bars, why = item
+            lines.append(f"{icon} {label}: {g['title']}, {when(g)}" + (f" on {g['tv']}" if g.get("tv") else "") + f", at {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
+            if why:
+                lines.append(f"   {why}")
+    if good or bad:
+        lines.append("")
     if games:
-        lines.append("🏈 GAME DAY")
+        lines.append("🏈 MORE GAMES" if featured else "🏈 GAME DAY")
         for x, bars in games[:8]:
             lines.append(f"• {when(x)}: {x['title']}" + (f" ({x['tv']})" if x.get("tv") else "") + f", at {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
         lines.append("")

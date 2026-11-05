@@ -22,6 +22,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://graph.facebook.com/v21.0"
 CFG = json.load(open(os.path.join(ROOT, "config.json")))
 BASE = CFG["base_url"].rstrip("/")
+LOCATION = CFG.get("location_page_id", "")  # Facebook place ID for Nashville, Tennessee
+
+
+class APIError(SystemExit):
+    pass
 
 
 def call(method, path, **params):
@@ -35,7 +40,7 @@ def call(method, path, **params):
     except urllib.error.HTTPError as err:
         body = err.read().decode(errors="replace")
         # never print the token
-        sys.exit(f"Meta API error {err.code} on {path}: {body}")
+        raise APIError(f"Meta API error {err.code} on {path}: {body}")
 
 
 def main():
@@ -74,7 +79,12 @@ def main():
             # IG_TOKEN may be a user token; Facebook Page posts need the Page's own token,
             # which a user token can look up (needs pages_show_list / pages_manage_posts).
             page_token = call("GET", page, fields="access_token", access_token=token).get("access_token") or token
-            fb = call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=page_token)
+            try:
+                fb = call("POST", f"{page}/photos", url=image_url, caption=caption, place=LOCATION, access_token=page_token) if LOCATION \
+                    else call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=page_token)
+            except APIError as err:
+                print("Facebook rejected the location tag, posting without it:", err)
+                fb = call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=page_token)
             print(f"Posted to Facebook for {today}: post id {fb.get('post_id') or fb.get('id')}")
         except SystemExit as err:
             print(err)
@@ -92,7 +102,12 @@ def main():
 
 def post_instagram(user, token, image_url, caption, today):
 
-    container = call("POST", f"{user}/media", image_url=image_url, caption=caption, access_token=token)["id"]
+    try:
+        container = (call("POST", f"{user}/media", image_url=image_url, caption=caption, location_id=LOCATION, access_token=token) if LOCATION
+                     else call("POST", f"{user}/media", image_url=image_url, caption=caption, access_token=token))["id"]
+    except APIError as err:
+        print("Instagram rejected the location tag, posting without it:", err)
+        container = call("POST", f"{user}/media", image_url=image_url, caption=caption, access_token=token)["id"]
     for _ in range(30):
         status = call("GET", container, fields="status_code", access_token=token).get("status_code")
         if status == "FINISHED":

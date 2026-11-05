@@ -390,8 +390,10 @@ if __name__ == "__main__":
     try:
         sys.path.insert(0, os.path.join(ROOT, "social"))
         import graphic
+        pf = os.path.join(ROOT, "data", "picks.json")
+        picks = json.load(open(pf)) if os.path.exists(pf) else {}
         graphic.make(os.path.join(OUT, "social"), TODAY, [x for x in EVENTS if occurs(x, TODAY)],
-                     bar_label, when, BASE, pydow)
+                     bar_label, when, BASE, pydow, picks)
         print("Made Instagram graphic for", TODAY)
     except ImportError as err:
         print("Skipped Instagram graphic (Pillow not installed):", err)
