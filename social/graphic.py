@@ -98,6 +98,30 @@ def headliners(games, picks_for_day):
     return good, bad
 
 
+GOOD_TAGS = ["CLEAR SKIES", "HIGH PRESSURE SYSTEM", "HEAT WAVE ALERT", "SUNNY & SIZZLING", "PERFECT CONDITIONS"]
+BAD_TAGS = ["BLOWOUT WARNING", "FLOOD WATCH", "COLD FRONT", "FOG ADVISORY", "HIGH WIND WARNING"]
+GOOD_PUNS = [
+    "Two fronts colliding. Expect thunder in every bar.",
+    "Pressure's building all night. Bring a rain jacket for the spills.",
+    "Forecast: 100% chance of nail-biting with scattered high-fives.",
+    "Conditions are perfect for a late-night lightning strike.",
+    "Barometer says this one goes down to the final drop.",
+    "Warm, humid and tight. The kind of air you can cut with a knife.",
+]
+BAD_PUNS = [
+    "Flood warning: one side's getting washed out early.",
+    "Severe yawn advisory. Happy hour is the better forecast.",
+    "Gusts up to 30 points. Secure your remote.",
+    "Fog rolling in by halftime. Visibility on the outcome: zero.",
+    "Cold front moving in. Expect a mass exodus to the patio.",
+    "Expect a one-sided downpour. Umbrellas for the underdog.",
+]
+
+
+def _pun(options, today, salt=0):
+    return options[(today.toordinal() + salt) % len(options)]
+
+
 def _sun(d, cx, cy, r):
     import math
     for i in range(12):
@@ -164,13 +188,13 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
                             outline=GOLD if good_kind else "#9AA3B5", width=5)
         (_sun if good_kind else _storm)(d, L + 92, y + h // 2 - (0 if good_kind else 22), 46 if good_kind else 50)
         tx = L + 190
-        tag = "GAME OF THE DAY  ·  CLEAR SKIES" if good_kind else "BAD GAME OF THE DAY  ·  BLOWOUT WARNING"
+        tag = ("GAME OF THE DAY  ·  " + _pun(GOOD_TAGS, today)) if good_kind else ("BAD GAME OF THE DAY  ·  " + _pun(BAD_TAGS, today))
         d.text((tx, y + 18), tag, font=FONT(BOLD, 30), fill=RED if good_kind else GREY)
         d.text((tx, y + 56), _clip(d, g["title"], FONT(BOLD, 46), R - tx - 20), font=_fit(d, g["title"], BOLD, 46, R - tx - 20), fill=INK)
         line = when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "") + f"  ·  {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else "")
         d.text((tx, y + 114), _clip(d, line, FONT(REG, 28), R - tx - 20), font=FONT(REG, 28), fill=GREY)
-        blurb = why or ("Full bars, loud crowds, perfect watching weather." if good_kind else "Lopsided line. Good time to hit happy hour instead.")
-        d.text((tx, y + 150), _clip(d, blurb, FONT(BOLD, 27), R - tx - 20), font=FONT(BOLD, 27), fill=INK if good_kind else GREY)
+        blurb = why or (_pun(GOOD_PUNS, today) if good_kind else _pun(BAD_PUNS, today, 3))
+        d.text((tx, y + 150), _clip(d, blurb, FONT(BOLD, 27), R - tx - 20), font=_fit(d, blurb, BOLD, 27, R - tx - 20), fill=INK if good_kind else GREY)
         y += h + 16
 
     if good:
@@ -209,7 +233,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     if games:
         section("MORE GAMES" if featured else "GAME DAY", f"{len(games)} GAMES")
         for x, bars in games:
-            if y > budget - (230 if (nights or happy) else 110):
+            if y > budget - (150 if (nights or happy) else 110):
                 break
             more = f" + {len(bars) - 2} more" if len(bars) > 2 else ""
             row(when(x), x["title"] + (f"  ·  {x['tv']}" if x.get("tv") else ""), "Home bars: " + ", ".join(bars[:2]) + more)
@@ -244,10 +268,11 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
 
     # caption
     dayname = DOW[pydow(today)].title()
-    lines = [f"🍺 Tonight in Nashville: {dayname}, {MON[today.month - 1].title()} {today.day}", "📍 Nashville, TN", ""]
+    lines = [f"🍺 Tonight's Pourcast for Nashville: {dayname}, {MON[today.month - 1].title()} {today.day}", "📍 Nashville, TN", ""]
     for item, icon, label in ((good, "☀️", "GAME OF THE DAY"), (bad, "⛈️", "BAD GAME OF THE DAY")):
         if item:
             g, bars, why = item
+            why = why or (_pun(GOOD_PUNS, today) if icon == "☀️" else _pun(BAD_PUNS, today, 3))
             lines.append(f"{icon} {label}: {g['title']}, {when(g)}" + (f" on {g['tv']}" if g.get("tv") else "") + f", at {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
             if why:
                 lines.append(f"   {why}")
@@ -264,7 +289,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
             lines.append(f"• {when(x)}: {x['title']} at {bar_label(x['barId'])}")
         lines.append("")
     if happy:
-        lines.append(f"🍻 {len(happy)} happy hours today, including:")
+        lines.append(f"🍻 Happy hour radar: {len(happy)} deals across town, including:")
         for x in happy[:6]:
             lines.append(f"• {bar_label(x['barId'])}: {x.get('deals') or x['title']}")
         lines.append("")
