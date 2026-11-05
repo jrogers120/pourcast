@@ -339,4 +339,12 @@ if __name__ == "__main__":
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
     build_home(); build_types(); build_bars(); build_teams(); build_static(); build_meta()
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "social"))
+        import graphic
+        graphic.make(os.path.join(OUT, "social"), TODAY, [x for x in EVENTS if occurs(x, TODAY)],
+                     bar_label, when, BASE, pydow)
+        print("Made Instagram graphic for", TODAY)
+    except ImportError as err:
+        print("Skipped Instagram graphic (Pillow not installed):", err)
     print(f"Built {len(PAGES)} pages for {TODAY} into {OUT}")
