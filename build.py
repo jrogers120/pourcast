@@ -392,8 +392,10 @@ if __name__ == "__main__":
         import graphic
         pf = os.path.join(ROOT, "data", "picks.json")
         picks = json.load(open(pf)) if os.path.exists(pf) else {}
+        df = os.path.join(ROOT, "data", "drinks.json")
+        drinks = json.load(open(df)) if os.path.exists(df) else []
         graphic.make(os.path.join(OUT, "social"), TODAY, [x for x in EVENTS if occurs(x, TODAY)],
-                     bar_label, when, BASE, pydow, picks)
+                     bar_label, when, BASE, pydow, picks, drinks, lambda b: b in BARS)
         print("Made Instagram graphic for", TODAY)
     except ImportError as err:
         print("Skipped Instagram graphic (Pillow not installed):", err)

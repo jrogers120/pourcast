@@ -142,6 +142,33 @@ def _storm(d, cx, cy, r):
         d.line([cx + x * r, cy + .8 * r, cx + (x - .15) * r, cy + 1.2 * r], fill="#6FA8FF", width=6)
 
 
+DRINK_TAGS = ["100% CHANCE OF SIPS", "SCATTERED SHAKERS", "LIGHT DRIZZLE OF BITTERS", "TROPICAL FRONT",
+              "COCKTAIL ADVISORY", "CHILL IN THE AIR"]
+
+
+def drink_for(today, picks_for_day, drinks, bar_ok):
+    """Editor/scheduled pick from picks.json wins; otherwise rotate the saved list by date."""
+    p = (picks_for_day or {}).get("drink")
+    if p and p.get("name") and bar_ok(p.get("barId")):
+        return p
+    pool = [x for x in (drinks or []) if bar_ok(x.get("barId"))]
+    if not pool:
+        return None
+    import random
+    order = list(range(len(pool)))
+    random.Random(len(pool)).shuffle(order)  # fixed shuffle so it doesn't go bar-by-bar
+    return pool[order[today.toordinal() % len(pool)]]
+
+
+def _glass(d, cx, cy, r):
+    d.polygon([(cx - r, cy - r * .8), (cx + r, cy - r * .8), (cx, cy + r * .35)], fill="#F8D7E3", outline=WHITE)
+    d.polygon([(cx - r * .78, cy - r * .62), (cx + r * .78, cy - r * .62), (cx, cy + r * .2)], fill=RED)
+    d.line([cx, cy + r * .35, cx, cy + r * 1.05], fill=WHITE, width=max(4, int(r * .12)))
+    d.ellipse([cx - r * .55, cy + r * .98, cx + r * .55, cy + r * 1.18], fill=WHITE)
+    d.line([cx + r * .15, cy - r * 1.15, cx - r * .25, cy - r * .2], fill="#8B5A2B", width=4)
+    d.ellipse([cx - r * .02, cy - r * 1.02, cx + r * .32, cy - r * .7], fill="#7BB661", outline="#4E7F3A", width=2)
+
+
 def pick(today_events, bar_label):
     """Group today's events into the sections shown on the graphic."""
     games, seen = [], set()
@@ -160,9 +187,10 @@ def pick(today_events, bar_label):
     return games, happy, nights
 
 
-def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=None):
+def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=None, drinks=None, bar_ok=None):
     games, happy, nights = pick(today_events, bar_label)
     good, bad = headliners(games, (picks or {}).get(today.isoformat()))
+    drink = drink_for(today, (picks or {}).get(today.isoformat()), drinks, bar_ok or (lambda b: bool(b)))
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
 
@@ -228,7 +256,8 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
             y += 38
         y += 10
 
-    budget = H - 150  # keep room for footer
+    DRINK_H = 124
+    budget = H - 150 - (DRINK_H + 14 if drink else 0)  # keep room for drink strip + footer
 
     if games:
         section("MORE GAMES" if featured else "GAME DAY", f"{len(games)} GAMES")
@@ -257,6 +286,18 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     if not (games or nights or happy):
         d.text((L, y), "Clear skies tonight. Check back tomorrow.", font=FONT(BOLD, 40), fill=INK)
 
+    # drink of the day strip
+    if drink:
+        top = H - 110 - 14 - DRINK_H
+        d.rounded_rectangle([L, top, R, top + DRINK_H], radius=14, fill=NAVY, outline=GOLD, width=4)
+        _glass(d, L + 70, top + 52, 36)
+        tx = L + 140
+        tag = "DRINK OF THE DAY  ·  " + _pun(DRINK_TAGS, today, 1)
+        d.text((tx, top + 12), tag, font=_fit(d, tag, BOLD, 27, R - tx - 20), fill=GOLD)
+        head = f"{drink['name']} at {bar_label(drink['barId'])}"
+        d.text((tx, top + 44), _clip(d, head, FONT(BOLD, 36), R - tx - 20), font=_fit(d, head, BOLD, 36, R - tx - 20), fill=WHITE)
+        d.text((tx, top + 86), _clip(d, drink.get("desc") or "", FONT(REG, 26), R - tx - 20), font=FONT(REG, 26), fill="#C9D6F2")
+
     # footer
     d.rectangle([0, H - 110, W, H], fill=NAVY)
     ft = "Full list + every happy hour: " + base_url.replace("https://", "")
@@ -277,6 +318,11 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
             if why:
                 lines.append(f"   {why}")
     if good or bad:
+        lines.append("")
+    if drink:
+        lines.append(f"🍸 DRINK OF THE DAY: {drink['name']} at {bar_label(drink['barId'])}")
+        if drink.get("desc"):
+            lines.append(f"   {drink['desc']}. Menus rotate, so ask your bartender.")
         lines.append("")
     if games:
         lines.append("🏈 MORE GAMES" if featured else "🏈 GAME DAY")
