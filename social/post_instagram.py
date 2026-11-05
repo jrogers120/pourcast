@@ -71,7 +71,10 @@ def main():
     failed = []
     if page:
         try:
-            fb = call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=token)
+            # IG_TOKEN may be a user token; Facebook Page posts need the Page's own token,
+            # which a user token can look up (needs pages_show_list / pages_manage_posts).
+            page_token = call("GET", page, fields="access_token", access_token=token).get("access_token") or token
+            fb = call("POST", f"{page}/photos", url=image_url, caption=caption, access_token=page_token)
             print(f"Posted to Facebook for {today}: post id {fb.get('post_id') or fb.get('id')}")
         except SystemExit as err:
             print(err)
