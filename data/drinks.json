@@ -40,5 +40,11 @@
   "barId": "skull-s-rainbow-room",
   "desc": "The namesake house cocktail at the 1948 Printers Alley jazz lounge",
   "source": "https://skullsrainbowroom.com/_files/ugd/88a28e_000c4c4848f14795afede4560aa0ddfd.pdf"
+ },
+ {
+  "name": "Buck Cherry",
+  "barId": "cherries",
+  "desc": "Mezcal, ginger, house cherry cordial and lime",
+  "source": "https://cherriesnashville.com/menu"
  }
 ]

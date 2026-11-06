@@ -1,1 +1,12 @@
-{}
+{
+  "2026-11-06": {
+    "good": "Virginia Tech at SMU",
+    "goodWhy": "Line: SMU -6.5. Warm Dallas air meets a Hokie front.",
+    "drink": {
+      "name": "Buck Cherry",
+      "barId": "cherries",
+      "desc": "Mezcal, ginger, house cherry cordial and lime",
+      "source": "https://cherriesnashville.com/menu"
+    }
+  }
+}
