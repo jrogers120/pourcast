@@ -269,7 +269,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         y += 6
 
     if nights and y < budget - 200:
-        section("ON TAP TONIGHT", f"{len(nights)}")
+        section("TRIVIA TONIGHT", f"{len(nights)}")
         for x in nights:
             if y > budget - 200:
                 break
@@ -330,7 +330,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
             lines.append(f"• {when(x)}: {x['title']}" + (f" ({x['tv']})" if x.get("tv") else "") + f", at {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
         lines.append("")
     if nights:
-        lines.append("🎤 ON TAP TONIGHT")
+        lines.append("🧠 TRIVIA TONIGHT")
         for x in nights[:8]:
             lines.append(f"• {when(x)}: {x['title']} at {bar_label(x['barId'])}")
         lines.append("")

@@ -430,6 +430,10 @@ def build_shop():
          "Pourcast sweatshirts, hoodies and sweatpants. First drop coming soon.", body, "/shop/")
 
 
+POST_SKIP_AREAS = {"Broadway"}
+POST_TYPES = {"happy", "trivia", "college", "game"}
+
+
 def build_home():
     parts = [f'<h1>{e(CITY)} 7-day bar forecast</h1><p class="dek">Where to watch the game, find trivia and karaoke, and catch happy hour across {e(CITY)}, {fmt_date(WEEK[0])}–{fmt_date(WEEK[-1])}.</p>', conditions_panel()]
     cfb_sat = [x for x in EVENTS if x.get("type") == "college" and not x.get("weekly") and x.get("date") in {d.isoformat() for d in WEEK}]
@@ -820,8 +824,12 @@ if __name__ == "__main__":
         picks = json.load(open(pf)) if os.path.exists(pf) else {}
         df = os.path.join(ROOT, "data", "drinks.json")
         drinks = json.load(open(df)) if os.path.exists(df) else []
-        graphic.make(os.path.join(OUT, "social"), TODAY, [x for x in EVENTS if occurs(x, TODAY)],
-                     bar_label, when, BASE, pydow, picks, drinks, lambda b: b in BARS)
+        # Instagram/Facebook post: skip Broadway honky-tonks (everyone knows there's music there)
+        # and keep only happy hours, trivia and game watch parties.
+        post_bar = lambda b: b in BARS and BARS[b].get("area") not in POST_SKIP_AREAS
+        post_evs = [x for x in EVENTS if occurs(x, TODAY) and x.get("type") in POST_TYPES and post_bar(x["barId"])]
+        graphic.make(os.path.join(OUT, "social"), TODAY, post_evs,
+                     bar_label, when, BASE, pydow, picks, drinks, post_bar)
         print("Made Instagram graphic for", TODAY)
     except ImportError as err:
         print("Skipped Instagram graphic (Pillow not installed):", err)
