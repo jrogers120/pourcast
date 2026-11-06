@@ -236,7 +236,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 {ads_head}{ld}
 </head>
 <body>
-<header class="masthead"><div class="wrap"><a class="logo" href="/">{LOGO_SVG}<b>Pour<span>cast</span></b></a><div class="strap"><b>{e(CITY)}</b><i>7-Day Bar Forecast</i></div></div></header>
+<header class="masthead"><div class="wrap"><a class="logo" href="/">{LOGO_SVG}<b>Pour<span>cast</span><sup class="tm">™</sup></b></a><div class="strap"><b>{e(CITY)}</b><i>7-Day Bar Forecast</i></div></div></header>
 <div class="ticker" aria-label="Today's highlights"><span class="lbl">Today</span><span class="track"><span class="run" style="animation-duration:{TICKER_SECS}s">{e(TICKER)}</span></span></div>
 <nav class="secnav" aria-label="Sections"><div class="wrap">{nav}</div></nav>
 <main><div class="wrap">
@@ -246,6 +246,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 <div><b>{e(CFG["site_name"])}</b>: game watches, trivia, karaoke and happy hours at {e(CITY)}-area bars. Updated {fmt_date(TODAY)}, {TODAY.year}.</div>
 <div>Instagram: <a href="https://www.instagram.com/{e(CFG["instagram"])}/">@{e(CFG["instagram"])}</a> · Email: {e(CFG["contact_email"])}</div>
 <div><a href="/about/">About</a> · <a href="/submit/">Post an event</a> · <a href="/privacy/">Privacy policy</a> · Deals and times change, so check with the bar before you go. Please drink responsibly; 21+.</div>
+<div>Pourcast™ is a trademark of Jack Rogers. © {TODAY.year} Pourcast.</div>
 </div></footer>
 </body>
 </html>
