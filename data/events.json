@@ -1,180 +1,5 @@
 [
  {
-  "id": "hh-dolans-14",
-  "barId": "dolans",
-  "type": "happy",
-  "title": "Happy hour (11 AM–7 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "11:00",
-  "deals": "$2.50 domestics, $3.50 wells, $5 doubles",
-  "source": "https://www.williamsonscene.com/spring_hill/business/from-a-to-z-a-comprehensive-guide-to-happy-hours-specials-at-franklin-restaurants-and/article_6fbee896-fc37-504a-99ac-31865ace477d.html"
- },
- {
-  "id": "hh-tonys-eat-drink-15",
-  "barId": "tonys-eat-drink",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "15:00",
-  "deals": "Select $8 appetizers 3–6 PM",
-  "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-tonys-eat-drink-16",
-  "barId": "tonys-eat-drink",
-  "type": "happy",
-  "title": "Tuesday all-day happy hour (11 AM–10 PM)",
-  "weekly": true,
-  "days": [
-   2
-  ],
-  "time": "11:00",
-  "deals": "2-for-1 bottled and draft beer, 2-for-1 12\" pizzas",
-  "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-jonathans-franklin-17",
-  "barId": "jonathans-franklin",
-  "type": "happy",
-  "title": "Late-night specials (10 PM–close)",
-  "weekly": true,
-  "days": [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "22:00",
-  "deals": "2-for-1 beer, $8 one-topping pizzas, $8 apps",
-  "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-curio-brewing-18",
-  "barId": "curio-brewing",
-  "type": "happy",
-  "title": "Happy hour (4–8 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2
-  ],
-  "time": "16:00",
-  "deals": "House-brewed beer specials",
-  "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-curio-brewing-19",
-  "barId": "curio-brewing",
-  "type": "happy",
-  "title": "Happy hour (4–6 PM)",
-  "weekly": true,
-  "days": [
-   3,
-   4,
-   5
-  ],
-  "time": "16:00",
-  "deals": "House-brewed beer specials",
-  "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-curio-brewing-20",
-  "barId": "curio-brewing",
-  "type": "happy",
-  "title": "Sunday happy hour",
-  "weekly": true,
-  "days": [
-   0
-  ],
-  "time": "",
-  "deals": "House-brewed beer specials",
-  "source": "https://franklinis.com/?p=293204",
-  "timeLabel": "All day"
- },
- {
-  "id": "hh-white-alligator-21",
-  "barId": "white-alligator",
-  "type": "happy",
-  "title": "Happy hour (2–6 PM)",
-  "weekly": true,
-  "days": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:00",
-  "deals": "$5 beer, $11 cocktails, $9–12 dessert martinis",
-  "source": "https://franklinis.com/?p=293204"
- },
- {
-  "id": "hh-saffire-22",
-  "barId": "saffire",
-  "type": "happy",
-  "title": "Happy hour (3–6 PM)",
-  "weekly": true,
-  "days": [
-   2,
-   3,
-   4,
-   5,
-   6
-  ],
-  "time": "15:00",
-  "deals": "$7 cocktails, wines by the glass and small plates",
-  "source": "https://stagefranklinis.webservice.team/?p=295221"
- },
- {
-  "id": "hh-saffire-23",
-  "barId": "saffire",
-  "type": "happy",
-  "title": "Wine Down Wednesday",
-  "weekly": true,
-  "days": [
-   3
-  ],
-  "time": "",
-  "deals": "Half-price bottles of wine",
-  "source": "https://stagefranklinis.webservice.team/?p=295221",
-  "timeLabel": "All day"
- },
- {
-  "id": "hh-skylight-bar-24",
-  "barId": "skylight-bar",
-  "type": "happy",
-  "title": "Happy hour (2–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4
-  ],
-  "time": "14:00",
-  "deals": "Drink specials",
-  "source": "https://baselocal.com/?p=13964"
- },
- {
   "barId": "corner-pub-green-hills",
   "type": "college",
   "title": "Tennessee vs. Kentucky",
@@ -296,17 +121,6 @@
   "id": "g-2026-11-07-green-light-10"
  },
  {
-  "barId": "tailgate",
-  "type": "college",
-  "title": "Texas A&M at South Carolina",
-  "team": "University of South Carolina",
-  "weekly": false,
-  "date": "2026-11-07",
-  "time": "14:00",
-  "tv": "ESPN",
-  "id": "g-2026-11-07-tailgate-11"
- },
- {
   "barId": "duck-blind",
   "type": "college",
   "title": "Alabama at LSU",
@@ -360,17 +174,6 @@
   "time": "18:30",
   "tv": "FOX",
   "id": "g-2026-11-07-tin-roof-broadway-16"
- },
- {
-  "barId": "tin-roof-2",
-  "type": "college",
-  "title": "Nebraska at Illinois",
-  "team": "University of Nebraska",
-  "weekly": false,
-  "date": "2026-11-06",
-  "time": "19:00",
-  "tv": "FOX",
-  "id": "g-2026-11-06-tin-roof-2-17"
  },
  {
   "barId": "beyond-the-edge",
@@ -604,17 +407,6 @@
   "id": "g-2026-11-08-boombozz-40"
  },
  {
-  "barId": "sanders-ferry",
-  "type": "game",
-  "title": "Buccaneers at Bears",
-  "team": "Tampa Bay Buccaneers",
-  "weekly": false,
-  "date": "2026-11-08",
-  "time": "19:20",
-  "tv": "Sunday Night Football",
-  "id": "g-2026-11-08-sanders-ferry-41"
- },
- {
   "barId": "beyond-the-edge",
   "type": "game",
   "title": "Bears vs. Buccaneers",
@@ -746,18 +538,6 @@
   "id": "w-east-nashville-beer-works-8"
  },
  {
-  "barId": "pooky-jane-s-kitchen-pub",
-  "type": "trivia",
-  "title": "Trivia Night",
-  "weekly": true,
-  "days": [
-   3
-  ],
-  "time": "18:30",
-  "source": "https://www.eventbrite.cl/d/tn--thompsons-station/trivia/",
-  "id": "w-pooky-jane-s-kitchen-pub-9"
- },
- {
   "barId": "double-dogs-hillsboro-village",
   "type": "trivia",
   "title": "Live Trivia",
@@ -794,18 +574,6 @@
   "id": "w-pearl-diver-12"
  },
  {
-  "barId": "hilltop-haven-bar-lounge",
-  "type": "trivia",
-  "title": "Live Trivia",
-  "weekly": true,
-  "days": [
-   2
-  ],
-  "time": "19:00",
-  "source": "https://www.eventbrite.ca/d/tn--franklin/seinfeld-trivia",
-  "id": "w-hilltop-haven-bar-lounge-13"
- },
- {
   "barId": "maggie-s-place",
   "type": "trivia",
   "title": "Live Trivia",
@@ -816,18 +584,6 @@
   "time": "19:00",
   "source": "https://www.eventbrite.it/d/tn--franklin/trivia/",
   "id": "w-maggie-s-place-14"
- },
- {
-  "barId": "union-hill-trading-post",
-  "type": "trivia",
-  "title": "Trivia Night",
-  "weekly": true,
-  "days": [
-   2
-  ],
-  "time": "19:00",
-  "source": "https://www.eventbrite.it/d/tn--franklin/trivia/",
-  "id": "w-union-hill-trading-post-15"
  },
  {
   "id": "hh-fogg-street-0",
@@ -845,23 +601,6 @@
   "time": "15:00",
   "deals": "$6.95 pints, $12.95 cocktail specials, $8.95 Jack & Coke, $5 off wonton rolls",
   "source": "https://nashvillego.com/happy-hours"
- },
- {
-  "id": "hh-fozzy-s-bar-grill-0",
-  "barId": "fozzy-s-bar-grill",
-  "type": "happy",
-  "title": "Happy hour (2–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:00",
-  "deals": "Weekday happy hour, plus late-night happy hour 10 PM–1 AM every night",
-  "source": "https://www.southernexposuremagazine.com/current_issue/the-restaurant-fozzys/article_f2470f14-d2de-4f19-ab15-0010164febfa.html"
  },
  {
   "id": "hh-nobles-0",
@@ -915,23 +654,6 @@
   "source": "https://nashvillego.com/happy-hours/monday"
  },
  {
-  "id": "hh-corner-pub-franklin-0",
-  "barId": "corner-pub-franklin",
-  "type": "happy",
-  "title": "Happy hour (2–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "14:00",
-  "deals": "Weekday happy hour drink specials",
-  "source": "https://citylifestyle.com/articles/sports-bar-roundup"
- },
- {
   "id": "hh-corner-pub-green-hills-0",
   "barId": "corner-pub-green-hills",
   "type": "happy",
@@ -944,23 +666,6 @@
   "deals": "99¢ traditional wings all day",
   "source": "https://frankiapp.com/business/corner-pub-129498.md",
   "timeLabel": "All day"
- },
- {
-  "id": "hh-neighbors-franklin-0",
-  "barId": "neighbors-franklin",
-  "type": "happy",
-  "title": "Happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ],
-  "time": "15:00",
-  "deals": "Half off drafts, bottles, house wine & wells",
-  "source": "https://franklinis.com/?p=293204"
  },
  {
   "id": "hh-big-machine-distillery-0",
@@ -2673,20 +2378,6 @@
   "time": "15:00",
   "source": "https://nashvillego.com/happy-hours",
   "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes"
- },
- {
-  "id": "hh3-tailgate-0",
-  "barId": "tailgate",
-  "type": "happy",
-  "title": "Half-price pizza Wednesday",
-  "weekly": true,
-  "days": [
-   3
-  ],
-  "time": "11:00",
-  "source": "https://www.tailgatebeer.com/specials",
-  "deals": "Half-priced pizzas, dine-in only",
-  "timeLabel": "All day"
  },
  {
   "id": "hh3-tailgate-demonbreun-0",

@@ -122,8 +122,6 @@ REGIONS = [
     ("Germantown & West", ["Germantown", "North Nashville", "Capitol View", "The Nations", "Sylvan Park", "Bellevue"]),
     ("South Nashville", ["12 South", "8th Ave", "Melrose", "Wedgewood-Houston", "Berry Hill", "Green Hills", "South Nashville"]),
     ("Donelson, Hermitage & north", ["Donelson", "Music Valley", "Hermitage", "Old Hickory", "Goodlettsville", "Hendersonville"]),
-    ("Franklin", ["Franklin"]),
-    ("Spring Hill", ["Spring Hill"]),
 ]
 
 
@@ -266,7 +264,7 @@ def upcoming(evs):
 
 # ---------- pages ----------
 def build_home():
-    parts = [f'<h1>{e(CITY)} 7-day bar forecast</h1><p class="dek">Where to watch the game, find trivia and karaoke, and catch happy hour across {e(CITY)}, Franklin and Spring Hill, {fmt_date(WEEK[0])}–{fmt_date(WEEK[-1])}.</p>']
+    parts = [f'<h1>{e(CITY)} 7-day bar forecast</h1><p class="dek">Where to watch the game, find trivia and karaoke, and catch happy hour across {e(CITY)}, {fmt_date(WEEK[0])}–{fmt_date(WEEK[-1])}.</p>']
     cfb_sat = [x for x in EVENTS if x.get("type") == "college" and not x.get("weekly") and x.get("date") in {d.isoformat() for d in WEEK}]
     if cfb_sat:
         parts.append(f'<div class="alert"><b>Weather alert</b><span>100% chance of college football: {len(cfb_sat)} watch parties at {e(CITY)} home bars this week. <a href="/tonight/college-football/">See where every fan base watches</a>.</span></div>')
@@ -339,7 +337,7 @@ def build_bars():
     by_area = {}
     for b in BARS.values():
         by_area.setdefault(b.get("area") or "Other Nashville bars", []).append(b)
-    parts = [f'<h1>{e(CITY)} bars on Pourcast</h1><p class="dek">{len(BARS)} bars across {e(CITY)}, Franklin and Spring Hill, by neighborhood.</p>']
+    parts = [f'<h1>{e(CITY)} bars on Pourcast</h1><p class="dek">{len(BARS)} bars across {e(CITY)}, by neighborhood.</p>']
     for a in sorted(by_area, key=lambda a: (a == "Other Nashville bars", a)):
         aslug = slug(a)
         parts.append(f'<h2><a href="/areas/{aslug}/" style="color:inherit;text-decoration:none">{e(a)}</a></h2><ul class="list">' +
@@ -401,7 +399,7 @@ def build_static():
     mail = e(CFG["contact_email"])
     page("/about/", "About Pourcast", f"Pourcast is {CITY}'s 7-day bar forecast.",
          f'<h1>About Pourcast</h1><p class="dek">Pourcast is {e(CITY)}\'s 7-day bar forecast: where to watch the game, find trivia and karaoke, and catch happy hour.</p>'
-         f'<p>We track team home bars, weekly events and happy hour deals across {e(CITY)}, Franklin and Spring Hill, and update game listings every week of the season. Listings come from bars, organizers and public sources; deals and times change, so check with the bar before you go.</p>'
+         f'<p>We track team home bars, weekly events and happy hour deals across {e(CITY)}, and update game listings every week of the season. Listings come from bars, organizers and public sources; deals and times change, so check with the bar before you go.</p>'
          f'<p>Contact: {mail} · Instagram <a href="https://www.instagram.com/{e(CFG["instagram"])}/">@{e(CFG["instagram"])}</a></p>')
     page("/submit/", "Post an Event on Pourcast", "Bars, social clubs and organizers can post events on Pourcast for free.",
          f'<h1>Post your event, free</h1><p class="dek">Run a trivia night, karaoke, watch party, happy hour or social club meetup at a {e(CITY)}-area bar? Send it to us.</p>'

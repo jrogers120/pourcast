@@ -1,0 +1,547 @@
+{
+ "note": "Bars outside the Donelson-to-Brentwood core, removed 2026-11-05. Move back into bars.json/events.json to restore.",
+ "bars": [
+  {
+   "id": "1799-kitchen-bar-room",
+   "name": "1799 Kitchen & Bar Room",
+   "area": "Franklin",
+   "teams": [],
+   "address": "130 2nd Ave N, Franklin, TN 37064"
+  },
+  {
+   "id": "amendment-xviii-cocktail-club",
+   "name": "Amendment XVIII Cocktail Club",
+   "area": "Franklin",
+   "teams": [],
+   "address": "317 Main St (back alley entrance), Franklin, TN 37064"
+  },
+  {
+   "id": "corner-pub-franklin",
+   "name": "Corner Pub Franklin",
+   "area": "Franklin",
+   "teams": [],
+   "address": "1916 Columbia Ave, Franklin, TN 37064"
+  },
+  {
+   "id": "curio-brewing",
+   "name": "Curio Brewing Company",
+   "area": "Franklin",
+   "teams": [],
+   "address": "216 Noah Dr #140, Franklin, TN 37064"
+  },
+  {
+   "id": "dolans",
+   "name": "Dolan's Bar & Grill",
+   "area": "Franklin",
+   "teams": [],
+   "address": "4140 Carothers Pkwy #2, Franklin, TN 37067"
+  },
+  {
+   "id": "fozzy-s-bar-grill",
+   "name": "Fozzy's Bar & Grill",
+   "area": "Spring Hill",
+   "teams": [],
+   "address": "150 Stephen P Yokich Pkwy Ste B, Spring Hill, TN 37174"
+  },
+  {
+   "id": "froggy-jeffro-s",
+   "name": "Froggy & Jeffro's",
+   "area": "Spring Hill",
+   "teams": [],
+   "address": "4910 Port Royal Rd, Spring Hill, TN 37174"
+  },
+  {
+   "id": "gary-s-place",
+   "name": "Gary's Place",
+   "area": "Spring Hill",
+   "teams": [],
+   "address": "2001 Campbell Station Pkwy, Spring Hill, TN 37174"
+  },
+  {
+   "id": "gray-s-on-main",
+   "name": "Gray's on Main",
+   "area": "Franklin",
+   "teams": [],
+   "address": "332 Main St, Franklin, TN 37064"
+  },
+  {
+   "id": "hilltop-haven-bar-lounge",
+   "name": "Hilltop Haven Bar & Lounge",
+   "area": "Hermitage",
+   "teams": [],
+   "address": "3424 Lebanon Pike, Hermitage, TN 37076"
+  },
+  {
+   "id": "jj-s-wine-bar",
+   "name": "JJ's Wine Bar",
+   "area": "Franklin",
+   "teams": [],
+   "address": "206 E Main St, Franklin, TN 37064"
+  },
+  {
+   "id": "jonathans-franklin",
+   "name": "Jonathan's Grille",
+   "area": "Franklin",
+   "teams": [],
+   "address": "7135 S Springs Dr, Franklin, TN 37067"
+  },
+  {
+   "id": "kimbro-s-pickin-parlor",
+   "name": "Kimbro's Pickin' Parlor",
+   "area": "Franklin",
+   "teams": [],
+   "address": "214 S Margin St, Franklin, TN 37064"
+  },
+  {
+   "id": "leiper-s-fork-house-of-spirits",
+   "name": "Leiper's Fork House of Spirits",
+   "area": "Franklin",
+   "teams": [],
+   "address": "334 Main St #104, Franklin, TN 37064"
+  },
+  {
+   "id": "mccreary-s-irish-pub-eatery",
+   "name": "McCreary's Irish Pub & Eatery",
+   "area": "Franklin",
+   "teams": [],
+   "address": "414 Main St, Franklin, TN 37064"
+  },
+  {
+   "id": "o-be-joyful",
+   "name": "O'Be Joyful",
+   "area": "Franklin",
+   "teams": [],
+   "address": "328 Main St, Franklin, TN 37064"
+  },
+  {
+   "id": "pooky-jane-s-kitchen-pub",
+   "name": "Pooky Jane's Kitchen & Pub",
+   "area": "Old Hickory",
+   "teams": [],
+   "address": "4957 Lebanon Pike, Old Hickory, TN 37138"
+  },
+  {
+   "id": "quinn-s-neighbourhood-pub",
+   "name": "Quinn's Neighbourhood Pub",
+   "area": "Franklin",
+   "teams": [],
+   "address": "1010 Murfreesboro Rd #118, Franklin, TN 37064"
+  },
+  {
+   "id": "reunion-wine-cocktail-bar",
+   "name": "Reunion Wine & Cocktail Bar",
+   "area": "Spring Hill",
+   "teams": [],
+   "address": "3308 Kedron Rd, Spring Hill, TN 37174"
+  },
+  {
+   "id": "saffire",
+   "name": "Saffire",
+   "area": "Franklin",
+   "teams": [],
+   "address": "230 Franklin Rd Suite 11M (The Factory), Franklin, TN 37064"
+  },
+  {
+   "id": "sanders-ferry",
+   "name": "Sanders Ferry Pizza & Pub",
+   "area": "Hendersonville",
+   "teams": [
+    "Tampa Bay Buccaneers"
+   ],
+   "address": "125 Sanders Ferry Rd, Hendersonville, TN 37075"
+  },
+  {
+   "id": "scout-s-pub",
+   "name": "Scout's Pub",
+   "area": "Franklin",
+   "teams": [],
+   "address": "158 Front St #120 (Westhaven), Franklin, TN 37064"
+  },
+  {
+   "id": "skylight-bar",
+   "name": "The Skylight Bar",
+   "area": "Franklin",
+   "teams": [],
+   "address": "230 Franklin Rd (The Factory), Franklin, TN 37064"
+  },
+  {
+   "id": "stable-reserve",
+   "name": "Stable Reserve",
+   "area": "Franklin",
+   "teams": [],
+   "address": "412 Main St, Franklin, TN 37064"
+  },
+  {
+   "id": "tailgate",
+   "name": "TailGate Brewery",
+   "area": "Bellevue",
+   "teams": [
+    "Texas A&M University",
+    "University of South Carolina"
+   ],
+   "address": "7300 Charlotte Pike, Nashville, TN 37209"
+  },
+  {
+   "id": "the-mission-cigar-social",
+   "name": "The Mission Cigar & Social",
+   "area": "Spring Hill",
+   "teams": [],
+   "address": "2094 Wall St, Spring Hill, TN 37174"
+  },
+  {
+   "id": "the-pond",
+   "name": "The Pond",
+   "area": "Franklin",
+   "teams": [],
+   "address": "595 Hillsboro Rd #321, Franklin, TN 37064"
+  },
+  {
+   "id": "tin-roof-2",
+   "name": "The Rafters",
+   "area": "Franklin",
+   "teams": [
+    "University of Nebraska"
+   ],
+   "address": "9135 Carothers Pkwy #100, Franklin, TN 37067"
+  },
+  {
+   "id": "tonys-eat-drink",
+   "name": "Tony's Eat & Drink",
+   "area": "Franklin",
+   "teams": [],
+   "address": "1000 Meridian Blvd #100, Franklin, TN 37067"
+  },
+  {
+   "id": "union-hill-trading-post",
+   "name": "Union Hill Trading Post",
+   "area": "Goodlettsville",
+   "teams": [],
+   "address": "1766 Union Hill Rd, Goodlettsville, TN 37072"
+  },
+  {
+   "id": "white-alligator",
+   "name": "The White Alligator",
+   "area": "Franklin",
+   "teams": [],
+   "address": "230 Franklin Rd (The Factory), Franklin, TN 37064"
+  },
+  {
+   "id": "neighbors-franklin",
+   "name": "Neighbors",
+   "area": "Franklin",
+   "teams": [],
+   "address": "4031 Aspen Grove Dr Ste 162, Franklin, TN 37067"
+  }
+ ],
+ "events": [
+  {
+   "id": "hh-dolans-14",
+   "barId": "dolans",
+   "type": "happy",
+   "title": "Happy hour (11 AM–7 PM)",
+   "weekly": true,
+   "days": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "time": "11:00",
+   "deals": "$2.50 domestics, $3.50 wells, $5 doubles",
+   "source": "https://www.williamsonscene.com/spring_hill/business/from-a-to-z-a-comprehensive-guide-to-happy-hours-specials-at-franklin-restaurants-and/article_6fbee896-fc37-504a-99ac-31865ace477d.html"
+  },
+  {
+   "id": "hh-tonys-eat-drink-15",
+   "barId": "tonys-eat-drink",
+   "type": "happy",
+   "title": "Happy hour (3–7 PM)",
+   "weekly": true,
+   "days": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "time": "15:00",
+   "deals": "Select $8 appetizers 3–6 PM",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh-tonys-eat-drink-16",
+   "barId": "tonys-eat-drink",
+   "type": "happy",
+   "title": "Tuesday all-day happy hour (11 AM–10 PM)",
+   "weekly": true,
+   "days": [
+    2
+   ],
+   "time": "11:00",
+   "deals": "2-for-1 bottled and draft beer, 2-for-1 12\" pizzas",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh-jonathans-franklin-17",
+   "barId": "jonathans-franklin",
+   "type": "happy",
+   "title": "Late-night specials (10 PM–close)",
+   "weekly": true,
+   "days": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "time": "22:00",
+   "deals": "2-for-1 beer, $8 one-topping pizzas, $8 apps",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh-curio-brewing-18",
+   "barId": "curio-brewing",
+   "type": "happy",
+   "title": "Happy hour (4–8 PM)",
+   "weekly": true,
+   "days": [
+    1,
+    2
+   ],
+   "time": "16:00",
+   "deals": "House-brewed beer specials",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh-curio-brewing-19",
+   "barId": "curio-brewing",
+   "type": "happy",
+   "title": "Happy hour (4–6 PM)",
+   "weekly": true,
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "time": "16:00",
+   "deals": "House-brewed beer specials",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh-curio-brewing-20",
+   "barId": "curio-brewing",
+   "type": "happy",
+   "title": "Sunday happy hour",
+   "weekly": true,
+   "days": [
+    0
+   ],
+   "time": "",
+   "deals": "House-brewed beer specials",
+   "source": "https://franklinis.com/?p=293204",
+   "timeLabel": "All day"
+  },
+  {
+   "id": "hh-white-alligator-21",
+   "barId": "white-alligator",
+   "type": "happy",
+   "title": "Happy hour (2–6 PM)",
+   "weekly": true,
+   "days": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "14:00",
+   "deals": "$5 beer, $11 cocktails, $9–12 dessert martinis",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh-saffire-22",
+   "barId": "saffire",
+   "type": "happy",
+   "title": "Happy hour (3–6 PM)",
+   "weekly": true,
+   "days": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "time": "15:00",
+   "deals": "$7 cocktails, wines by the glass and small plates",
+   "source": "https://stagefranklinis.webservice.team/?p=295221"
+  },
+  {
+   "id": "hh-saffire-23",
+   "barId": "saffire",
+   "type": "happy",
+   "title": "Wine Down Wednesday",
+   "weekly": true,
+   "days": [
+    3
+   ],
+   "time": "",
+   "deals": "Half-price bottles of wine",
+   "source": "https://stagefranklinis.webservice.team/?p=295221",
+   "timeLabel": "All day"
+  },
+  {
+   "id": "hh-skylight-bar-24",
+   "barId": "skylight-bar",
+   "type": "happy",
+   "title": "Happy hour (2–6 PM)",
+   "weekly": true,
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "time": "14:00",
+   "deals": "Drink specials",
+   "source": "https://baselocal.com/?p=13964"
+  },
+  {
+   "barId": "tailgate",
+   "type": "college",
+   "title": "Texas A&M at South Carolina",
+   "team": "University of South Carolina",
+   "weekly": false,
+   "date": "2026-11-07",
+   "time": "14:00",
+   "tv": "ESPN",
+   "id": "g-2026-11-07-tailgate-11"
+  },
+  {
+   "barId": "tin-roof-2",
+   "type": "college",
+   "title": "Nebraska at Illinois",
+   "team": "University of Nebraska",
+   "weekly": false,
+   "date": "2026-11-06",
+   "time": "19:00",
+   "tv": "FOX",
+   "id": "g-2026-11-06-tin-roof-2-17"
+  },
+  {
+   "barId": "sanders-ferry",
+   "type": "game",
+   "title": "Buccaneers at Bears",
+   "team": "Tampa Bay Buccaneers",
+   "weekly": false,
+   "date": "2026-11-08",
+   "time": "19:20",
+   "tv": "Sunday Night Football",
+   "id": "g-2026-11-08-sanders-ferry-41"
+  },
+  {
+   "barId": "pooky-jane-s-kitchen-pub",
+   "type": "trivia",
+   "title": "Trivia Night",
+   "weekly": true,
+   "days": [
+    3
+   ],
+   "time": "18:30",
+   "source": "https://www.eventbrite.cl/d/tn--thompsons-station/trivia/",
+   "id": "w-pooky-jane-s-kitchen-pub-9"
+  },
+  {
+   "barId": "hilltop-haven-bar-lounge",
+   "type": "trivia",
+   "title": "Live Trivia",
+   "weekly": true,
+   "days": [
+    2
+   ],
+   "time": "19:00",
+   "source": "https://www.eventbrite.ca/d/tn--franklin/seinfeld-trivia",
+   "id": "w-hilltop-haven-bar-lounge-13"
+  },
+  {
+   "barId": "union-hill-trading-post",
+   "type": "trivia",
+   "title": "Trivia Night",
+   "weekly": true,
+   "days": [
+    2
+   ],
+   "time": "19:00",
+   "source": "https://www.eventbrite.it/d/tn--franklin/trivia/",
+   "id": "w-union-hill-trading-post-15"
+  },
+  {
+   "id": "hh-fozzy-s-bar-grill-0",
+   "barId": "fozzy-s-bar-grill",
+   "type": "happy",
+   "title": "Happy hour (2–7 PM)",
+   "weekly": true,
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "14:00",
+   "deals": "Weekday happy hour, plus late-night happy hour 10 PM–1 AM every night",
+   "source": "https://www.southernexposuremagazine.com/current_issue/the-restaurant-fozzys/article_f2470f14-d2de-4f19-ab15-0010164febfa.html"
+  },
+  {
+   "id": "hh-corner-pub-franklin-0",
+   "barId": "corner-pub-franklin",
+   "type": "happy",
+   "title": "Happy hour (2–7 PM)",
+   "weekly": true,
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "14:00",
+   "deals": "Weekday happy hour drink specials",
+   "source": "https://citylifestyle.com/articles/sports-bar-roundup"
+  },
+  {
+   "id": "hh-neighbors-franklin-0",
+   "barId": "neighbors-franklin",
+   "type": "happy",
+   "title": "Happy hour (3–7 PM)",
+   "weekly": true,
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "15:00",
+   "deals": "Half off drafts, bottles, house wine & wells",
+   "source": "https://franklinis.com/?p=293204"
+  },
+  {
+   "id": "hh3-tailgate-0",
+   "barId": "tailgate",
+   "type": "happy",
+   "title": "Half-price pizza Wednesday",
+   "weekly": true,
+   "days": [
+    3
+   ],
+   "time": "11:00",
+   "source": "https://www.tailgatebeer.com/specials",
+   "deals": "Half-priced pizzas, dine-in only",
+   "timeLabel": "All day"
+  }
+ ]
+}
