@@ -7,13 +7,6 @@
   "address": "101 Broadway, Nashville, TN 37201"
  },
  {
-  "id": "aj-s-good-time-bar",
-  "name": "AJ's Good Time Bar",
-  "area": "Broadway",
-  "teams": [],
-  "address": "421 Broadway, Nashville, TN 37203"
- },
- {
   "id": "attaboy",
   "name": "Attaboy",
   "area": "East Nashville",
@@ -884,20 +877,6 @@
   "area": "Germantown",
   "teams": [],
   "address": "1010 4th Ave N, Nashville, TN 37219"
- },
- {
-  "id": "ms-kellis",
-  "name": "Ms. Kelli's Karaoke Bar",
-  "area": "Printers Alley",
-  "teams": [],
-  "address": "207 Printers Alley, Nashville, TN 37201"
- },
- {
-  "id": "lonnies",
-  "name": "Lonnie's Western Room",
-  "area": "Downtown",
-  "teams": [],
-  "address": "308 Church St, Nashville, TN 37201"
  },
  {
   "id": "wild-beaver",

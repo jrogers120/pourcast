@@ -1,5 +1,5 @@
 {
- "note": "Bars outside the Donelson-to-Brentwood core, removed 2026-11-05. Move back into bars.json/events.json to restore.",
+ "note": "Bars outside the Donelson-to-Brentwood core, removed 2026-11-05. Move back into bars.json/events.json to restore. AJ's, Lonnie's and Ms. Kelli's removed at the owner's request 2026-11-05.",
  "bars": [
   {
    "id": "1799-kitchen-bar-room",
@@ -231,6 +231,27 @@
    "area": "Franklin",
    "teams": [],
    "address": "4031 Aspen Grove Dr Ste 162, Franklin, TN 37067"
+  },
+  {
+   "id": "aj-s-good-time-bar",
+   "name": "AJ's Good Time Bar",
+   "area": "Broadway",
+   "teams": [],
+   "address": "421 Broadway, Nashville, TN 37203"
+  },
+  {
+   "id": "ms-kellis",
+   "name": "Ms. Kelli's Karaoke Bar",
+   "area": "Printers Alley",
+   "teams": [],
+   "address": "207 Printers Alley, Nashville, TN 37201"
+  },
+  {
+   "id": "lonnies",
+   "name": "Lonnie's Western Room",
+   "area": "Downtown",
+   "teams": [],
+   "address": "308 Church St, Nashville, TN 37201"
   }
  ],
  "events": [
@@ -542,6 +563,84 @@
    "source": "https://www.tailgatebeer.com/specials",
    "deals": "Half-priced pizzas, dine-in only",
    "timeLabel": "All day"
+  },
+  {
+   "id": "k-aj-s-good-time-bar-0",
+   "barId": "aj-s-good-time-bar",
+   "type": "karaoke",
+   "title": "Karaoke all night (11 AM–2:30 AM)",
+   "weekly": true,
+   "days": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "time": "11:00",
+   "deals": "Karaoke the whole time they're open",
+   "source": "Google Maps hours, checked 2026-11-05"
+  },
+  {
+   "id": "k-ms-kellis-1",
+   "barId": "ms-kellis",
+   "type": "karaoke",
+   "title": "Karaoke all night (7 PM–3 AM)",
+   "weekly": true,
+   "days": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "time": "19:00",
+   "deals": "Karaoke the whole time they're open",
+   "source": "Google Maps hours, checked 2026-11-05"
+  },
+  {
+   "id": "k-ms-kellis-2",
+   "barId": "ms-kellis",
+   "type": "karaoke",
+   "title": "Karaoke all night (6 PM–3 AM)",
+   "weekly": true,
+   "days": [
+    5,
+    6
+   ],
+   "time": "18:00",
+   "deals": "Karaoke the whole time they're open",
+   "source": "Google Maps hours, checked 2026-11-05"
+  },
+  {
+   "id": "k-lonnies-3",
+   "barId": "lonnies",
+   "type": "karaoke",
+   "title": "Karaoke all night (7:30 PM–1 AM)",
+   "weekly": true,
+   "days": [
+    3,
+    4
+   ],
+   "time": "19:30",
+   "deals": "Karaoke the whole time they're open",
+   "source": "Google Maps hours, checked 2026-11-05"
+  },
+  {
+   "id": "k-lonnies-4",
+   "barId": "lonnies",
+   "type": "karaoke",
+   "title": "Karaoke all night (6 PM–3 AM)",
+   "weekly": true,
+   "days": [
+    5,
+    6
+   ],
+   "time": "18:00",
+   "deals": "Karaoke the whole time they're open",
+   "source": "Google Maps hours, checked 2026-11-05"
   }
  ]
 }

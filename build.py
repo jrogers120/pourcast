@@ -125,7 +125,56 @@ REGIONS = [
 ]
 
 
-def area_filter():
+TYPE_CHIPS = [("", "All"), ("game", "Games"), ("happy", "Happy hour"), ("trivia", "Trivia"), ("karaoke", "Karaoke"), ("music", "Live music"), ("special", "Specials")]
+
+FILTER_JS = r"""
+var NAMES=['sun','mon','tue','wed','thu','fri','sat'];
+var sel=document.getElementById('areaSel'),cnt=document.getElementById('areaCount');
+var cards=[].slice.call(document.querySelectorAll('article.card.ev')),secs=[].slice.call(document.querySelectorAll('section.dayblock'));
+var st={area:'',type:'',day:''},showEarlier=false;
+function chi(){var p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value;});
+ return {date:o.year+'-'+o.month+'-'+o.day,min:(+o.hour)*60+(+o.minute),hour:+o.hour};}
+function fmt(m){m=Math.max(1,Math.round(m));return m<60?m+' min':(Math.floor(m/60)+' hr'+(m%60?' '+m%60+' min':''));}
+function timing(){var n=chi();cards.forEach(function(c){var l=c.querySelector('.live');c.classList.remove('is-live','is-ended','is-soon');if(l)l.textContent='';
+  if(c.getAttribute('data-date')!==n.date||n.hour<4)return;var s=+c.getAttribute('data-s'),e=+c.getAttribute('data-e');
+  if(n.min>=e)c.classList.add('is-ended');
+  else if(n.min>=s){c.classList.add('is-live');if(l)l.textContent=e>=1560?'On now':'On now · ends in '+fmt(e-n.min);}
+  else if(s-n.min<=90){c.classList.add('is-soon');if(l)l.textContent='Starts in '+fmt(s-n.min);}});}
+function areaOk(c){var v=st.area;if(!v)return true;var as=(c.getAttribute('data-area')||'').split('|');
+ return as.some(function(a){return v.slice(0,2)=='a:'?a==v.slice(2):R[a]==v.slice(2);});}
+function typeOk(c){var t=c.getAttribute('data-type'),v=st.type;return !v||t==v||(v=='game'&&t=='college');}
+function apply(){timing();var shown=0;
+ secs.forEach(function(s){var ok=st.day===''||(st.day==='now'?s.getAttribute('data-day')==='0':s.getAttribute('data-day')===st.day);s.hidden=!ok;});
+ cards.forEach(function(c){var ok=areaOk(c)&&typeOk(c);
+  if(ok&&st.day==='now'&&!c.classList.contains('is-live'))ok=false;
+  if(ok&&c.classList.contains('is-ended')&&!showEarlier)ok=false;
+  c.hidden=!ok;var sec=c.closest('section.dayblock');if(ok&&!(sec&&sec.hidden))shown++;});
+ document.querySelectorAll('.grid').forEach(function(g){if(!g.querySelector('article.card.ev'))return;var any=g.querySelector('article.card.ev:not([hidden])'),n=g.nextElementSibling;
+  if(!n||!n.classList.contains('areaempty')){n=document.createElement('div');n.className='empty areaempty';g.after(n);}
+  n.textContent=st.day==='now'?'Nothing on right now with these filters. Try All week.':'Nothing posted that matches. Try another area or type.';n.hidden=!!any;});
+ var eb=document.getElementById('earlier');if(!eb&&secs.length){var h=secs[0].querySelector('h2,.day');if(h){eb=document.createElement('button');eb.id='earlier';eb.type='button';eb.className='earlier';h.after(eb);
+  eb.addEventListener('click',function(){showEarlier=!showEarlier;apply();});}}
+ if(eb){var n2=cards.filter(function(c){return c.classList.contains('is-ended')&&areaOk(c)&&typeOk(c);}).length;
+  eb.hidden=!n2||st.day==='now';eb.textContent=showEarlier?'Hide earlier events':'Show '+n2+' earlier event'+(n2>1?'s':'')+' from today';}
+ cnt.textContent=(st.area||st.type||st.day)?shown+' events':'';}
+function press(rowId,attr,v){var row=document.getElementById(rowId);if(!row)return;row.querySelectorAll('button').forEach(function(b){var on=b.getAttribute(attr)===v;b.setAttribute('aria-pressed',on?'true':'false');
+ if(on&&v!=='')row.scrollLeft=b.offsetLeft-row.offsetLeft-12;});}
+function url(){var u=new URL(location.href);['area','type','day'].forEach(function(k){var v=st[k];if(k==='day'&&v!==''&&v!=='now'){var b=document.querySelector('#dayPick button[data-d="'+v+'"]');v=b?NAMES[b.getAttribute('data-dow')]:'';}
+ if(v)u.searchParams.set(k,v);else u.searchParams.delete(k);});history.replaceState(null,'',u);}
+var q=new URLSearchParams(location.search);
+var a=q.get('area');if(a===null){try{a=localStorage.getItem('pourcastArea')||'';}catch(e){a='';}}
+if(a&&![].some.call(sel.options,function(o){return o.value==a}))a='';sel.value=a;st.area=a;
+var t=q.get('type')||'';if(!document.querySelector('#typePick button[data-t="'+t+'"]'))t='';st.type=t;
+var d=q.get('day');if(d==='now'&&document.getElementById('dayPick'))st.day='now';else if(d){var k=NAMES.indexOf(d.slice(0,3).toLowerCase());document.querySelectorAll('#dayPick button').forEach(function(b){if(b.getAttribute('data-d')===d||(k>=0&&b.getAttribute('data-dow')==k))st.day=b.getAttribute('data-d');});}
+press('dayPick','data-d',st.day);press('typePick','data-t',st.type);apply();
+sel.addEventListener('change',function(){st.area=sel.value;try{localStorage.setItem('pourcastArea',sel.value);}catch(e){}apply();url();});
+document.querySelectorAll('#dayPick button').forEach(function(b){b.addEventListener('click',function(){st.day=b.getAttribute('data-d');press('dayPick','data-d',st.day);apply();url();});});
+document.querySelectorAll('#typePick button').forEach(function(b){b.addEventListener('click',function(){st.type=b.getAttribute('data-t');press('typePick','data-t',st.type);apply();url();});});
+setInterval(apply,60000);
+"""
+
+
+def filters(body):
     used = {b.get("area") for b in BARS.values() if b.get("area")}
     known = {a for _, al in REGIONS for a in al}
     regions = REGIONS + ([("Other areas", sorted(used - known))] if used - known else [])
@@ -138,39 +187,23 @@ def area_filter():
         if len(al) > 1:
             opts.append(f'<optgroup label="{e(r)}">' + "".join(f'<option value="a:{e(a)}">{e(a)}</option>' for a in al) + "</optgroup>")
     rmap = {a: r for r, al in regions for a in al}
-    return ('<div class="areafilter"><label for="areaSel">Area</label><select id="areaSel">' + "".join(opts) + "</select>"
-            '<span class="areacount" id="areaCount"></span></div>'
-            "<script>(function(){var R=" + json.dumps(rmap) + r""";
-var sel=document.getElementById('areaSel'),cnt=document.getElementById('areaCount');
-function apply(v){var cards=document.querySelectorAll('article.card.ev'),shown=0;
- cards.forEach(function(c){var a=c.getAttribute('data-area')||'',ok=!v||(v.slice(0,2)=='a:'?a==v.slice(2):R[a]==v.slice(2));c.hidden=!ok;if(ok)shown++;});
- document.querySelectorAll('.grid').forEach(function(g){if(!g.querySelector('article.card.ev'))return;var any=g.querySelector('article.card.ev:not([hidden])'),n=g.nextElementSibling;
-  if(!n||!n.classList.contains('areaempty')){n=document.createElement('div');n.className='empty areaempty';n.textContent='Nothing posted in this area. Try another area or All areas.';g.after(n);}
-  n.hidden=!!any;});
- cnt.textContent=v?shown+' events':'';}
-var v=new URLSearchParams(location.search).get('area');if(v===null){try{v=localStorage.getItem('pourcastArea')||'';}catch(e){v='';}}
-if(v&&![].some.call(sel.options,function(o){return o.value==v}))v='';sel.value=v;apply(v);
-sel.addEventListener('change',function(){apply(sel.value);try{localStorage.setItem('pourcastArea',sel.value);}catch(e){}});
-})();</script>""")
-
-
-def day_picker():
-    chips = ['<button type="button" data-d="" aria-pressed="true">All week</button>']
-    for i, d in enumerate(WEEK):
-        lbl = "Today" if i == 0 else ("Tomorrow" if i == 1 else DOW[pydow(d)][:3] + " " + fmt_date(d))
-        chips.append(f'<button type="button" data-d="{i}" data-dow="{pydow(d)}" aria-pressed="false">{e(lbl)}</button>')
-    return ('<div class="daypick" role="group" aria-label="Pick a day">' + "".join(chips) + '</div>'
-            + r"""<script>document.addEventListener('DOMContentLoaded',function(){var bs=document.querySelectorAll('.daypick button'),secs=document.querySelectorAll('section.dayblock');
-function pick(v){bs.forEach(function(b){var on=b.getAttribute('data-d')===v;b.setAttribute('aria-pressed',on?'true':'false');if(on&&v!=='')b.parentNode.scrollLeft=b.offsetLeft-b.parentNode.offsetLeft-12;});
- var any=false;secs.forEach(function(s){var ok=v===''||s.getAttribute('data-day')===v;s.hidden=!ok;if(ok)any=true;});
- var n=document.getElementById('dayEmpty');if(!n){n=document.createElement('div');n.id='dayEmpty';n.className='empty';n.textContent='Nothing posted that day yet.';document.querySelector('.daypick').after(n);}n.hidden=any;
-}
-var q=new URLSearchParams(location.search).get('day'),v='';
-if(q!==null){var names=['sun','mon','tue','wed','thu','fri','sat'],k=names.indexOf(q.slice(0,3).toLowerCase());
- bs.forEach(function(b){if(b.getAttribute('data-d')===q||(k>=0&&b.getAttribute('data-dow')==k))v=b.getAttribute('data-d');});}
-pick(v);bs.forEach(function(b){b.addEventListener('click',function(){var d=b.getAttribute('data-d');pick(d);
- var u=new URL(location.href);if(d==='')u.searchParams.delete('day');else u.searchParams.set('day',['sun','mon','tue','wed','thu','fri','sat'][b.getAttribute('data-dow')]);history.replaceState(null,'',u);});});
-});</script>""")
+    types_here = set(re.findall(r'data-type="([a-z]+)"', body))
+    tchips = ""
+    if len(types_here) > 1:
+        tchips = '<div class="chiprow types" id="typePick" role="group" aria-label="Pick a type">' + "".join(
+            f'<button type="button" data-t="{v}" aria-pressed="{"true" if not v else "false"}">{e(l)}</button>'
+            for v, l in TYPE_CHIPS if not v or v in types_here or (v == "game" and "college" in types_here)) + "</div>"
+    days = ""
+    if 'class="dayblock"' in body:
+        chips = ['<button type="button" data-d="" aria-pressed="true">All week</button>',
+                 '<button type="button" data-d="now" class="now" aria-pressed="false">Right now</button>']
+        for i, d in enumerate(WEEK):
+            lbl = "Today" if i == 0 else ("Tomorrow" if i == 1 else DOW[pydow(d)][:3] + " " + fmt_date(d))
+            chips.append(f'<button type="button" data-d="{i}" data-dow="{pydow(d)}" aria-pressed="false">{e(lbl)}</button>')
+        days = '<div class="chiprow" id="dayPick" role="group" aria-label="Pick a day">' + "".join(chips) + "</div>"
+    return ('<div class="filters"><div class="areafilter"><label for="areaSel">Area</label><select id="areaSel">' + "".join(opts) + "</select>"
+            '<span class="areacount" id="areaCount"></span></div>' + days + tchips + "</div>"
+            "<script>document.addEventListener('DOMContentLoaded',function(){var R=" + json.dumps(rmap) + ";" + FILTER_JS + "});</script>")
 
 
 TICKER = ticker_text()
@@ -184,8 +217,7 @@ def page(path, title, desc, body, current="", jsonld=None):
                 if CFG.get("adsense_client") else "")
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if h == current else ""}>{e(t)}</a>' for h, t in NAV)
     ld = f'<script type="application/ld+json">{json.dumps(jsonld)}</script>' if jsonld else ""
-    filt = area_filter() if ('class="card ev' in body and not path.startswith(("/bars/", "/areas/"))) else ""
-    dpick = day_picker() if 'class="dayblock"' in body else ""
+    filt = filters(body) if ('class="card ev' in body and not path.startswith(("/bars/", "/areas/"))) else ""
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -208,7 +240,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 <div class="ticker" aria-label="Today's highlights"><span class="lbl">Today</span><span class="track"><span class="run" style="animation-duration:{TICKER_SECS}s">{e(TICKER)}</span></span></div>
 <nav class="secnav" aria-label="Sections"><div class="wrap">{nav}</div></nav>
 <main><div class="wrap">
-{filt}{dpick}{body}
+{filt}{body}
 </div></main>
 <footer><div class="wrap">
 <div><b>{e(CFG["site_name"])}</b>: game watches, trivia, karaoke and happy hours at {e(CITY)}-area bars. Updated {fmt_date(TODAY)}, {TODAY.year}.</div>
@@ -230,6 +262,46 @@ def page(path, title, desc, body, current="", jsonld=None):
 PAGES = []
 
 
+DUR = {"college": 210, "game": 210, "trivia": 120, "karaoke": 240, "music": 180, "happy": 180, "special": 180}
+_WIN = re.compile(r"(\d{1,2})(?::(\d\d))?\s*(AM|PM)?\s*[–-]\s*(?:(\d{1,2})(?::(\d\d))?\s*(AM|PM)|(close|midnight))", re.I)
+
+
+def span(ev):
+    """(start, end) in minutes after midnight; end can pass 1440 (after midnight)."""
+    t = ev.get("time") or ""
+    lab = (ev.get("timeLabel") or "").lower()
+    if not t or "all day" in lab:
+        st = int(t[:2]) * 60 + int(t[3:]) if t else 11 * 60
+        return st, 26 * 60
+    st = int(t[:2]) * 60 + int(t[3:])
+    m = _WIN.search(ev.get("title", "") + " " + lab)
+    if m:
+        if m.group(7):
+            en = 24 * 60 if m.group(7).lower() == "midnight" else 26 * 60
+        else:
+            h = int(m.group(4)) % 12 + (12 if m.group(6).upper() == "PM" else 0)
+            en = h * 60 + int(m.group(5) or 0)
+        while en <= st:
+            en += 24 * 60
+        return st, en
+    return st, st + DUR.get(ev.get("type"), 180)
+
+
+def merge(evs):
+    """Collapse the same deal at several locations of one chain into one card."""
+    out, seen = [], {}
+    for x in evs:
+        b = BARS.get(x["barId"]) or {}
+        k = (b.get("name"), x.get("type"), x.get("title"), x.get("deals"), x.get("time"), x.get("timeLabel"), x.get("team"))
+        if b.get("name") and k in seen:
+            seen[k].setdefault("_bars", [seen[k]["barId"]]).append(x["barId"])
+            continue
+        y = dict(x)
+        seen[k] = y
+        out.append(y)
+    return out
+
+
 def card(ev, d=None, show_day=False):
     t = ev.get("type", "special")
     label = TYPES.get(t, ("Event",))[0]
@@ -247,9 +319,19 @@ def card(ev, d=None, show_day=False):
         sched = ("Every " + ", ".join(DOW[x] for x in sorted(ev["days"])) if ev.get("weekly")
                  else f"{DOW[pydow(date.fromisoformat(ev['date']))]}, {fmt_date(date.fromisoformat(ev['date']))}") + " · "
     host = f' · Hosted by {e(ev["host"])}' if ev.get("host") else ""
-    area = (BARS.get(ev["barId"]) or {}).get("area") or ""
-    return (f'<article class="card ev {e(t)}" data-area="{e(area)}"><div class="meta"><span class="badge">{e(label)}</span><span class="when">{e(sched)}{e(when(ev))}</span></div>'
-            f'<div class="title">{e(ev["title"])}</div><div class="where"><a href="{bar_url(ev["barId"])}">{e(bar_label(ev["barId"]))}</a>{host}</div>'
+    bids = ev.get("_bars") or [ev["barId"]]
+    areas = [(BARS.get(b) or {}).get("area") or "" for b in bids]
+    if len(bids) > 1:
+        where = (f'{e(BARS[bids[0]]["name"])} · {len(bids)} locations: '
+                 + ", ".join(f'<a href="{bar_url(b)}">{e(a or "Nashville")}</a>' for b, a in zip(bids, areas)))
+    else:
+        where = f'<a href="{bar_url(bids[0])}">{e(bar_label(bids[0]))}</a>'
+    timeattr = ""
+    if d is not None:
+        st, en = span(ev)
+        timeattr = f' data-date="{d.isoformat()}" data-s="{st}" data-e="{en}"'
+    return (f'<article class="card ev {e(t)}" data-type="{e(t)}" data-area="{e("|".join(areas))}"{timeattr}><div class="meta"><span class="badge">{e(label)}</span><span class="when">{e(sched)}{e(when(ev))}</span><span class="live"></span></div>'
+            f'<div class="title">{e(ev["title"])}</div><div class="where">{where}{host}</div>'
             f'{"<div class=chips>" + "".join(chips) + "</div>" if chips else ""}</article>')
 
 
@@ -257,7 +339,7 @@ def upcoming(evs):
     """Events in the next 7 days, one-time ones first by date, weekly ones by day."""
     out = []
     for d in WEEK:
-        for x in sorted([x for x in evs if occurs(x, d)], key=sort_key):
+        for x in merge(sorted([x for x in evs if occurs(x, d)], key=sort_key)):
             out.append((d, x))
     return out
 
@@ -269,7 +351,7 @@ def build_home():
     if cfb_sat:
         parts.append(f'<div class="alert"><b>Weather alert</b><span>100% chance of college football: {len(cfb_sat)} watch parties at {e(CITY)} home bars this week. <a href="/tonight/college-football/">See where every fan base watches</a>.</span></div>')
     for i, d in enumerate(WEEK):
-        evs = sorted([x for x in EVENTS if occurs(x, d)], key=lambda x: (0 if x.get("type") == "college" else 1, sort_key(x)))
+        evs = merge(sorted([x for x in EVENTS if occurs(x, d)], key=lambda x: (0 if x.get("type") == "college" else 1, sort_key(x))))
         parts.append(f'<section class="dayblock" data-day="{i}"><h2>{e(day_name(d))} · {e(DOW[pydow(d)][:3])} {fmt_date(d)}</h2>')
         parts.append(('<div class="grid">' + "".join(card(x, d) for x in evs) + '</div>' if evs else '<div class="empty">Nothing posted yet. <a href="/submit/">Add an event</a>.</div>') + '</section>')
         if i in (0, 2, 4):

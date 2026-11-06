@@ -75,8 +75,19 @@ footer .wrap{display:grid;gap:6px}
 
 .addr{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 18px;font-size:17px}
 .addr .dir{background:var(--blue,#0B3D91);color:#fff;padding:6px 14px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
-.daypick{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:10px 0 6px;margin:4px 0 6px;scrollbar-width:none}
-.daypick::-webkit-scrollbar{display:none}
-.daypick button{flex:0 0 auto;font:inherit;font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.4px;font-size:17px;padding:8px 14px;border:2px solid var(--red);border-radius:999px;background:#fff;color:var(--red);cursor:pointer}
-.daypick button[aria-pressed="true"]{background:var(--red);color:#fff}
+.chiprow{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:10px 0 6px;margin:4px 0 6px;scrollbar-width:none}
+.chiprow::-webkit-scrollbar{display:none}
+.chiprow button{flex:0 0 auto;font:inherit;font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.4px;font-size:17px;padding:8px 14px;border:2px solid var(--red);border-radius:999px;background:#fff;color:var(--red);cursor:pointer}
+.chiprow button[aria-pressed="true"]{background:var(--red);color:#fff}
 section.dayblock[hidden],#dayEmpty[hidden]{display:none}
+.chiprow.types button{border-color:var(--blue);color:var(--blue);font-size:16px;padding:6px 12px}
+.chiprow.types button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.chiprow button.now{border-color:var(--turf);color:var(--turf)}
+.chiprow button.now[aria-pressed="true"]{background:var(--turf);color:#fff}
+.card.ev[hidden]{display:none}
+.card .live:empty{display:none}
+.card .live{font-weight:800;font-size:14px;padding:2px 8px;border-radius:999px;background:#E3F4EA;color:var(--turf)}
+.card.ev.is-soon .live{background:#FFF4D6;color:#8A5A00}
+.card.ev.is-live{border-left:5px solid var(--turf)}
+.earlier{display:block;margin:6px 0 10px;font:inherit;font-weight:700;font-size:15px;color:var(--blue);background:none;border:0;padding:4px 0;text-decoration:underline;cursor:pointer}
+.earlier[hidden]{display:none}
