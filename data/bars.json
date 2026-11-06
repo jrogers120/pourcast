@@ -1271,5 +1271,47 @@
   "area": "Antioch",
   "teams": [],
   "address": "1015 Bell Rd, Antioch, TN 37013"
+ },
+ {
+  "id": "bluebird-cafe",
+  "name": "The Bluebird Cafe",
+  "area": "Green Hills",
+  "teams": [],
+  "address": "4104 Hillsboro Pike, Nashville, TN 37215"
+ },
+ {
+  "id": "3rd-and-lindsley",
+  "name": "3rd & Lindsley",
+  "area": "Downtown",
+  "teams": [],
+  "address": "818 3rd Ave S, Nashville, TN 37210"
+ },
+ {
+  "id": "listening-room-cafe",
+  "name": "The Listening Room Cafe",
+  "area": "Rutledge Hill",
+  "teams": [],
+  "address": "618 4th Ave S, Nashville, TN 37210"
+ },
+ {
+  "id": "the-stillery-midtown",
+  "name": "The Stillery Midtown",
+  "area": "Midtown",
+  "teams": [],
+  "address": "1921 Broadway, Nashville, TN 37203"
+ },
+ {
+  "id": "the-basement",
+  "name": "The Basement",
+  "area": "8th Ave",
+  "teams": [],
+  "address": "1604 8th Ave S, Nashville, TN 37203"
+ },
+ {
+  "id": "the-local",
+  "name": "The Local",
+  "area": "West End",
+  "teams": [],
+  "address": "110 28th Ave N, Nashville, TN 37203"
  }
 ]

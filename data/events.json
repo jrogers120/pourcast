@@ -3389,5 +3389,190 @@
   "time": "21:00",
   "source": "https://nashvillelocalsguide.com/best-karaoke-spots-nashville-unforgettable-night/",
   "id": "w2-lowbar-1"
+ },
+ {
+  "id": "w3-bluebird-cafe-0",
+  "barId": "bluebird-cafe",
+  "type": "music",
+  "title": "In the Round writers shows (6 PM & 9 PM)",
+  "weekly": true,
+  "days": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "18:00",
+  "source": "https://www.bluebirdcafe.com/shows/"
+ },
+ {
+  "id": "w3-bluebird-cafe-1",
+  "barId": "bluebird-cafe",
+  "type": "music",
+  "title": "Sunday Writers Night",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "20:00",
+  "source": "https://www.bluebirdcafe.com/shows/"
+ },
+ {
+  "id": "w3-bluebird-cafe-2",
+  "barId": "bluebird-cafe",
+  "type": "music",
+  "title": "Monday Open Mic with Barbara Cloyd",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "source": "https://www.bluebirdcafe.com/shows/"
+ },
+ {
+  "id": "w3-3rd-and-lindsley-0",
+  "barId": "3rd-and-lindsley",
+  "type": "music",
+  "title": "Bluebird on 3rd writers round (lunch)",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "12:30",
+  "source": "https://www.bluebirdcafe.com/"
+ },
+ {
+  "id": "w3-listening-room-cafe-0",
+  "barId": "listening-room-cafe",
+  "type": "music",
+  "title": "Song Suffragettes: all-female writers showcase",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "source": "https://ma.to/event/song-suffragettes-03-aug-2026"
+ },
+ {
+  "id": "w3-commons-club-0",
+  "barId": "commons-club",
+  "type": "music",
+  "title": "Songwriter Showcase with Sam's Jams (6–9 PM)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "18:00",
+  "source": "https://virginhotels.com/nashville/events"
+ },
+ {
+  "id": "w3-tennessee-brew-works-0",
+  "barId": "tennessee-brew-works",
+  "type": "music",
+  "title": "Writer's Showcase & Top Shelf Tuesday (6–8 PM)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "18:00",
+  "source": "https://www.tnbrew.com/live-music"
+ },
+ {
+  "id": "w3-the-stillery-midtown-0",
+  "barId": "the-stillery-midtown",
+  "type": "music",
+  "title": "Write My Wrongs writers round",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://thestillery.com/midtown"
+ },
+ {
+  "id": "w3-the-stillery-midtown-1",
+  "barId": "the-stillery-midtown",
+  "type": "music",
+  "title": "The Get Up writers round",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "18:00",
+  "source": "https://thestillery.com/midtown"
+ },
+ {
+  "id": "w3-the-basement-0",
+  "barId": "the-basement",
+  "type": "music",
+  "title": "New Faces Night showcase (doors 7 PM)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://songkick.com/concerts/42967784-new-faces-night-at-basement"
+ },
+ {
+  "id": "w3-the-local-0",
+  "barId": "the-local",
+  "type": "music",
+  "title": "Music Row Freakshow writers round",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://localnash.com/calendar"
+ },
+ {
+  "id": "w3-the-local-1",
+  "barId": "the-local",
+  "type": "music",
+  "title": "Freak'n Fridaze writers round",
+  "weekly": true,
+  "days": [
+   5
+  ],
+  "time": "18:00",
+  "source": "https://localnash.com/calendar"
+ },
+ {
+  "id": "w3-teddys-0",
+  "barId": "teddys",
+  "type": "music",
+  "title": "The Bridge Series songwriters round (7–10 PM)",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "19:00",
+  "source": "https://ma.to/event/the-bridge-series-19-jul-2026"
+ },
+ {
+  "id": "w3-dierks-bentley-s-whiskey-row-0",
+  "barId": "dierks-bentley-s-whiskey-row",
+  "type": "music",
+  "title": "Whiskey Jam (free writers showcase)",
+  "weekly": true,
+  "days": [
+   1,
+   4
+  ],
+  "time": "20:00",
+  "source": "https://bandsintown.com/e/106393194-whiskey-jam"
+ },
+ {
+  "id": "w3-live-oak-0",
+  "barId": "live-oak",
+  "type": "music",
+  "title": "Grindhouse Nashville writers night (free)",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://www.grindhousenashville.com/"
  }
 ]
