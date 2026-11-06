@@ -93,7 +93,7 @@ def sort_key(ev):
 
 # ---------- page shell ----------
 NAV = [("/", "Forecast"), ("/map/", "Map"), ("/tonight/college-football/", "College football"), ("/tonight/nfl/", "NFL"),
-       ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/christmas/", "Christmas pop-ups"), ("/bars/", "Bars"), ("/submit/", "Post an event")]
+       ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/christmas/", "Christmas pop-ups"), ("/bars/", "Bars"), ("/shop/", "Merch"), ("/submit/", "Post an event")]
 LOGO_SVG = ('<svg width="48" height="48" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#fff"/><circle cx="100" cy="100" r="86" fill="#0B3D91"/>'
             '<circle cx="132" cy="70" r="30" fill="#FFC53D"/><path d="M132 26 L132 14 M166 36 L175 27 M176 70 L188 70" stroke="#FFC53D" stroke-width="7" stroke-linecap="round"/>'
             '<rect x="56" y="82" width="70" height="82" rx="8" fill="#F5B12E"/><path d="M126 98 h14 a16 16 0 0 1 16 16 v14 a16 16 0 0 1 -16 16 h-14" fill="none" stroke="#fff" stroke-width="10"/>'
@@ -346,8 +346,76 @@ def upcoming(evs):
 
 
 # ---------- pages ----------
+DAY_ICON = {"college": ("🏈", "Game-day storm"), "game": ("🏈", "Game-day storm"), "happy": ("🍻", "Happy-hour front"),
+            "trivia": ("🧠", "Trivia showers"), "karaoke": ("🎤", "Karaoke winds"), "music": ("🎸", "Live-music breeze"),
+            "special": ("✨", "Special conditions")}
+
+
+def conditions_panel():
+    pf = os.path.join(ROOT, "data", "picks.json")
+    picks = (json.load(open(pf)) if os.path.exists(pf) else {}).get(TODAY.isoformat(), {})
+    strip = []
+    for i, d in enumerate(WEEK):
+        evs = [x for x in EVENTS if occurs(x, d)]
+        games = sum(1 for x in evs if x.get("type") in ("college", "game"))
+        cnt = {}
+        for x in evs:
+            cnt[x.get("type")] = cnt.get(x.get("type"), 0) + 1
+        top = "college" if games >= 5 else (max(cnt, key=cnt.get) if cnt else None)
+        icon = DAY_ICON.get(top, ("☀️", ""))[0] if top else "☀️"
+        lbl = "Today" if i == 0 else DOW[pydow(d)][:3]
+        strip.append(f'<a class="fday" href="/?day={["sun","mon","tue","wed","thu","fri","sat"][pydow(d)]}"><b>{e(lbl)}</b><span class="ficon">{icon}</span><small>{len(evs)} events</small></a>')
+    tev = [x for x in EVENTS if occurs(x, WEEK[0])]
+    g = sum(1 for x in tev if x.get("type") in ("college", "game"))
+    h = sum(1 for x in tev if x.get("type") == "happy")
+    tk = sum(1 for x in tev if x.get("type") in ("trivia", "karaoke"))
+    if g >= 5:
+        headline = f"⛈️ Game-day storm: {g} watch parties rolling through"
+    elif h >= 20:
+        headline = f"🍻 Happy-hour front moving in: {h} deals across town"
+    else:
+        headline = f"🌤️ Mostly pleasant: {len(tev)} things on tonight"
+    pl = lambda n, a, b: f"{n} {a if n == 1 else b}"
+    lines = [pl(h, "happy hour", "happy hours"), pl(g, "game watch", "game watches") if g else "", pl(tk, "trivia or karaoke night", "trivia & karaoke nights") if tk else ""]
+    pick = ""
+    if picks.get("good"):
+        pick += f'<div class="fpick"><b>Game of the Day</b> {e(picks["good"])}<small>{e(picks.get("goodWhy", ""))}</small></div>'
+    if picks.get("drink"):
+        dr = picks["drink"]
+        pick += f'<div class="fpick"><b>Drink of the Day</b> {e(dr.get("name", ""))} at {e(BARS.get(dr.get("barId"), {}).get("name", ""))}<small>{e(dr.get("desc", ""))}</small></div>'
+    return ('<section class="conditions"><div class="ctop"><span class="clabel">Tonight\'s conditions</span>'
+            f'<h2 class="chead">{e(headline)}</h2><p class="cline">{e(" · ".join(l for l in lines if l))}</p>{pick}'
+            '<div class="cbtns"><a class="mapbtn" href="/?day=now">Right now</a><a class="mapbtn ghost" href="/map/">Map</a>'
+            '<a class="mapbtn ghost" href="/tonight/happy-hour/">Happy hour</a></div></div>'
+            f'<div class="fstrip">{"".join(strip)}</div></section>')
+
+
+SWEAT_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}"><path d="M78 22 L102 12 Q120 30 138 12 L162 22 L200 60 L224 180 L198 188 L172 100 L172 205 L68 205 L68 100 L42 188 L16 180 L40 60 Z" fill="{fill}" stroke="#0A1A33" stroke-width="3"/>'
+             '<path d="M102 12 Q120 34 138 12" fill="none" stroke="#0A1A33" stroke-width="3"/><rect x="68" y="192" width="104" height="13" fill="{trim}"/><path d="M16 180 L42 188 L44 178 L19 170 Z M224 180 L198 188 L196 178 L221 170 Z" fill="{trim}"/>'
+             '<text x="120" y="112" text-anchor="middle" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="22" fill="#fff">POUR<tspan fill="#FFC53D">CAST</tspan></text>'
+             '<text x="120" y="136" text-anchor="middle" font-family="Barlow Condensed,Arial" font-weight="800" font-size="7.5" letter-spacing="1" fill="#fff">7-DAY BAR FORECAST</text></svg>')
+PANTS_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}"><path d="M75 15 L165 15 L180 205 L130 205 L120 80 L110 205 L60 205 Z" fill="{fill}" stroke="#0A1A33" stroke-width="3"/>'
+             '<rect x="75" y="15" width="90" height="16" fill="{trim}" stroke="#0A1A33" stroke-width="3"/><rect x="62" y="190" width="48" height="12" fill="{trim}"/><rect x="130" y="190" width="48" height="12" fill="{trim}"/>'
+             '<text x="88" y="140" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="15" fill="#fff" transform="rotate(-90 88 140)">POURCAST</text></svg>')
+
+
+def build_shop():
+    items = [("The Forecast Crew", "Heavyweight crewneck sweatshirt, Pourcast logo on the chest", SWEAT_SVG, "#0B3D91", "#C8202A"),
+             ("Last Call Hoodie", "Red pullover hoodie with the 7-Day Bar Forecast logo", SWEAT_SVG, "#C8202A", "#FFC53D"),
+             ("Happy Hour Sweats", "Navy joggers with POURCAST down the leg", PANTS_SVG, "#071E4A", "#FFC53D"),
+             ("Game Day Sweats", "Gray joggers with red Pourcast trim", PANTS_SVG, "#5B6577", "#C8202A")]
+    mail = f'mailto:{CFG["contact_email"]}?subject=' + quote_plus("Pourcast merch: put me on the list")
+    cards = "".join(f'<article class="card merch">{svg.format(label=e(n), fill=f, trim=t)}<h3>{e(n)}</h3><p class="muted">{e(d)}</p><span class="chip">Coming soon</span></article>'
+                    for n, d, svg, f, t in items)
+    body = (f'<h1>Pourcast merch</h1><p class="dek">Sweatshirts and sweatpants for the {e(CITY)} bar forecast faithful. First drop is coming soon; these are design previews.</p>'
+            f'<div class="grid merchgrid">{cards}</div>'
+            f'<div class="alert"><b>First dibs</b><span>Want in on the first drop? <a href="{mail}">Email us</a> or DM <a href="https://www.instagram.com/{e(CFG["instagram"])}/">@{e(CFG["instagram"])}</a> and we\'ll let you know when it\'s live.</span></div>')
+    page("/shop/", f"Pourcast Merch: Sweatshirts & Sweatpants | {CITY} Bar Forecast",
+         "Pourcast sweatshirts, hoodies and sweatpants. First drop coming soon.", body, "/shop/")
+
+
 def build_home():
-    parts = [f'<h1>{e(CITY)} 7-day bar forecast</h1><p class="dek">Where to watch the game, find trivia and karaoke, and catch happy hour across {e(CITY)}, {fmt_date(WEEK[0])}–{fmt_date(WEEK[-1])}.</p>']
+    parts = [f'<h1>{e(CITY)} 7-day bar forecast</h1><p class="dek">Where to watch the game, find trivia and karaoke, and catch happy hour across {e(CITY)}, {fmt_date(WEEK[0])}–{fmt_date(WEEK[-1])}.</p>', conditions_panel()]
     cfb_sat = [x for x in EVENTS if x.get("type") == "college" and not x.get("weekly") and x.get("date") in {d.isoformat() for d in WEEK}]
     if cfb_sat:
         parts.append(f'<div class="alert"><b>Weather alert</b><span>100% chance of college football: {len(cfb_sat)} watch parties at {e(CITY)} home bars this week. <a href="/tonight/college-football/">See where every fan base watches</a>.</span></div>')
@@ -565,8 +633,12 @@ def build_bars():
         p.append('<h2>Every week</h2>' + ('<div class="grid">' + "".join(card(x, show_day=True) for x in weekly) + '</div>' if weekly else '<div class="empty">No weekly specials posted yet. Work here? <a href="/submit/">Add yours free</a>.</div>'))
         p.append(ad_slot())
         srcs = sorted({x["source"] for x in evs if x.get("source")})
-        if srcs:
-            p.append('<p class="src">Listing sources: ' + " · ".join(f'<a href="{e(s)}" rel="nofollow">{e(re.sub(r"^https?://(www\\.)?", "", s).split("/")[0])}</a>' for s in srcs) + '</p>')
+        own = [s for s in srcs if s.startswith("http") and not re.search(r"nashvilleguru|nashvillego|eventbrite|williamsonscene|franklinis|citylifestyle|baselocal", s)]
+        ver = sorted(x["verified"] for x in evs if x.get("verified"))
+        line = "Listings checked by Pourcast" + (f" (last confirmed {fmt_date(date.fromisoformat(ver[-1]))})" if ver else "") + ". Deals and times change, so confirm with the bar."
+        if own:
+            line += ' From the bar: ' + " · ".join(f'<a href="{e(s)}" rel="nofollow">{e(re.sub(r"^https?://(www\\.)?", "", s).split("/")[0])}</a>' for s in own)
+        p.append(f'<p class="src">{line}</p>')
         ld = {"@context": "https://schema.org", "@type": "BarOrPub", "name": b["name"], "url": BASE + bar_url(b["id"]),
               "address": {"@type": "PostalAddress", "addressLocality": "Franklin" if loc == "Franklin" else "Spring Hill" if loc == "Spring Hill" else CITY, "addressRegion": "TN"}}
         page(bar_url(b["id"]), f"{b['name']} {CITY}: Events, Game Watches & Happy Hour | Pourcast",
@@ -635,7 +707,7 @@ if __name__ == "__main__":
         shutil.rmtree(OUT)
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
-    build_home(); build_types(); build_popups(); build_map(); build_bars(); build_teams(); build_static(); build_meta()
+    build_home(); build_types(); build_popups(); build_map(); build_shop(); build_bars(); build_teams(); build_static(); build_meta()
     try:
         sys.path.insert(0, os.path.join(ROOT, "social"))
         import graphic
