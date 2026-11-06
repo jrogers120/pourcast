@@ -1,18 +1,5 @@
 [
  {
-  "id": "hh-golden-sound-9",
-  "barId": "golden-sound",
-  "type": "happy",
-  "title": "Happy hour (5–7 PM)",
-  "weekly": true,
-  "days": [
-   5
-  ],
-  "time": "17:00",
-  "deals": "25% off all drinks",
-  "source": "https://nashvillego.com/happy-hours/friday"
- },
- {
   "id": "hh-dolans-14",
   "barId": "dolans",
   "type": "happy",
@@ -2031,7 +2018,6 @@
   "barId": "marsh-house",
   "weekly": true,
   "days": [
-   1,
    2,
    3,
    4,
@@ -2482,5 +2468,266 @@
   "date": "2026-11-07",
   "time": "15:15",
   "tv": "SECN"
+ },
+ {
+  "id": "hh3-live-oak-0",
+  "barId": "live-oak",
+  "type": "happy",
+  "title": "Happy hour (4–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2
+  ],
+  "time": "16:00",
+  "source": "https://nashvilleguru.com/businesses/live-oak",
+  "deals": "$5 Tito's, Rumpleminz & Fireball, $4 green/white tea shots, $3 domestics, $1 off 16oz drafts, $3 Jell-O shots"
+ },
+ {
+  "id": "hh3-live-oak-1",
+  "barId": "live-oak",
+  "type": "happy",
+  "title": "Happy hour (11 AM–6 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "source": "https://nashvilleguru.com/businesses/live-oak",
+  "deals": "$5 Tito's, Rumpleminz & Fireball, $4 green/white tea shots, $3 domestics, $1 off 16oz drafts, $3 Jell-O shots"
+ },
+ {
+  "id": "hh3-live-oak-2",
+  "barId": "live-oak",
+  "type": "happy",
+  "title": "Weekend champagne deal",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "11:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "2-for-1 champagne bottles",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-heartbreakers-hideaway-0",
+  "barId": "heartbreakers-hideaway",
+  "type": "happy",
+  "title": "Happy hour (3–6 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "source": "https://www.heartbreakersmidtown.com/happy-hour",
+  "deals": "$5 wells, $5 domestics, $5 house wine, $7 spritzes, $7 martinis, $7 dirty soda mugz"
+ },
+ {
+  "id": "hh3-heartbreakers-hideaway-1",
+  "barId": "heartbreakers-hideaway",
+  "type": "happy",
+  "title": "Slice Night",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "source": "https://www.heartbreakersmidtown.com/happy-hour",
+  "deals": "$4 cheese / $4.25 pepperoni deep-dish slices; buy 2 get the 3rd free",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-heartbreakers-hideaway-2",
+  "barId": "heartbreakers-hideaway",
+  "type": "trivia",
+  "title": "Trivia Night",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "19:00",
+  "source": "https://www.heartbreakersmidtown.com/happy-hour"
+ },
+ {
+  "id": "hh3-golden-sound-0",
+  "barId": "golden-sound",
+  "type": "happy",
+  "title": "Happy hour (5–7 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "17:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "25% off all drinks"
+ },
+ {
+  "id": "hh3-sidecar-bar-0",
+  "barId": "sidecar-bar",
+  "type": "happy",
+  "title": "Late deal (6 PM–close)",
+  "weekly": true,
+  "days": [
+   1,
+   4
+  ],
+  "time": "18:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$4 bottles & drafts, $6 frozen drinks, $36 buckets"
+ },
+ {
+  "id": "hh3-sidecar-bar-1",
+  "barId": "sidecar-bar",
+  "type": "happy",
+  "title": "Saturday all-day deal",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "11:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$25 buckets, $6 Fruity Pebble shots",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-sonny-s-patio-pub-refuge-0",
+  "barId": "sonny-s-patio-pub-refuge",
+  "type": "happy",
+  "title": "Late-night happy hour (10 PM–midnight)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "22:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$5 food"
+ },
+ {
+  "id": "hh3-ottos-bar-0",
+  "barId": "ottos-bar",
+  "type": "happy",
+  "title": "Martini Monday",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "11:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$7 martinis all day",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-ottos-bar-1",
+  "barId": "ottos-bar",
+  "type": "happy",
+  "title": "Wednesday deal",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$5 wine & $5 tacos all day",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-jaspers-0",
+  "barId": "jaspers",
+  "type": "happy",
+  "title": "Monday beer deal",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "11:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$3 domestics",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-bottle-cap-0",
+  "barId": "bottle-cap",
+  "type": "happy",
+  "title": "Saturday happy hour (3–7 PM)",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "15:00",
+  "source": "https://nashvillego.com/happy-hours",
+  "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes"
+ },
+ {
+  "id": "hh3-tailgate-0",
+  "barId": "tailgate",
+  "type": "happy",
+  "title": "Half-price pizza Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "source": "https://www.tailgatebeer.com/specials",
+  "deals": "Half-priced pizzas, dine-in only",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-tailgate-demonbreun-0",
+  "barId": "tailgate-demonbreun",
+  "type": "happy",
+  "title": "Half-price pizza Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "source": "https://www.tailgatebeer.com/specials",
+  "deals": "Half-priced pizzas, dine-in only",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-tailgate-east-0",
+  "barId": "tailgate-east",
+  "type": "happy",
+  "title": "Half-price pizza Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "source": "https://www.tailgatebeer.com/specials",
+  "deals": "Half-priced pizzas, dine-in only",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh3-tailgate-germantown-0",
+  "barId": "tailgate-germantown",
+  "type": "happy",
+  "title": "Half-price pizza Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "source": "https://www.tailgatebeer.com/specials",
+  "deals": "Half-priced pizzas, dine-in only",
+  "timeLabel": "All day"
  }
 ]
