@@ -2525,7 +2525,7 @@
  {
   "barId": "commons-club",
   "type": "music",
-  "title": "Songwriter Showcase (6–9 PM)",
+  "title": "Songwriter Showcase with Lucky Money (6–9 PM)",
   "weekly": true,
   "days": [
    1
@@ -3574,5 +3574,167 @@
   ],
   "time": "19:00",
   "source": "https://www.grindhousenashville.com/"
+ },
+ {
+  "barId": "live-oak",
+  "type": "music",
+  "title": "Magic Monday writers round",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "w4-live-oak-0"
+ },
+ {
+  "barId": "live-oak",
+  "type": "music",
+  "title": "Roundabout Rounds",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "w4-live-oak-1"
+ },
+ {
+  "barId": "live-oak",
+  "type": "music",
+  "title": "Prime Time 615 showcase",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "w4-live-oak-2"
+ },
+ {
+  "barId": "tin-roof",
+  "type": "music",
+  "title": "Buscall writers round",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "w4-tin-roof-0"
+ },
+ {
+  "barId": "sonny-s-patio-pub-refuge",
+  "type": "music",
+  "title": "Nashville Tour Stop showcase",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "w4-sonny-s-patio-pub-refuge-0"
+ },
+ {
+  "barId": "the-local",
+  "type": "music",
+  "title": "Porchlight Pickers",
+  "weekly": true,
+  "days": [
+   2,
+   4
+  ],
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "w4-the-local-0"
+ },
+ {
+  "barId": "the-local",
+  "type": "music",
+  "title": "Outside the Round",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "18:00",
+  "source": "https://ma.to/event/outside-the-round-nashville-04-aug-2026",
+  "timeLabel": "6 or 7 PM (check with the bar)",
+  "id": "w4-the-local-1"
+ },
+ {
+  "barId": "odies",
+  "type": "music",
+  "title": "Heavy Hitters & Co. writers round (7–11 PM)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://ma.to/event/heavy-hitters-and-co-odies-28-jul-2026",
+  "id": "w4-odies-0"
+ },
+ {
+  "barId": "commodore-grille",
+  "type": "music",
+  "title": "Songwriter night (sign-ups 6 PM)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "21:00",
+  "source": "https://nashvilleguru.com/30574/nashvilles-best-open-mic-songwriters-nights",
+  "id": "w4-commodore-grille-0"
+ },
+ {
+  "barId": "commodore-grille",
+  "type": "music",
+  "title": "Songwriter night (sign-ups 6 PM)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "22:00",
+  "source": "https://nashvilleguru.com/30574/nashvilles-best-open-mic-songwriters-nights",
+  "id": "w4-commodore-grille-1"
+ },
+ {
+  "barId": "tin-roof-broadway",
+  "type": "music",
+  "title": "The Six String Sessions writers round (2nd floor)",
+  "weekly": false,
+  "date": "2026-11-17",
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "s4-tin-roof-broadway-0"
+ },
+ {
+  "barId": "tin-roof-broadway",
+  "type": "music",
+  "title": "The Six String Sessions writers round (2nd floor)",
+  "weekly": false,
+  "date": "2026-12-01",
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "s4-tin-roof-broadway-1"
+ },
+ {
+  "barId": "tin-roof-broadway",
+  "type": "music",
+  "title": "The Six String Sessions writers round (2nd floor)",
+  "weekly": false,
+  "date": "2026-12-15",
+  "time": "18:00",
+  "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
+  "timeLabel": "Evening, time TBA",
+  "id": "s4-tin-roof-broadway-2"
  }
 ]

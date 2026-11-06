@@ -1313,5 +1313,12 @@
   "area": "West End",
   "teams": [],
   "address": "110 28th Ave N, Nashville, TN 37203"
+ },
+ {
+  "id": "commodore-grille",
+  "name": "Commodore Grille (Holiday Inn Vanderbilt)",
+  "area": "West End",
+  "teams": [],
+  "address": "2613 West End Ave, Nashville, TN 37203"
  }
 ]
