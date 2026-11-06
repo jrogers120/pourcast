@@ -2420,5 +2420,53 @@
   "source": "https://www.tailgatebeer.com/specials",
   "deals": "Half-priced pizzas, dine-in only",
   "timeLabel": "All day"
+ },
+ {
+  "id": "s-live-oak-fall-2026-11-05",
+  "barId": "live-oak",
+  "type": "special",
+  "title": "Fall Menu Special (this week only)",
+  "weekly": false,
+  "date": "2026-11-05",
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$9 Drunk Man's Patty Melt (7oz Angus, Swiss, over-medium egg, fries), $6 grilled cheese on Texas toast",
+  "source": "Live Oak post, sent by Pourcast 2026-11-05"
+ },
+ {
+  "id": "s-live-oak-fall-2026-11-06",
+  "barId": "live-oak",
+  "type": "special",
+  "title": "Fall Menu Special (this week only)",
+  "weekly": false,
+  "date": "2026-11-06",
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$9 Drunk Man's Patty Melt (7oz Angus, Swiss, over-medium egg, fries), $6 grilled cheese on Texas toast",
+  "source": "Live Oak post, sent by Pourcast 2026-11-05"
+ },
+ {
+  "id": "s-live-oak-fall-2026-11-07",
+  "barId": "live-oak",
+  "type": "special",
+  "title": "Fall Menu Special (this week only)",
+  "weekly": false,
+  "date": "2026-11-07",
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$9 Drunk Man's Patty Melt (7oz Angus, Swiss, over-medium egg, fries), $6 grilled cheese on Texas toast",
+  "source": "Live Oak post, sent by Pourcast 2026-11-05"
+ },
+ {
+  "id": "s-live-oak-fall-2026-11-08",
+  "barId": "live-oak",
+  "type": "special",
+  "title": "Fall Menu Special (this week only)",
+  "weekly": false,
+  "date": "2026-11-08",
+  "time": "11:00",
+  "timeLabel": "All day",
+  "deals": "$9 Drunk Man's Patty Melt (7oz Angus, Swiss, over-medium egg, fries), $6 grilled cheese on Texas toast",
+  "source": "Live Oak post, sent by Pourcast 2026-11-05"
  }
 ]
