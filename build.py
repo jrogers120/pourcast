@@ -246,7 +246,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 <div><b>{e(CFG["site_name"])}</b>: game watches, trivia, karaoke and happy hours at {e(CITY)}-area bars. Updated {fmt_date(TODAY)}, {TODAY.year}.</div>
 <div>Instagram: <a href="https://www.instagram.com/{e(CFG["instagram"])}/">@{e(CFG["instagram"])}</a> · Email: {e(CFG["contact_email"])}</div>
 <div><a href="/about/">About</a> · <a href="/submit/">Post an event</a> · <a href="/privacy/">Privacy policy</a> · Deals and times change, so check with the bar before you go. Please drink responsibly; 21+.</div>
-<div>Pourcast™ is a trademark of Jack Rogers. © {TODAY.year} Pourcast.</div>
+<div>Pourcast™ © {TODAY.year} Pourcast. All rights reserved.</div>
 </div></footer>
 </body>
 </html>
