@@ -75,3 +75,8 @@ footer .wrap{display:grid;gap:6px}
 
 .addr{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 18px;font-size:17px}
 .addr .dir{background:var(--blue,#0B3D91);color:#fff;padding:6px 14px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
+.daypick{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:10px 0 6px;margin:4px 0 6px;scrollbar-width:none}
+.daypick::-webkit-scrollbar{display:none}
+.daypick button{flex:0 0 auto;font:inherit;font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.4px;font-size:17px;padding:8px 14px;border:2px solid var(--red);border-radius:999px;background:#fff;color:var(--red);cursor:pointer}
+.daypick button[aria-pressed="true"]{background:var(--red);color:#fff}
+section.dayblock[hidden],#dayEmpty[hidden]{display:none}

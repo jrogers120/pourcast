@@ -156,6 +156,25 @@ sel.addEventListener('change',function(){apply(sel.value);try{localStorage.setIt
 })();</script>""")
 
 
+def day_picker():
+    chips = ['<button type="button" data-d="" aria-pressed="true">All week</button>']
+    for i, d in enumerate(WEEK):
+        lbl = "Today" if i == 0 else ("Tomorrow" if i == 1 else DOW[pydow(d)][:3] + " " + fmt_date(d))
+        chips.append(f'<button type="button" data-d="{i}" data-dow="{pydow(d)}" aria-pressed="false">{e(lbl)}</button>')
+    return ('<div class="daypick" role="group" aria-label="Pick a day">' + "".join(chips) + '</div>'
+            + r"""<script>document.addEventListener('DOMContentLoaded',function(){var bs=document.querySelectorAll('.daypick button'),secs=document.querySelectorAll('section.dayblock');
+function pick(v){bs.forEach(function(b){var on=b.getAttribute('data-d')===v;b.setAttribute('aria-pressed',on?'true':'false');if(on&&v!=='')b.parentNode.scrollLeft=b.offsetLeft-b.parentNode.offsetLeft-12;});
+ var any=false;secs.forEach(function(s){var ok=v===''||s.getAttribute('data-day')===v;s.hidden=!ok;if(ok)any=true;});
+ var n=document.getElementById('dayEmpty');if(!n){n=document.createElement('div');n.id='dayEmpty';n.className='empty';n.textContent='Nothing posted that day yet.';document.querySelector('.daypick').after(n);}n.hidden=any;
+}
+var q=new URLSearchParams(location.search).get('day'),v='';
+if(q!==null){var names=['sun','mon','tue','wed','thu','fri','sat'],k=names.indexOf(q.slice(0,3).toLowerCase());
+ bs.forEach(function(b){if(b.getAttribute('data-d')===q||(k>=0&&b.getAttribute('data-dow')==k))v=b.getAttribute('data-d');});}
+pick(v);bs.forEach(function(b){b.addEventListener('click',function(){var d=b.getAttribute('data-d');pick(d);
+ var u=new URL(location.href);if(d==='')u.searchParams.delete('day');else u.searchParams.set('day',['sun','mon','tue','wed','thu','fri','sat'][b.getAttribute('data-dow')]);history.replaceState(null,'',u);});});
+});</script>""")
+
+
 TICKER = ticker_text()
 # constant, slow reading speed (~40 px/sec) no matter how long the ticker is
 TICKER_SECS = max(45, round((len(TICKER) * 8.5 + 1200) / 55))
@@ -168,6 +187,7 @@ def page(path, title, desc, body, current="", jsonld=None):
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if h == current else ""}>{e(t)}</a>' for h, t in NAV)
     ld = f'<script type="application/ld+json">{json.dumps(jsonld)}</script>' if jsonld else ""
     filt = area_filter() if ('class="card ev' in body and not path.startswith(("/bars/", "/areas/"))) else ""
+    dpick = day_picker() if 'class="dayblock"' in body else ""
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,7 +210,7 @@ def page(path, title, desc, body, current="", jsonld=None):
 <div class="ticker" aria-label="Today's highlights"><span class="lbl">Today</span><span class="track"><span class="run" style="animation-duration:{TICKER_SECS}s">{e(TICKER)}</span></span></div>
 <nav class="secnav" aria-label="Sections"><div class="wrap">{nav}</div></nav>
 <main><div class="wrap">
-{filt}{body}
+{filt}{dpick}{body}
 </div></main>
 <footer><div class="wrap">
 <div><b>{e(CFG["site_name"])}</b>: game watches, trivia, karaoke and happy hours at {e(CITY)}-area bars. Updated {fmt_date(TODAY)}, {TODAY.year}.</div>
@@ -252,8 +272,8 @@ def build_home():
         parts.append(f'<div class="alert"><b>Weather alert</b><span>100% chance of college football: {len(cfb_sat)} watch parties at {e(CITY)} home bars this week. <a href="/tonight/college-football/">See where every fan base watches</a>.</span></div>')
     for i, d in enumerate(WEEK):
         evs = sorted([x for x in EVENTS if occurs(x, d)], key=lambda x: (0 if x.get("type") == "college" else 1, sort_key(x)))
-        parts.append(f'<h2>{e(day_name(d))} · {e(DOW[pydow(d)][:3])} {fmt_date(d)}</h2>')
-        parts.append('<div class="grid">' + "".join(card(x, d) for x in evs) + '</div>' if evs else '<div class="empty">Nothing posted yet. <a href="/submit/">Add an event</a>.</div>')
+        parts.append(f'<section class="dayblock" data-day="{i}"><h2>{e(day_name(d))} · {e(DOW[pydow(d)][:3])} {fmt_date(d)}</h2>')
+        parts.append(('<div class="grid">' + "".join(card(x, d) for x in evs) + '</div>' if evs else '<div class="empty">Nothing posted yet. <a href="/submit/">Add an event</a>.</div>') + '</section>')
         if i in (0, 2, 4):
             parts.append(ad_slot())
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": CFG["site_name"], "url": BASE + "/"}
@@ -270,10 +290,11 @@ def build_types():
         if up:
             for d, x in up:
                 if d != cur:
-                    parts.append(f'<div class="day">{e(day_name(d))} · {fmt_date(d)}</div><div class="grid">' if cur is None else f'</div><div class="day">{e(day_name(d))} · {fmt_date(d)}</div><div class="grid">')
+                    blk = f'<section class="dayblock" data-day="{WEEK.index(d)}"><div class="day">{e(day_name(d))} · {fmt_date(d)}</div><div class="grid">'
+                    parts.append(blk if cur is None else '</div></section>' + blk)
                     cur = d
                 parts.append(card(x, d))
-            parts.append("</div>")
+            parts.append("</div></section>")
         else:
             parts.append('<div class="empty">Nothing posted for the next 7 days. <a href="/submit/">Add one</a>.</div>')
         parts.append(ad_slot())
