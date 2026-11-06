@@ -2442,5 +2442,952 @@
   "timeLabel": "All day",
   "source": "https://www.ottosnashville.com/",
   "verified": "2026-11-06"
+ },
+ {
+  "barId": "skull-s-rainbow-room",
+  "type": "music",
+  "title": "Live jazz nightly",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "19:30",
+  "source": "https://www.skullsrainbowroom.com/entertainment",
+  "id": "w2-skull-s-rainbow-room-0"
+ },
+ {
+  "barId": "skull-s-rainbow-room",
+  "type": "special",
+  "title": "Burlesque show (standing room only)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "23:00",
+  "source": "https://www.skullsrainbowroom.com/entertainment",
+  "id": "w2-skull-s-rainbow-room-1"
+ },
+ {
+  "barId": "the-5-spot",
+  "type": "music",
+  "title": "Motown Monday",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "21:00",
+  "source": "https://ma.to/event/motown-monday-14-sep-2026",
+  "id": "w2-the-5-spot-0"
+ },
+ {
+  "barId": "station-inn",
+  "type": "music",
+  "title": "Sunday Bluegrass Jam",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "19:00",
+  "source": "https://stationinn.com/events",
+  "id": "w2-station-inn-0"
+ },
+ {
+  "barId": "rudy-s-jazz-room",
+  "type": "music",
+  "title": "Rudy's Jazz Jam (9–11 PM)",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "21:00",
+  "source": "https://www.musiccityreview.com/events/rudys-jazz-jam-9/2026-03-22",
+  "id": "w2-rudy-s-jazz-room-0"
+ },
+ {
+  "barId": "losers-bar",
+  "type": "music",
+  "title": "Losers Live: original music",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "20:00",
+  "source": "https://ma.to/event/original-country-at-losers-live-03-aug-2026",
+  "id": "w2-losers-bar-0"
+ },
+ {
+  "barId": "commons-club",
+  "type": "music",
+  "title": "Songwriter Showcase (6–9 PM)",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "source": "https://virginhotels.com/nashville/entertainment",
+  "id": "w2-commons-club-0"
+ },
+ {
+  "barId": "robert-s-western-world",
+  "type": "music",
+  "title": "Kelley's Heroes (6:30–10 PM)",
+  "weekly": true,
+  "days": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "18:30",
+  "source": "https://www.robertswesternworld.com/faq",
+  "id": "w2-robert-s-western-world-0"
+ },
+ {
+  "barId": "tootsie-s-orchid-lounge",
+  "type": "music",
+  "title": "Live music on every floor, open to close",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "09:30",
+  "source": "https://tootsies.net/faq",
+  "id": "w2-tootsie-s-orchid-lounge-0"
+ },
+ {
+  "barId": "nudie-s-honky-tonk",
+  "type": "music",
+  "title": "Live bands all day (sets 10 AM, 2:30, 6:30, 10:30 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "10:00",
+  "source": "https://nudieshonkytonk.com",
+  "id": "w2-nudie-s-honky-tonk-0"
+ },
+ {
+  "barId": "jason-aldean-s-kitchen-rooftop-bar",
+  "type": "music",
+  "title": "Live music on two floors",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "11:00",
+  "source": "https://jasonaldeansbar.com/nashville/music/",
+  "id": "w2-jason-aldean-s-kitchen-rooftop-bar-0"
+ },
+ {
+  "barId": "jason-aldean-s-kitchen-rooftop-bar",
+  "type": "music",
+  "title": "Live music on two floors",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "10:00",
+  "source": "https://jasonaldeansbar.com/nashville/music/",
+  "id": "w2-jason-aldean-s-kitchen-rooftop-bar-1"
+ },
+ {
+  "barId": "bourbon-street-blues-boogie-bar",
+  "type": "music",
+  "title": "Sweet Lizzy Project",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "22:00",
+  "source": "https://www.bourbonstreetbluesandboogiebar.com/",
+  "id": "w2-bourbon-street-blues-boogie-bar-0"
+ },
+ {
+  "barId": "lowbar",
+  "type": "music",
+  "title": "First Friday DJ Night",
+  "weekly": false,
+  "date": "2026-11-06",
+  "time": "22:00",
+  "source": "https://ma.to/venue/lowbarnashville",
+  "id": "s2-lowbar-0"
+ },
+ {
+  "barId": "lakeside-lounge",
+  "type": "happy",
+  "title": "Happy hour (11 AM–4 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "source": "https://www.nashvillescene.com/food_drink/coverstory/cheap-beer-nashville/article_b602a652-ac7a-4b05-a247-005545c6beff.html",
+  "deals": "$2 frosties (mug of Genesee Light)",
+  "verified": "2026-11-06",
+  "id": "w2-lakeside-lounge-0"
+ },
+ {
+  "barId": "up-down-nashville",
+  "type": "happy",
+  "title": "Tennessee Tuesday",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "15:00",
+  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "deals": "$1 off Tennessee beer on tap",
+  "timeLabel": "All day",
+  "verified": "2026-11-06",
+  "id": "w2-up-down-nashville-0"
+ },
+ {
+  "barId": "up-down-nashville",
+  "type": "happy",
+  "title": "Tallboy Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "15:00",
+  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "deals": "$3 domestic tallboys",
+  "timeLabel": "All day",
+  "verified": "2026-11-06",
+  "id": "w2-up-down-nashville-1"
+ },
+ {
+  "barId": "up-down-nashville",
+  "type": "special",
+  "title": "Dime Token Thursday",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "15:00",
+  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "deals": "10-cent game tokens all night",
+  "timeLabel": "All night",
+  "id": "w2-up-down-nashville-2"
+ },
+ {
+  "barId": "up-down-nashville",
+  "type": "happy",
+  "title": "Friday deal (until 8 PM)",
+  "weekly": true,
+  "days": [
+   5
+  ],
+  "time": "15:00",
+  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "deals": "$2 pizza slices; 20 free tokens for the first 100 people",
+  "verified": "2026-11-06",
+  "id": "w2-up-down-nashville-3"
+ },
+ {
+  "barId": "up-down-nashville",
+  "type": "special",
+  "title": "2-for-1 tokens (until 9 PM)",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "11:00",
+  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "id": "w2-up-down-nashville-4"
+ },
+ {
+  "barId": "up-down-nashville",
+  "type": "happy",
+  "title": "Sunday six-pack",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "11:00",
+  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "deals": "$30 six-pack of domestic cans",
+  "timeLabel": "All day",
+  "verified": "2026-11-06",
+  "id": "w2-up-down-nashville-5"
+ },
+ {
+  "barId": "tailgate-germantown",
+  "type": "trivia",
+  "title": "Challenge Entertainment Trivia",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-tailgate-germantown-0"
+ },
+ {
+  "barId": "bottle-cap",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-bottle-cap-0"
+ },
+ {
+  "barId": "game-terminal",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-game-terminal-0"
+ },
+ {
+  "barId": "ml-rose-melrose",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:30",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-ml-rose-melrose-0"
+ },
+ {
+  "barId": "ml-rose-sylvan-park",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:30",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-ml-rose-sylvan-park-0"
+ },
+ {
+  "barId": "ml-rose-inglewood",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:30",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-ml-rose-inglewood-0"
+ },
+ {
+  "barId": "ml-rose-gulch",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:30",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-ml-rose-gulch-0"
+ },
+ {
+  "barId": "neighbors-germantown",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-neighbors-germantown-0"
+ },
+ {
+  "barId": "crows-nest",
+  "type": "trivia",
+  "title": "Trivia Time Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "20:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-crows-nest-0"
+ },
+ {
+  "barId": "beyond-the-edge",
+  "type": "trivia",
+  "title": "Trivia Time Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-beyond-the-edge-0"
+ },
+ {
+  "barId": "tailgate-east",
+  "type": "trivia",
+  "title": "Challenge Entertainment Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-tailgate-east-0"
+ },
+ {
+  "barId": "edleys-east",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-edleys-east-0"
+ },
+ {
+  "barId": "the-pharmacy-burger-parlor-beer-garden",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-the-pharmacy-burger-parlor-beer-garden-0"
+ },
+ {
+  "barId": "von-elrod-s-beer-hall-kitchen",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-von-elrod-s-beer-hall-kitchen-0"
+ },
+ {
+  "barId": "germantown-pub",
+  "type": "trivia",
+  "title": "Trivia Time Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-germantown-pub-0"
+ },
+ {
+  "barId": "neighbors-sylvan-park",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-neighbors-sylvan-park-0"
+ },
+ {
+  "barId": "neighbors-gulch",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-neighbors-gulch-0"
+ },
+ {
+  "barId": "boombozz",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-boombozz-0"
+ },
+ {
+  "barId": "streetcar-nations",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-streetcar-nations-0"
+ },
+ {
+  "barId": "drifters",
+  "type": "trivia",
+  "title": "Trivia Time Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-drifters-0"
+ },
+ {
+  "barId": "slider-house",
+  "type": "trivia",
+  "title": "Challenge Entertainment Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-slider-house-0"
+ },
+ {
+  "barId": "crazy-gnome",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-crazy-gnome-0"
+ },
+ {
+  "barId": "big-machine-distillery",
+  "type": "trivia",
+  "title": "Challenge Entertainment Trivia",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-big-machine-distillery-0"
+ },
+ {
+  "barId": "tailgate-demonbreun",
+  "type": "trivia",
+  "title": "Challenge Entertainment Trivia",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-tailgate-demonbreun-0"
+ },
+ {
+  "barId": "brotherly-love",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-brotherly-love-0"
+ },
+ {
+  "barId": "tennessee-brew-works",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "17:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-tennessee-brew-works-0"
+ },
+ {
+  "barId": "the-goat-germantown",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-the-goat-germantown-0"
+ },
+ {
+  "barId": "monday-night-brewing-germantown",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-monday-night-brewing-germantown-0"
+ },
+ {
+  "barId": "xul-beer",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-xul-beer-0"
+ },
+ {
+  "barId": "lowbar",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-lowbar-0"
+ },
+ {
+  "barId": "jackalope-brewing-wedgewood-houston",
+  "type": "trivia",
+  "title": "Geeks Who Drink Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:30",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-jackalope-brewing-wedgewood-houston-0"
+ },
+ {
+  "barId": "marble-fox-brewing",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-marble-fox-brewing-0"
+ },
+ {
+  "barId": "51-north-taproom",
+  "type": "trivia",
+  "title": "Geeks Who Drink Trivia",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-51-north-taproom-0"
+ },
+ {
+  "barId": "broadcast-brewing",
+  "type": "trivia",
+  "title": "Trivia Night",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-broadcast-brewing-0"
+ },
+ {
+  "barId": "new-heights-brewing",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-new-heights-brewing-0"
+ },
+ {
+  "barId": "southern-grist-brewing",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-southern-grist-brewing-0"
+ },
+ {
+  "barId": "harding-house-brewing",
+  "type": "trivia",
+  "title": "Nerdy Talk Trivia",
+  "weekly": true,
+  "days": [
+   5
+  ],
+  "time": "20:00",
+  "source": "https://nashvilleguru.com/32450/trivia-nights-nashville",
+  "id": "w2-harding-house-brewing-0"
+ },
+ {
+  "barId": "santa-s-pub",
+  "type": "karaoke",
+  "title": "Karaoke (7 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "19:00",
+  "source": "https://findkaraoke.net/nashville/venues/santa-s-pub-2",
+  "id": "w2-santa-s-pub-0"
+ },
+ {
+  "barId": "santa-s-pub",
+  "type": "karaoke",
+  "title": "Sunday karaoke (9 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "21:00",
+  "source": "https://findkaraoke.net/nashville/venues/santa-s-pub-2",
+  "id": "w2-santa-s-pub-1"
+ },
+ {
+  "barId": "teddys",
+  "type": "karaoke",
+  "title": "Karaoke (8 PM–close)",
+  "weekly": true,
+  "days": [
+   4,
+   5,
+   6
+  ],
+  "time": "20:00",
+  "source": "https://teddystavern.squarespace.com/entertainment/karaoke",
+  "id": "w2-teddys-0"
+ },
+ {
+  "barId": "garage-sale-bar",
+  "type": "karaoke",
+  "title": "Tuesday karaoke hosted by Sma!",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "20:00",
+  "source": "https://www.garagesalebar.com/",
+  "id": "w2-garage-sale-bar-0"
+ },
+ {
+  "barId": "game-terminal",
+  "type": "karaoke",
+  "title": "Karaoke Thursdays (7–11 PM)",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "19:00",
+  "source": "https://nashvillelife.com/Game-Terminal%E2%80%99s-Karaoke-Thursdays/Nashville-Calendar",
+  "id": "w2-game-terminal-1"
+ },
+ {
+  "barId": "lonnies-western-room",
+  "type": "karaoke",
+  "title": "Karaoke (6 PM–close)",
+  "weekly": true,
+  "days": [
+   4,
+   5,
+   6
+  ],
+  "time": "18:00",
+  "source": "http://www.lonnieswesternroom.com",
+  "id": "w2-lonnies-western-room-0"
+ },
+ {
+  "barId": "ms-kellis-karaoke-bar",
+  "type": "karaoke",
+  "title": "Karaoke (7 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "19:00",
+  "source": "https://findkaraoke.net/nashville/venues/ms-kelli-s-karaoke-bar",
+  "id": "w2-ms-kellis-karaoke-bar-0"
+ },
+ {
+  "barId": "ms-kellis-karaoke-bar",
+  "type": "karaoke",
+  "title": "Saturday karaoke (6 PM–close)",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "18:00",
+  "source": "https://findkaraoke.net/nashville/venues/ms-kelli-s-karaoke-bar",
+  "id": "w2-ms-kellis-karaoke-bar-1"
+ },
+ {
+  "barId": "ms-kellis-karaoke-bar",
+  "type": "karaoke",
+  "title": "Sunday karaoke (8 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "20:00",
+  "source": "https://findkaraoke.net/nashville/venues/ms-kelli-s-karaoke-bar",
+  "id": "w2-ms-kellis-karaoke-bar-2"
+ },
+ {
+  "barId": "ajs-good-time-bar",
+  "type": "karaoke",
+  "title": "Nightly karaoke, 3rd floor",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "18:00",
+  "source": "https://findkaraoke.net/nashville/venues/aj-s-good-time-bar",
+  "id": "w2-ajs-good-time-bar-0"
+ },
+ {
+  "barId": "rosies-twin-kegs",
+  "type": "karaoke",
+  "title": "Friday night karaoke (9 PM–2 AM)",
+  "weekly": true,
+  "days": [
+   5
+  ],
+  "time": "21:00",
+  "source": "https://do615.com/events/weekly/fri/friday-night-karaoke-tickets",
+  "id": "w2-rosies-twin-kegs-0"
+ },
+ {
+  "barId": "rosies-twin-kegs",
+  "type": "karaoke",
+  "title": "Saturday karaoke (9 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "21:00",
+  "source": "https://do615.com/events/weekly/sat/saturday-karaoke-tickets",
+  "id": "w2-rosies-twin-kegs-1"
+ },
+ {
+  "barId": "brewhouse-west",
+  "type": "karaoke",
+  "title": "Friday karaoke (9 PM–1 AM)",
+  "weekly": true,
+  "days": [
+   5
+  ],
+  "time": "21:00",
+  "source": "https://ma.to/venue/brewhouse_west",
+  "id": "w2-brewhouse-west-0"
+ },
+ {
+  "barId": "tnts-billiards-bar-grill",
+  "type": "karaoke",
+  "title": "Karaoke with Scott Smith",
+  "weekly": true,
+  "days": [
+   2,
+   4
+  ],
+  "time": "20:00",
+  "source": "https://findkaraoke.net/nashville/venues/tnts-billiards-bar-grill",
+  "id": "w2-tnts-billiards-bar-grill-0"
+ },
+ {
+  "barId": "lowbar",
+  "type": "karaoke",
+  "title": "Karaoke (9 PM–3 AM)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "21:00",
+  "source": "https://nashvillelocalsguide.com/best-karaoke-spots-nashville-unforgettable-night/",
+  "id": "w2-lowbar-1"
  }
 ]

@@ -1129,5 +1129,147 @@
   "address": "1903 Division St, Nashville, TN 37203",
   "lat": 36.150035,
   "lng": -86.796002
+ },
+ {
+  "id": "lakeside-lounge",
+  "name": "Lakeside Lounge",
+  "area": "East Nashville",
+  "teams": [],
+  "address": "921 Woodland St, Nashville, TN 37206",
+  "lat": 36.175623,
+  "lng": -86.755297
+ },
+ {
+  "id": "lowbar",
+  "name": "Lowbar",
+  "area": "East Nashville",
+  "teams": [],
+  "address": "917 Woodland St, Nashville, TN 37206"
+ },
+ {
+  "id": "up-down-nashville",
+  "name": "Up-Down Nashville",
+  "area": "East Nashville",
+  "teams": [],
+  "address": "927 Woodland St, Nashville, TN 37206"
+ },
+ {
+  "id": "tennessee-brew-works",
+  "name": "Tennessee Brew Works",
+  "area": "Downtown",
+  "teams": [],
+  "address": "809 Ewing Ave, Nashville, TN 37203"
+ },
+ {
+  "id": "the-goat-germantown",
+  "name": "The Goat",
+  "area": "Germantown",
+  "teams": [],
+  "address": "1220 2nd Ave N, Suite 100, Nashville, TN 37208"
+ },
+ {
+  "id": "monday-night-brewing-germantown",
+  "name": "Monday Night Brewing (Preservation Co)",
+  "area": "Germantown",
+  "teams": [],
+  "address": "1308 Adams St, Nashville, TN 37208"
+ },
+ {
+  "id": "xul-beer",
+  "name": "Xul Beer Company",
+  "area": "The Nations",
+  "teams": [],
+  "address": "5012 Centennial Blvd, Nashville, TN 37209"
+ },
+ {
+  "id": "jackalope-brewing-wedgewood-houston",
+  "name": "Jackalope Brewing Company",
+  "area": "Wedgewood-Houston",
+  "teams": [],
+  "address": "429B Houston St, Nashville, TN 37203"
+ },
+ {
+  "id": "marble-fox-brewing",
+  "name": "Marble Fox Brewing Co.",
+  "area": "South Nashville",
+  "teams": [],
+  "address": "410 Woodbine St, Nashville, TN 37211"
+ },
+ {
+  "id": "51-north-taproom",
+  "name": "51 North Taproom",
+  "area": "The Nations",
+  "teams": [],
+  "address": "704 51st Ave N, Nashville, TN 37209"
+ },
+ {
+  "id": "broadcast-brewing",
+  "name": "Broadcast Brewing",
+  "area": "Berry Hill",
+  "teams": [],
+  "address": "2605 Grissom Dr, Suite B, Nashville, TN 37204"
+ },
+ {
+  "id": "new-heights-brewing",
+  "name": "New Heights Brewing Co.",
+  "area": "Downtown",
+  "teams": [],
+  "address": "28 5th Ave S, Nashville, TN 37203"
+ },
+ {
+  "id": "southern-grist-brewing",
+  "name": "Southern Grist Brewing Co.",
+  "area": "East Nashville",
+  "teams": [],
+  "address": "754 Douglas Ave, Nashville, TN 37207"
+ },
+ {
+  "id": "harding-house-brewing",
+  "name": "Harding House Brewing Co.",
+  "area": "The Nations",
+  "teams": [],
+  "address": "410 39th Ave N, Nashville, TN 37209"
+ },
+ {
+  "id": "lonnies-western-room",
+  "name": "Lonnie's Western Room",
+  "area": "Downtown",
+  "teams": [],
+  "address": "308 Church St, Nashville, TN 37201"
+ },
+ {
+  "id": "ms-kellis-karaoke-bar",
+  "name": "Ms. Kelli's Karaoke Bar",
+  "area": "Printers Alley",
+  "teams": [],
+  "address": "207 Printers Alley, Nashville, TN 37201"
+ },
+ {
+  "id": "ajs-good-time-bar",
+  "name": "AJ's Good Time Bar",
+  "area": "Broadway",
+  "teams": [],
+  "address": "421 Broadway, Nashville, TN 37203"
+ },
+ {
+  "id": "rosies-twin-kegs",
+  "name": "Rosie's Twin Kegs",
+  "area": "Berry Hill",
+  "teams": [],
+  "address": "413 Thompson Ln, Nashville, TN 37211"
+ },
+ {
+  "id": "brewhouse-west",
+  "name": "Brewhouse West",
+  "area": "Bellevue",
+  "teams": [],
+  "address": "7108 Charlotte Pike, Nashville, TN 37209"
+ },
+ {
+  "id": "tnts-billiards-bar-grill",
+  "name": "TNTs Billiards Bar & Grill",
+  "area": "Antioch",
+  "teams": [],
+  "address": "1015 Bell Rd, Antioch, TN 37013"
  }
 ]
