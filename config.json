@@ -10,5 +10,6 @@
   "base_path": "",
   "custom_domain": "pourcastapp.com",
   "location_page_id": "106220079409935",
-  "location_name": "Nashville, Tennessee"
+  "location_name": "Nashville, Tennessee",
+  "vote_form_action": ""
 }

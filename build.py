@@ -15,6 +15,8 @@ CFG = json.load(open(os.path.join(ROOT, "config.json")))
 TZ = ZoneInfo(CFG["timezone"])
 BARS = {b["id"]: b for b in json.load(open(os.path.join(ROOT, "data", "bars.json")))}
 EVENTS = json.load(open(os.path.join(ROOT, "data", "events.json")))
+_af = os.path.join(ROOT, "data", "awards.json")
+AWARDS = json.load(open(_af)) if os.path.exists(_af) else {}
 BASE = CFG["base_url"].rstrip("/")
 CITY = CFG["city"]
 DOW = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -93,7 +95,7 @@ def sort_key(ev):
 
 # ---------- page shell ----------
 NAV = [("/", "Forecast"), ("/map/", "Map"), ("/tonight/college-football/", "College football"), ("/tonight/nfl/", "NFL"),
-       ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/christmas/", "Christmas pop-ups"), ("/bars/", "Bars"), ("/shop/", "Merch"), ("/submit/", "Post an event")]
+       ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/christmas/", "Christmas pop-ups"), ("/bars/", "Bars"), ("/vote/", "Vote"), ("/shop/", "Merch"), ("/submit/", "Post an event")]
 LOGO_SVG = ('<svg width="48" height="48" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#fff"/><circle cx="100" cy="100" r="86" fill="#0B3D91"/>'
             '<circle cx="132" cy="70" r="30" fill="#FFC53D"/><path d="M132 26 L132 14 M166 36 L175 27 M176 70 L188 70" stroke="#FFC53D" stroke-width="7" stroke-linecap="round"/>'
             '<rect x="56" y="82" width="70" height="82" rx="8" fill="#F5B12E"/><path d="M126 98 h14 a16 16 0 0 1 16 16 v14 a16 16 0 0 1 -16 16 h-14" fill="none" stroke="#fff" stroke-width="10"/>'
@@ -433,6 +435,7 @@ def build_home():
     cfb_sat = [x for x in EVENTS if x.get("type") == "college" and not x.get("weekly") and x.get("date") in {d.isoformat() for d in WEEK}]
     if cfb_sat:
         parts.append(f'<div class="alert"><b>Weather alert</b><span>100% chance of college football: {len(cfb_sat)} watch parties at {e(CITY)} home bars this week. <a href="/tonight/college-football/">See where every fan base watches</a>.</span></div>')
+    parts.append(vote_alert())
     for i, d in enumerate(WEEK):
         evs = merge(sorted([x for x in EVENTS if occurs(x, d)], key=lambda x: (0 if x.get("type") == "college" else 1, sort_key(x))))
         parts.append(f'<section class="dayblock" data-day="{i}"><h2>{e(day_name(d))} · {e(DOW[pydow(d)][:3])} {fmt_date(d)}</h2>')
@@ -641,6 +644,7 @@ def build_bars():
             maps = "https://www.google.com/maps/search/?api=1&query=" + quote_plus(b["name"] + ", " + b["address"])
             p.append(f'<p class="addr"><span>📍 {e(b["address"])}</span> <a class="dir" href="{maps}" target="_blank" rel="noopener">Directions</a></p>')
             p.append(bar_map_block(b))
+        p.append(award_badges(b["id"]))
         if b["teams"]:
             p.append('<div class="alert"><b>Home bar for</b><span>' + ", ".join(f'<a href="{team_url(t)}">{e(t)}</a>' for t in b["teams"]) + " fans</span></div>")
         p.append('<h2>Coming up</h2>' + ('<div class="grid">' + "".join(card(x, show_day=True) for x in once) + '</div>' if once else '<div class="empty">No one-time events posted yet.</div>'))
@@ -689,7 +693,7 @@ def build_static():
          f'<div class="card"><p style="margin:0">Email <b>{mail}</b> with:</p><ul><li>Bar name and neighborhood</li><li>Event name and type</li><li>Day and start time (one time, or every week)</li><li>Specials or cover, and who\'s hosting</li></ul><p style="margin:0">We\'ll add it to the forecast, and the best ones go in our weekly email and on Instagram.</p></div>', "/submit/")
     page("/privacy/", "Privacy Policy | Pourcast", "How Pourcast handles data, cookies and advertising.",
          f'<h1>Privacy policy</h1><p class="dek">Last updated {fmt_date(TODAY)}, {TODAY.year}.</p>'
-         '<h2>What we collect</h2><p>This site does not require an account. If you email us, we keep your message to reply and to list your event.</p>'
+         '<h2>What we collect</h2><p>This site does not require an account. If you email us, we keep your message to reply and to list your event. If you vote for Bar of the Month or Bartender of the Week, we use your email only to count one vote per person and never share it.</p>'
          '<h2>Cookies and advertising</h2><p>We use third-party advertising, including Google AdSense. Google and its partners use cookies to serve ads based on your prior visits to this and other websites. '
          'Google\'s use of advertising cookies lets it and its partners serve ads based on your visits to this site and/or other sites on the internet. You can opt out of personalized advertising at '
          '<a href="https://www.google.com/settings/ads">Google Ads Settings</a> or <a href="https://www.aboutads.info/choices/">www.aboutads.info</a>.</p>'
@@ -716,12 +720,99 @@ def build_meta():
         open(os.path.join(OUT, "CNAME"), "w").write(CFG["custom_domain"] + "\n")
 
 
+# ---------- Bar of the Month / Bartender of the Week ----------
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+
+def vote_periods():
+    wk_start = TODAY - timedelta(days=TODAY.weekday())  # Monday
+    if TODAY.weekday() >= 4:  # Fri-Sun: votes count toward next week so every week gets a full run
+        wk_start += timedelta(days=7)
+    wk_end = wk_start + timedelta(days=6)
+    nxt = wk_end + timedelta(days=1)
+    m1 = (TODAY.replace(day=28) + timedelta(days=4)).replace(day=1)
+    return {"week": wk_start.isoformat(), "week_label": f"{fmt_date(wk_start)}–{fmt_date(wk_end)}", "week_announce": f"Monday, {fmt_date(nxt)}",
+            "month": TODAY.strftime("%Y-%m"), "month_label": MONTHS[TODAY.month - 1], "month_close": fmt_date(m1 - timedelta(days=1)),
+            "month_announce": f"{DOW[pydow(m1)]}, {fmt_date(m1)}"}
+
+
+def vote_alert():
+    v = vote_periods()
+    return (f'<div class="alert"><b>🏆 Vote now</b><span>Who pours the best in {e(CITY)}? Write in your <a href="/vote/">Bartender of the Week</a> '
+            f'(winner {e(v["week_announce"])}) and <a href="/vote/">{e(v["month_label"])} Bar of the Month</a> (winner {e(v["month_announce"])}).</span></div>')
+
+
+def award_badges(bid):
+    out = []
+    for w in AWARDS.get("bar_of_month", []):
+        if w.get("barId") == bid:
+            y, m = w["month"].split("-")
+            out.append(f'🏆 {MONTHS[int(m) - 1]} {y} Bar of the Month')
+    for w in AWARDS.get("bartender_of_week", []):
+        if w.get("barId") == bid:
+            out.append(f'🍸 Bartender of the Week: {e(w["name"])} (week of {fmt_date(date.fromisoformat(w["week"]))})')
+    return f'<div class="alert"><b>Voted by {e(CITY)}</b><span>{"<br>".join(out)}</span></div>' if out else ""
+
+
+def build_vote():
+    v = vote_periods()
+    opts = "".join(f'<option value="{e(b["name"])} ({e(b.get("area") or CITY)})"></option>' for b in sorted(BARS.values(), key=lambda b: b["name"].lower()))
+    action = CFG.get("vote_form_action", "")
+    mail = CFG["contact_email"]
+    winners = []
+    for w in sorted(AWARDS.get("bartender_of_week", []), key=lambda w: w["week"], reverse=True)[:8]:
+        winners.append(f'<li><b>{e(w["name"])}</b> at <a href="{bar_url(w["barId"])}">{e(bar_label(w["barId"]))}</a> · week of {fmt_date(date.fromisoformat(w["week"]))}' + (f'<br><small>{e(w["why"])}</small>' if w.get("why") else "") + "</li>")
+    mwin = []
+    for w in sorted(AWARDS.get("bar_of_month", []), key=lambda w: w["month"], reverse=True)[:12]:
+        y, m = w["month"].split("-")
+        mwin.append(f'<li><a href="{bar_url(w["barId"])}"><b>{e(bar_label(w["barId"]))}</b></a> · {MONTHS[int(m) - 1]} {y}' + (f'<br><small>{e(w["why"])}</small>' if w.get("why") else "") + "</li>")
+    fld = 'style="width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);box-sizing:border-box"'
+    body = (f'<h1>Vote: Bar of the Month &amp; Bartender of the Week</h1>'
+            f'<p class="dek">Forecast calls for a flood of nominations. Write in the {e(CITY)} bar and bartender who made your week, and we\'ll crown the winners on Instagram and on their Pourcast page.</p>'
+            f'<div class="grid">'
+            f'<div class="card" style="border-top:4px solid var(--turf)"><span class="badge" style="justify-self:start">Bartender of the Week</span><p style="margin:6px 0 0">Voting for <b>{e(v["week_label"])}</b>. Winner announced <b>{e(v["week_announce"])}</b>.</p></div>'
+            f'<div class="card" style="border-top:4px solid var(--red)"><span class="badge" style="justify-self:start">Bar of the Month</span><p style="margin:6px 0 0">Voting for <b>{e(v["month_label"])}</b> closes {e(v["month_close"])}. Winner announced <b>{e(v["month_announce"])}</b>.</p></div>'
+            f'</div>'
+            f'<h2>Cast your vote</h2>'
+            f'<form id="voteForm" class="card" style="gap:14px"{f" action={chr(34)}{e(action)}{chr(34)} method={chr(34)}post{chr(34)}" if action else ""}>'
+            f'<fieldset style="border:0;padding:0;margin:0;display:flex;gap:18px;flex-wrap:wrap"><legend style="font-weight:800;margin-bottom:6px">I\'m voting for</legend>'
+            f'<label><input type="radio" name="category" value="Bartender of the Week" checked> Bartender of the Week</label>'
+            f'<label><input type="radio" name="category" value="Bar of the Month"> Bar of the Month</label></fieldset>'
+            f'<label id="bartenderRow">Bartender\'s first name<br><input name="bartender" maxlength="40" autocomplete="off" {fld} placeholder="e.g. Sam"></label>'
+            f'<label>Bar<br><input name="bar" list="barList" required maxlength="80" autocomplete="off" {fld} placeholder="Start typing, or write in any {e(CITY)} bar"></label>'
+            f'<datalist id="barList">{opts}</datalist>'
+            f'<label>Why? <span class="muted">(optional, we may quote you)</span><br><textarea name="why" maxlength="280" rows="3" {fld}></textarea></label>'
+            f'<label>Your email <span class="muted">(one vote per person each period; never shared)</span><br><input type="email" name="email" required maxlength="120" {fld}></label>'
+            f'<input type="hidden" name="period" value="">'
+            f'<div class="btns"><button type="submit" class="mapbtn">Submit my vote</button></div>'
+            f'<p id="voteMsg" class="muted" role="status" style="margin:0"></p></form>'
+            f'<p class="src">One vote per person per category each week or month; duplicate and bulk votes are removed. Bars and staff can share the page, but please don\'t vote for yourself. 21+.</p>'
+            f'<h2>Bartenders of the Week</h2>' + (f'<ul class="list">{"".join(winners)}</ul>' if winners else f'<div class="empty">First winner announced {e(v["week_announce"])}. Your vote could make the forecast.</div>') +
+            f'<h2>Bars of the Month</h2>' + (f'<ul class="list">{"".join(mwin)}</ul>' if mwin else f'<div class="empty">The first Bar of the Month is crowned {e(v["month_announce"])}.</div>') +
+            '<script>(function(){var f=document.getElementById("voteForm"),msg=document.getElementById("voteMsg"),row=document.getElementById("bartenderRow");'
+            f'var P={{"Bartender of the Week":"{v["week"]}","Bar of the Month":"{v["month"]}"}},MAIL={json.dumps(mail)},ACT={json.dumps(action)};'
+            'function cat(){return f.querySelector("input[name=category]:checked").value;}'
+            'function sync(){var b=cat()==="Bartender of the Week";row.style.display=b?"":"none";f.bartender.required=b;}'
+            'f.querySelectorAll("input[name=category]").forEach(function(r){r.addEventListener("change",sync);});sync();'
+            'function key(){return "pc-vote-"+cat()+"-"+P[cat()];}'
+            'f.addEventListener("submit",function(ev){ev.preventDefault();var c=cat();f.period.value=P[c];'
+            'try{if(localStorage.getItem(key())){msg.textContent="You already voted for "+c+" this period. Thanks!";return;}}catch(x){}'
+            'var done=function(){try{localStorage.setItem(key(),"1");}catch(x){}msg.textContent="Vote received. Thanks for keeping the forecast honest!";f.reset();sync();};'
+            'if(ACT){fetch(ACT,{method:"POST",body:new FormData(f),headers:{"Accept":"application/json"}}).then(function(r){if(r.ok)done();else msg.textContent="Something went wrong. Please try again.";}).catch(function(){msg.textContent="Something went wrong. Please try again.";});return;}'
+            'var lines=["Category: "+c,"Period: "+P[c],(c==="Bartender of the Week"?"Bartender: "+f.bartender.value+"\\n":"")+"Bar: "+f.bar.value,"Why: "+f.why.value,"Voter email: "+f.email.value];'
+            'location.href="mailto:"+MAIL+"?subject="+encodeURIComponent("Pourcast vote: "+c)+"&body="+encodeURIComponent(lines.join("\\n"));'
+            'msg.textContent="Your email app should open with your vote filled in. Hit send to make it count.";try{localStorage.setItem(key(),"1");}catch(x){}});})();</script>')
+    ld = {"@context": "https://schema.org", "@type": "WebPage", "name": f"Vote: {CITY} Bar of the Month & Bartender of the Week", "url": BASE + "/vote/"}
+    page("/vote/", f"Vote: {CITY} Bar of the Month & Bartender of the Week | Pourcast",
+         f"Write in your favorite {CITY} bar and bartender. Pourcast crowns a Bartender of the Week every Monday and a Bar of the Month on the 1st.", body, "/vote/", ld)
+
+
 if __name__ == "__main__":
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
-    build_home(); build_types(); build_popups(); build_map(); build_shop(); build_bars(); build_teams(); build_static(); build_meta()
+    build_home(); build_types(); build_popups(); build_map(); build_shop(); build_bars(); build_teams(); build_static(); build_vote(); build_meta()
     try:
         sys.path.insert(0, os.path.join(ROOT, "social"))
         import graphic
