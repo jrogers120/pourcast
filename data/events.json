@@ -2390,5 +2390,27 @@
   "timeLabel": "All day",
   "deals": "$9 Drunk Man's Patty Melt (7oz Angus, Swiss, over-medium egg, fries), $6 grilled cheese on Texas toast",
   "source": "Live Oak post, sent by Pourcast 2026-11-05"
+ },
+ {
+  "id": "g-2026-11-09-tin-roof-bills",
+  "barId": "tin-roof",
+  "type": "game",
+  "title": "Bills at Vikings",
+  "team": "Buffalo Bills",
+  "weekly": false,
+  "date": "2026-11-09",
+  "time": "19:15",
+  "tv": "Monday Night Football"
+ },
+ {
+  "id": "s-tin-roof-judge-judy-karaoke-2026-12-06",
+  "barId": "tin-roof",
+  "type": "karaoke",
+  "title": "Judge Judy Karaoke + Toy Drive (8–11 PM)",
+  "weekly": false,
+  "date": "2026-12-06",
+  "time": "20:00",
+  "deals": "In Two Bits/Green Room. Industry discount; wear an ugly Christmas sweater and bring a kids' toy to donate",
+  "source": "Tin Roof Nashville Instagram story, sent by Pourcast 2026-11-05"
  }
 ]
