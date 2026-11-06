@@ -92,7 +92,7 @@ def sort_key(ev):
 
 
 # ---------- page shell ----------
-NAV = [("/", "Forecast"), ("/tonight/college-football/", "College football"), ("/tonight/nfl/", "NFL"),
+NAV = [("/", "Forecast"), ("/map/", "Map"), ("/tonight/college-football/", "College football"), ("/tonight/nfl/", "NFL"),
        ("/tonight/trivia/", "Trivia"), ("/tonight/happy-hour/", "Happy hour"), ("/christmas/", "Christmas pop-ups"), ("/bars/", "Bars"), ("/submit/", "Post an event")]
 LOGO_SVG = ('<svg width="48" height="48" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#fff"/><circle cx="100" cy="100" r="86" fill="#0B3D91"/>'
             '<circle cx="132" cy="70" r="30" fill="#FFC53D"/><path d="M132 26 L132 14 M166 36 L175 27 M176 70 L188 70" stroke="#FFC53D" stroke-width="7" stroke-linecap="round"/>'
@@ -416,6 +416,119 @@ def build_popups():
          f"Every holiday and Christmas pop-up bar in {CITY} this season, with dates and reservation info.", "".join(parts), "/christmas/")
 
 
+LEAFLET = ('<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">'
+           '<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>')
+MAP_COLORS = {"college": "#C8202A", "game": "#0B3D91", "happy": "#E0A100", "trivia": "#5B2A86",
+              "karaoke": "#1E7A46", "music": "#1E7A46", "special": "#B5338A"}
+
+
+def map_data():
+    out = []
+    for b in BARS.values():
+        if not b.get("lat"):
+            continue
+        evs = []
+        for i, d in enumerate(WEEK):
+            for x in sorted([x for x in EVENTS if x["barId"] == b["id"] and occurs(x, d)], key=sort_key):
+                st, en = span(x)
+                evs.append({"d": i, "date": d.isoformat(), "t": x.get("type", "special"), "title": x["title"],
+                            "when": when(x), "deals": x.get("deals", ""), "s": st, "e": en})
+        maps = "https://www.google.com/maps/search/?api=1&query=" + quote_plus(b["name"] + ", " + (b.get("address") or ""))
+        out.append({"id": b["id"], "name": b["name"], "area": b.get("area", ""), "addr": b.get("address", ""),
+                    "lat": b["lat"], "lng": b["lng"], "url": bar_url(b["id"]), "dir": maps, "ev": evs})
+    return out
+
+
+MAP_JS = r"""
+var COL=__COLORS__,LBL={college:'College football',game:'NFL / game',happy:'Happy hour',trivia:'Trivia',karaoke:'Karaoke',music:'Live music',special:'Special'};
+function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function chi(){var p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value;});return{date:o.year+'-'+o.month+'-'+o.day,min:(+o.hour)*60+(+o.minute)};}
+function km(a,b,c,d){var R=6371,x=(c-a)*Math.PI/180,y=(d-b)*Math.PI/180,h=Math.sin(x/2)*Math.sin(x/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(y/2)*Math.sin(y/2);return 2*R*Math.asin(Math.sqrt(h));}
+function miles(k){var m=k*0.621371;return m<0.1?'right here':(m<10?m.toFixed(1):Math.round(m))+' mi away';}
+"""
+
+MAP_PAGE_JS = r"""
+var map=L.map('bigmap',{zoomControl:true}).setView([36.158,-86.785],13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+var st={day:'0',type:''},me=null,meMark=null,marks=[];
+function evsFor(b){var n=chi();return b.ev.filter(function(e){
+  if(st.day==='now'){if(e.date!==n.date)return false;if(!(n.min>=e.s&&n.min<e.e))return false;}
+  else if(String(e.d)!==st.day)return false;
+  if(st.type&&!(e.t===st.type||(st.type==='game'&&e.t==='college')))return false;
+  if(st.day!=='now'&&e.date===n.date&&n.min>=e.e)return false;
+  return true;});}
+function popup(b,evs){var h='<div class="mp"><b>'+esc(b.name)+'</b><div class="mpa">'+esc(b.area)+(b.addr?' · '+esc(b.addr):'')+'</div>';
+  if(me)h+='<div class="mpd">📍 '+miles(km(me[0],me[1],b.lat,b.lng))+'</div>';
+  if(evs.length){h+='<ul>'+evs.slice(0,5).map(function(e){return '<li><span class="dot" style="background:'+COL[e.t]+'"></span><b>'+esc(e.when)+'</b> '+esc(e.title)+(e.deals?'<br><small>'+esc(e.deals)+'</small>':'')+'</li>';}).join('')+'</ul>';if(evs.length>5)h+='<small>+'+(evs.length-5)+' more</small>';}
+  else h+='<div class="mpa">Nothing posted for this pick.</div>';
+  return h+'<div class="mpl"><a href="'+b.url+'">Bar page</a> · <a href="'+b.dir+'" target="_blank" rel="noopener">Directions</a></div></div>';}
+function draw(){marks.forEach(function(m){map.removeLayer(m);});marks=[];var shown=0,list=[];
+  BARS.forEach(function(b){var evs=evsFor(b),on=evs.length>0;if(!on&&(st.type||st.day==='now'))return;
+    var m=L.circleMarker([b.lat,b.lng],{radius:on?9:5,color:'#fff',weight:2,fillColor:on?COL[evs[0].t]:'#8A96A8',fillOpacity:on?.95:.7}).addTo(map);
+    m.bindPopup(function(){return popup(b,evsFor(b));},{maxWidth:280});marks.push(m);if(on){shown++;list.push([b,evs]);}});
+  document.getElementById('mapCount').textContent=shown+' bars with something on';
+  var near=document.getElementById('nearList');
+  if(me){list.sort(function(a,c){return km(me[0],me[1],a[0].lat,a[0].lng)-km(me[0],me[1],c[0].lat,c[0].lng);});
+    near.innerHTML=!list.length?'<p class="muted">Nothing on near you for this pick. Try another day or type.</p>':'<h2>Closest to you</h2><ol class="near">'+list.slice(0,8).map(function(x){var b=x[0];return '<li><a href="'+b.url+'">'+esc(b.name)+'</a> <span class="muted">'+miles(km(me[0],me[1],b.lat,b.lng))+'</span><br><small>'+esc(x[1][0].when)+' · '+esc(x[1][0].title)+'</small></li>';}).join('')+'</ol>';}
+}
+function press(sel,attr,v){document.querySelectorAll(sel+' button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute(attr)===v?'true':'false');});}
+document.querySelectorAll('#mapDay button').forEach(function(b){b.addEventListener('click',function(){st.day=b.getAttribute('data-d');press('#mapDay','data-d',st.day);draw();});});
+document.querySelectorAll('#mapType button').forEach(function(b){b.addEventListener('click',function(){st.type=b.getAttribute('data-t');press('#mapType','data-t',st.type);draw();});});
+document.getElementById('locBtn').addEventListener('click',function(){var btn=this;if(!navigator.geolocation){btn.textContent='Location not available';return;}
+  btn.textContent='Finding you…';navigator.geolocation.getCurrentPosition(function(p){me=[p.coords.latitude,p.coords.longitude];
+    if(meMark)map.removeLayer(meMark);meMark=L.circleMarker(me,{radius:9,color:'#fff',weight:3,fillColor:'#1A73E8',fillOpacity:1}).addTo(map).bindPopup('You are here');
+    map.setView(me,15);btn.textContent='📍 Showing where you are';draw();},
+  function(){btn.textContent='Couldn\'t get your location. Check location permission.';},{enableHighAccuracy:true,timeout:10000});});
+var q=new URLSearchParams(location.search);if(q.get('day')==='now'){st.day='now';press('#mapDay','data-d','now');}
+var fb=q.get('bar');draw();
+if(fb){BARS.forEach(function(b,i){if(b.id===fb){map.setView([b.lat,b.lng],16);marks.forEach(function(m){var ll=m.getLatLng();if(ll.lat===b.lat&&ll.lng===b.lng)m.openPopup();});}});}
+"""
+
+BAR_MAP_JS = r"""
+var B=window.BARPT,m=L.map('barmap',{scrollWheelZoom:false}).setView([B.lat,B.lng],16);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(m);
+L.circleMarker([B.lat,B.lng],{radius:10,color:'#fff',weight:3,fillColor:'#C8202A',fillOpacity:1}).addTo(m).bindPopup(esc(B.name)).openPopup();
+document.getElementById('barLoc').addEventListener('click',function(){var btn=this;if(!navigator.geolocation){btn.textContent='Location not available';return;}
+  btn.textContent='Finding you…';navigator.geolocation.getCurrentPosition(function(p){var me=[p.coords.latitude,p.coords.longitude];
+    L.circleMarker(me,{radius:9,color:'#fff',weight:3,fillColor:'#1A73E8',fillOpacity:1}).addTo(m).bindPopup('You are here');
+    L.polyline([me,[B.lat,B.lng]],{color:'#1A73E8',weight:3,dashArray:'6 6'}).addTo(m);
+    m.fitBounds([me,[B.lat,B.lng]],{padding:[40,40],maxZoom:16});btn.textContent='📍 You are '+miles(km(me[0],me[1],B.lat,B.lng));},
+  function(){btn.textContent='Couldn\'t get your location. Check location permission.';},{enableHighAccuracy:true,timeout:10000});});
+"""
+
+
+def bar_map_block(b):
+    if not b.get("lat"):
+        return ""
+    pt = json.dumps({"lat": b["lat"], "lng": b["lng"], "name": b["name"]})
+    return (f'<div class="barmapwrap"><div id="barmap" class="barmap" role="img" aria-label="Map showing {e(b["name"])}"></div>'
+            f'<div class="btns"><button type="button" class="mapbtn" id="barLoc">📍 Show where I am</button>'
+            f'<a class="mapbtn ghost" href="/map/?bar={e(b["id"])}">Open the big map</a></div></div>'
+            + LEAFLET + "<script>window.BARPT=" + pt + ";document.addEventListener('DOMContentLoaded',function(){"
+            + MAP_JS.replace("__COLORS__", json.dumps(MAP_COLORS)) + BAR_MAP_JS + "});</script>")
+
+
+def build_map():
+    data = map_data()
+    days = ['<button type="button" data-d="now" class="now" aria-pressed="false">Right now</button>']
+    for i, d in enumerate(WEEK):
+        lbl = "Today" if i == 0 else ("Tomorrow" if i == 1 else DOW[pydow(d)][:3] + " " + fmt_date(d))
+        days.append(f'<button type="button" data-d="{i}" aria-pressed="{"true" if i == 0 else "false"}">{e(lbl)}</button>')
+    types = "".join(f'<button type="button" data-t="{v}" aria-pressed="{"true" if not v else "false"}">{e(l)}</button>' for v, l in TYPE_CHIPS)
+    legend = "".join(f'<span><i style="background:{c}"></i>{e(l)}</span>' for l, c in
+                     [("College", MAP_COLORS["college"]), ("NFL", MAP_COLORS["game"]), ("Happy hour", MAP_COLORS["happy"]),
+                      ("Trivia", MAP_COLORS["trivia"]), ("Karaoke / music", MAP_COLORS["music"]), ("Special", MAP_COLORS["special"])])
+    body = (f'<h1>{e(CITY)} bar map</h1><p class="dek">Every bar on Pourcast, colored by what\'s on. Tap a pin for tonight\'s lineup and directions.</p>'
+            '<div class="btns"><button type="button" class="mapbtn" id="locBtn">📍 Show where I am</button><span class="muted" id="mapCount"></span></div>'
+            f'<div class="chiprow" id="mapDay">{"".join(days)}</div><div class="chiprow types" id="mapType">{types}</div>'
+            '<div id="bigmap" class="bigmap" role="application" aria-label="Map of Nashville bars"></div>'
+            f'<div class="legend">{legend}<span><i style="background:#8A96A8"></i>Nothing posted</span></div><div id="nearList"></div>'
+            + LEAFLET + "<script>var BARS=" + json.dumps(data, ensure_ascii=False) + ";document.addEventListener('DOMContentLoaded',function(){"
+            + MAP_JS.replace("__COLORS__", json.dumps(MAP_COLORS)) + MAP_PAGE_JS + "});</script>")
+    page("/map/", f"{CITY} Bar Map: Happy Hours, Watch Parties & Trivia | Pourcast",
+         f"Map of {CITY} bars with tonight's happy hours, game watch parties, trivia and karaoke. See what's closest to you.", body, "/map/")
+
+
 def build_bars():
     by_area = {}
     for b in BARS.values():
@@ -445,6 +558,7 @@ def build_bars():
         if b.get("address"):
             maps = "https://www.google.com/maps/search/?api=1&query=" + quote_plus(b["name"] + ", " + b["address"])
             p.append(f'<p class="addr"><span>📍 {e(b["address"])}</span> <a class="dir" href="{maps}" target="_blank" rel="noopener">Directions</a></p>')
+            p.append(bar_map_block(b))
         if b["teams"]:
             p.append('<div class="alert"><b>Home bar for</b><span>' + ", ".join(f'<a href="{team_url(t)}">{e(t)}</a>' for t in b["teams"]) + " fans</span></div>")
         p.append('<h2>Coming up</h2>' + ('<div class="grid">' + "".join(card(x, show_day=True) for x in once) + '</div>' if once else '<div class="empty">No one-time events posted yet.</div>'))
@@ -521,7 +635,7 @@ if __name__ == "__main__":
         shutil.rmtree(OUT)
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
-    build_home(); build_types(); build_popups(); build_bars(); build_teams(); build_static(); build_meta()
+    build_home(); build_types(); build_popups(); build_map(); build_bars(); build_teams(); build_static(); build_meta()
     try:
         sys.path.insert(0, os.path.join(ROOT, "social"))
         import graphic

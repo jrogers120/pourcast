@@ -4,21 +4,27 @@
   "name": "Acme Feed & Seed",
   "area": "Broadway",
   "teams": [],
-  "address": "101 Broadway, Nashville, TN 37201"
+  "address": "101 Broadway, Nashville, TN 37201",
+  "lat": 36.162016,
+  "lng": -86.774413
  },
  {
   "id": "attaboy",
   "name": "Attaboy",
   "area": "East Nashville",
   "teams": [],
-  "address": "8 McFerrin Ave, Nashville, TN 37206"
+  "address": "8 McFerrin Ave, Nashville, TN 37206",
+  "lat": 36.17611,
+  "lng": -86.75544
  },
  {
   "id": "bastion",
   "name": "Bastion",
   "area": "Wedgewood-Houston",
   "teams": [],
-  "address": "434 Houston St Ste 110, Nashville, TN 37203"
+  "address": "434 Houston St Ste 110, Nashville, TN 37203",
+  "lat": 36.142924,
+  "lng": -86.766565
  },
  {
   "id": "beyond-the-edge",
@@ -29,14 +35,18 @@
    "University of Michigan",
    "Chicago Bears"
   ],
-  "address": "112 S 11th St, Nashville, TN 37206"
+  "address": "112 S 11th St, Nashville, TN 37206",
+  "lat": 36.176548,
+  "lng": -86.75041
  },
  {
   "id": "bobby-s-idle-hour",
   "name": "Bobby's Idle Hour",
   "area": "Music Row",
   "teams": [],
-  "address": "9 Music Square S, Nashville, TN 37203"
+  "address": "9 Music Square S, Nashville, TN 37203",
+  "lat": 36.146538,
+  "lng": -86.793346
  },
  {
   "id": "boombozz",
@@ -45,14 +55,18 @@
   "teams": [
    "Seattle Seahawks"
   ],
-  "address": "1003 Russell St, Nashville, TN 37206"
+  "address": "1003 Russell St, Nashville, TN 37206",
+  "lat": 36.176106,
+  "lng": -86.751326
  },
  {
   "id": "bourbon-street-blues-boogie-bar",
   "name": "Bourbon Street Blues & Boogie Bar",
   "area": "Printers Alley",
   "teams": [],
-  "address": "220 Printers Alley, Nashville, TN 37201"
+  "address": "220 Printers Alley, Nashville, TN 37201",
+  "lat": 36.164453,
+  "lng": -86.778849
  },
  {
   "id": "bringles",
@@ -61,7 +75,9 @@
   "teams": [
    "Clemson University"
   ],
-  "address": "4901 Centennial Blvd, Nashville, TN 37209"
+  "address": "4901 Centennial Blvd, Nashville, TN 37209",
+  "lat": 36.162318,
+  "lng": -86.846983
  },
  {
   "id": "brotherly-love",
@@ -70,21 +86,27 @@
   "teams": [
    "James Madison University"
   ],
-  "address": "1610 54th Ave N #100, Nashville, TN 37209"
+  "address": "1610 54th Ave N #100, Nashville, TN 37209",
+  "lat": 36.165154,
+  "lng": -86.853071
  },
  {
   "id": "canvas",
   "name": "Canvas",
   "area": "East Nashville",
   "teams": [],
-  "address": "1105 Fatherland St, Nashville, TN 37206"
+  "address": "1105 Fatherland St, Nashville, TN 37206",
+  "lat": 36.174297,
+  "lng": -86.749748
  },
  {
   "id": "cherries",
   "name": "CHERRIES",
   "area": "East Nashville",
   "teams": [],
-  "address": "839 Dickerson Pike, Nashville, TN 37207"
+  "address": "839 Dickerson Pike, Nashville, TN 37207",
+  "lat": 36.186647,
+  "lng": -86.773012
  },
  {
   "id": "corner-pub-green-hills",
@@ -94,7 +116,9 @@
    "University of Tennessee",
    "Tennessee Titans"
   ],
-  "address": "4109 Hillsboro Pike, Nashville, TN 37215"
+  "address": "4109 Hillsboro Pike, Nashville, TN 37215",
+  "lat": 36.101916,
+  "lng": -86.818131
  },
  {
   "id": "crows-nest",
@@ -104,28 +128,36 @@
    "University of Oregon",
    "University of Texas"
   ],
-  "address": "2221 Bandywood Dr, Nashville, TN 37215"
+  "address": "2221 Bandywood Dr, Nashville, TN 37215",
+  "lat": 36.104667,
+  "lng": -86.818729
  },
  {
   "id": "dierks-bentley-s-whiskey-row",
   "name": "Dierks Bentley's Whiskey Row",
   "area": "Broadway",
   "teams": [],
-  "address": "400 Broadway, Nashville, TN 37203"
+  "address": "400 Broadway, Nashville, TN 37203",
+  "lat": 36.16111,
+  "lng": -86.777394
  },
  {
   "id": "dino-s",
   "name": "Dino's",
   "area": "East Nashville",
   "teams": [],
-  "address": "411 Gallatin Ave, Nashville, TN 37206"
+  "address": "411 Gallatin Ave, Nashville, TN 37206",
+  "lat": 36.181146,
+  "lng": -86.749294
  },
  {
   "id": "double-dogs-hillsboro-village",
   "name": "Double Dogs Hillsboro Village",
   "area": "Hillsboro Village",
   "teams": [],
-  "address": "1807 21st Ave S, Nashville, TN 37212"
+  "address": "1807 21st Ave S, Nashville, TN 37212",
+  "lat": 36.136127,
+  "lng": -86.801105
  },
  {
   "id": "drifters",
@@ -134,7 +166,9 @@
   "teams": [
    "Miami Dolphins"
   ],
-  "address": "1008 B Woodland St, Nashville, TN 37206"
+  "address": "1008 B Woodland St, Nashville, TN 37206",
+  "lat": 36.176743,
+  "lng": -86.750788
  },
  {
   "id": "duck-blind",
@@ -143,42 +177,54 @@
   "teams": [
    "University of Alabama"
   ],
-  "address": "1913 Division St, Nashville, TN 37203"
+  "address": "1913 Division St, Nashville, TN 37203",
+  "lat": 36.149594,
+  "lng": -86.796849
  },
  {
   "id": "duke-s",
   "name": "Duke's",
   "area": "East Nashville",
   "teams": [],
-  "address": "1000 Main St, Nashville, TN 37206"
+  "address": "1000 Main St, Nashville, TN 37206",
+  "lat": 36.177919,
+  "lng": -86.751079
  },
  {
   "id": "east-nashville-beer-works",
   "name": "East Nashville Beer Works",
   "area": "East Nashville",
   "teams": [],
-  "address": "320 E Trinity Ln, Nashville, TN 37207"
+  "address": "320 E Trinity Ln, Nashville, TN 37207",
+  "lat": 36.205334,
+  "lng": -86.763193
  },
  {
   "id": "edleys-east",
   "name": "Edley's Bar-B-Que",
   "area": "East Nashville",
   "teams": [],
-  "address": "1004 Woodland St, Nashville, TN 37206"
+  "address": "1004 Woodland St, Nashville, TN 37206",
+  "lat": 36.176884,
+  "lng": -86.751339
  },
  {
   "id": "five-points-pizza-east",
   "name": "Five Points Pizza",
   "area": "East Nashville",
   "teams": [],
-  "address": "1012 Woodland St, Nashville, TN 37206"
+  "address": "1012 Woodland St, Nashville, TN 37206",
+  "lat": 36.177118,
+  "lng": -86.750507
  },
  {
   "id": "fleet-street-pub",
   "name": "Fleet Street Pub",
   "area": "Printers Alley",
   "teams": [],
-  "address": "207 Printers Alley, Nashville, TN 37201"
+  "address": "207 Printers Alley, Nashville, TN 37201",
+  "lat": 36.164369,
+  "lng": -86.778515
  },
  {
   "id": "fogg-street",
@@ -187,42 +233,54 @@
   "teams": [
    "University of Florida"
   ],
-  "address": "648 Fogg St, Nashville, TN 37203"
+  "address": "648 Fogg St, Nashville, TN 37203",
+  "lat": 36.151168,
+  "lng": -86.777338
  },
  {
   "id": "folk",
   "name": "Folk",
   "area": "East Nashville",
   "teams": [],
-  "address": "823 Meridian St, Nashville, TN 37207"
+  "address": "823 Meridian St, Nashville, TN 37207",
+  "lat": 36.185564,
+  "lng": -86.767977
  },
  {
   "id": "frankie-j-s",
   "name": "Frankie J's",
   "area": "Germantown",
   "teams": [],
-  "address": "1314 6th Ave N, Nashville, TN 37208"
+  "address": "1314 6th Ave N, Nashville, TN 37208",
+  "lat": 36.17744,
+  "lng": -86.790686
  },
  {
   "id": "garage-bar-at-bobby-hotel",
   "name": "Bobby's Garage",
   "area": "Printers Alley",
   "teams": [],
-  "address": "222 Printers Alley, Nashville, TN 37219"
+  "address": "222 Printers Alley, Nashville, TN 37219",
+  "lat": 36.164501,
+  "lng": -86.779045
  },
  {
   "id": "germantown-pub",
   "name": "Germantown Pub",
   "area": "Germantown",
   "teams": [],
-  "address": "708 Monroe St, Nashville, TN 37208"
+  "address": "708 Monroe St, Nashville, TN 37208",
+  "lat": 36.175707,
+  "lng": -86.792555
  },
  {
   "id": "golden-sound",
   "name": "Golden Sound",
   "area": "The Gulch",
   "teams": [],
-  "address": "610 Magazine St, Nashville, TN 37203"
+  "address": "610 Magazine St, Nashville, TN 37203",
+  "lat": 36.15155,
+  "lng": -86.782945
  },
  {
   "id": "green-light",
@@ -233,7 +291,9 @@
    "University of Missouri",
    "Cleveland Browns"
   ],
-  "address": "833 Hawkins St, Nashville, TN 37203"
+  "address": "833 Hawkins St, Nashville, TN 37203",
+  "lat": 36.147215,
+  "lng": -86.780411
  },
  {
   "id": "happy-does",
@@ -243,28 +303,36 @@
    "Indiana University",
    "Louisiana State University"
   ],
-  "address": "1921 Division St, Nashville, TN 37203"
+  "address": "1921 Division St, Nashville, TN 37203",
+  "lat": 36.14916,
+  "lng": -86.797356
  },
  {
   "id": "honky-tonk-central",
   "name": "Honky Tonk Central",
   "area": "Broadway",
   "teams": [],
-  "address": "329 Broadway, Nashville, TN 37201"
+  "address": "329 Broadway, Nashville, TN 37201",
+  "lat": 36.160925,
+  "lng": -86.776873
  },
  {
   "id": "hops-and-crafts",
   "name": "Hops & Crafts",
   "area": "The Gulch",
   "teams": [],
-  "address": "319 12th Ave S, Nashville, TN 37203"
+  "address": "319 12th Ave S, Nashville, TN 37203",
+  "lat": 36.152833,
+  "lng": -86.78531
  },
  {
   "id": "jason-aldean-s-kitchen-rooftop-bar",
   "name": "Jason Aldean's Kitchen + Rooftop Bar",
   "area": "Broadway",
   "teams": [],
-  "address": "307 Broadway, Nashville, TN 37201"
+  "address": "307 Broadway, Nashville, TN 37201",
+  "lat": 36.161249,
+  "lng": -86.776225
  },
  {
   "id": "john-dalys",
@@ -273,28 +341,36 @@
   "teams": [
    "Jacksonville Jaguars"
   ],
-  "address": "1907 Division St, Nashville, TN 37203"
+  "address": "1907 Division St, Nashville, TN 37203",
+  "lat": 36.149835,
+  "lng": -86.796612
  },
  {
   "id": "kid-rock-s-big-ass-honky-tonk",
   "name": "Kid Rock's Big Ass Honky Tonk",
   "area": "Broadway",
   "teams": [],
-  "address": "221 Broadway, Nashville, TN 37201"
+  "address": "221 Broadway, Nashville, TN 37201",
+  "lat": 36.161446,
+  "lng": -86.775725
  },
  {
   "id": "l-a-jackson",
   "name": "L.A. Jackson",
   "area": "The Gulch",
   "teams": [],
-  "address": "401 11th Ave S (Thompson Hotel rooftop), Nashville, TN 37203"
+  "address": "401 11th Ave S (Thompson Hotel rooftop), Nashville, TN 37203",
+  "lat": 36.152397,
+  "lng": -86.784106
  },
  {
   "id": "legends-corner",
   "name": "Legends Corner",
   "area": "Broadway",
   "teams": [],
-  "address": "428 Broadway, Nashville, TN 37203"
+  "address": "428 Broadway, Nashville, TN 37203",
+  "lat": 36.1607,
+  "lng": -86.778392
  },
  {
   "id": "live-oak",
@@ -305,28 +381,36 @@
    "Pennsylvania State University",
    "New England Patriots"
   ],
-  "address": "1522 Demonbreun St, Nashville, TN 37203"
+  "address": "1522 Demonbreun St, Nashville, TN 37203",
+  "lat": 36.15302,
+  "lng": -86.790312
  },
  {
   "id": "living-waters-brewing-west",
   "name": "Living Waters Brewing West",
   "area": "The Nations",
   "teams": [],
-  "address": "4909 Indiana Ave, Nashville, TN 37209"
+  "address": "4909 Indiana Ave, Nashville, TN 37209",
+  "lat": 36.156328,
+  "lng": -86.847322
  },
  {
   "id": "lockeland-table",
   "name": "Lockeland Table",
   "area": "East Nashville",
   "teams": [],
-  "address": "1520 Woodland St, Nashville, TN 37206"
+  "address": "1520 Woodland St, Nashville, TN 37206",
+  "lat": 36.176674,
+  "lng": -86.742087
  },
  {
   "id": "losers-bar",
   "name": "Losers Bar",
   "area": "Midtown",
   "teams": [],
-  "address": "1911 Division St, Nashville, TN 37203"
+  "address": "1911 Division St, Nashville, TN 37203",
+  "lat": 36.149722,
+  "lng": -86.79673
  },
  {
   "id": "lost-paddy",
@@ -336,49 +420,63 @@
    "University of Notre Dame",
    "New York Giants"
   ],
-  "address": "715 Spence Ln, Nashville, TN 37217"
+  "address": "715 Spence Ln, Nashville, TN 37217",
+  "lat": 36.136537,
+  "lng": -86.723869
  },
  {
   "id": "lou-na",
   "name": "lou/na",
   "area": "Downtown",
   "teams": [],
-  "address": "1000 Broadway (rooftop), Nashville, TN 37203"
+  "address": "1000 Broadway (rooftop), Nashville, TN 37203",
+  "lat": 36.158096,
+  "lng": -86.784961
  },
  {
   "id": "luke-s-32-bridge",
   "name": "Luke's 32 Bridge",
   "area": "Broadway",
   "teams": [],
-  "address": "301 Broadway, Nashville, TN 37201"
+  "address": "301 Broadway, Nashville, TN 37201",
+  "lat": 36.161319,
+  "lng": -86.776007
  },
  {
   "id": "maggie-s-place",
   "name": "Maggie's Place",
   "area": "The Nations",
   "teams": [],
-  "address": "905 51st Ave N, Nashville, TN 37209"
+  "address": "905 51st Ave N, Nashville, TN 37209",
+  "lat": 36.157889,
+  "lng": -86.849283
  },
  {
   "id": "marsh-house",
   "name": "Marsh House",
   "area": "The Gulch",
   "teams": [],
-  "address": "401 11th Ave S, Nashville, TN 37203"
+  "address": "401 11th Ave S, Nashville, TN 37203",
+  "lat": 36.152191,
+  "lng": -86.784225
  },
  {
   "id": "mickey-s-tavern",
   "name": "Mickey's Tavern",
   "area": "East Nashville",
   "teams": [],
-  "address": "2907 Gallatin Pike, Nashville, TN 37216"
+  "address": "2907 Gallatin Pike, Nashville, TN 37216",
+  "lat": 36.202921,
+  "lng": -86.739131
  },
  {
   "id": "neighbors-gulch",
   "name": "Neighbors",
   "area": "The Gulch",
   "teams": [],
-  "address": "610 12th Ave S, Nashville, TN 37203"
+  "address": "610 12th Ave S, Nashville, TN 37203",
+  "lat": 36.151195,
+  "lng": -86.784088
  },
  {
   "id": "nobles",
@@ -387,7 +485,9 @@
   "teams": [
    "Kansas State University"
   ],
-  "address": "974 Main St, Nashville, TN 37206"
+  "address": "974 Main St, Nashville, TN 37206",
+  "lat": 36.177697,
+  "lng": -86.751956
  },
  {
   "id": "nobles-central",
@@ -396,14 +496,18 @@
   "teams": [
    "University of Southern California"
   ],
-  "address": "2292 Rosa L Parks Blvd, Nashville, TN 37228"
+  "address": "2292 Rosa L Parks Blvd, Nashville, TN 37228",
+  "lat": 36.194494,
+  "lng": -86.804514
  },
  {
   "id": "nudie-s-honky-tonk",
   "name": "Nudie's Honky Tonk",
   "area": "Broadway",
   "teams": [],
-  "address": "409 Broadway, Nashville, TN 37203"
+  "address": "409 Broadway, Nashville, TN 37203",
+  "lat": 36.160693,
+  "lng": -86.777445
  },
  {
   "id": "odies",
@@ -412,63 +516,81 @@
   "teams": [
    "University of Mississippi"
   ],
-  "address": "1919 Division St, Nashville, TN 37203"
+  "address": "1919 Division St, Nashville, TN 37203",
+  "lat": 36.149405,
+  "lng": -86.797182
  },
  {
   "id": "old-glory",
   "name": "Old Glory",
   "area": "Edgehill",
   "teams": [],
-  "address": "1200 Villa Pl Unit 103, Nashville, TN 37212"
+  "address": "1200 Villa Pl Unit 103, Nashville, TN 37212",
+  "lat": 36.142885,
+  "lng": -86.791536
  },
  {
   "id": "ole-red",
   "name": "Ole Red",
   "area": "Broadway",
   "teams": [],
-  "address": "300 Broadway, Nashville, TN 37201"
+  "address": "300 Broadway, Nashville, TN 37201",
+  "lat": 36.161714,
+  "lng": -86.776188
  },
  {
   "id": "pearl-diver",
   "name": "Pearl Diver",
   "area": "East Nashville",
   "teams": [],
-  "address": "1008 Gallatin Ave, Nashville, TN 37206"
+  "address": "1008 Gallatin Ave, Nashville, TN 37206",
+  "lat": 36.18909,
+  "lng": -86.746377
  },
  {
   "id": "pinewood-social",
   "name": "Pinewood Social",
   "area": "Rutledge Hill",
   "teams": [],
-  "address": "33 Peabody St, Nashville, TN 37210"
+  "address": "33 Peabody St, Nashville, TN 37210",
+  "lat": 36.15839,
+  "lng": -86.767783
  },
  {
   "id": "red-door-saloon",
   "name": "Red Door Saloon",
   "area": "Midtown",
   "teams": [],
-  "address": "1816 Division St, Nashville, TN 37203"
+  "address": "1816 Division St, Nashville, TN 37203",
+  "lat": 36.150626,
+  "lng": -86.795789
  },
  {
   "id": "rippy-s-smokin-bar-grill",
   "name": "Rippy's Smokin' Bar & Grill",
   "area": "Broadway",
   "teams": [],
-  "address": "429 Broadway, Nashville, TN 37203"
+  "address": "429 Broadway, Nashville, TN 37203",
+  "lat": 36.160365,
+  "lng": -86.778173
  },
  {
   "id": "robert-s-western-world",
   "name": "Robert's Western World",
   "area": "Broadway",
   "teams": [],
-  "address": "416 Broadway, Nashville, TN 37203"
+  "address": "416 Broadway, Nashville, TN 37203",
+  "lat": 36.160993,
+  "lng": -86.777999
  },
  {
   "id": "rosemary-beauty-queen",
   "name": "Rosemary & Beauty Queen",
   "area": "East Nashville",
   "teams": [],
-  "address": "1102 Forrest Ave, Nashville, TN 37206"
+  "address": "1102 Forrest Ave, Nashville, TN 37206",
+  "lat": 36.178284,
+  "lng": -86.749553
  },
  {
   "id": "roys-tavern",
@@ -477,21 +599,27 @@
   "teams": [
    "Buffalo Bills"
   ],
-  "address": "3807 Gallatin Pike, Nashville, TN 37216"
+  "address": "3807 Gallatin Pike, Nashville, TN 37216",
+  "lat": 36.214738,
+  "lng": -86.730701
  },
  {
   "id": "rudy-s-jazz-room",
   "name": "Rudy's Jazz Room",
   "area": "The Gulch",
   "teams": [],
-  "address": "809 Gleaves St, Nashville, TN 37203"
+  "address": "809 Gleaves St, Nashville, TN 37203",
+  "lat": 36.15179,
+  "lng": -86.78012
  },
  {
   "id": "santa-s-pub",
   "name": "Santa's Pub",
   "area": "Berry Hill",
   "teams": [],
-  "address": "2225 Bransford Ave, Nashville, TN 37204"
+  "address": "2225 Bransford Ave, Nashville, TN 37204",
+  "lat": 36.127438,
+  "lng": -86.767237
  },
  {
   "id": "scoreboard",
@@ -501,7 +629,9 @@
    "Louisiana State University",
    "Green Bay Packers"
   ],
-  "address": "2408 Music Valley Dr, Nashville, TN 37214"
+  "address": "2408 Music Valley Dr, Nashville, TN 37214",
+  "lat": 36.218237,
+  "lng": -86.697951
  },
  {
   "id": "sidecar-bar",
@@ -510,14 +640,18 @@
   "teams": [
    "Auburn University"
   ],
-  "address": "1318 6th Ave N, Nashville, TN 37208"
+  "address": "1318 6th Ave N, Nashville, TN 37208",
+  "lat": 36.17765,
+  "lng": -86.790846
  },
  {
   "id": "skull-s-rainbow-room",
   "name": "Skull's Rainbow Room",
   "area": "Printers Alley",
   "teams": [],
-  "address": "222 Printers Alley, Nashville, TN 37201"
+  "address": "222 Printers Alley, Nashville, TN 37201",
+  "lat": 36.164578,
+  "lng": -86.77883
  },
  {
   "id": "slider-house",
@@ -526,14 +660,18 @@
   "teams": [
    "Detroit Lions"
   ],
-  "address": "1907 Division St, Nashville, TN 37203"
+  "address": "1907 Division St, Nashville, TN 37203",
+  "lat": 36.149896,
+  "lng": -86.796305
  },
  {
   "id": "sonny-s-patio-pub-refuge",
   "name": "Sonny's Patio Pub & Refuge",
   "area": "Germantown",
   "teams": [],
-  "address": "1322 6th Ave N, Nashville, TN 37208"
+  "address": "1322 6th Ave N, Nashville, TN 37208",
+  "lat": 36.177799,
+  "lng": -86.791057
  },
  {
   "id": "sports-social",
@@ -544,28 +682,36 @@
    "Michigan State University",
    "Philadelphia Eagles"
   ],
-  "address": "2126 Abbott Martin Rd Ste 282, Nashville, TN 37215"
+  "address": "2126 Abbott Martin Rd Ste 282, Nashville, TN 37215",
+  "lat": 36.107692,
+  "lng": -86.814316
  },
  {
   "id": "springwater-supper-club",
   "name": "Springwater Supper Club",
   "area": "West End",
   "teams": [],
-  "address": "115 27th Ave N, Nashville, TN 37203"
+  "address": "115 27th Ave N, Nashville, TN 37203",
+  "lat": 36.146434,
+  "lng": -86.812278
  },
  {
   "id": "standard-proof-whiskey-co",
   "name": "Standard Proof Whiskey Co.",
   "area": "Downtown",
   "teams": [],
-  "address": "219 Rep. John Lewis Way N, Nashville, TN 37219"
+  "address": "219 Rep. John Lewis Way N, Nashville, TN 37219",
+  "lat": 36.163702,
+  "lng": -86.780657
  },
  {
   "id": "station-inn",
   "name": "Station Inn",
   "area": "The Gulch",
   "teams": [],
-  "address": "402 12th Ave S, Nashville, TN 37203"
+  "address": "402 12th Ave S, Nashville, TN 37203",
+  "lat": 36.152532,
+  "lng": -86.784533
  },
  {
   "id": "tailgate-demonbreun",
@@ -574,7 +720,9 @@
   "teams": [
    "Cincinnati Bengals"
   ],
-  "address": "1538 Demonbreun St, Nashville, TN 37203"
+  "address": "1538 Demonbreun St, Nashville, TN 37203",
+  "lat": 36.152642,
+  "lng": -86.791293
  },
  {
   "id": "tailgate-east",
@@ -583,7 +731,9 @@
   "teams": [
    "Washington Commanders"
   ],
-  "address": "811 Gallatin Ave, Nashville, TN 37206"
+  "address": "811 Gallatin Ave, Nashville, TN 37206",
+  "lat": 36.186339,
+  "lng": -86.746997
  },
  {
   "id": "tailgate-germantown",
@@ -592,7 +742,9 @@
   "teams": [
    "Denver Broncos"
   ],
-  "address": "915 3rd Ave N, Nashville, TN 37201"
+  "address": "915 3rd Ave N, Nashville, TN 37201",
+  "lat": 36.173005,
+  "lng": -86.783547
  },
  {
   "id": "teddys",
@@ -601,7 +753,9 @@
   "teams": [
    "University of Central Florida"
   ],
-  "address": "104 Rep. John Lewis Way S, Nashville, TN 37203"
+  "address": "104 Rep. John Lewis Way S, Nashville, TN 37203",
+  "lat": 36.160183,
+  "lng": -86.778054
  },
  {
   "id": "tee-line",
@@ -612,56 +766,72 @@
    "West Virginia University",
    "Baltimore Ravens"
   ],
-  "address": "106 Duluth Ave, Nashville, TN 37209"
+  "address": "106 Duluth Ave, Nashville, TN 37209",
+  "lat": 36.157882,
+  "lng": -86.867754
  },
  {
   "id": "the-5-spot",
   "name": "The 5 Spot",
   "area": "East Nashville",
   "teams": [],
-  "address": "1006 Forrest Ave, Nashville, TN 37206"
+  "address": "1006 Forrest Ave, Nashville, TN 37206",
+  "lat": 36.178411,
+  "lng": -86.750397
  },
  {
   "id": "the-basement-east",
   "name": "The Basement East",
   "area": "East Nashville",
   "teams": [],
-  "address": "917 Woodland St, Nashville, TN 37206"
+  "address": "917 Woodland St, Nashville, TN 37206",
+  "lat": 36.175686,
+  "lng": -86.75559
  },
  {
   "id": "the-lipstick-lounge",
   "name": "The Lipstick Lounge",
   "area": "East Nashville",
   "teams": [],
-  "address": "1400 Woodland St, Nashville, TN 37206"
+  "address": "1400 Woodland St, Nashville, TN 37206",
+  "lat": 36.176962,
+  "lng": -86.74573
  },
  {
   "id": "the-nashville-palace",
   "name": "The Nashville Palace",
   "area": "Donelson",
   "teams": [],
-  "address": "2611 McGavock Pike, Nashville, TN 37214"
+  "address": "2611 McGavock Pike, Nashville, TN 37214",
+  "lat": 36.217732,
+  "lng": -86.698216
  },
  {
   "id": "the-patterson-house",
   "name": "The Patterson House",
   "area": "The Gulch",
   "teams": [],
-  "address": "700 8th Ave S, 5th Floor, Nashville, TN 37203"
+  "address": "700 8th Ave S, 5th Floor, Nashville, TN 37203",
+  "lat": 36.150632,
+  "lng": -86.778699
  },
  {
   "id": "the-pharmacy-burger-parlor-beer-garden",
   "name": "The Pharmacy Burger Parlor & Beer Garden",
   "area": "East Nashville",
   "teams": [],
-  "address": "731 McFerrin Ave, Nashville, TN 37206"
+  "address": "731 McFerrin Ave, Nashville, TN 37206",
+  "lat": 36.184934,
+  "lng": -86.754188
  },
  {
   "id": "the-stage-on-broadway",
   "name": "The Stage on Broadway",
   "area": "Broadway",
   "teams": [],
-  "address": "412 Broadway, Nashville, TN 37203"
+  "address": "412 Broadway, Nashville, TN 37203",
+  "lat": 36.160906,
+  "lng": -86.777846
  },
  {
   "id": "tin-roof",
@@ -672,7 +842,9 @@
    "University of Georgia",
    "Buffalo Bills"
   ],
-  "address": "1516 Demonbreun St, Nashville, TN 37203"
+  "address": "1516 Demonbreun St, Nashville, TN 37203",
+  "lat": 36.153189,
+  "lng": -86.789934
  },
  {
   "id": "tin-roof-broadway",
@@ -681,210 +853,270 @@
   "teams": [
    "University of Iowa"
   ],
-  "address": "316 Broadway, Nashville, TN 37201"
+  "address": "316 Broadway, Nashville, TN 37201",
+  "lat": 36.16151,
+  "lng": -86.776935
  },
  {
   "id": "tootsie-s-orchid-lounge",
   "name": "Tootsie's Orchid Lounge",
   "area": "Broadway",
   "teams": [],
-  "address": "422 Broadway, Nashville, TN 37203"
+  "address": "422 Broadway, Nashville, TN 37203",
+  "lat": 36.160902,
+  "lng": -86.778292
  },
  {
   "id": "von-elrod-s-beer-hall-kitchen",
   "name": "Von Elrod's Beer Hall & Kitchen",
   "area": "Germantown",
   "teams": [],
-  "address": "1004 4th Ave N, Nashville, TN 37219"
+  "address": "1004 4th Ave N, Nashville, TN 37219",
+  "lat": 36.173755,
+  "lng": -86.785026
  },
  {
   "id": "neighbors-germantown",
   "name": "Neighbors",
   "area": "Germantown",
   "teams": [],
-  "address": "313 Jefferson St, Nashville, TN 37208"
+  "address": "313 Jefferson St, Nashville, TN 37208",
+  "lat": 36.174555,
+  "lng": -86.78581
  },
  {
   "id": "neighbors-sylvan-park",
   "name": "Neighbors",
   "area": "Sylvan Park",
   "teams": [],
-  "address": "4425 Murphy Rd, Nashville, TN 37209"
+  "address": "4425 Murphy Rd, Nashville, TN 37209",
+  "lat": 36.140734,
+  "lng": -86.839987
  },
  {
   "id": "streetcar-germantown",
   "name": "Streetcar Taps & Garden",
   "area": "Germantown",
   "teams": [],
-  "address": "1325 3rd Ave N, Nashville, TN 37208"
+  "address": "1325 3rd Ave N, Nashville, TN 37208",
+  "lat": 36.179027,
+  "lng": -86.787531
  },
  {
   "id": "streetcar-nations",
   "name": "Streetcar Taps & Garden",
   "area": "The Nations",
   "teams": [],
-  "address": "4916 Charlotte Pike, Nashville, TN 37209"
+  "address": "4916 Charlotte Pike, Nashville, TN 37209",
+  "lat": 36.152245,
+  "lng": -86.846807
  },
  {
   "id": "never-never",
   "name": "Never Never",
   "area": "Wedgewood-Houston",
   "teams": [],
-  "address": "413 Houston St, Nashville, TN 37203"
+  "address": "413 Houston St, Nashville, TN 37203",
+  "lat": 36.14241,
+  "lng": -86.765524
  },
  {
   "id": "bottle-cap",
   "name": "Bottle Cap",
   "area": "12 South",
   "teams": [],
-  "address": "2403 12th Ave S, Nashville, TN 37204"
+  "address": "2403 12th Ave S, Nashville, TN 37204",
+  "lat": 36.126043,
+  "lng": -86.789559
  },
  {
   "id": "embers-ski-lodge",
   "name": "Embers Ski Lodge",
   "area": "12 South",
   "teams": [],
-  "address": "2410 12th Ave S, Nashville, TN 37204"
+  "address": "2410 12th Ave S, Nashville, TN 37204",
+  "lat": 36.126053,
+  "lng": -86.78902
  },
  {
   "id": "jaspers",
   "name": "Jasper's",
   "area": "West End",
   "teams": [],
-  "address": "1918 West End Ave, Nashville, TN 37203"
+  "address": "1918 West End Ave, Nashville, TN 37203",
+  "lat": 36.151875,
+  "lng": -86.799043
  },
  {
   "id": "aladdins",
   "name": "Aladdin's",
   "area": "West End",
   "teams": [],
-  "address": "2206 Elliston Pl, Nashville, TN 37203"
+  "address": "2206 Elliston Pl, Nashville, TN 37203",
+  "lat": 36.151393,
+  "lng": -86.804208
  },
  {
   "id": "ottos-bar",
   "name": "Otto's Bar",
   "area": "Sylvan Park",
   "teams": [],
-  "address": "4210 Charlotte Ave, Nashville, TN 37209"
+  "address": "4210 Charlotte Ave, Nashville, TN 37209",
+  "lat": 36.152667,
+  "lng": -86.838212
  },
  {
   "id": "big-machine-distillery",
   "name": "Big Machine Distillery & Tavern",
   "area": "Berry Hill",
   "teams": [],
-  "address": "2824 Bransford Ave, Nashville, TN 37204"
+  "address": "2824 Bransford Ave, Nashville, TN 37204",
+  "lat": 36.113943,
+  "lng": -86.766443
  },
  {
   "id": "game-terminal",
   "name": "Game Terminal",
   "area": "South Nashville",
   "teams": [],
-  "address": "201 Terminal Ct, Nashville, TN 37210"
+  "address": "201 Terminal Ct, Nashville, TN 37210",
+  "lat": 36.131641,
+  "lng": -86.745446
  },
  {
   "id": "pucketts-downtown",
   "name": "Puckett's",
   "area": "Downtown",
   "teams": [],
-  "address": "500 Church St, Nashville, TN 37219"
+  "address": "500 Church St, Nashville, TN 37219",
+  "lat": 36.163225,
+  "lng": -86.780463
  },
  {
   "id": "commons-club",
   "name": "Commons Club",
   "area": "Music Row",
   "teams": [],
-  "address": "1 Music Square W (Virgin Hotels), Nashville, TN 37203"
+  "address": "1 Music Square W (Virgin Hotels), Nashville, TN 37203",
+  "lat": 36.151739,
+  "lng": -86.793137
  },
  {
   "id": "black-rabbit",
   "name": "Black Rabbit",
   "area": "Printers Alley",
   "teams": [],
-  "address": "218 3rd Ave N, Nashville, TN 37201"
+  "address": "218 3rd Ave N, Nashville, TN 37201",
+  "lat": 36.164998,
+  "lng": -86.777809
  },
  {
   "id": "garage-sale-bar",
   "name": "Garage Sale Bar",
   "area": "East Nashville",
   "teams": [],
-  "address": "747 Douglas Ave Ste 101-B, Nashville, TN 37207"
+  "address": "747 Douglas Ave Ste 101-B, Nashville, TN 37207",
+  "lat": 36.193777,
+  "lng": -86.754369
  },
  {
   "id": "the-treehouse",
   "name": "The Treehouse",
   "area": "East Nashville",
   "teams": [],
-  "address": "1011 Clearview Ave, Nashville, TN 37206"
+  "address": "1011 Clearview Ave, Nashville, TN 37206",
+  "lat": 36.177853,
+  "lng": -86.750446
  },
  {
   "id": "strega",
   "name": "Strega",
   "area": "East Nashville",
   "teams": [],
-  "address": "1405 Gallatin Ave, Nashville, TN 37206"
+  "address": "1405 Gallatin Ave, Nashville, TN 37206",
+  "lat": 36.193907,
+  "lng": -86.743525
  },
  {
   "id": "crazy-gnome",
   "name": "Crazy Gnome Brewery",
   "area": "East Nashville",
   "teams": [],
-  "address": "1005 W Kirkland Ave, Nashville, TN 37216"
+  "address": "1005 W Kirkland Ave, Nashville, TN 37216",
+  "lat": 36.209847,
+  "lng": -86.737905
  },
  {
   "id": "martha-my-dear",
   "name": "Martha My Dear",
   "area": "East Nashville",
   "teams": [],
-  "address": "2503 Gallatin Ave, Nashville, TN 37206"
+  "address": "2503 Gallatin Ave, Nashville, TN 37206",
+  "lat": 36.195298,
+  "lng": -86.743416
  },
  {
   "id": "ml-rose-inglewood",
   "name": "M.L.Rose",
   "area": "East Nashville",
   "teams": [],
-  "address": "3701 Gallatin Pike Ste D, Nashville, TN 37216"
+  "address": "3701 Gallatin Pike Ste D, Nashville, TN 37216",
+  "lat": 36.213416,
+  "lng": -86.731522
  },
  {
   "id": "ml-rose-sylvan-park",
   "name": "M.L.Rose",
   "area": "Sylvan Park",
   "teams": [],
-  "address": "4408 Charlotte Ave, Nashville, TN 37209"
+  "address": "4408 Charlotte Ave, Nashville, TN 37209",
+  "lat": 36.152508,
+  "lng": -86.840587
  },
  {
   "id": "ml-rose-melrose",
   "name": "M.L.Rose",
   "area": "Melrose",
   "teams": [],
-  "address": "2535 8th Ave S #107, Nashville, TN 37204"
+  "address": "2535 8th Ave S #107, Nashville, TN 37204",
+  "lat": 36.122794,
+  "lng": -86.776165
  },
  {
   "id": "ml-rose-gulch",
   "name": "M.L.Rose (Capitol View)",
   "area": "Capitol View",
   "teams": [],
-  "address": "431 11th Ave N, Nashville, TN 37203"
+  "address": "431 11th Ave N, Nashville, TN 37203",
+  "lat": 36.163171,
+  "lng": -86.791438
  },
  {
   "id": "loves-alibi",
   "name": "Love's Alibi",
   "area": "The Gulch",
   "teams": [],
-  "address": "901 Gleaves St, Nashville, TN 37203"
+  "address": "901 Gleaves St, Nashville, TN 37203",
+  "lat": 36.151775,
+  "lng": -86.780876
  },
  {
   "id": "barrel-proof",
   "name": "Barrel Proof",
   "area": "Germantown",
   "teams": [],
-  "address": "1010 4th Ave N, Nashville, TN 37219"
+  "address": "1010 4th Ave N, Nashville, TN 37219",
+  "lat": 36.173911,
+  "lng": -86.785256
  },
  {
   "id": "wild-beaver",
   "name": "Wild Beaver Saloon",
   "area": "Downtown",
   "teams": [],
-  "address": "212 Commerce St (at 2nd Ave), Nashville, TN 37201"
+  "address": "212 Commerce St (at 2nd Ave), Nashville, TN 37201",
+  "lat": 36.163125,
+  "lng": -86.776827
  },
  {
   "id": "heartbreakers-hideaway",
@@ -894,6 +1126,8 @@
    "Mississippi State University",
    "Pittsburgh Steelers"
   ],
-  "address": "1903 Division St, Nashville, TN 37203"
+  "address": "1903 Division St, Nashville, TN 37203",
+  "lat": 36.150035,
+  "lng": -86.796002
  }
 ]
