@@ -390,24 +390,38 @@ def conditions_panel():
             f'<div class="fstrip">{"".join(strip)}</div></section>')
 
 
-SWEAT_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}"><path d="M78 22 L102 12 Q120 30 138 12 L162 22 L200 60 L224 180 L198 188 L172 100 L172 205 L68 205 L68 100 L42 188 L16 180 L40 60 Z" fill="{fill}" stroke="#0A1A33" stroke-width="3"/>'
-             '<path d="M102 12 Q120 34 138 12" fill="none" stroke="#0A1A33" stroke-width="3"/><rect x="68" y="192" width="104" height="13" fill="{trim}"/><path d="M16 180 L42 188 L44 178 L19 170 Z M224 180 L198 188 L196 178 L221 170 Z" fill="{trim}"/>'
-             '<text x="120" y="112" text-anchor="middle" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="22" fill="#fff">POUR<tspan fill="#FFC53D">CAST</tspan></text>'
-             '<text x="120" y="136" text-anchor="middle" font-family="Barlow Condensed,Arial" font-weight="800" font-size="7.5" letter-spacing="1" fill="#fff">7-DAY BAR FORECAST</text></svg>')
-PANTS_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}"><path d="M75 15 L165 15 L180 205 L130 205 L120 80 L110 205 L60 205 Z" fill="{fill}" stroke="#0A1A33" stroke-width="3"/>'
-             '<rect x="75" y="15" width="90" height="16" fill="{trim}" stroke="#0A1A33" stroke-width="3"/><rect x="62" y="190" width="48" height="12" fill="{trim}"/><rect x="130" y="190" width="48" height="12" fill="{trim}"/>'
-             '<text x="88" y="140" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="15" fill="#fff" transform="rotate(-90 88 140)">POURCAST</text></svg>')
+SWEAT_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}"><path d="M78 22 L102 12 Q120 30 138 12 L162 22 L200 60 L224 180 L198 188 L172 100 L172 205 L68 205 L68 100 L42 188 L16 180 L40 60 Z" fill="{fill}" stroke="rgba(0,0,0,.35)" stroke-width="2"/>'
+             '<path d="M102 12 Q120 34 138 12" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="2"/><rect x="68" y="194" width="104" height="11" fill="rgba(0,0,0,.08)"/>'
+             '<path d="M16 180 L42 188 L44 178 L19 170 Z M224 180 L198 188 L196 178 L221 170 Z" fill="rgba(0,0,0,.08)"/>'
+             '<text x="148" y="66" text-anchor="middle" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="11" fill="{ink}">Pourcast</text>'
+             '<text x="148" y="76" text-anchor="middle" font-family="Barlow Condensed,Arial" font-weight="700" font-size="5.5" letter-spacing="1" fill="{ink}">NASHVILLE · EST. 2026</text></svg>')
+BACK_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}, back"><path d="M78 22 L102 16 Q120 22 138 16 L162 22 L200 60 L224 180 L198 188 L172 100 L172 205 L68 205 L68 100 L42 188 L16 180 L40 60 Z" fill="{fill}" stroke="rgba(0,0,0,.35)" stroke-width="2"/>'
+            '<defs><path id="arc{key}" d="M74 116 Q120 58 166 116"/></defs><text font-family="Barlow Condensed,Arial" font-weight="800" font-size="7.5" letter-spacing=".5" fill="{ink}"><textPath href="#arc{key}" startOffset="50%" text-anchor="middle">7-DAY BAR FORECAST</textPath></text>'
+            '<circle cx="120" cy="124" r="13" fill="none" stroke="{ink}" stroke-width="2"/><path d="M114 120 h9 v10 h-9 z M123 122 h3 a2 2 0 0 1 2 2 v3 a2 2 0 0 1 -2 2 h-3" fill="none" stroke="{ink}" stroke-width="1.8"/>'
+            '<text x="120" y="156" text-anchor="middle" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="15" fill="{ink}">POURCAST</text>'
+            '<text x="120" y="167" text-anchor="middle" font-family="Barlow Condensed,Arial" font-weight="700" font-size="5.6" letter-spacing=".6" fill="{ink}">100% CHANCE OF A GOOD NIGHT</text></svg>')
+PANTS_SVG = ('<svg viewBox="0 0 240 220" class="merchsvg" role="img" aria-label="{label}"><path d="M75 15 L165 15 L180 200 L130 200 L120 80 L110 200 L60 200 Z" fill="{fill}" stroke="rgba(0,0,0,.35)" stroke-width="2"/>'
+             '<rect x="75" y="15" width="90" height="14" fill="rgba(0,0,0,.1)"/><path d="M112 29 L110 44 M128 29 L130 44" stroke="{ink}" stroke-width="1.5"/>'
+             '<rect x="62" y="188" width="48" height="12" fill="rgba(0,0,0,.1)"/><rect x="130" y="188" width="48" height="12" fill="rgba(0,0,0,.1)"/>'
+             '<text x="100" y="62" text-anchor="middle" font-family="Barlow,Arial" font-style="italic" font-weight="900" font-size="8" fill="{ink}">Pourcast</text></svg>')
 
 
 def build_shop():
-    items = [("The Forecast Crew", "Heavyweight crewneck sweatshirt, Pourcast logo on the chest", SWEAT_SVG, "#0B3D91", "#C8202A"),
-             ("Last Call Hoodie", "Red pullover hoodie with the 7-Day Bar Forecast logo", SWEAT_SVG, "#C8202A", "#FFC53D"),
-             ("Happy Hour Sweats", "Navy joggers with POURCAST down the leg", PANTS_SVG, "#071E4A", "#FFC53D"),
-             ("Game Day Sweats", "Gray joggers with red Pourcast trim", PANTS_SVG, "#5B6577", "#C8202A")]
+    items = [("The Forecast Crew", "Washed Navy", "Garment-dyed heavyweight crewneck. Small chest hit up front, arched 7-Day Bar Forecast print on the back.", "#3A4660", "#EFE6D2", True),
+             ("Last Call Crew", "Bone", "Oversized cream crewneck with tonal navy print. The one you'll steal back from your friends.", "#EFE6D2", "#2F3B55", True),
+             ("Front Porch Crew", "Sage", "Boxy heavyweight crewneck in muted sage, cream print front and back.", "#9DAA92", "#F6F0E1", True),
+             ("Sunday Scaries Sweats", "Washed Navy", "Relaxed fleece joggers, small Pourcast hit on the thigh. Built for brunch and game day.", "#3A4660", "#EFE6D2", False),
+             ("Recovery Sweats", "Heather Oat", "Oat fleece sweatpants with a tonal embroidered logo.", "#D8CDB8", "#5A4A3A", False)]
     mail = f'mailto:{CFG["contact_email"]}?subject=' + quote_plus("Pourcast merch: put me on the list")
-    cards = "".join(f'<article class="card merch">{svg.format(label=e(n), fill=f, trim=t)}<h3>{e(n)}</h3><p class="muted">{e(d)}</p><span class="chip">Coming soon</span></article>'
-                    for n, d, svg, f, t in items)
-    body = (f'<h1>Pourcast merch</h1><p class="dek">Sweatshirts and sweatpants for the {e(CITY)} bar forecast faithful. First drop is coming soon; these are design previews.</p>'
+    cards = ""
+    for i, (n, col, d, f, ink, top) in enumerate(items):
+        art = SWEAT_SVG.format(label=e(n), fill=f, ink=ink)
+        if top:
+            art = f'<div class="merchpair">{art}{BACK_SVG.format(label=e(n), fill=f, ink=ink, key=i)}</div>'
+        else:
+            art = PANTS_SVG.format(label=e(n), fill=f, ink=ink)
+        cards += f'<article class="card merch">{art}<h3>{e(n)}</h3><p class="mcol">{e(col)}</p><p class="muted">{e(d)}</p><span class="chip">Coming soon</span></article>'
+    body = (f'<h1>Pourcast merch</h1><p class="dek">Heavyweight, garment-dyed sweats in washed colors with a small Pourcast hit up front and the forecast on the back. First drop is coming soon; these are design previews.</p>'
             f'<div class="grid merchgrid">{cards}</div>'
             f'<div class="alert"><b>First dibs</b><span>Want in on the first drop? <a href="{mail}">Email us</a> or DM <a href="https://www.instagram.com/{e(CFG["instagram"])}/">@{e(CFG["instagram"])}</a> and we\'ll let you know when it\'s live.</span></div>')
     page("/shop/", f"Pourcast Merch: Sweatshirts & Sweatpants | {CITY} Bar Forecast",
