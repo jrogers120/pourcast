@@ -595,12 +595,12 @@
    1,
    2,
    3,
-   4,
-   5
+   4
   ],
   "time": "15:00",
-  "deals": "$6.95 pints, $12.95 cocktail specials, $8.95 Jack & Coke, $5 off wonton rolls",
-  "source": "https://nashvillego.com/happy-hours"
+  "deals": "Happy hour specials (bar lists no prices)",
+  "source": "https://foggstreet.squarespace.com/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh-nobles-0",
@@ -674,15 +674,13 @@
   "title": "Happy hour (3–6 PM)",
   "weekly": true,
   "days": [
-   1,
-   2,
    3,
-   4,
-   5
+   4
   ],
   "time": "15:00",
-  "deals": "$3 beer, $4 spirits, $5 frozen drinks",
-  "source": "https://nashvillego.com/happy-hours"
+  "deals": "Happy hour specials (bar lists no prices)",
+  "source": "https://borchettaspirits.com/pages/berry-hill",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh-strega-0",
@@ -881,7 +879,8 @@
   "title": "Happy hour (3–7 PM)",
   "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://bottlecapnashville.com/special-events/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-bottle-cap-1",
@@ -892,10 +891,11 @@
   ],
   "time": "11:00",
   "title": "Wednesday all-day happy hour",
-  "deals": "$1 off drafts, $15 domestic buckets, $7 mules & crushes; Ballad Bingo 7:30 PM",
+  "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://bottlecapnashville.com/special-events/",
+  "timeLabel": "All day",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-bottle-cap-2",
@@ -905,10 +905,11 @@
    1
   ],
   "time": "19:00",
-  "title": "Monday Dive Burger night (7 PM–close)",
-  "deals": "$10 Dive Burger combo",
+  "title": "Monday burger night (7 PM–close)",
+  "deals": "$10 burger, fries & domestic draft",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://bottlecapnashville.com/special-events/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-bottle-cap-3",
@@ -921,7 +922,8 @@
   "title": "Thursday late deal (7 PM–close)",
   "deals": "2-for-1 bottles & cans",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://bottlecapnashville.com/special-events/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-germantown-pub-0",
@@ -937,7 +939,8 @@
   "title": "Happy hour (3–6 PM)",
   "deals": "Half off select drafts & wells, BOGO select cocktails, 6 wings $8.95",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://thegermantownpub.com/nashville-germantown-germantown-pub-happy-hours-specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-germantown-pub-1",
@@ -950,7 +953,8 @@
   "title": "Friday happy hour (2–6 PM)",
   "deals": "Half off select drafts & well liquors",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://thegermantownpub.com/nashville-germantown-germantown-pub-happy-hours-specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-germantown-pub-2",
@@ -969,8 +973,9 @@
   "title": "Beer & shot special",
   "deals": "$8 beer and shot all day",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://thegermantownpub.com/nashville-germantown-germantown-pub-happy-hours-specials",
+  "timeLabel": "All day",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-germantown-pub-3",
@@ -984,7 +989,8 @@
   "title": "Late-night happy hour (9 PM–midnight)",
   "deals": "$7–$20 select drinks, 25% off signature cocktails",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://thegermantownpub.com/nashville-germantown-germantown-pub-happy-hours-specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-germantown-pub-4",
@@ -998,7 +1004,8 @@
   "title": "Weekend brunch drinks (11 AM–3 PM)",
   "deals": "$5 mimosas, $5 Bloody Marys",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://thegermantownpub.com/nashville-germantown-germantown-pub-happy-hours-specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-germantown-pub-5",
@@ -1011,7 +1018,8 @@
   "title": "Trivia night deal (7–9 PM)",
   "deals": "Half off drafts and cans/bottles",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://thegermantownpub.com/nashville-germantown-germantown-pub-happy-hours-specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-embers-ski-lodge-0",
@@ -1057,7 +1065,8 @@
   "title": "Happy hour (5–8 PM)",
   "deals": "$5 pints from a featured brewery",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.hopscrafts.com/specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-hops-and-crafts-1",
@@ -1070,7 +1079,8 @@
   "title": "Happy hour (5–8 PM)",
   "deals": "$6 well shots",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.hopscrafts.com/specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-hops-and-crafts-2",
@@ -1083,7 +1093,8 @@
   "title": "Happy hour (5–8 PM)",
   "deals": "$5 select pints until the keg kicks",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.hopscrafts.com/specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-hops-and-crafts-3",
@@ -1096,7 +1107,8 @@
   "title": "Happy hour (5–8 PM)",
   "deals": "$9 specialty cocktails, half-off pub grub",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.hopscrafts.com/specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-hops-and-crafts-4",
@@ -1110,7 +1122,8 @@
   "title": "Happy hour (5–8 PM)",
   "deals": "$5 wine, $5 cider",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.hopscrafts.com/specials",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-ottos-bar-0",
@@ -1127,7 +1140,8 @@
   "title": "Happy hour (4–6 PM)",
   "deals": "$7 teeny martinis, $5 house wine, $1 off drafts & wells",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.ottosnashville.com/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-ottos-bar-1",
@@ -1140,7 +1154,8 @@
   "title": "Sunday late happy hour (9–11 PM)",
   "deals": "$7 teeny martinis, $5 house wine, $1 off drafts & wells",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.ottosnashville.com/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-ottos-bar-2",
@@ -1153,8 +1168,9 @@
   "title": "Taco Tuesday",
   "deals": "Half-off margaritas, 2 tacos for $5",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://www.ottosnashville.com/",
+  "timeLabel": "All day",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-slider-house-0",
@@ -1173,7 +1189,8 @@
   "title": "Happy hour (11 AM–7 PM)",
   "deals": "$1 off wells, painkillers, mimosas, wine, domestic cans & drafts; weekdays 2–6 PM 30% off apps",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://sliderhousensh.com/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-five-points-pizza-east-0",
@@ -1188,9 +1205,10 @@
   ],
   "time": "14:00",
   "title": "Happy hour (2–6 PM)",
-  "deals": "Any slice + any draft (or NA Thirst Mutilator) $8, or cheese/pepperoni slice + High Life, Bud or PBR $5",
+  "deals": "Any slice + any draft $8, or cheese/pepperoni slice + High Life or PBR $5",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://fivepointspizza.com/east-nashville/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-aladdins-0",
@@ -1230,19 +1248,18 @@
   "barId": "commons-club",
   "weekly": true,
   "days": [
-   0,
    1,
    2,
    3,
    4,
-   5,
-   6
+   5
   ],
-  "time": "15:00",
-  "title": "Happy hour (3–6 PM)",
-  "deals": "$2 oysters, $8 wine, $5 drafts, $10 classic cocktails, $9 bites",
+  "time": "17:00",
+  "title": "Local Love Happy Hour (5–7 PM)",
+  "deals": "$1 oysters, $7 house wine, and more",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://virginhotels.com/nashville/entertainment/local-love-happy-hour/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-garage-sale-bar-0",
@@ -1257,9 +1274,10 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–6 PM)",
-  "deals": "Half off all food, $8 domestic beer + shot",
+  "deals": "Half off food, $8 beer + shot specials",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.garagesalebar.com/happyhour",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-jaspers-0",
@@ -1274,9 +1292,10 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–6 PM)",
-  "deals": "$4 drafts, $5 house wine, $8 draft & frozen cocktails, $6 snacks",
+  "deals": "$4 draft beers, $5 house wines, $8 draft & frozen cocktails",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://jaspers.restaurant/wp-content/uploads/2021/04/Jaspers-Menu-8.6.2026.pdf",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-jaspers-1",
@@ -1289,7 +1308,8 @@
   "title": "Monday pizza deal (4 PM–close)",
   "deals": "BOGO pizza",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://jaspers.restaurant/specials/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-jaspers-2",
@@ -1299,10 +1319,11 @@
    3
   ],
   "time": "16:00",
-  "title": "Wednesday burger deal (4 PM–close)",
-  "deals": "Any burger + side $10",
+  "title": "Wednesday burger deal",
+  "deals": "$10 burgers",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://jaspers.restaurant/specials/",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-jaspers-3",
@@ -1315,8 +1336,9 @@
   "title": "Sunday 2-for-1 beers",
   "deals": "2-for-1 beers all day",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://jaspers.restaurant/specials/",
+  "timeLabel": "All day",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-maggie-s-place-0",
@@ -1324,16 +1346,16 @@
   "weekly": true,
   "days": [
    1,
-   2,
    3,
    4,
    5
   ],
   "time": "15:00",
   "title": "Happy hour (3–7 PM)",
-  "deals": "$2 off drafts, $5 16oz Montucky, $7 wine, $20/$36 margarita pitchers, 5 mini tacos $8",
+  "deals": "$2 off drafts, $5 16oz Montucky, $20/$36 margarita pitchers, select wines, mini tacos",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.maggiesplacenashville.com/menu",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-maggie-s-place-1",
@@ -1366,7 +1388,8 @@
   "title": "Happy hour (3–5 PM)",
   "deals": "$8–$10 cocktails, $6 wine, $25 bottles, $5 drafts & bottled beer, discounted bites",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://pinewoodsocial.com/pages/social-hour",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-pucketts-downtown-0",
@@ -1383,7 +1406,8 @@
   "title": "Happy hour (3–6 PM)",
   "deals": "$2 off drafts, bottled beer, cocktails & most wines; $7 A. Marshall wines; $8 bar bites",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.puckettsrestaurant.com/nashville",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-0",
@@ -1400,7 +1424,8 @@
   "title": "Happy hour (3–6 PM)",
   "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.sonnysnashville.com/drinks",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-1",
@@ -1445,7 +1470,8 @@
   "title": "Happy hour (3–6 PM)",
   "deals": "Half-price drafts, $5 Garden Maggies, $5 espresso martinis, $10 wine, $10 wings",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://germantown.streetcartaps.com/food-menu",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh2-streetcar-nations-0",
@@ -2256,23 +2282,25 @@
    1
   ],
   "time": "11:00",
-  "source": "https://nashvillego.com/happy-hours",
-  "deals": "$7 martinis all day",
-  "timeLabel": "All day"
+  "source": "https://www.ottosnashville.com/",
+  "deals": "$7 teeny martinis all day",
+  "timeLabel": "All day",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh3-ottos-bar-1",
   "barId": "ottos-bar",
   "type": "happy",
-  "title": "Wednesday deal",
+  "title": "Wine Wednesday",
   "weekly": true,
   "days": [
    3
   ],
   "time": "11:00",
-  "source": "https://nashvillego.com/happy-hours",
-  "deals": "$5 wine & $5 tacos all day",
-  "timeLabel": "All day"
+  "source": "https://www.ottosnashville.com/",
+  "deals": "$5 house wines all day",
+  "timeLabel": "All day",
+  "verified": "2026-11-06"
  },
  {
   "id": "hh3-jaspers-0",
@@ -2287,19 +2315,6 @@
   "source": "https://nashvillego.com/happy-hours",
   "deals": "$3 domestics",
   "timeLabel": "All day"
- },
- {
-  "id": "hh3-bottle-cap-0",
-  "barId": "bottle-cap",
-  "type": "happy",
-  "title": "Saturday happy hour (3–7 PM)",
-  "weekly": true,
-  "days": [
-   6
-  ],
-  "time": "15:00",
-  "source": "https://nashvillego.com/happy-hours",
-  "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes"
  },
  {
   "id": "hh3-tailgate-demonbreun-0",
@@ -2412,5 +2427,20 @@
   "time": "20:00",
   "deals": "In Two Bits/Green Room. Industry discount; wear an ugly Christmas sweater and bring a kids' toy to donate",
   "source": "Tin Roof Nashville Instagram story, sent by Pourcast 2026-11-05"
+ },
+ {
+  "id": "hh4-ottos-bar-1",
+  "barId": "ottos-bar",
+  "type": "happy",
+  "title": "Thirsty Thursday",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "deals": "Half-price alternators all day",
+  "timeLabel": "All day",
+  "source": "https://www.ottosnashville.com/",
+  "verified": "2026-11-06"
  }
 ]
