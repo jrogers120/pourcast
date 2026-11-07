@@ -8,5 +8,17 @@
       "desc": "Mezcal, ginger, house cherry cordial and lime",
       "source": "https://cherriesnashville.com/menu"
     }
+  },
+  "2026-11-07": {
+    "good": "Clemson at Syracuse",
+    "goodWhy": "Line: Clemson -1.5. Tight front forecast for the Dome.",
+    "bad": "West Virginia at Texas Tech",
+    "badWhy": "Line: Texas Tech -17.5. Red Raider heat wave in Lubbock.",
+    "drink": {
+      "name": "Mexico Honey",
+      "barId": "lockeland-table",
+      "desc": "Tequila, yellow Chartreuse, guava, lime and Angostura bitters",
+      "source": "https://www.nashvillescene.com/promo/sips-of-summer/article_493869ea-0205-4884-b23c-f906a8389cc6.html"
+    }
   }
 }

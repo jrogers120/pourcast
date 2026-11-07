@@ -46,5 +46,11 @@
   "barId": "cherries",
   "desc": "Mezcal, ginger, house cherry cordial and lime",
   "source": "https://cherriesnashville.com/menu"
+ },
+ {
+  "name": "Mexico Honey",
+  "barId": "lockeland-table",
+  "desc": "Tequila, yellow Chartreuse, guava, lime and Angostura bitters",
+  "source": "https://www.nashvillescene.com/promo/sips-of-summer/article_493869ea-0205-4884-b23c-f906a8389cc6.html"
  }
 ]
