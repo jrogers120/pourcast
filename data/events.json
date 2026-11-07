@@ -1549,9 +1549,10 @@
   ],
   "time": "16:00",
   "title": "Community Hour (4–6 PM)",
-  "deals": "$8 cocktails, $8 wine, $6–$8 beer, $8 snacks; proceeds help local school PTOs",
+  "deals": "$8 cocktails, wine & beer, $8 snacks; proceeds help local school PTOs",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.lockelandtable.com/community",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-never-never-0",
@@ -1585,7 +1586,8 @@
   "title": "Happy hour (4–7 PM)",
   "deals": "$2 off wine, wells & drafts",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.sidecarbarnash.com/drinks",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-sidecar-bar-1",
@@ -1626,9 +1628,10 @@
   ],
   "time": "16:00",
   "title": "Happy hour (4–7 PM)",
-  "deals": "$9 Old Fashioned, espresso martini or whiskey sour; $5 shots & picklebacks; $17 flights",
+  "deals": "$17 whiskey flights (reg. $27); $10 off a bottle with a flight",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.standardproofwhiskey.com/nashville",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-the-treehouse-0",
@@ -1664,13 +1667,15 @@
   "title": "Apéro Hour (5–6 PM)",
   "deals": "$10 wine by the glass, $40 bottles, $10 cocktails, $4 drafts, $4–$12 food",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.goodasfolk.com/menu",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-marsh-house-0",
   "barId": "marsh-house",
   "weekly": true,
   "days": [
+   1,
    2,
    3,
    4,
@@ -1678,9 +1683,10 @@
   ],
   "time": "17:00",
   "title": "Happy hour (5–7 PM)",
-  "deals": "$1.50 oysters, $5–$9 wine, $3 High Life ponies, $11 cocktails, discounted bites",
+  "deals": "$1.50 oysters, $9 broiled oysters, $3 High Life ponies, $9 wine, $5 bubbles, $11 cocktail",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.marshhouserestaurant.com/happyhour",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-martha-my-dear-0",
@@ -1718,8 +1724,9 @@
   "title": "Happy hour",
   "deals": "$8 cocktails, $6 wine, $4 Cold Snack, discounted bites",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "Open–8 PM"
+  "source": "https://cherriesnashville.com/menu",
+  "timeLabel": "Open–8 PM",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-von-elrod-s-beer-hall-kitchen-0",
@@ -1732,28 +1739,28 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–6 PM)",
-  "deals": "$5 half-liter steins, $5 wine, $5 cocktails, $5 food; Thursday any big beer $10",
+  "deals": "$5 half-liter steins, $5 wine, $5 Big Ass Cocktails, $5 select food",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://vonelrods.com/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-tin-roof-broadway-0",
   "barId": "tin-roof-broadway",
   "weekly": true,
   "days": [
-   0,
    1,
    2,
    3,
    4,
-   5,
-   6
+   5
   ],
   "time": "11:00",
-  "title": "Day happy hour (11 AM–4 PM)",
-  "deals": "50% off appetizers, select beers, well & call liquor",
+  "title": "Day happy hour (open–4 PM)",
+  "deals": "50% off appetizers, beers, well & call liquor",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://tinroofbroadway.com/food-drinks/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-tin-roof-broadway-1",
@@ -1770,7 +1777,8 @@
   "title": "Late-night happy hour (10 PM–close)",
   "deals": "$5 house liquors, $5 domestic beers, $5 Sun Cruisers",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://tinroofbroadway.com/food-drinks/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-tin-roof-broadway-2",
@@ -1784,7 +1792,8 @@
   "title": "Weekend brunch (10 AM–3 PM)",
   "deals": "$20 mimosa buckets; Sunday 2-for-1 Bloody Marys & screwdrivers",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://tinroofbroadway.com/food-drinks/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-odies-0",
@@ -1874,9 +1883,10 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–7 PM)",
-  "deals": "Half off bottles, pints, pilsners, well drinks, seltzers & house wine",
+  "deals": "Half off bottles, pints, pillers, well drinks, seltzers & house wine",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://neighborsnashville.com/gulch-location/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-neighbors-germantown-0",
@@ -1891,9 +1901,10 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–7 PM)",
-  "deals": "Half off bottles, pints, pilsners, well drinks, seltzers & house wine",
+  "deals": "Half off bottles, pints, pillers, well drinks, seltzers & house wine",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://neighborsnashville.com/german-town/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-neighbors-sylvan-park-0",
@@ -1908,9 +1919,10 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–7 PM)",
-  "deals": "Half off bottles, pints, pilsners, well drinks, seltzers & house wine",
+  "deals": "Half off bottles, pints, pillers, well drinks, seltzers & house wine",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://neighborsnashville.com/sylvan-park/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-inglewood-0",
@@ -1922,10 +1934,11 @@
    3
   ],
   "time": "15:00",
-  "title": "Happy hour (3–6 PM)",
+  "title": "Neighbor Hour (3–6 PM)",
   "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-inglewood-1",
@@ -1936,10 +1949,11 @@
   ],
   "time": "11:00",
   "title": "Thursday 2-for-1",
-  "deals": "2-for-1 on everything on the drink menu",
+  "deals": "2-for-1 on the entire drink menu",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://mlrose.com/specials/",
+  "timeLabel": "All day",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-inglewood-2",
@@ -1951,9 +1965,10 @@
   ],
   "time": "10:00",
   "title": "Brunch 2-for-1 (until 2 PM)",
-  "deals": "2-for-1 select brunch drinks",
+  "deals": "2-for-1 mimosas & Bloody Marys",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-sylvan-park-0",
@@ -1965,10 +1980,11 @@
    3
   ],
   "time": "15:00",
-  "title": "Happy hour (3–6 PM)",
+  "title": "Neighbor Hour (3–6 PM)",
   "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-sylvan-park-1",
@@ -1979,10 +1995,11 @@
   ],
   "time": "11:00",
   "title": "Thursday 2-for-1",
-  "deals": "2-for-1 on everything on the drink menu",
+  "deals": "2-for-1 on the entire drink menu",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://mlrose.com/specials/",
+  "timeLabel": "All day",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-sylvan-park-2",
@@ -1994,9 +2011,10 @@
   ],
   "time": "10:00",
   "title": "Brunch 2-for-1 (until 2 PM)",
-  "deals": "2-for-1 select brunch drinks",
+  "deals": "2-for-1 mimosas & Bloody Marys",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-melrose-0",
@@ -2008,10 +2026,11 @@
    3
   ],
   "time": "15:00",
-  "title": "Happy hour (3–6 PM)",
+  "title": "Neighbor Hour (3–6 PM)",
   "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-melrose-1",
@@ -2022,10 +2041,11 @@
   ],
   "time": "11:00",
   "title": "Thursday 2-for-1",
-  "deals": "2-for-1 on everything on the drink menu",
+  "deals": "2-for-1 on the entire drink menu",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://mlrose.com/specials/",
+  "timeLabel": "All day",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-melrose-2",
@@ -2037,9 +2057,10 @@
   ],
   "time": "10:00",
   "title": "Brunch 2-for-1 (until 2 PM)",
-  "deals": "2-for-1 select brunch drinks",
+  "deals": "2-for-1 mimosas & Bloody Marys",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-gulch-0",
@@ -2051,10 +2072,11 @@
    3
   ],
   "time": "15:00",
-  "title": "Happy hour (3–6 PM)",
+  "title": "Neighbor Hour (3–6 PM)",
   "deals": "2-for-1 beer, wine & wells; half-price classic cheeseburgers & chicken tenders",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-gulch-1",
@@ -2065,10 +2087,11 @@
   ],
   "time": "11:00",
   "title": "Thursday 2-for-1",
-  "deals": "2-for-1 on everything on the drink menu",
+  "deals": "2-for-1 on the entire drink menu",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://mlrose.com/specials/",
+  "timeLabel": "All day",
+  "verified": "2026-11-07"
  },
  {
   "id": "hh2-ml-rose-gulch-2",
@@ -2080,9 +2103,10 @@
   ],
   "time": "10:00",
   "title": "Brunch 2-for-1 (until 2 PM)",
-  "deals": "2-for-1 select brunch drinks",
+  "deals": "2-for-1 mimosas & Bloody Marys",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://mlrose.com/specials/",
+  "verified": "2026-11-07"
  },
  {
   "barId": "happy-does",
@@ -3736,5 +3760,109 @@
   "source": "https://www.upstarmusiconline.com/post/get-to-know-the-writers-rounds-and-full-band-showcases-around-nashville",
   "timeLabel": "Evening, time TBA",
   "id": "s4-tin-roof-broadway-2"
+ },
+ {
+  "id": "hh4-neighbors-gulch-0",
+  "barId": "neighbors-gulch",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "22:00",
+  "title": "Late-night happy hour (10 PM–close)",
+  "deals": "Half off pints & pillers",
+  "source": "https://neighborsnashville.com/gulch-location/",
+  "verified": "2026-11-07"
+ },
+ {
+  "id": "hh4-neighbors-gulch-1",
+  "barId": "neighbors-gulch",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "title": "Wine Down Wednesday",
+  "deals": "Half-price wine bottles",
+  "timeLabel": "All day",
+  "source": "https://neighborsnashville.com/gulch-location/",
+  "verified": "2026-11-07"
+ },
+ {
+  "id": "hh4-neighbors-germantown-0",
+  "barId": "neighbors-germantown",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "22:00",
+  "title": "Late-night happy hour (10 PM–close)",
+  "deals": "Half off pints & pillers",
+  "source": "https://neighborsnashville.com/german-town/",
+  "verified": "2026-11-07"
+ },
+ {
+  "id": "hh4-neighbors-sylvan-park-0",
+  "barId": "neighbors-sylvan-park",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "22:00",
+  "title": "Late-night happy hour (10 PM–1 AM)",
+  "deals": "Half off pints & pillers",
+  "source": "https://neighborsnashville.com/sylvan-park/",
+  "verified": "2026-11-07"
+ },
+ {
+  "id": "hh4-neighbors-sylvan-park-1",
+  "barId": "neighbors-sylvan-park",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "title": "Wine Down Wednesday",
+  "deals": "Half-price wine bottles",
+  "timeLabel": "All day",
+  "source": "https://neighborsnashville.com/sylvan-park/",
+  "verified": "2026-11-07"
+ },
+ {
+  "id": "hh4-von-elrod-s-beer-hall-kitchen-0",
+  "barId": "von-elrod-s-beer-hall-kitchen",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "16:00",
+  "title": "Big Stein Thursday (4 PM–close)",
+  "deals": "Any big stein $10",
+  "source": "https://vonelrods.com/",
+  "verified": "2026-11-07"
  }
 ]
