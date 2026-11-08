@@ -686,7 +686,7 @@
   "id": "hh-strega-0",
   "barId": "strega",
   "type": "happy",
-  "title": "Happy hour (5–7 PM)",
+  "title": "Aperitivo hour (4–7 PM)",
   "weekly": true,
   "days": [
    1,
@@ -695,9 +695,10 @@
    4,
    5
   ],
-  "time": "17:00",
-  "deals": "$1 pizza slices, $3 select drafts",
-  "source": "https://nashvillego.com/happy-hours"
+  "time": "16:00",
+  "deals": "$1 slices, $3 draft beer, $2 off wells",
+  "source": "https://www.stregabar.com/menu",
+  "verified": "2026-11-08"
  },
  {
   "id": "k-wild-beaver-5",
@@ -1366,10 +1367,11 @@
   ],
   "time": "11:00",
   "title": "Taco Tuesday",
-  "deals": "BOGO tacos, $5 select drafts, $18 32oz / $34 60oz margarita pitchers",
+  "deals": "2-for-1 tacos all day",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials",
-  "timeLabel": "All day"
+  "source": "https://www.maggiesplacenashville.com/",
+  "timeLabel": "All day",
+  "verified": "2026-11-08"
  },
  {
   "id": "hh2-pinewood-social-0",
@@ -1486,9 +1488,10 @@
   ],
   "time": "15:00",
   "title": "Happy hour (3–6 PM)",
-  "deals": "Half-price beers, $5 Garden Maggies, $10 wine, $10 wings",
+  "deals": "Half-price drafts, $5 Garden Maggies, $10 wine, $10 smoked wings",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://sylvanpark.streetcartaps.com/nashville-sylvan-park-the-nations-streetcar-taps-and-garden-food-menu",
+  "verified": "2026-11-08"
  },
  {
   "id": "hh2-black-rabbit-0",
@@ -3864,5 +3867,173 @@
   "deals": "Any big stein $10",
   "source": "https://vonelrods.com/",
   "verified": "2026-11-07"
+ },
+ {
+  "id": "hh4-acme-feed-seed-0",
+  "barId": "acme-feed-seed",
+  "type": "happy",
+  "title": "Happy hour (4:30–6:30 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "time": "16:30",
+  "deals": "Half-price drafts, $10 nachos, $10 hot chicken bites (1st & 2nd floors)",
+  "source": "https://www.acmefeedandseed.com/floor-2-happy-hour",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-acme-feed-seed-1",
+  "barId": "acme-feed-seed",
+  "type": "happy",
+  "title": "Happy Days specials",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "deals": "$3 Busch Light & Montucky, $4 Acme lager & Jell-O shots, $5 frosé, $6 signature shots",
+  "source": "https://www.acmefeedandseed.com/floor-2-happy-hour",
+  "verified": "2026-11-08",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-bastion-0",
+  "barId": "bastion",
+  "type": "happy",
+  "title": "Big Bar happy hour (5–7 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "17:00",
+  "deals": "Happy hour at the Big Bar (deals not listed)",
+  "source": "https://www.bastionnashville.com/bigbar",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-beyond-the-edge-0",
+  "barId": "beyond-the-edge",
+  "type": "happy",
+  "title": "Happy hour (2–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "14:00",
+  "deals": "Happy hour specials (deals not listed)",
+  "source": "https://www.beyondtheedge.net/",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-beyond-the-edge-1",
+  "barId": "beyond-the-edge",
+  "type": "happy",
+  "title": "Tuesday 2-for-1 Yazoo (6–11 PM)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "18:00",
+  "deals": "2-for-1 Yazoo beers; trivia at 7",
+  "source": "https://www.beyondtheedge.net/",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-beyond-the-edge-2",
+  "barId": "beyond-the-edge",
+  "type": "happy",
+  "title": "Thursday 2-for-1 drafts (6–11 PM)",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "18:00",
+  "deals": "2-for-1 drafts",
+  "source": "https://www.beyondtheedge.net/",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-beyond-the-edge-3",
+  "barId": "beyond-the-edge",
+  "type": "happy",
+  "title": "Sunday 2-for-1 beer",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "11:00",
+  "deals": "2-for-1 beer all day",
+  "source": "https://www.beyondtheedge.net/",
+  "verified": "2026-11-08",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-bourbon-street-blues-boogie-bar-0",
+  "barId": "bourbon-street-blues-boogie-bar",
+  "type": "happy",
+  "title": "Happy hour (4–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2
+  ],
+  "time": "16:00",
+  "deals": "2-for-1 wells",
+  "source": "https://bourbonstreetbluesandboogiebar.com/faq/index",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-bourbon-street-blues-boogie-bar-1",
+  "barId": "bourbon-street-blues-boogie-bar",
+  "type": "happy",
+  "title": "Happy hour (11:30 AM–6 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:30",
+  "deals": "2-for-1 wells",
+  "source": "https://bourbonstreetbluesandboogiebar.com/faq/index",
+  "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-canvas-0",
+  "barId": "canvas",
+  "type": "happy",
+  "title": "Happy hour (4–7 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "deals": "50% off wine, wells & domestics",
+  "source": "https://www.canvasnash.com/",
+  "verified": "2026-11-08"
  }
 ]

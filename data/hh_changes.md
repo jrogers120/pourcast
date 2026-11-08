@@ -47,3 +47,20 @@
 - M.L.Rose (Capitol View): hh2-ml-rose-gulch-1: Thursday 2-for-1 [4] — 2-for-1 on everything on the drink menu → Thursday 2-for-1 [4] — 2-for-1 on the entire drink menu (source: https://mlrose.com/specials/)
 - M.L.Rose (Capitol View): hh2-ml-rose-gulch-2: Brunch 2-for-1 (until 2 PM) [0, 6] — 2-for-1 select brunch drinks → Brunch 2-for-1 (until 2 PM) [0, 6] — 2-for-1 mimosas & Bloody Marys (source: https://mlrose.com/specials/)
 - Confirmed from bar's own source with no change: 5 entries (source + verified updated).
+
+## 2026-11-08
+
+- Strega: hh-strega-0: Happy hour (5–7 PM) [1, 2, 3, 4, 5] — $1 pizza slices, $3 select drafts → Aperitivo hour (4–7 PM) [1, 2, 3, 4, 5] — $1 slices, $3 draft beer, $2 off wells (source: https://www.stregabar.com/menu)
+- Streetcar Taps & Garden: hh2-streetcar-nations-0: Happy hour (3–6 PM) [1, 2, 3, 4, 5] — Half-price beers, $5 Garden Maggies, $10 wine, $10 wings → Happy hour (3–6 PM) [1, 2, 3, 4, 5] — Half-price drafts, $5 Garden Maggies, $10 wine, $10 smoked wings (source: https://sylvanpark.streetcartaps.com/nashville-sylvan-park-the-nations-streetcar-taps-and-garden-food-menu)
+- Maggie's Place: hh2-maggie-s-place-1: Taco Tuesday [2] — BOGO tacos, $5 select drafts, $18 32oz / $34 60oz margarita pitchers → Taco Tuesday [2] — 2-for-1 tacos all day (source: https://www.maggiesplacenashville.com/)
+- Acme Feed & Seed: hh4-acme-feed-seed-0: ADDED Happy hour (4:30–6:30 PM) [1, 2, 3, 4] — Half-price drafts, $10 nachos, $10 hot chicken bites (1st & 2nd floors) (source: https://www.acmefeedandseed.com/floor-2-happy-hour)
+- Acme Feed & Seed: hh4-acme-feed-seed-1: ADDED Happy Days specials [0, 1, 2, 3, 4, 5, 6] — $3 Busch Light & Montucky, $4 Acme lager & Jell-O shots, $5 frosé, $6 signature shots (source: https://www.acmefeedandseed.com/floor-2-happy-hour)
+- Bastion: hh4-bastion-0: ADDED Big Bar happy hour (5–7 PM) [1, 2, 3, 4, 5] — Happy hour at the Big Bar (deals not listed) (source: https://www.bastionnashville.com/bigbar)
+- Beyond the Edge: hh4-beyond-the-edge-0: ADDED Happy hour (2–6 PM) [1, 2, 3, 4, 5] — Happy hour specials (deals not listed) (source: https://www.beyondtheedge.net/)
+- Beyond the Edge: hh4-beyond-the-edge-1: ADDED Tuesday 2-for-1 Yazoo (6–11 PM) [2] — 2-for-1 Yazoo beers; trivia at 7 (source: https://www.beyondtheedge.net/)
+- Beyond the Edge: hh4-beyond-the-edge-2: ADDED Thursday 2-for-1 drafts (6–11 PM) [4] — 2-for-1 drafts (source: https://www.beyondtheedge.net/)
+- Beyond the Edge: hh4-beyond-the-edge-3: ADDED Sunday 2-for-1 beer [0] — 2-for-1 beer all day (source: https://www.beyondtheedge.net/)
+- Bourbon Street Blues & Boogie Bar: hh4-bourbon-street-blues-boogie-bar-0: ADDED Happy hour (4–6 PM) [1, 2] — 2-for-1 wells (source: https://bourbonstreetbluesandboogiebar.com/faq/index)
+- Bourbon Street Blues & Boogie Bar: hh4-bourbon-street-blues-boogie-bar-1: ADDED Happy hour (11:30 AM–6 PM) [0, 3, 4, 5, 6] — 2-for-1 wells (source: https://bourbonstreetbluesandboogiebar.com/faq/index)
+- Canvas: hh4-canvas-0: ADDED Happy hour (4–7 PM) [1, 2, 3, 4, 5] — 50% off wine, wells & domestics (source: https://www.canvasnash.com/)
+- Confirmed from bar's own source with no change: 0 entries (source + verified updated).
