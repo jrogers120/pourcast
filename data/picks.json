@@ -20,5 +20,15 @@
       "desc": "Tequila, grapefruit, hot honey syrup, lime and soda, Tajín rim",
       "source": "https://www.odiesbar.com/drink-menu"
     }
+  },
+  "2026-11-08": {
+    "good": "Broncos at Panthers",
+    "goodWhy": "Line: Broncos -2.5. Mile High front stalls in Charlotte.",
+    "drink": {
+      "name": "Maya Bay",
+      "barId": "pearl-diver",
+      "desc": "Reposado tequila, red curry, ginger beer, mango and lime",
+      "source": "https://www.visitmusiccity.com/media/press-release/2026/pearl-diver-announces-next-chapter-after-brief-reset-bringing-fresh-energy"
+    }
   }
 }
