@@ -64,3 +64,20 @@
 - Bourbon Street Blues & Boogie Bar: hh4-bourbon-street-blues-boogie-bar-1: ADDED Happy hour (11:30 AM–6 PM) [0, 3, 4, 5, 6] — 2-for-1 wells (source: https://bourbonstreetbluesandboogiebar.com/faq/index)
 - Canvas: hh4-canvas-0: ADDED Happy hour (4–7 PM) [1, 2, 3, 4, 5] — 50% off wine, wells & domestics (source: https://www.canvasnash.com/)
 - Confirmed from bar's own source with no change: 0 entries (source + verified updated).
+
+## 2026-11-09
+
+- Up-Down Nashville: 4 weekly specials (Tue, Wed, Fri, Sun) confirmed on bar site, no change (source: https://updownarcadebar.com/nashville/)
+- Black Rabbit: hh2-black-rabbit-0: Happy hour (4–6 PM) [1, 2, 3, 4, 5] — $6 cocktails, $6 wine, $2 off beer, select food discounts → Happy hour (4–6 PM) [1, 2, 3, 4, 5, 6] — Happy hour menu (deals not listed in page text) (source: https://www.blackrabbittn.com/info)
+- Black Rabbit: hh2-black-rabbit-1: REMOVED Saturday happy hour (10 AM–6 PM) [6] — $6 cocktails, $6 wine, $2 off beer; food discounts 4–6 PM (bar site says happy hour is 4–6 PM Mon–Sat, now covered by hh2-black-rabbit-0; source: https://www.blackrabbittn.com/info)
+- 51 North Taproom: hh4-51-north-taproom-0: ADDED Happy hour (3–6 PM) [2, 3, 5] — $2 off drafts, house wine & wells; $3 domestics; $7 smashburgers (source: https://51northtaproom.com/specials)
+- 51 North Taproom: hh4-51-north-taproom-1: ADDED Weekend happy hour [0, 6] — $2 off drafts, house wine & wells, $3 domestics all day; Sun $5 mimosas & $7 Bloody Marys (source: https://51northtaproom.com/specials)
+- 51 North Taproom: hh4-51-north-taproom-2: ADDED Half-price Monday [1] — Half-price drafts, wine & wells (source: https://51northtaproom.com/specials)
+- 51 North Taproom: hh4-51-north-taproom-3: ADDED Taco Tuesday [2] — $2 off all tacos, $5 margaritas (source: https://51northtaproom.com/specials)
+- 51 North Taproom: hh4-51-north-taproom-4: ADDED Mule Wednesday [3] — $5 mules (source: https://51northtaproom.com/specials)
+- 51 North Taproom: hh4-51-north-taproom-5: ADDED Thirsty Thursday [4] — $2 off local beer, $10 off wine bottles (source: https://51northtaproom.com/specials)
+- Barrel Proof: hh4-barrel-proof-0: ADDED Happy hour (4–6 PM) [0, 1, 2, 3, 4, 5, 6] — $7 mini frozen margs, daiquiris, old fashioneds & scotch highballs (source: https://www.barrelproofnash.com/menu)
+- Brewhouse West: hh4-brewhouse-west-0: ADDED Weekday beer deal [1, 2, 3, 4, 5] — $2 off all beer (source: https://brewhousenashville.com/brewhouse-west-nashville-tn/)
+- Brewhouse West: hh4-brewhouse-west-1: ADDED Late-night half-price beer (10 PM–close) [1, 2, 3, 4, 5] — Half-price all beer (source: https://brewhousenashville.com/brewhouse-west-nashville-tn/)
+- Brewhouse West: hh4-brewhouse-west-2: ADDED Weekend deal [0, 6] — Half-price all beer, $4 Bloody Marys, $20 mimosa buckets (source: https://brewhousenashville.com/brewhouse-west-nashville-tn/)
+- Confirmed from bar's own source with no change: 4 entries (source + verified updated).

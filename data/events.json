@@ -1502,26 +1502,15 @@
    2,
    3,
    4,
-   5
+   5,
+   6
   ],
   "time": "16:00",
   "title": "Happy hour (4–6 PM)",
-  "deals": "$6 cocktails, $6 wine, $2 off beer, select food discounts",
+  "deals": "Happy hour menu (deals not listed in page text)",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
- },
- {
-  "id": "hh2-black-rabbit-1",
-  "barId": "black-rabbit",
-  "weekly": true,
-  "days": [
-   6
-  ],
-  "time": "10:00",
-  "title": "Saturday happy hour (10 AM–6 PM)",
-  "deals": "$6 cocktails, $6 wine, $2 off beer; food discounts 4–6 PM",
-  "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://www.blackrabbittn.com/info",
+  "verified": "2026-11-09"
  },
  {
   "id": "hh2-crazy-gnome-0",
@@ -2698,10 +2687,10 @@
    2
   ],
   "time": "15:00",
-  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "source": "https://updownarcadebar.com/nashville/",
   "deals": "$1 off Tennessee beer on tap",
   "timeLabel": "All day",
-  "verified": "2026-11-06",
+  "verified": "2026-11-09",
   "id": "w2-up-down-nashville-0"
  },
  {
@@ -2713,10 +2702,10 @@
    3
   ],
   "time": "15:00",
-  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "source": "https://updownarcadebar.com/nashville/",
   "deals": "$3 domestic tallboys",
   "timeLabel": "All day",
-  "verified": "2026-11-06",
+  "verified": "2026-11-09",
   "id": "w2-up-down-nashville-1"
  },
  {
@@ -2742,9 +2731,9 @@
    5
   ],
   "time": "15:00",
-  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "source": "https://updownarcadebar.com/nashville/",
   "deals": "$2 pizza slices; 20 free tokens for the first 100 people",
-  "verified": "2026-11-06",
+  "verified": "2026-11-09",
   "id": "w2-up-down-nashville-3"
  },
  {
@@ -2768,10 +2757,10 @@
    0
   ],
   "time": "11:00",
-  "source": "https://nashvilleguru.com/businesses/up-down-nashville",
+  "source": "https://updownarcadebar.com/nashville/",
   "deals": "$30 six-pack of domestic cans",
   "timeLabel": "All day",
-  "verified": "2026-11-06",
+  "verified": "2026-11-09",
   "id": "w2-up-down-nashville-5"
  },
  {
@@ -4035,5 +4024,170 @@
   "deals": "50% off wine, wells & domestics",
   "source": "https://www.canvasnash.com/",
   "verified": "2026-11-08"
+ },
+ {
+  "id": "hh4-51-north-taproom-0",
+  "barId": "51-north-taproom",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   2,
+   3,
+   5
+  ],
+  "time": "15:00",
+  "title": "Happy hour (3–6 PM)",
+  "deals": "$2 off drafts, house wine & wells; $3 domestics; $7 smashburgers",
+  "source": "https://51northtaproom.com/specials",
+  "verified": "2026-11-09"
+ },
+ {
+  "id": "hh4-51-north-taproom-1",
+  "barId": "51-north-taproom",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "11:00",
+  "title": "Weekend happy hour",
+  "deals": "$2 off drafts, house wine & wells, $3 domestics all day; Sun $5 mimosas & $7 Bloody Marys",
+  "source": "https://51northtaproom.com/specials",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-51-north-taproom-2",
+  "barId": "51-north-taproom",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "11:00",
+  "title": "Half-price Monday",
+  "deals": "Half-price drafts, wine & wells",
+  "source": "https://51northtaproom.com/specials",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-51-north-taproom-3",
+  "barId": "51-north-taproom",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "11:00",
+  "title": "Taco Tuesday",
+  "deals": "$2 off all tacos, $5 margaritas",
+  "source": "https://51northtaproom.com/specials",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-51-north-taproom-4",
+  "barId": "51-north-taproom",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "title": "Mule Wednesday",
+  "deals": "$5 mules",
+  "source": "https://51northtaproom.com/specials",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-51-north-taproom-5",
+  "barId": "51-north-taproom",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   4
+  ],
+  "time": "11:00",
+  "title": "Thirsty Thursday",
+  "deals": "$2 off local beer, $10 off wine bottles",
+  "source": "https://51northtaproom.com/specials",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-barrel-proof-0",
+  "barId": "barrel-proof",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "16:00",
+  "title": "Happy hour (4–6 PM)",
+  "deals": "$7 mini frozen margs, daiquiris, old fashioneds & scotch highballs",
+  "source": "https://www.barrelproofnash.com/menu",
+  "verified": "2026-11-09"
+ },
+ {
+  "id": "hh4-brewhouse-west-0",
+  "barId": "brewhouse-west",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "11:00",
+  "title": "Weekday beer deal",
+  "deals": "$2 off all beer",
+  "source": "https://brewhousenashville.com/brewhouse-west-nashville-tn/",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-brewhouse-west-1",
+  "barId": "brewhouse-west",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "22:00",
+  "title": "Late-night half-price beer (10 PM–close)",
+  "deals": "Half-price all beer",
+  "source": "https://brewhousenashville.com/brewhouse-west-nashville-tn/",
+  "verified": "2026-11-09"
+ },
+ {
+  "id": "hh4-brewhouse-west-2",
+  "barId": "brewhouse-west",
+  "type": "happy",
+  "weekly": true,
+  "days": [
+   0,
+   6
+  ],
+  "time": "11:00",
+  "title": "Weekend deal",
+  "deals": "Half-price all beer, $4 Bloody Marys, $20 mimosa buckets",
+  "source": "https://brewhousenashville.com/brewhouse-west-nashville-tn/",
+  "verified": "2026-11-09",
+  "timeLabel": "All day"
  }
 ]
