@@ -30,5 +30,15 @@
       "desc": "Reposado tequila, red curry, ginger beer, mango and lime",
       "source": "https://www.visitmusiccity.com/media/press-release/2026/pearl-diver-announces-next-chapter-after-brief-reset-bringing-fresh-energy"
     }
+  },
+  "2026-11-09": {
+    "good": "Bills at Vikings",
+    "goodWhy": "Line: Bills -3. Lake-effect snow meets a Purple Haze.",
+    "drink": {
+      "name": "Melon Paloma",
+      "barId": "folk",
+      "desc": "Tequila, melon, pineapple and sparkling wine",
+      "source": "https://www.goodasfolk.com/menu"
+    }
   }
 }

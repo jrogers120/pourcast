@@ -58,5 +58,11 @@
   "barId": "pearl-diver",
   "desc": "Reposado tequila, red curry, ginger beer, mango and lime",
   "source": "https://www.visitmusiccity.com/media/press-release/2026/pearl-diver-announces-next-chapter-after-brief-reset-bringing-fresh-energy"
+ },
+ {
+  "name": "Melon Paloma",
+  "barId": "folk",
+  "desc": "Tequila, melon, pineapple and sparkling wine",
+  "source": "https://www.goodasfolk.com/menu"
  }
 ]
