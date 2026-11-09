@@ -169,6 +169,26 @@ def _glass(d, cx, cy, r):
     d.ellipse([cx - r * .02, cy - r * 1.02, cx + r * .32, cy - r * .7], fill="#7BB661", outline="#4E7F3A", width=2)
 
 
+def deal_score(ev):
+    """Rough 'how good is this deal' score so the best happy hours lead the post."""
+    t = (ev.get("deals") or "").lower()
+    if not t or "not listed" in t or "no prices" in t or "specials (" in t:
+        return -10
+    s = 0
+    if re.search(r"half[- ]?price|50% off|2[- ]for[- ]1|bogo|buy one", t):
+        s += 6
+    prices = [float(p) for p in re.findall(r"\$(\d+(?:\.\d+)?)(?!\s*off)", t)]
+    if prices:
+        low = min(prices)
+        s += 6 if low <= 2 else 5 if low <= 3 else 4 if low <= 4 else 3 if low <= 5 else 1 if low <= 7 else 0
+    s += min(t.count(",") + t.count("&"), 4) * 0.5  # several items on special
+    if "all day" in t or "all night" in t:
+        s += 1.5
+    if re.search(r"\$\d+ off|% off", t):
+        s += 1
+    return s
+
+
 def pick(today_events, bar_label):
     """Group today's events into the sections shown on the graphic."""
     games, seen = [], set()
@@ -181,7 +201,7 @@ def pick(today_events, bar_label):
         bars = [bar_label(y["barId"]) for y in today_events
                 if y.get("type") in ("college", "game") and _matchup(y.get("title", "")) == key]
         games.append((x, bars))
-    happy = sorted([x for x in today_events if x.get("type") == "happy"], key=lambda x: x.get("time") or "99")
+    happy = sorted([x for x in today_events if x.get("type") == "happy"], key=lambda x: (-deal_score(x), x.get("time") or "99"))
     nights = sorted([x for x in today_events if x.get("type") in ("trivia", "karaoke", "music", "special")],
                     key=lambda x: x.get("time") or "99")
     return games, happy, nights
@@ -270,8 +290,9 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
 
     if nights and y < budget - 200:
         section("TRIVIA TONIGHT", f"{len(nights)}")
+        stop = budget - (340 if happy else 200)  # leave room for at least 2 happy hour deals
         for x in nights:
-            if y > budget - 200:
+            if y > stop:
                 break
             row(when(x), x["title"], bar_label(x["barId"]))
         y += 6
@@ -335,7 +356,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
             lines.append(f"• {when(x)}: {x['title']} at {bar_label(x['barId'])}")
         lines.append("")
     if happy:
-        lines.append(f"🍻 Happy hour radar: {len(happy)} deals across town, including:")
+        lines.append(f"🍻 Happy hour radar: {len(happy)} deals across town. Best of the bunch:")
         for x in happy[:6]:
             lines.append(f"• {bar_label(x['barId'])}: {x.get('deals') or x['title']}")
         lines.append("")
