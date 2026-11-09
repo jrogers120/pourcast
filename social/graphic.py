@@ -202,8 +202,7 @@ def pick(today_events, bar_label):
                 if y.get("type") in ("college", "game") and _matchup(y.get("title", "")) == key]
         games.append((x, bars))
     happy = sorted([x for x in today_events if x.get("type") == "happy"], key=lambda x: (-deal_score(x), x.get("time") or "99"))
-    nights = sorted([x for x in today_events if x.get("type") in ("trivia", "karaoke", "music", "special")],
-                    key=lambda x: x.get("time") or "99")
+    nights = []  # social post focuses on happy hour; trivia etc. stay on the website
     return games, happy, nights
 
 
@@ -300,7 +299,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     if happy and y < budget - 140:
         section("HAPPY HOUR", f"{len(happy)} DEALS")
         for x in happy:
-            if y > budget - 60:
+            if y > budget - 92:
                 break
             row(when(x), bar_label(x["barId"]), x.get("deals"))
 
@@ -357,7 +356,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         lines.append("")
     if happy:
         lines.append(f"🍻 Happy hour radar: {len(happy)} deals across town. Best of the bunch:")
-        for x in happy[:6]:
+        for x in happy[:10]:
             lines.append(f"• {bar_label(x['barId'])}: {x.get('deals') or x['title']}")
         lines.append("")
     lines += ["Every bar, every deal, every game: link in bio 👉 " + base_url.replace("https://", ""),
