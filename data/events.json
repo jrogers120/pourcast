@@ -1009,7 +1009,7 @@
   "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
   "type": "happy",
   "source": "https://www.sonnysnashville.com/drinks",
-  "verified": "2026-11-06"
+  "verified": "2026-11-10"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-1",
@@ -1161,7 +1161,7 @@
   "deals": "$2 off wine, wells & drafts",
   "type": "happy",
   "source": "https://www.sidecarbarnash.com/drinks",
-  "verified": "2026-11-07"
+  "verified": "2026-11-10"
  },
  {
   "id": "hh2-sidecar-bar-1",
@@ -1888,20 +1888,6 @@
   "deals": "$5 house wines all day",
   "timeLabel": "All day",
   "verified": "2026-11-06"
- },
- {
-  "id": "hh3-jaspers-0",
-  "barId": "jaspers",
-  "type": "happy",
-  "title": "Monday beer deal",
-  "weekly": true,
-  "days": [
-   1
-  ],
-  "time": "11:00",
-  "source": "https://nashvillego.com/happy-hours",
-  "deals": "$3 domestics",
-  "timeLabel": "All day"
  },
  {
   "id": "hh3-tailgate-demonbreun-0",
@@ -4255,5 +4241,110 @@
   "date": "2026-11-14",
   "time": "18:30",
   "tv": "ACCN"
+ },
+ {
+  "id": "hh4-duke-s-0",
+  "barId": "duke-s",
+  "type": "happy",
+  "title": "Happy hour (noon–7 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "12:00",
+  "deals": "$1 off draft beer & well drinks",
+  "source": "https://www.dukesbarnashville.com/",
+  "verified": "2026-11-10"
+ },
+ {
+  "id": "hh4-duke-s-1",
+  "barId": "duke-s",
+  "type": "happy",
+  "title": "Beer & shot special",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "12:00",
+  "deals": "$7 beer and a shot, all the time",
+  "timeLabel": "All day",
+  "source": "https://www.dukesbarnashville.com/",
+  "verified": "2026-11-10"
+ },
+ {
+  "id": "hh4-drifters-0",
+  "barId": "drifters",
+  "type": "happy",
+  "title": "Happy hour (2–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "14:00",
+  "deals": "2-for-1 beers & well drinks",
+  "source": "https://www.driftersnashville.com/",
+  "verified": "2026-11-10"
+ },
+ {
+  "id": "hh4-drifters-1",
+  "barId": "drifters",
+  "type": "happy",
+  "title": "Wednesday 2-for-1 beers",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "deals": "2-for-1 beers all day",
+  "timeLabel": "All day",
+  "source": "https://www.driftersnashville.com/",
+  "verified": "2026-11-10"
+ },
+ {
+  "id": "hh4-drifters-2",
+  "barId": "drifters",
+  "type": "happy",
+  "title": "Sunday 2-for-1 beers",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "11:00",
+  "deals": "2-for-1 beers all day",
+  "timeLabel": "All day",
+  "source": "https://www.driftersnashville.com/",
+  "verified": "2026-11-10"
+ },
+ {
+  "id": "hh4-green-light-0",
+  "barId": "green-light",
+  "type": "happy",
+  "title": "Happy hour (4–7 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "deals": "Happy hour specials (deals not listed)",
+  "source": "https://thegreenlightbar.com/",
+  "verified": "2026-11-10"
  }
 ]

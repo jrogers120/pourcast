@@ -81,3 +81,15 @@
 - Brewhouse West: hh4-brewhouse-west-1: ADDED Late-night half-price beer (10 PM–close) [1, 2, 3, 4, 5] — Half-price all beer (source: https://brewhousenashville.com/brewhouse-west-nashville-tn/)
 - Brewhouse West: hh4-brewhouse-west-2: ADDED Weekend deal [0, 6] — Half-price all beer, $4 Bloody Marys, $20 mimosa buckets (source: https://brewhousenashville.com/brewhouse-west-nashville-tn/)
 - Confirmed from bar's own source with no change: 4 entries (source + verified updated).
+
+## 2026-11-10
+
+- Duke's: hh4-duke-s-0: ADDED Happy hour (noon–7 PM) [1, 2, 3, 4, 5] — $1 off draft beer & well drinks (source: https://www.dukesbarnashville.com/)
+- Duke's: hh4-duke-s-1: ADDED Beer & shot special, all day [0, 1, 2, 3, 4, 5, 6] — $7 beer and a shot, all the time (source: https://www.dukesbarnashville.com/)
+- Drifters BBQ: hh4-drifters-0: ADDED Happy hour (2–6 PM) [1, 2, 3, 4, 5] — 2-for-1 beers & well drinks (source: https://www.driftersnashville.com/)
+- Drifters BBQ: hh4-drifters-1: ADDED Wednesday 2-for-1 beers, all day [3] (source: https://www.driftersnashville.com/)
+- Drifters BBQ: hh4-drifters-2: ADDED Sunday 2-for-1 beers, all day [0] (source: https://www.driftersnashville.com/)
+- The Green Light Bar: hh4-green-light-0: ADDED Happy hour (4–7 PM) [1, 2, 3, 4, 5] — deals not listed; site footer says 4–7 PM, homepage banner says 4–8 PM (source: https://thegreenlightbar.com/)
+- Jasper's: hh3-jaspers-0: REMOVED Monday beer deal [1] — $3 domestics all day (guide-only; bar's specials page lists Monday as BOGO pizza only and its menu prices domestics at $5; source: https://jaspers.restaurant/specials/)
+- Confirmed from bar's own source with no change: 2 entries (hh2-sidecar-bar-0, hh2-sonny-s-patio-pub-refuge-0; verified updated).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never (4–8 PM window confirmed on bar site, deals not), Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome, Martha My Dear.
