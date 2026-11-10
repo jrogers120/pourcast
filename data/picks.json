@@ -40,5 +40,13 @@
       "desc": "Tequila, melon, pineapple and sparkling wine",
       "source": "https://www.goodasfolk.com/menu"
     }
+  },
+  "2026-11-10": {
+    "drink": {
+      "name": "Blackberry Cobbler",
+      "barId": "loves-alibi",
+      "desc": "Tennessee whiskey, blackberry, lemon, génépy and Twisted Tea",
+      "source": "https://www.lovesalibinashville.com/menu"
+    }
   }
 }
