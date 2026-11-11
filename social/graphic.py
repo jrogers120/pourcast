@@ -80,15 +80,22 @@ def _score(game, bars):
 
 def headliners(games, picks_for_day):
     """(good, bad) as (event, bars, blurb), or None. Editor picks in data/picks.json win."""
-    if not games:
+    p = picks_for_day or {}
+    if not games and not p.get("good"):
         return None, None
     by_key = {_matchup(g["title"]): (g, b) for g, b in games}
     good = bad = None
-    p = picks_for_day or {}
-    if p.get("good") and _matchup(p["good"]) in by_key:
-        good = by_key[_matchup(p["good"])] + (p.get("goodWhy") or "",)
-    if p.get("bad") and _matchup(p["bad"]) in by_key:
-        bad = by_key[_matchup(p["bad"])] + (p.get("badWhy") or "",)
+
+    def editor(k):
+        # A pick with no bar event (another sport, a TV show): show it with its own time/TV, no bar.
+        if _matchup(p[k]) in by_key:
+            return by_key[_matchup(p[k])] + (p.get(k + "Why") or "",)
+        return ({"title": p[k], "time": p.get(k + "Time"), "tv": p.get(k + "Tv")}, [], p.get(k + "Why") or "")
+
+    if p.get("good"):
+        good = editor("good")
+    if p.get("bad"):
+        bad = editor("bad")
     # Without today's betting lines we can't call a game close or a blowout, so:
     # fall back to the game Nashville cares most about, and skip the bad game.
     if not good:
@@ -238,7 +245,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         tag = ("GAME OF THE DAY  ·  " + _pun(GOOD_TAGS, today)) if good_kind else ("BAD GAME OF THE DAY  ·  " + _pun(BAD_TAGS, today))
         d.text((tx, y + 18), tag, font=FONT(BOLD, 30), fill=RED if good_kind else GREY)
         d.text((tx, y + 56), _clip(d, g["title"], FONT(BOLD, 46), R - tx - 20), font=_fit(d, g["title"], BOLD, 46, R - tx - 20), fill=INK)
-        line = when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "") + f"  ·  {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else "")
+        line = when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "") + (f"  ·  {bars[0]}" if bars else "") + (f" + {len(bars) - 1} more" if len(bars) > 1 else "")
         d.text((tx, y + 114), _clip(d, line, FONT(REG, 28), R - tx - 20), font=FONT(REG, 28), fill=GREY)
         blurb = why or (_pun(GOOD_PUNS, today) if good_kind else _pun(BAD_PUNS, today, 3))
         d.text((tx, y + 150), _clip(d, blurb, FONT(BOLD, 27), R - tx - 20), font=_fit(d, blurb, BOLD, 27, R - tx - 20), fill=INK if good_kind else GREY)
@@ -334,7 +341,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         if item:
             g, bars, why = item
             why = why or (_pun(GOOD_PUNS, today) if icon == "☀️" else _pun(BAD_PUNS, today, 3))
-            lines.append(f"{icon} {label}: {g['title']}, {when(g)}" + (f" on {g['tv']}" if g.get("tv") else "") + f", at {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
+            lines.append(f"{icon} {label}: {g['title']}, {when(g)}" + (f" on {g['tv']}" if g.get("tv") else "") + (f", at {bars[0]}" if bars else "") + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
             if why:
                 lines.append(f"   {why}")
     if good or bad:
@@ -347,7 +354,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     if games:
         lines.append("🏈 MORE GAMES" if featured else "🏈 GAME DAY")
         for x, bars in games[:8]:
-            lines.append(f"• {when(x)}: {x['title']}" + (f" ({x['tv']})" if x.get("tv") else "") + f", at {bars[0]}" + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
+            lines.append(f"• {when(x)}: {x['title']}" + (f" ({x['tv']})" if x.get("tv") else "") + (f", at {bars[0]}" if bars else "") + (f" + {len(bars) - 1} more" if len(bars) > 1 else ""))
         lines.append("")
     if nights:
         lines.append("🧠 TRIVIA TONIGHT")

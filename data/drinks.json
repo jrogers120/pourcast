@@ -70,5 +70,11 @@
   "barId": "loves-alibi",
   "desc": "Tennessee whiskey, blackberry, lemon, génépy and Twisted Tea",
   "source": "https://www.lovesalibinashville.com/menu"
+ },
+ {
+  "name": "Yuzu Lemon Drop",
+  "barId": "folk",
+  "desc": "Vodka, yuzu sake, dry vermouth, yuzu curaçao and citrus",
+  "source": "https://www.goodasfolk.com/menu"
  }
 ]

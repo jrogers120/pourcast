@@ -48,5 +48,19 @@
       "desc": "Tennessee whiskey, blackberry, lemon, génépy and Twisted Tea",
       "source": "https://www.lovesalibinashville.com/menu"
     }
+  },
+  "2026-11-11": {
+    "good": "Thunder at Trail Blazers",
+    "goodWhy": "Line: Thunder -1.5. Thunder rolls into rainy Rip City.",
+    "goodTime": "21:00",
+    "bad": "Spurs at Bulls",
+    "badWhy": "Line: Spurs -14.5. Texas heat wave hits the Windy City.",
+    "badTime": "19:00",
+    "drink": {
+      "name": "Yuzu Lemon Drop",
+      "barId": "folk",
+      "desc": "Vodka, yuzu sake, dry vermouth, yuzu curaçao and citrus",
+      "source": "https://www.goodasfolk.com/menu"
+    }
   }
 }
