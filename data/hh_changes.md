@@ -93,3 +93,14 @@
 - Jasper's: hh3-jaspers-0: REMOVED Monday beer deal [1] — $3 domestics all day (guide-only; bar's specials page lists Monday as BOGO pizza only and its menu prices domestics at $5; source: https://jaspers.restaurant/specials/)
 - Confirmed from bar's own source with no change: 2 entries (hh2-sidecar-bar-0, hh2-sonny-s-patio-pub-refuge-0; verified updated).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never (4–8 PM window confirmed on bar site, deals not), Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome, Martha My Dear.
+
+## 2026-11-11
+
+- Martha My Dear: hh2-martha-my-dear-0: Happy hour (5–7 PM) daily — $10 select cocktails, $2 off wine, $1 off beer → Happy hour (daily, from 5 PM) — $10 cocktails, $2 off wine, $1 off beer (bar site says "Happy Hour Daily!" with no end time; bar opens 5 PM) (source: https://www.marthasnashville.com/)
+- L.A. Jackson: hh4-l-a-jackson-0: ADDED Happy hour (5–7 PM) [1, 2, 3, 4] — deals not listed (source: https://www.lajacksonbar.com/home)
+- L.A. Jackson: hh4-l-a-jackson-1: ADDED Sunday happy hour, all day [0] — deals not listed (source: https://www.lajacksonbar.com/home)
+- L.A. Jackson: hh4-l-a-jackson-2: ADDED Wine Wednesday, all day [3] — half-price full bottles of wine (source: https://www.lajacksonbar.com/home)
+- lou/na: hh4-lou-na-0: ADDED Happy hour (4–6 PM) [1, 2, 3, 4] — deals not listed (source: https://www.hyatt.com/en-US/hotel/tennessee/grand-hyatt-nashville/bnarn/dining)
+- Confirmed from bar's own source with no change: 2 entries (hh2-sidecar-bar-0, hh2-sonny-s-patio-pub-refuge-0; verified updated).
+- Checked, nothing found on bar sources: Honky Tonk Central, Jason Aldean's, John Daly's (specials page "updating"), Kid Rock's, Legends Corner, Living Waters West, Losers (no own site), The Lost Paddy.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3; bar lists mimosas at $7, not $6), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome.
