@@ -104,3 +104,14 @@
 - Confirmed from bar's own source with no change: 2 entries (hh2-sidecar-bar-0, hh2-sonny-s-patio-pub-refuge-0; verified updated).
 - Checked, nothing found on bar sources: Honky Tonk Central, Jason Aldean's, John Daly's (specials page "updating"), Kid Rock's, Legends Corner, Living Waters West, Losers (no own site), The Lost Paddy.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3; bar lists mimosas at $7, not $6), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome.
+
+## 2026-11-12
+
+- Pearl Diver: hh4-pearl-diver-0: ADDED Happy hour (4–6 PM) [1, 2, 3, 4, 5]: half-price menu cocktails, $3 drafts, $20 pitchers; $6–$10 food (source: https://pearldivernashville.com/nashville-east-nashville-pearl-diver-happy-hours-specials)
+- Pearl Diver: hh4-pearl-diver-1: ADDED Wing Wednesday, all day [3]: 75¢ wings, six-wing minimum (same source)
+- Rosemary & Beauty Queen: hh4-rosemary-beauty-queen-0: ADDED Happy hour (5–8 PM) [0, 1, 2, 3, 4] (source: https://www.rosemaryandbeautyqueen.com/happy-hour)
+- Rosemary & Beauty Queen: hh4-rosemary-beauty-queen-1: ADDED Happy hour (5–7 PM) [5, 6] (same source; page headings conflict, but the home page and the happy-hour page body both say Sun–Thu 5–8 PM, Fri–Sat 5–7 PM)
+- Confirmed from the bar's own source with no change: 2 entries (hh2-sidecar-bar-0, hh2-sonny-s-patio-pub-refuge-0; verified updated).
+- Checked, nothing found on bar sources: Luke's 32 Bridge, Mickey's, Noble's Central (one-time 11/11 special only), Nudie's, Old Glory (menu is images only), Ole Red, Red Door Saloon (site unreadable), Rippy's, Robert's Western World.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never (bar site confirms the 4–8 PM window but not the days or deals), Embers Ski Lodge (2, site unreadable), Aladdin's (2, site unreadable), Game Terminal, The Treehouse (site unreadable), Crazy Gnome.
+- Conflict: Game Terminal's own pages say happy hour is Mon–Fri 4–7 PM, but the same pages list Monday as closed. We have Tue–Fri 3–7 PM. Left unchanged.

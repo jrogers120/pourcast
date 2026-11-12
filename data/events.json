@@ -1009,7 +1009,7 @@
   "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
   "type": "happy",
   "source": "https://www.sonnysnashville.com/drinks",
-  "verified": "2026-11-11"
+  "verified": "2026-11-12"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-1",
@@ -1161,7 +1161,7 @@
   "deals": "$2 off wine, wells & drafts",
   "type": "happy",
   "source": "https://www.sidecarbarnash.com/drinks",
-  "verified": "2026-11-11"
+  "verified": "2026-11-12"
  },
  {
   "id": "hh2-sidecar-bar-1",
@@ -4411,5 +4411,71 @@
   "deals": "Happy hour (deals not listed)",
   "source": "https://www.hyatt.com/en-US/hotel/tennessee/grand-hyatt-nashville/bnarn/dining",
   "verified": "2026-11-11"
+ },
+ {
+  "id": "hh4-pearl-diver-0",
+  "barId": "pearl-diver",
+  "type": "happy",
+  "title": "Happy hour (4–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "deals": "Half-price menu cocktails, $3 drafts, $20 pitchers; $6–$10 food",
+  "source": "https://pearldivernashville.com/nashville-east-nashville-pearl-diver-happy-hours-specials",
+  "verified": "2026-11-12"
+ },
+ {
+  "id": "hh4-pearl-diver-1",
+  "barId": "pearl-diver",
+  "type": "happy",
+  "title": "Wing Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "16:00",
+  "deals": "75¢ wings (six-wing minimum)",
+  "timeLabel": "All day",
+  "source": "https://pearldivernashville.com/nashville-east-nashville-pearl-diver-happy-hours-specials",
+  "verified": "2026-11-12"
+ },
+ {
+  "id": "hh4-rosemary-beauty-queen-0",
+  "barId": "rosemary-beauty-queen",
+  "type": "happy",
+  "title": "Happy hour (5–8 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "time": "17:00",
+  "deals": "$7 palomas, $8 Aperol spritz & old fashioned, $9 double cheeseburger, half-off wine bottles",
+  "source": "https://www.rosemaryandbeautyqueen.com/happy-hour",
+  "verified": "2026-11-12"
+ },
+ {
+  "id": "hh4-rosemary-beauty-queen-1",
+  "barId": "rosemary-beauty-queen",
+  "type": "happy",
+  "title": "Happy hour (5–7 PM)",
+  "weekly": true,
+  "days": [
+   5,
+   6
+  ],
+  "time": "17:00",
+  "deals": "$7 palomas, $8 Aperol spritz & old fashioned, $9 double cheeseburger, half-off wine bottles",
+  "source": "https://www.rosemaryandbeautyqueen.com/happy-hour",
+  "verified": "2026-11-12"
  }
 ]
