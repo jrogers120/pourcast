@@ -76,5 +76,11 @@
   "barId": "folk",
   "desc": "Vodka, yuzu sake, dry vermouth, yuzu curaçao and citrus",
   "source": "https://www.goodasfolk.com/menu"
+ },
+ {
+  "name": "Tipsy Jitters",
+  "barId": "martha-my-dear",
+  "desc": "Vodka, coffee liqueur, amaro, Licor 43, cold brew and cream",
+  "source": "https://www.marketwatchmag.com/serious-but-light-hearted/"
  }
 ]

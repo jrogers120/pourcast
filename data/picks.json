@@ -62,5 +62,18 @@
       "desc": "Vodka, yuzu sake, dry vermouth, yuzu curaçao and citrus",
       "source": "https://www.goodasfolk.com/menu"
     }
+  },
+  "2026-11-12": {
+    "good": "Commanders at Giants",
+    "goodWhy": "Line: Giants -2. Nor'easter stalls over MetLife.",
+    "bad": "Louisiana at UL Monroe",
+    "badWhy": "Line: Louisiana -10.5. Cajun heat wave floods Monroe.",
+    "badTime": "20:00",
+    "drink": {
+      "name": "Tipsy Jitters",
+      "barId": "martha-my-dear",
+      "desc": "Vodka, coffee liqueur, amaro, Licor 43, cold brew and cream",
+      "source": "https://www.marketwatchmag.com/serious-but-light-hearted/"
+    }
   }
 }
