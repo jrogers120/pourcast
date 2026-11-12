@@ -79,7 +79,8 @@ def _score(game, bars):
 
 
 def headliners(games, picks_for_day):
-    """(good, bad) as (event, bars, blurb), or None. Editor picks in data/picks.json win."""
+    """(good, None): the Game of the Day as (event, bars, blurb), or None. Editor picks in data/picks.json win.
+    The "bad game of the day" was retired; any "bad" keys left in picks.json are ignored."""
     p = picks_for_day or {}
     if not games and not p.get("good"):
         return None, None
@@ -94,14 +95,10 @@ def headliners(games, picks_for_day):
 
     if p.get("good"):
         good = editor("good")
-    if p.get("bad"):
-        bad = editor("bad")
     # Without today's betting lines we can't call a game close or a blowout, so:
-    # fall back to the game Nashville cares most about, and skip the bad game.
+    # fall back to the game Nashville cares most about.
     if not good:
         good = sorted(games, key=lambda gb: _score(*gb), reverse=True)[0] + ("",)
-    if bad and _matchup(bad[0]["title"]) == _matchup(good[0]["title"]):
-        bad = None
     return good, bad
 
 
@@ -253,8 +250,6 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
 
     if good:
         hero(good, "good")
-    if bad:
-        hero(bad, "bad")
     if good or bad:
         y += 8
     featured = {_matchup(i[0]["title"]) for i in (good, bad) if i}
@@ -337,7 +332,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     # caption
     dayname = DOW[pydow(today)].title()
     lines = [f"🍺 Tonight's Pourcast for Nashville: {dayname}, {MON[today.month - 1].title()} {today.day}", "📍 Nashville, TN", ""]
-    for item, icon, label in ((good, "☀️", "GAME OF THE DAY"), (bad, "⛈️", "BAD GAME OF THE DAY")):
+    for item, icon, label in ((good, "☀️", "GAME OF THE DAY"),):
         if item:
             g, bars, why = item
             why = why or (_pun(GOOD_PUNS, today) if icon == "☀️" else _pun(BAD_PUNS, today, 3))
