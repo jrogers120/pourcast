@@ -248,8 +248,21 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         d.text((tx, y + 150), _clip(d, blurb, FONT(BOLD, 27), R - tx - 20), font=_fit(d, blurb, BOLD, 27, R - tx - 20), fill=INK if good_kind else GREY)
         y += h + 16
 
+    def slim(item):
+        # Compact strip for the Game of the Day so happy hour gets the room.
+        nonlocal y
+        g, bars, why = item
+        h = 78
+        d.rounded_rectangle([L, y, R, y + h], radius=12, fill=WHITE, outline=GOLD, width=4)
+        _sun(d, L + 44, y + h // 2, 18)
+        tx = L + 90
+        d.text((tx, y + 9), "GAME OF THE DAY  ·  " + _pun(GOOD_TAGS, today), font=FONT(BOLD, 22), fill=RED)
+        line = g["title"] + "  ·  " + when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "")
+        d.text((tx, y + 38), _clip(d, line, FONT(BOLD, 28), R - tx - 16), font=FONT(BOLD, 28), fill=INK)
+        y += h + 16
+
     if good:
-        hero(good, "good")
+        slim(good)
     if good or bad:
         y += 8
     featured = {_matchup(i[0]["title"]) for i in (good, bad) if i}
