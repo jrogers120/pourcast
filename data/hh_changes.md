@@ -115,3 +115,9 @@
 - Checked, nothing found on bar sources: Luke's 32 Bridge, Mickey's, Noble's Central (one-time 11/11 special only), Nudie's, Old Glory (menu is images only), Ole Red, Red Door Saloon (site unreadable), Rippy's, Robert's Western World.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never (bar site confirms the 4–8 PM window but not the days or deals), Embers Ski Lodge (2, site unreadable), Aladdin's (2, site unreadable), Game Terminal, The Treehouse (site unreadable), Crazy Gnome.
 - Conflict: Game Terminal's own pages say happy hour is Mon–Fri 4–7 PM, but the same pages list Monday as closed. We have Tue–Fri 3–7 PM. Left unchanged.
+
+## 2026-11-13
+
+- Teddy's Tavern: hh4-teddys-0: ADDED Daily beer deal, all day [0, 1, 2, 3, 4, 5, 6]: $5 Music City Light pints (source: https://teddystavern.squarespace.com/aboutteddys; menu page also says "$5 pints all day every day")
+- Checked, nothing found on bar sources: Roy's Tavern, Rudy's Jazz Room, Santa's Pub, Scoreboard, Skull's Rainbow Room (Mardi Gras-only specials), Springwater, Station Inn, Tee Line, The 5 Spot, The Basement East.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome.

@@ -4477,5 +4477,26 @@
   "deals": "$7 palomas, $8 Aperol spritz & old fashioned, $9 double cheeseburger, half-off wine bottles",
   "source": "https://www.rosemaryandbeautyqueen.com/happy-hour",
   "verified": "2026-11-12"
+ },
+ {
+  "id": "hh4-teddys-0",
+  "barId": "teddys",
+  "type": "happy",
+  "title": "Daily beer deal",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "11:00",
+  "deals": "$5 Music City Light pints, all day every day",
+  "timeLabel": "All day",
+  "source": "https://teddystavern.squarespace.com/aboutteddys",
+  "verified": "2026-11-13"
  }
 ]
