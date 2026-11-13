@@ -82,5 +82,11 @@
   "barId": "martha-my-dear",
   "desc": "Vodka, coffee liqueur, amaro, Licor 43, cold brew and cream",
   "source": "https://www.marketwatchmag.com/serious-but-light-hearted/"
+ },
+ {
+  "name": "¡Oh Bruno!",
+  "barId": "skull-s-rainbow-room",
+  "desc": "Tequila, strawberry, vanilla and lemon",
+  "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_1d68f4b197ea4eb694a9304211b26f57.pdf"
  }
 ]
