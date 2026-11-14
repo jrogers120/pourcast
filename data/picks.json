@@ -89,5 +89,17 @@
       "desc": "Tequila, strawberry, vanilla and lemon",
       "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_1d68f4b197ea4eb694a9304211b26f57.pdf"
     }
+  },
+  "2026-11-14": {
+    "good": "Tennessee at Texas A&M",
+    "goodWhy": "Line: Tennessee -1.5. Smoky haze settles over Kyle Field.",
+    "bad": "Boston College at Notre Dame",
+    "badWhy": "Line: Notre Dame -29.5. Golden Dome heat wave all day.",
+    "drink": {
+      "name": "Bourbon Beach",
+      "barId": "golden-sound",
+      "desc": "Bourbon, tamarind, lemon, orgeat, bitters and mint",
+      "source": "https://ediblenashville.ediblecommunities.com/wp-content/uploads/2025/11/EN_2025-digital-cocktail-guide.pdf"
+    }
   }
 }
