@@ -121,3 +121,13 @@
 - Teddy's Tavern: hh4-teddys-0: ADDED Daily beer deal, all day [0, 1, 2, 3, 4, 5, 6]: $5 Music City Light pints (source: https://teddystavern.squarespace.com/aboutteddys; menu page also says "$5 pints all day every day")
 - Checked, nothing found on bar sources: Roy's Tavern, Rudy's Jazz Room, Santa's Pub, Scoreboard, Skull's Rainbow Room (Mardi Gras-only specials), Springwater, Station Inn, Tee Line, The 5 Spot, The Basement East.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome.
+
+## 2026-11-14
+
+- Commodore Grille: hh4-commodore-grille-0: ADDED Happy hour (4–6 PM) [1, 2, 3, 4, 5]: $5 drafts, $6 house wine, $8 wells; $5–$10 bites (source: https://www.ihg.com/holidayinn/hotels/us/en/nashville/bnavb/hoteldetail/dining)
+- Love's Alibi: hh4-loves-alibi-0: ADDED Happy hour (3–6 PM) daily [0–6]: $8 select cocktails & wine, $8 smashburger, $6 wings, $5 fries (source: https://www.lovesalibinashville.com/menu; home page says "HH 3-6pm daily")
+- Confirmed from the bar's own source with no change: 2 entries (hh2-sidecar-bar-0, hh2-sonny-s-patio-pub-refuge-0; verified updated).
+- Checked, nothing found on bar sources: Harding House, Jackalope (Wedgewood-Houston), Lonnie's Western Room, Lowbar (Instagram only), Marble Fox, Monday Night Brewing (Preservation Co), Ms. Kelli's (Facebook only), New Heights.
+- Not added (ambiguous): The Listening Room Cafe FAQ mentions "happy hour from 4-5:30pm" with Thu/Fri front-bar music and half-price drafts after the last show, but gives no clear days or deals.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome.
+- Needs a look: Golden Sound site is now a sushi omakase + cocktail lounge with no happy hour listed. Crazy Gnome's own site lists no happy hour or $5 pints.

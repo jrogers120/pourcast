@@ -1009,7 +1009,7 @@
   "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
   "type": "happy",
   "source": "https://www.sonnysnashville.com/drinks",
-  "verified": "2026-11-12"
+  "verified": "2026-11-14"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-1",
@@ -1161,7 +1161,7 @@
   "deals": "$2 off wine, wells & drafts",
   "type": "happy",
   "source": "https://www.sidecarbarnash.com/drinks",
-  "verified": "2026-11-12"
+  "verified": "2026-11-14"
  },
  {
   "id": "hh2-sidecar-bar-1",
@@ -4498,5 +4498,43 @@
   "timeLabel": "All day",
   "source": "https://teddystavern.squarespace.com/aboutteddys",
   "verified": "2026-11-13"
+ },
+ {
+  "id": "hh4-commodore-grille-0",
+  "barId": "commodore-grille",
+  "type": "happy",
+  "title": "Happy hour (4–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "16:00",
+  "deals": "$5 drafts, $6 house wine, $8 wells; $5–$10 bites",
+  "source": "https://www.ihg.com/holidayinn/hotels/us/en/nashville/bnavb/hoteldetail/dining",
+  "verified": "2026-11-14"
+ },
+ {
+  "id": "hh4-loves-alibi-0",
+  "barId": "loves-alibi",
+  "type": "happy",
+  "title": "Happy hour (3–6 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "deals": "$8 select cocktails & wine, $8 smashburger, $6 wings, $5 fries",
+  "source": "https://www.lovesalibinashville.com/menu",
+  "verified": "2026-11-14"
  }
 ]
