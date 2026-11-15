@@ -101,5 +101,17 @@
       "desc": "Bourbon, tamarind, lemon, orgeat, bitters and mint",
       "source": "https://ediblenashville.ediblecommunities.com/wp-content/uploads/2025/11/EN_2025-digital-cocktail-guide.pdf"
     }
+  },
+  "2026-11-15": {
+    "good": "Panthers at Saints",
+    "goodWhy": "Line: Saints -1.5. Bayou fog rolls into the Superdome.",
+    "bad": "Jaguars at Titans",
+    "badWhy": "Line: Jaguars -10.5. Teal tide surges up the Cumberland.",
+    "drink": {
+      "name": "Velvet Curtain",
+      "barId": "skull-s-rainbow-room",
+      "desc": "Rum, cinnamon, lime and macadamia",
+      "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_1d68f4b197ea4eb694a9304211b26f57.pdf"
+    }
   }
 }
