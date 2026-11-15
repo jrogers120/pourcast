@@ -4536,5 +4536,67 @@
   "deals": "$8 select cocktails & wine, $8 smashburger, $6 wings, $5 fries",
   "source": "https://www.lovesalibinashville.com/menu",
   "verified": "2026-11-14"
+ },
+ {
+  "id": "hh4-tennessee-brew-works-0",
+  "barId": "tennessee-brew-works",
+  "type": "happy",
+  "title": "Happy hour (3–6 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "15:00",
+  "deals": "Food and drink specials (details not listed)",
+  "source": "https://www.tnbrew.com/taproom",
+  "verified": "2026-11-15"
+ },
+ {
+  "id": "hh4-tennessee-brew-works-1",
+  "barId": "tennessee-brew-works",
+  "type": "happy",
+  "title": "Monday pitcher special",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "11:00",
+  "deals": "$5 off craft beer pitchers",
+  "source": "https://www.tnbrew.com/taproom",
+  "verified": "2026-11-15"
+ },
+ {
+  "id": "hh4-tennessee-brew-works-2",
+  "barId": "tennessee-brew-works",
+  "type": "happy",
+  "title": "Top Shelf Tuesday",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "11:00",
+  "deals": "Top-shelf spirits specials",
+  "timeLabel": "All day",
+  "source": "https://www.tnbrew.com/taproom",
+  "verified": "2026-11-15"
+ },
+ {
+  "id": "hh4-tennessee-brew-works-3",
+  "barId": "tennessee-brew-works",
+  "type": "happy",
+  "title": "Wednesday 2-for-1 beer",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "deals": "2-for-1 craft beer",
+  "timeLabel": "All day",
+  "source": "https://www.tnbrew.com/taproom",
+  "verified": "2026-11-15"
  }
 ]

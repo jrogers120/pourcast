@@ -131,3 +131,13 @@
 - Not added (ambiguous): The Listening Room Cafe FAQ mentions "happy hour from 4-5:30pm" with Thu/Fri front-bar music and half-price drafts after the last show, but gives no clear days or deals.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome.
 - Needs a look: Golden Sound site is now a sushi omakase + cocktail lounge with no happy hour listed. Crazy Gnome's own site lists no happy hour or $5 pints.
+
+## 2026-11-15
+
+- Tennessee Brew Works: hh4-tennessee-brew-works-0: ADDED Happy hour (3–6 PM) [1, 2, 3, 4, 5]: food and drink specials, details not listed (source: https://www.tnbrew.com/taproom)
+- Tennessee Brew Works: hh4-tennessee-brew-works-1: ADDED Monday pitcher special [1]: $5 off craft beer pitchers (same source)
+- Tennessee Brew Works: hh4-tennessee-brew-works-2: ADDED Top Shelf Tuesday, all day [2]: top-shelf spirits specials (same source)
+- Tennessee Brew Works: hh4-tennessee-brew-works-3: ADDED Wednesday 2-for-1 craft beer, all day [3] (same source)
+- Checked, nothing found on bar sources: The Lipstick Lounge, The Nashville Palace (only an old SinglePlatform menu with $2.50 domestics; not used), The Patterson House (menus are PDFs), The Pharmacy, The Stage on Broadway, Tootsie's, Wild Beaver Saloon, The Goat (Germantown), Xul Beer (rebranded Southern Grist Nations taproom), Southern Grist (East).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse (OpenTable lists Patio Happy Hour Mon–Fri 4–6 PM; not a bar source), Crazy Gnome.
+- Needs a look: Game Terminal's own site now lists Mon–Thu 3–10:30 PM (Monday open); its HH details are only in an image. We have Tue–Fri 3–7 PM. Left unchanged.
