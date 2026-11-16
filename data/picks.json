@@ -113,5 +113,15 @@
       "desc": "Rum, cinnamon, lime and macadamia",
       "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_1d68f4b197ea4eb694a9304211b26f57.pdf"
     }
+  },
+  "2026-11-16": {
+    "good": "Chargers at Ravens",
+    "goodWhy": "Line: Ravens -4.5. Lightning bolts strike over M&T Bank.",
+    "drink": {
+      "name": "Grown Up Girl Scout",
+      "barId": "commons-club",
+      "desc": "Vodka, Branca Menta, Licor 43, coffee and chocolate foam",
+      "source": "https://virginhotels.com/Nashville/dine-and-drink/the-commons-club"
+    }
   }
 }
