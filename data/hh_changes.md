@@ -141,3 +141,9 @@
 - Checked, nothing found on bar sources: The Lipstick Lounge, The Nashville Palace (only an old SinglePlatform menu with $2.50 domestics; not used), The Patterson House (menus are PDFs), The Pharmacy, The Stage on Broadway, Tootsie's, Wild Beaver Saloon, The Goat (Germantown), Xul Beer (rebranded Southern Grist Nations taproom), Southern Grist (East).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse (OpenTable lists Patio Happy Hour Mon–Fri 4–6 PM; not a bar source), Crazy Gnome.
 - Needs a look: Game Terminal's own site now lists Mon–Thu 3–10:30 PM (Monday open); its HH details are only in an image. We have Tue–Fri 3–7 PM. Left unchanged.
+
+## 2026-11-16
+
+- No changes.
+- Checked, nothing found on bar sources: Rosie's Twin Kegs, TNT's Billiards, The Stillery Midtown (own page lists no happy hour), The Basement, The Local, Attaboy, Bobby's Idle Hour, BoomBozz East, Bringle's Smoking Oasis, Brotherly Love, Crow's Nest.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome. Sidecar and Sonny's own drinks pages could not be fetched this run.
