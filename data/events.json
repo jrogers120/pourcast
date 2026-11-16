@@ -4598,5 +4598,15 @@
   "timeLabel": "All day",
   "source": "https://www.tnbrew.com/taproom",
   "verified": "2026-11-15"
+ },
+ {
+  "id": "s-2026-11-18-ole-red-cma-after-party",
+  "barId": "ole-red",
+  "type": "special",
+  "title": "CMA Awards: Country Late Night After Party (ticketed)",
+  "weekly": false,
+  "date": "2026-11-18",
+  "time": "22:00",
+  "source": "https://www.eventbrite.com/e/cma-awards-country-late-night-after-party-registration-1993484070518"
  }
 ]
