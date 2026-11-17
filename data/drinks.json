@@ -106,5 +106,11 @@
   "barId": "commons-club",
   "desc": "Vodka, Branca Menta, Licor 43, coffee and chocolate foam",
   "source": "https://virginhotels.com/Nashville/dine-and-drink/the-commons-club"
+ },
+ {
+  "name": "Barracuda",
+  "barId": "pearl-diver",
+  "desc": "Vodka, vanilla liqueur, grapefruit, hibiscus-rosemary syrup and tonic",
+  "source": "https://www.visitmusiccity.com/media/press-release/2026/pearl-diver-announces-next-chapter-after-brief-reset-bringing-fresh-energy"
  }
 ]

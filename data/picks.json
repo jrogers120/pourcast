@@ -124,6 +124,21 @@
       "source": "https://virginhotels.com/Nashville/dine-and-drink/the-commons-club"
     }
   },
+  "2026-11-17": {
+    "good": "Dancing with the Stars",
+    "goodWhy": "Semifinal sparkle front with a chance of a perfect 10.",
+    "goodTime": "19:00",
+    "goodTv": "ABC",
+    "bad": "Eastern Michigan at Western Michigan",
+    "badWhy": "Line: W Michigan -14.5. Bronco blizzard blankets Waldo.",
+    "badTime": "18:00",
+    "drink": {
+      "name": "Barracuda",
+      "barId": "pearl-diver",
+      "desc": "Vodka, vanilla liqueur, grapefruit, hibiscus-rosemary syrup and tonic",
+      "source": "https://www.visitmusiccity.com/media/press-release/2026/pearl-diver-announces-next-chapter-after-brief-reset-bringing-fresh-energy"
+    }
+  },
   "2026-11-18": {
     "good": "CMA Awards",
     "goodWhy": "Lainey Wilson brings a warm front to Bridgestone.",
