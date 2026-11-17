@@ -147,3 +147,11 @@
 - No changes.
 - Checked, nothing found on bar sources: Rosie's Twin Kegs, TNT's Billiards, The Stillery Midtown (own page lists no happy hour), The Basement, The Local, Attaboy, Bobby's Idle Hour, BoomBozz East, Bringle's Smoking Oasis, Brotherly Love, Crow's Nest.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal, The Treehouse, Crazy Gnome. Sidecar and Sonny's own drinks pages could not be fetched this run.
+
+## 2026-11-17
+
+- No changes.
+- Checked, nothing found on bar sources: Dierks Bentley's Whiskey Row (site mentions "happy hour specials" but no days/times/deals), Dino's (menus are images), 3rd & Lindsley, AJ's Good Time Bar, The Bluebird Cafe (menus are images), Broadcast Brewing (digital menu blocked), Duck Blind (shares Losers Midtown site), East Nashville Beer Works.
+- Could not re-verify (bar pages blocked this run): Happy Does (4 entries), Heartbreakers Hideaway (2), Corner Pub Green Hills (Wing Wednesday; only source is frankiapp, no bar site found).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village (own location/menu pages list no HH), Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2, site unreadable), Aladdin's (2, site unreadable), Game Terminal, The Treehouse, Crazy Gnome (own site lists no HH; open Wed–Sun).
+- Needs a look: Game Terminal's own (2022) pages say HH Mon–Fri 4–7 PM, but its hours table shows Mon–Tue closed; we have Tue–Fri 3–7 PM. Left unchanged. Golden Sound (omakase + cocktail lounge, Wed–Sun 5–11 PM) still lists no happy hour.
