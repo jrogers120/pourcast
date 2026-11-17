@@ -34,6 +34,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           ONLY: ${{ inputs.only || 'both' }}
+          SKIP_IF_POSTED: ${{ github.event_name == 'schedule' && '1' || '0' }}
         run: |
           if [ "$ONLY" = "facebook" ]; then unset IG_USER_ID; fi
           if [ "$ONLY" = "instagram" ]; then unset FB_PAGE_ID; fi

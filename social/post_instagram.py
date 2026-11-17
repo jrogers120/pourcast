@@ -73,6 +73,18 @@ def main():
     if not token or not (user or page):
         sys.exit("IG_TOKEN plus IG_USER_ID and/or FB_PAGE_ID secrets are not set yet.")
 
+    # A late scheduled run must not double-post a day that was already posted by hand.
+    if user and os.environ.get("SKIP_IF_POSTED") == "1":
+        try:
+            latest = call("GET", f"{user}/media", fields="timestamp", limit=1, access_token=token).get("data") or []
+            if latest:
+                ts = datetime.strptime(latest[0]["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+                if ts.astimezone(ZoneInfo(CFG.get("timezone", "America/Chicago"))).date().isoformat() == today:
+                    print(f"Already posted to Instagram for {today}; skipping this run.")
+                    return
+        except Exception as err:
+            print("Could not check for an earlier post today, posting anyway:", err)
+
     failed = []
     if page:
         try:
