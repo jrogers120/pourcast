@@ -155,3 +155,11 @@
 - Could not re-verify (bar pages blocked this run): Happy Does (4 entries), Heartbreakers Hideaway (2), Corner Pub Green Hills (Wing Wednesday; only source is frankiapp, no bar site found).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village (own location/menu pages list no HH), Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2, site unreadable), Aladdin's (2, site unreadable), Game Terminal, The Treehouse, Crazy Gnome (own site lists no HH; open Wed–Sun).
 - Needs a look: Game Terminal's own (2022) pages say HH Mon–Fri 4–7 PM, but its hours table shows Mon–Tue closed; we have Tue–Fri 3–7 PM. Left unchanged. Golden Sound (omakase + cocktail lounge, Wed–Sun 5–11 PM) still lists no happy hour.
+
+## 2026-11-18
+
+- Game Terminal: hh2-game-terminal-0: days Tue–Fri → Wed–Fri (3–7 PM). The bar's own homepage now lists Mon & Tue closed (https://www.gameterminal.com/home). Deals still guide-only.
+- Confirmed from the bar's own source with no change: 2 entries (hh2-sidecar-bar-0 via https://www.sidecarbarnash.com/drinks, hh2-sonny-s-patio-pub-refuge-0 via https://www.sonnysnashville.com/drinks; verified updated).
+- Checked, nothing found on bar sources: Edley's (East), Fleet Street Pub, Frankie J's, Bobby's Garage, Honky Tonk Central, Jason Aldean's (Fri/Sat taco menu items only), John Daly's (specials page still "updating"), Kid Rock's (menu page blocked), Legends Corner ("drink specials throughout the week", no details), Living Waters West, Losers (own site losersmidtown.com lists no specials).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3; daily specials and brunch drink prices are images only), Never Never, Embers Ski Lodge (2, site unreadable), Aladdin's (2, site unreadable), Game Terminal, The Treehouse (site errors), Crazy Gnome.
+- Needs a look: Golden Sound (omakase, Wed–Sun 5–11 PM) still lists no happy hour on its own site. Game Terminal's start time is unclear (old own blog says 4–7 PM Mon–Fri).
