@@ -152,6 +152,7 @@
         "   Lainey Wilson hosts, and @ellalangleymusic leads the field with 9 nominations. Good luck tonight, Ella! 🤠",
         "   Big night for @cma and Music City. Catch the show at the bar and tag us in your watch party.",
         "🎤 After the show: CMA Awards Country Late Night After Party at Ole Red (Broadway), 10:00 PM, ticketed",
+        "👀 After-show tip: you never know who'll pop up at @losersoriginal on Division St.",
         "🎮 ALSO: GTA 6 launches tomorrow (Nov 19) on PS5 and Xbox Series X|S. Get one last night out in before Vice City takes over your weekend."
       ],
       "hashtags": "#CMAawards #CMAs #EllaLangley #GTA6 #GTAVI",
@@ -165,6 +166,11 @@
           "username": "cma",
           "x": 0.65,
           "y": 0.24
+        },
+        {
+          "username": "losersoriginal",
+          "x": 0.5,
+          "y": 0.5
         }
       ],
       "icon": "star",
