@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = lambda name, size: ImageFont.truetype(os.path.join(HERE, "fonts", name), size)
@@ -287,6 +287,32 @@ def _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=
 
     if good:
         slim(good)
+
+    def extra_strip(x):
+        # Optional second strip for a big non-bar moment (picks.json "special": {"strip": {...}}),
+        # with its own left-to-right gradient colors.
+        nonlocal y
+        h = 86
+        cols = x.get("gradient") or [BLUE, RED]
+        band = Image.new("RGB", (R - L, h))
+        bd = ImageDraw.Draw(band)
+        for i in range(R - L):
+            t = i / max(1, R - L - 1) * (len(cols) - 1)
+            a, b = int(t), min(int(t) + 1, len(cols) - 1)
+            ca, cb = ImageColor.getrgb(cols[a]), ImageColor.getrgb(cols[b])
+            f = t - a
+            bd.line([(i, 0), (i, h)], fill=tuple(int(ca[k] + (cb[k] - ca[k]) * f) for k in range(3)))
+        mask = Image.new("L", (R - L, h), 0)
+        ImageDraw.Draw(mask).rounded_rectangle([0, 0, R - L - 1, h - 1], radius=12, fill=255)
+        img.paste(band, (L, y), mask)
+        fg = x.get("text") or WHITE
+        tx = L + 26
+        d.text((tx, y + 10), _clip(d, x.get("tag", ""), FONT(BOLD, 24), R - tx - 20), font=FONT(BOLD, 24), fill=x.get("tagColor") or fg)
+        d.text((tx, y + 40), _clip(d, x.get("line", ""), FONT(BOLD, 32), R - tx - 20), font=_fit(d, x.get("line", ""), BOLD, 32, R - tx - 20), fill=fg)
+        y += h + 16
+
+    if special.get("strip"):
+        extra_strip(special["strip"])
     if good or bad:
         y += 8
     featured = {_matchup(i[0]["title"]) for i in (good, bad) if i}

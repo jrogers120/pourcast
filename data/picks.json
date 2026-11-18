@@ -151,9 +151,10 @@
         "🏆 CMA AWARDS NIGHT: 7:00 PM on ABC, live from Bridgestone Arena",
         "   Lainey Wilson hosts, and @ellalangleymusic leads the field with 9 nominations. Good luck tonight, Ella! 🤠",
         "   Big night for @cma and Music City. Catch the show at the bar and tag us in your watch party.",
-        "🎤 After the show: CMA Awards Country Late Night After Party at Ole Red (Broadway), 10:00 PM, ticketed"
+        "🎤 After the show: CMA Awards Country Late Night After Party at Ole Red (Broadway), 10:00 PM, ticketed",
+        "🎮 ALSO: GTA 6 launches tomorrow (Nov 19) on PS5 and Xbox Series X|S. Get one last night out in before Vice City takes over your weekend."
       ],
-      "hashtags": "#CMAawards #CMAs #EllaLangley",
+      "hashtags": "#CMAawards #CMAs #EllaLangley #GTA6 #GTAVI",
       "userTags": [
         {
           "username": "ellalangleymusic",
@@ -178,7 +179,19 @@
         "GREY": "#5E5A52"
       },
       "subtle": "#D9CBA3",
-      "drinkTag": "CURTAIN CALL"
+      "drinkTag": "CURTAIN CALL",
+      "strip": {
+        "tag": "ALSO TONIGHT  ·  LAST CALL BEFORE VICE CITY",
+        "line": "GTA 6 launches tomorrow, Nov 19  ·  PS5 & Xbox",
+        "gradient": [
+          "#2B1055",
+          "#C2187A",
+          "#FF4F7B",
+          "#FF9A3C"
+        ],
+        "text": "#FFFFFF",
+        "tagColor": "#FFE29A"
+      }
     },
     "bad": "Bucks at Heat",
     "badWhy": "Line: Heat -12.5. Miami heat wave melts the Bucks.",
