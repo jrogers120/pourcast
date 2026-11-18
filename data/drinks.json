@@ -112,5 +112,11 @@
   "barId": "pearl-diver",
   "desc": "Chai dark rum, coffee liqueur, vanilla and espresso",
   "source": "https://pearldivernashville.com/nashville-east-nashville-pearl-diver-drink-menu"
+ },
+ {
+  "name": "Slow Roads",
+  "barId": "old-glory",
+  "desc": "Rye, aged rum, chocolate bitters and banana",
+  "source": "https://theinfatuation.com/nashville/reviews/old-glory"
  }
 ]

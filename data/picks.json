@@ -178,6 +178,15 @@
         "GREY": "#5E5A52"
       },
       "subtle": "#D9CBA3"
+    },
+    "bad": "Bucks at Heat",
+    "badWhy": "Line: Heat -12.5. Miami heat wave melts the Bucks.",
+    "badTime": "18:00",
+    "drink": {
+      "name": "Slow Roads",
+      "barId": "old-glory",
+      "desc": "Rye, aged rum, chocolate bitters and banana",
+      "source": "https://theinfatuation.com/nashville/reviews/old-glory"
     }
   }
 }
