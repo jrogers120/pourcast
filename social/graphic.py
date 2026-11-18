@@ -351,7 +351,7 @@ def _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=
         d.rounded_rectangle([L, top, R, top + DRINK_H], radius=14, fill=NAVY, outline=GOLD, width=4)
         _glass(d, L + 70, top + 52, 36)
         tx = L + 140
-        tag = "DRINK OF THE DAY  ·  " + _pun(DRINK_TAGS, today, 1)
+        tag = "DRINK OF THE DAY  ·  " + (special.get("drinkTag") or _pun(DRINK_TAGS, today, 1))
         d.text((tx, top + 12), tag, font=_fit(d, tag, BOLD, 27, R - tx - 20), fill=GOLD)
         head = f"{drink['name']} at {bar_label(drink['barId'])}"
         d.text((tx, top + 44), _clip(d, head, FONT(BOLD, 36), R - tx - 20), font=_fit(d, head, BOLD, 36, R - tx - 20), fill=WHITE)
