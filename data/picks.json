@@ -165,7 +165,19 @@
           "x": 0.65,
           "y": 0.24
         }
-      ]
+      ],
+      "icon": "star",
+      "colors": {
+        "BLUE": "#111111",
+        "NAVY": "#0B0B0B",
+        "RED": "#9C7A1E",
+        "GOLD": "#E3BE55",
+        "AMBER": "#B8912F",
+        "PAPER": "#FBF7EE",
+        "INK": "#151515",
+        "GREY": "#5E5A52"
+      },
+      "subtle": "#D9CBA3"
     }
   }
 }

@@ -210,7 +210,28 @@ def pick(today_events, bar_label):
     return games, happy, nights
 
 
+PALETTE_KEYS = ("BLUE", "NAVY", "RED", "GOLD", "AMBER", "WHITE", "INK", "GREY", "PAPER")
+
+
 def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=None, drinks=None, bar_ok=None):
+    # A special night can recolor the whole graphic: picks.json "special": {"colors": {"BLUE": "#111111", ...}}
+    special = ((picks or {}).get(today.isoformat()) or {}).get("special") or {}
+    saved = {k: globals()[k] for k in PALETTE_KEYS}
+    globals().update({k: v for k, v in (special.get("colors") or {}).items() if k in PALETTE_KEYS})
+    try:
+        return _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks, drinks, bar_ok)
+    finally:
+        globals().update(saved)
+
+
+def _star(d, cx, cy, r):
+    import math
+    pts = [(cx + (r if i % 2 == 0 else r * .45) * math.cos(math.radians(-90 + i * 36)),
+            cy + (r if i % 2 == 0 else r * .45) * math.sin(math.radians(-90 + i * 36))) for i in range(10)]
+    d.polygon(pts, fill=GOLD, outline=AMBER)
+
+
+def _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=None, drinks=None, bar_ok=None):
     games, happy, nights = pick(today_events, bar_label)
     good, bad = headliners(games, (picks or {}).get(today.isoformat()))
     drink = drink_for(today, (picks or {}).get(today.isoformat()), drinks, bar_ok or (lambda b: bool(b)))
@@ -257,7 +278,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         g, bars, why = item
         h = 78
         d.rounded_rectangle([L, y, R, y + h], radius=12, fill=WHITE, outline=GOLD, width=4)
-        _sun(d, L + 44, y + h // 2, 18)
+        (_star if special.get("icon") == "star" else _sun)(d, L + 44, y + h // 2, 22 if special.get("icon") == "star" else 18)
         tx = L + 90
         d.text((tx, y + 9), special.get("tag") or ("GAME OF THE DAY  ·  " + _pun(GOOD_TAGS, today)), font=FONT(BOLD, 22), fill=RED)
         line = g["title"] + "  ·  " + when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "")
@@ -334,7 +355,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         d.text((tx, top + 12), tag, font=_fit(d, tag, BOLD, 27, R - tx - 20), fill=GOLD)
         head = f"{drink['name']} at {bar_label(drink['barId'])}"
         d.text((tx, top + 44), _clip(d, head, FONT(BOLD, 36), R - tx - 20), font=_fit(d, head, BOLD, 36, R - tx - 20), fill=WHITE)
-        d.text((tx, top + 86), _clip(d, drink.get("desc") or "", FONT(REG, 26), R - tx - 20), font=FONT(REG, 26), fill="#C9D6F2")
+        d.text((tx, top + 86), _clip(d, drink.get("desc") or "", FONT(REG, 26), R - tx - 20), font=FONT(REG, 26), fill=special.get("subtle") or "#C9D6F2")
 
     # footer
     d.rectangle([0, H - 110, W, H], fill=NAVY)
