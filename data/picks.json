@@ -143,6 +143,29 @@
     "good": "CMA Awards",
     "goodWhy": "Lainey Wilson brings a warm front to Bridgestone.",
     "goodTime": "19:00",
-    "goodTv": "ABC"
+    "goodTv": "ABC",
+    "special": {
+      "tag": "LIVE FROM BRIDGESTONE ARENA  ·  HOSTED BY LAINEY WILSON",
+      "banner": "CMA AWARDS NIGHT  ·  WEDNESDAY, NOV 18",
+      "caption": [
+        "🏆 CMA AWARDS NIGHT: 7:00 PM on ABC, live from Bridgestone Arena",
+        "   Lainey Wilson hosts, and @ellalangleymusic leads the field with 9 nominations. Good luck tonight, Ella! 🤠",
+        "   Big night for @cma and Music City. Catch the show at the bar and tag us in your watch party.",
+        "🎤 After the show: CMA Awards Country Late Night After Party at Ole Red (Broadway), 10:00 PM, ticketed"
+      ],
+      "hashtags": "#CMAawards #CMAs #EllaLangley",
+      "userTags": [
+        {
+          "username": "ellalangleymusic",
+          "x": 0.35,
+          "y": 0.24
+        },
+        {
+          "username": "cma",
+          "x": 0.65,
+          "y": 0.24
+        }
+      ]
+    }
   }
 }

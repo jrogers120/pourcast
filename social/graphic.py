@@ -214,6 +214,9 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     games, happy, nights = pick(today_events, bar_label)
     good, bad = headliners(games, (picks or {}).get(today.isoformat()))
     drink = drink_for(today, (picks or {}).get(today.isoformat()), drinks, bar_ok or (lambda b: bool(b)))
+    # Optional one-day special (big night in town) from picks.json:
+    # {"tag": strip label, "banner": red date-bar text, "caption": [lines], "hashtags": "#..."}
+    special = ((picks or {}).get(today.isoformat()) or {}).get("special") or {}
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
 
@@ -224,7 +227,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     d.text((199, 124), "NASHVILLE, TN  ·  WHAT'S POURING TONIGHT", font=FONT(BOLD, 30), fill=GOLD)
     # red date bar
     d.rectangle([0, 190, W, 262], fill=RED)
-    date_txt = f"TONIGHT'S FORECAST  ·  {DOW[pydow(today)]}, {MON[today.month - 1]} {today.day}"
+    date_txt = special.get("banner") or f"TONIGHT'S FORECAST  ·  {DOW[pydow(today)]}, {MON[today.month - 1]} {today.day}"
     d.text((48, 205), date_txt, font=_fit(d, date_txt, BOLD, 40, W - 96), fill=WHITE)
 
     y = 292
@@ -256,7 +259,7 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         d.rounded_rectangle([L, y, R, y + h], radius=12, fill=WHITE, outline=GOLD, width=4)
         _sun(d, L + 44, y + h // 2, 18)
         tx = L + 90
-        d.text((tx, y + 9), "GAME OF THE DAY  ·  " + _pun(GOOD_TAGS, today), font=FONT(BOLD, 22), fill=RED)
+        d.text((tx, y + 9), special.get("tag") or ("GAME OF THE DAY  ·  " + _pun(GOOD_TAGS, today)), font=FONT(BOLD, 22), fill=RED)
         line = g["title"] + "  ·  " + when(g) + (f"  ·  {g['tv']}" if g.get("tv") else "")
         d.text((tx, y + 38), _clip(d, line, FONT(BOLD, 28), R - tx - 16), font=FONT(BOLD, 28), fill=INK)
         y += h + 16
@@ -345,7 +348,9 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
     # caption
     dayname = DOW[pydow(today)].title()
     lines = [f"🍺 Tonight's Pourcast for Nashville: {dayname}, {MON[today.month - 1].title()} {today.day}", "📍 Nashville, TN", ""]
-    for item, icon, label in ((good, "☀️", "GAME OF THE DAY"),):
+    if special.get("caption"):
+        lines += list(special["caption"])
+    for item, icon, label in (() if special.get("caption") else ((good, "☀️", "GAME OF THE DAY"),)):
         if item:
             g, bars, why = item
             why = why or (_pun(GOOD_PUNS, today) if icon == "☀️" else _pun(BAD_PUNS, today, 3))
@@ -376,9 +381,13 @@ def make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=N
         lines.append("")
     lines += ["Every bar, every deal, every game: link in bio 👉 " + base_url.replace("https://", ""),
               "Hosting something? Post it free on the site.", "",
-              "#Nashville #NashvilleBars #NashvilleHappyHour #MusicCity #NashvilleNightlife #SECFootball #Pourcast"]
+              "#Nashville #NashvilleBars #NashvilleHappyHour #MusicCity #NashvilleNightlife #SECFootball #Pourcast"
+              + (" " + special["hashtags"] if special.get("hashtags") else "")]
     caption = "\n".join(lines)[:2150]
     open(os.path.join(out_dir, f"{name}.txt"), "w").write(caption)
+    tags_file = os.path.join(out_dir, f"{name}.tags.json")
+    if special.get("userTags"):  # Instagram photo tags, e.g. [{"username": "cma", "x": 0.5, "y": 0.24}]
+        json.dump(special["userTags"], open(tags_file, "w"))
     json.dump({"date": name, "image": f"{base_url}/social/{name}.png", "caption": caption},
               open(os.path.join(out_dir, "latest.json"), "w"), ensure_ascii=False)
     return name

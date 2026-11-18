@@ -50,6 +50,8 @@ def main():
     if not os.path.exists(cap_file):
         sys.exit(f"No caption for {today}. Run build.py first.")
     caption = open(cap_file).read()
+    tags_path = os.path.join(ROOT, "public", "social", f"{today}.tags.json")
+    user_tags = open(tags_path).read() if os.path.exists(tags_path) else ""
     image_url = f"{BASE}/social/{today}.png"
 
     # the image must already be live on the website for Instagram to fetch it
@@ -105,14 +107,24 @@ def main():
             failed.append("Facebook")
     if user:
         try:
-            post_instagram(user, token, image_url, caption, today)
+            post_instagram(user, token, image_url, caption, today, user_tags)
         except SystemExit as err:
             print(err); failed.append("Instagram")
     if failed:
         sys.exit("Failed: " + ", ".join(failed))
 
 
-def post_instagram(user, token, image_url, caption, today):
+def post_instagram(user, token, image_url, caption, today, user_tags=""):
+    if user_tags:
+        # Photo tags (special nights). If Instagram refuses them, post untagged; the caption still @mentions.
+        try:
+            params = dict(image_url=image_url, caption=caption, user_tags=user_tags, access_token=token)
+            if LOCATION:
+                params["location_id"] = LOCATION
+            container = call("POST", f"{user}/media", **params)["id"]
+            return _publish(user, token, container, today)
+        except APIError as err:
+            print("Instagram rejected the photo tags, posting without them:", err)
 
     try:
         container = (call("POST", f"{user}/media", image_url=image_url, caption=caption, location_id=LOCATION, access_token=token) if LOCATION
@@ -120,6 +132,10 @@ def post_instagram(user, token, image_url, caption, today):
     except APIError as err:
         print("Instagram rejected the location tag, posting without it:", err)
         container = call("POST", f"{user}/media", image_url=image_url, caption=caption, access_token=token)["id"]
+    _publish(user, token, container, today)
+
+
+def _publish(user, token, container, today):
     for _ in range(30):
         status = call("GET", container, fields="status_code", access_token=token).get("status_code")
         if status == "FINISHED":
