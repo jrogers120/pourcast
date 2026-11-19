@@ -420,7 +420,9 @@ def _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=
                 lines.append(f"   {why}")
     if good or bad:
         lines.append("")
-    drink_ig = _drink_handle(drink)
+    # Tag the bar only when the drink was checked on the bar's own current menu today (picks "verified": today),
+    # so a stale fallback-rotation drink never @'s a bar that may not pour it tonight.
+    drink_ig = _drink_handle(drink) if drink and drink.get("verified") == today.isoformat() else ""
     if drink:
         lines.append(f"🍸 DRINK OF THE DAY: {drink['name']} at {bar_label(drink['barId'])}" + (f" @{drink_ig}" if drink_ig else ""))
         if drink.get("desc"):

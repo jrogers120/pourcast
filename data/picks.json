@@ -222,7 +222,8 @@
       "name": "When Did You Get Hot?",
       "barId": "sidecar-bar",
       "desc": "Pear vodka, St-Germain, lemon and serrano peppers",
-      "source": "https://www.sidecarbarnash.com/drinks"
+      "source": "https://www.sidecarbarnash.com/drinks",
+      "verified": "2026-11-19"
     }
   }
 }
