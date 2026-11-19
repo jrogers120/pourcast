@@ -164,6 +164,20 @@ def drink_for(today, picks_for_day, drinks, bar_ok):
     return pool[order[today.toordinal() % len(pool)]]
 
 
+def _drink_handle(drink):
+    """Instagram handle for the drink's bar: picks/drinks "instagram" first, then bars.json "instagram"."""
+    if not drink:
+        return ""
+    h = drink.get("instagram")
+    if not h:
+        try:
+            bars = json.load(open(os.path.join(HERE, "..", "data", "bars.json")))
+            h = next((b.get("instagram") for b in bars if b.get("id") == drink.get("barId")), "")
+        except (OSError, ValueError):
+            h = ""
+    return re.sub(r"[^A-Za-z0-9._]", "", (h or "").lstrip("@"))
+
+
 def _glass(d, cx, cy, r):
     d.polygon([(cx - r, cy - r * .8), (cx + r, cy - r * .8), (cx, cy + r * .35)], fill="#F8D7E3", outline=WHITE)
     d.polygon([(cx - r * .78, cy - r * .62), (cx + r * .78, cy - r * .62), (cx, cy + r * .2)], fill=RED)
@@ -406,8 +420,9 @@ def _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=
                 lines.append(f"   {why}")
     if good or bad:
         lines.append("")
+    drink_ig = _drink_handle(drink)
     if drink:
-        lines.append(f"🍸 DRINK OF THE DAY: {drink['name']} at {bar_label(drink['barId'])}")
+        lines.append(f"🍸 DRINK OF THE DAY: {drink['name']} at {bar_label(drink['barId'])}" + (f" @{drink_ig}" if drink_ig else ""))
         if drink.get("desc"):
             lines.append(f"   {drink['desc']}. Menus rotate, so ask your bartender.")
         lines.append("")
@@ -433,8 +448,12 @@ def _make(out_dir, today, today_events, bar_label, when, base_url, pydow, picks=
     caption = "\n".join(lines)[:2150]
     open(os.path.join(out_dir, f"{name}.txt"), "w").write(caption)
     tags_file = os.path.join(out_dir, f"{name}.tags.json")
-    if special.get("userTags"):  # Instagram photo tags, e.g. [{"username": "cma", "x": 0.5, "y": 0.24}]
-        json.dump(special["userTags"], open(tags_file, "w"))
+    # Instagram photo tags, e.g. [{"username": "cma", "x": 0.5, "y": 0.24}]; the drink bar is tagged on its strip
+    user_tags = list(special.get("userTags") or [])
+    if drink_ig and all(t.get("username", "").lower() != drink_ig.lower() for t in user_tags):
+        user_tags.append({"username": drink_ig, "x": 0.5, "y": round((H - 110 - 14 - 62) / H, 3)})
+    if user_tags:
+        json.dump(user_tags[:20], open(tags_file, "w"))
     json.dump({"date": name, "image": f"{base_url}/social/{name}.png", "caption": caption},
               open(os.path.join(out_dir, "latest.json"), "w"), ensure_ascii=False)
     return name

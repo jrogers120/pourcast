@@ -118,5 +118,11 @@
   "barId": "old-glory",
   "desc": "Rye, aged rum, chocolate bitters and banana",
   "source": "https://theinfatuation.com/nashville/reviews/old-glory"
+ },
+ {
+  "name": "When Did You Get Hot?",
+  "barId": "sidecar-bar",
+  "desc": "Pear vodka, St-Germain, lemon and serrano peppers",
+  "source": "https://www.sidecarbarnash.com/drinks"
  }
 ]
