@@ -4607,5 +4607,130 @@
   "date": "2026-11-18",
   "time": "22:00",
   "source": "https://www.eventbrite.com/e/cma-awards-country-late-night-after-party-registration-1993484070518"
+ },
+ {
+  "id": "hh4-lowbar-0",
+  "barId": "lowbar",
+  "type": "happy",
+  "weekly": true,
+  "title": "Happy hour (5–8 PM)",
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "17:00",
+  "deals": "Daily happy hour (deals not listed online)",
+  "source": "https://www.lowbarnashville.com/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-0",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "Margarita Monday (all day)",
+  "days": [
+   1
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "$10 classic margaritas; buy any to-go beer, get a pint free",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-1",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "2-for-1 Tuesday (all day)",
+  "days": [
+   2
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "2 beers for the price of 1; buy any to-go beer, get a pint free",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-2",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "Wednesday special (all day)",
+  "days": [
+   3
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "$5 Yacht Waters, $12 Yacht & a Shot; buy any to-go beer, get a pint free",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-3",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "Thursday special (all day)",
+  "days": [
+   4
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "$5 Gasoline Dreams; buy any to-go beer, get a pint free",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-4",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "404 Friday (all day)",
+  "days": [
+   5
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "$4 404 Lagers",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-5",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "Sneaky Shot Saturday (all day)",
+  "days": [
+   6
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "$5 Jell-O shots",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-monday-night-brewing-germantown-6",
+  "barId": "monday-night-brewing-germantown",
+  "type": "happy",
+  "weekly": true,
+  "title": "Sunday special (all day)",
+  "days": [
+   0
+  ],
+  "time": "12:00",
+  "timeLabel": "All day",
+  "deals": "$5 Dr. Robots, $8 Bloody Marys",
+  "source": "https://mondaynightbrewing.com/location/preservation-co/",
+  "verified": "2026-11-20"
  }
 ]
