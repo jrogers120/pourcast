@@ -225,5 +225,22 @@
       "source": "https://www.sidecarbarnash.com/drinks",
       "verified": "2026-11-19"
     }
+  },
+  "2026-11-20": {
+    "good": "Iowa State at UCF",
+    "goodWhy": "Line: UCF -1.5. Cyclone spins into the Bounce House.",
+    "goodTime": "17:00",
+    "goodTv": "FS1",
+    "bad": "UTEP at Air Force",
+    "badWhy": "Line: Air Force -21.5. Falcon jet stream over the Rockies.",
+    "badTime": "19:00",
+    "badTv": "The CW",
+    "drink": {
+      "name": "Rule of Thirds",
+      "barId": "rosemary-beauty-queen",
+      "desc": "Mezcal, Aperol, Ancho Reyes, tangerine-orange, agave and lime",
+      "source": "https://www.rosemaryandbeautyqueen.com/cocktails",
+      "verified": "2026-11-20"
+    }
   }
 }

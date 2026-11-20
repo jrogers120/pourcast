@@ -124,5 +124,11 @@
   "barId": "sidecar-bar",
   "desc": "Pear vodka, St-Germain, lemon and serrano peppers",
   "source": "https://www.sidecarbarnash.com/drinks"
+ },
+ {
+  "name": "Rule of Thirds",
+  "barId": "rosemary-beauty-queen",
+  "desc": "Mezcal, Aperol, Ancho Reyes, tangerine-orange, agave and lime",
+  "source": "https://www.rosemaryandbeautyqueen.com/cocktails"
  }
 ]
