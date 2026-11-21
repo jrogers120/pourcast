@@ -4732,5 +4732,20 @@
   "deals": "$5 Dr. Robots, $8 Bloody Marys",
   "source": "https://mondaynightbrewing.com/location/preservation-co/",
   "verified": "2026-11-20"
+ },
+ {
+  "id": "hh4-listening-room-cafe-0",
+  "barId": "listening-room-cafe",
+  "type": "happy",
+  "weekly": true,
+  "title": "Happy hour (4–5:30 PM)",
+  "days": [
+   4,
+   5
+  ],
+  "time": "16:00",
+  "deals": "Happy hour deals with free live music in the front bar (prices not listed)",
+  "source": "https://www.listeningroomcafe.com/faqs",
+  "verified": "2026-11-21"
  }
 ]

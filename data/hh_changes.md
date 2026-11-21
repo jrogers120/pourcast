@@ -179,3 +179,10 @@
 - Checked, nothing found on bar sources: Rudy's Jazz Room (site timed out), Santa's Pub (no site), Scoreboard (site timed out), Skull's Rainbow Room, Springwater Supper Club (no site), Station Inn, Tee Line (own HH page exists but wouldn't load; NFL gameday buckets have no times), The 5 Spot (Friday 6 PM "Rock'n Roll Happy Hour" show says only "cheap drinks"), The Basement East.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4; specials are images on its calendar), Sonny's (3; daily specials and brunch drinks are images), Never Never (4–8 PM time confirmed, days/deals not), Embers Ski Lodge (2, site unreachable), Aladdin's (2, redirect loop), Game Terminal (deals; Nov 2026 HH menu is an image), The Treehouse (own HH page errors), Crazy Gnome.
 - Needs a look: Crazy Gnome's own site lists no happy hour or pint deal (hours Wed–Thu 4–10 PM, Fri–Sun noon–10 PM). Sidecar's own homepage shows only $7 event martinis vs our $10 Tuesday martini. Live Oak address may be 1530 Demonbreun (listing sites), we have 1522.
+
+## 2026-11-21
+
+- The Listening Room Cafe: added hh4-listening-room-cafe-0, Thu–Fri 4–5:30 PM happy hour with free live music in the front bar (prices not listed). Source: https://www.listeningroomcafe.com/faqs ("free live music on Thursday's & Friday in our front bar for Happy hour from 4-5:30pm"; opens 4 PM).
+- Checked, nothing found on bar sources: Jackalope (Wedgewood-Houston; taproom page lists no HH), Marble Fox, New Heights, Harding House, Lonnie's Western Room, Ms. Kelli's, The Lipstick Lounge, The Nashville Palace, The Patterson House (site lists no HH), The Pharmacy (Toast page lists no HH).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal (deals), The Treehouse, Crazy Gnome. Searches returned only guide/listing pages this run.
+- Needs a look: Golden Sound (omakase) and Crazy Gnome still show no happy hour on their own sites.
