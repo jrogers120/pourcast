@@ -1,14 +1,4 @@
 {
-  "2026-11-06": {
-    "good": "Virginia Tech at SMU",
-    "goodWhy": "Line: SMU -6.5. Warm Dallas air meets a Hokie front.",
-    "drink": {
-      "name": "Buck Cherry",
-      "barId": "cherries",
-      "desc": "Mezcal, ginger, house cherry cordial and lime",
-      "source": "https://cherriesnashville.com/menu"
-    }
-  },
   "2026-11-07": {
     "good": "Clemson at Syracuse",
     "goodWhy": "Line: Clemson -1.5. Tight front forecast for the Dome.",
@@ -241,6 +231,23 @@
       "desc": "Mezcal, Aperol, Ancho Reyes, tangerine-orange, agave and lime",
       "source": "https://www.rosemaryandbeautyqueen.com/cocktails",
       "verified": "2026-11-20"
+    }
+  },
+  "2026-11-21": {
+    "good": "LSU at Tennessee",
+    "goodWhy": "Line: LSU -1.5. Bayou fog meets Smoky Mountain mist.",
+    "goodTime": "14:30",
+    "goodTv": "ABC",
+    "bad": "Wofford at Ole Miss",
+    "badWhy": "Line: Ole Miss -49.5. Grove gets a 50-point downpour.",
+    "badTime": "11:00",
+    "badTv": "SEC Network+",
+    "drink": {
+      "name": "Dolly Goes to Cabo",
+      "barId": "happy-does",
+      "desc": "Blanco tequila, Aperol, coconut, lime and agave",
+      "source": "https://www.happydoesnash.com/drink-menu",
+      "verified": "2026-11-21"
     }
   }
 }

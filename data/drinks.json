@@ -130,5 +130,11 @@
   "barId": "rosemary-beauty-queen",
   "desc": "Mezcal, Aperol, Ancho Reyes, tangerine-orange, agave and lime",
   "source": "https://www.rosemaryandbeautyqueen.com/cocktails"
+ },
+ {
+  "name": "Dolly Goes to Cabo",
+  "barId": "happy-does",
+  "desc": "Blanco tequila, Aperol, coconut, lime and agave",
+  "source": "https://www.happydoesnash.com/drink-menu"
  }
 ]
