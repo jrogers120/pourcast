@@ -4747,5 +4747,25 @@
   "deals": "Happy hour deals with free live music in the front bar (prices not listed)",
   "source": "https://www.listeningroomcafe.com/faqs",
   "verified": "2026-11-21"
+ },
+ {
+  "id": "hh4-the-goat-germantown-0",
+  "barId": "the-goat-germantown",
+  "type": "happy",
+  "title": "Happy hour (3–6 PM)",
+  "weekly": true,
+  "days": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "time": "15:00",
+  "deals": "$6 house wines, $7 cocktails, $2 off all drafts",
+  "source": "https://www.lcgoat.com/locations/germantown",
+  "verified": "2026-11-22"
  }
 ]

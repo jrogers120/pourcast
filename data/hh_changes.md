@@ -186,3 +186,9 @@
 - Checked, nothing found on bar sources: Jackalope (Wedgewood-Houston; taproom page lists no HH), Marble Fox, New Heights, Harding House, Lonnie's Western Room, Ms. Kelli's, The Lipstick Lounge, The Nashville Palace, The Patterson House (site lists no HH), The Pharmacy (Toast page lists no HH).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal (deals), The Treehouse, Crazy Gnome. Searches returned only guide/listing pages this run.
 - Needs a look: Golden Sound (omakase) and Crazy Gnome still show no happy hour on their own sites.
+
+## 2026-11-22
+
+- The Goat (Germantown): added hh4-the-goat-germantown-0, daily 3–6 PM happy hour: $6 house wines, $7 cocktails, $2 off all drafts. Source: https://www.lcgoat.com/locations/germantown ("Happy Hour • Every day!", "3PM - 6PM"; open daily 11 AM–midnight).
+- Checked, nothing found on bar sources: The Stage on Broadway, Tootsie's (menu is an image), Wild Beaver Saloon, Xul Beer (Nations) and Southern Grist East (both taprooms now Xul Beer; event pages only), Attaboy, Bobby's Idle Hour (no own site), BoomBozz East (menu PDF blocked), Bringle's (Friday prime rib special only, no time/price; not added), Brotherly Love (own site lists no HH).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), Game Terminal (deals), The Treehouse, Crazy Gnome. Most of these bars' own sites were blocked from fetching this run.
