@@ -1,16 +1,4 @@
 {
-  "2026-11-07": {
-    "good": "Clemson at Syracuse",
-    "goodWhy": "Line: Clemson -1.5. Tight front forecast for the Dome.",
-    "bad": "West Virginia at Texas Tech",
-    "badWhy": "Line: Texas Tech -17.5. Red Raider heat wave in Lubbock.",
-    "drink": {
-      "name": "You're Hot Honey",
-      "barId": "odies",
-      "desc": "Tequila, grapefruit, hot honey syrup, lime and soda, Tajín rim",
-      "source": "https://www.odiesbar.com/drink-menu"
-    }
-  },
   "2026-11-08": {
     "good": "Broncos at Panthers",
     "goodWhy": "Line: Broncos -2.5. Mile High front stalls in Charlotte.",
@@ -248,6 +236,23 @@
       "desc": "Blanco tequila, Aperol, coconut, lime and agave",
       "source": "https://www.happydoesnash.com/drink-menu",
       "verified": "2026-11-21"
+    }
+  },
+  "2026-11-22": {
+    "good": "Ravens at Panthers",
+    "goodWhy": "Line: Panthers -2.5. Purple storm prowls Charlotte skies.",
+    "goodTime": "12:00",
+    "goodTv": "FOX",
+    "bad": "Dolphins at Bills",
+    "badWhy": "Line: Bills -16.5. Orchard Park blizzard chills the Fins.",
+    "badTime": "12:00",
+    "badTv": "CBS",
+    "drink": {
+      "name": "Dark Paradise",
+      "barId": "rosemary-beauty-queen",
+      "desc": "Coffee liqueur, coconut rum, cachaça, pineapple, coconut and lime",
+      "source": "https://www.rosemaryandbeautyqueen.com/menu",
+      "verified": "2026-11-22"
     }
   }
 }
