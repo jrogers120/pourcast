@@ -193,13 +193,13 @@
   "days": [
    1,
    2,
-   3,
    4,
    5
   ],
   "time": "11:00",
   "deals": "2-for-1 drafts, wells & wines",
-  "source": "https://styleblueprint.com/nashville/everyday/best-happy-hours/"
+  "source": "https://east.noblesbeerhall.com/nashville-east-nashville-noble-s-east-happy-hour",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh-sports-social-0",
@@ -350,7 +350,8 @@
   "deals": "$3 domestics, $4 wells, $5 Green Tea/White Tea/Lemon Drop/Fireball shots, $6 calls, $6 chicken & jack quesadillas",
   "barId": "tin-roof",
   "weekly": true,
-  "source": "https://theoriginaltinroof.com"
+  "source": "https://theoriginaltinroof.com/food-drinks/",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh-tin-roof-1",
@@ -364,7 +365,8 @@
   "deals": "$3 domestics, $4 wells, $5 Green Tea/White Tea/Lemon Drop/Fireball shots, $6 calls, $6 chicken & jack quesadillas",
   "barId": "tin-roof",
   "weekly": true,
-  "source": "https://theoriginaltinroof.com"
+  "source": "https://theoriginaltinroof.com/food-drinks/",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh-tin-roof-2",
@@ -378,7 +380,8 @@
   "deals": "$5 margaritas, $6 Modelo drafts",
   "barId": "tin-roof",
   "weekly": true,
-  "source": "https://theoriginaltinroof.com"
+  "source": "https://theoriginaltinroof.com/food-drinks/",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh-tin-roof-3",
@@ -392,7 +395,8 @@
   "deals": "$5 seltzers (White Claw, High Noon, Nutrl, Sun Cruiser, Super Lyte)",
   "barId": "tin-roof",
   "weekly": true,
-  "source": "https://theoriginaltinroof.com"
+  "source": "https://theoriginaltinroof.com/food-drinks/",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh-tin-roof-4",
@@ -405,7 +409,8 @@
   "deals": "$3 liquor, 2-for-1 domestic beers & select seltzers",
   "barId": "tin-roof",
   "weekly": true,
-  "source": "https://theoriginaltinroof.com"
+  "source": "https://theoriginaltinroof.com/food-drinks/",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh-tin-roof-5",
@@ -418,7 +423,8 @@
   "deals": "$20 domestic buckets, $25 premium buckets, $30 seltzer buckets",
   "barId": "tin-roof",
   "weekly": true,
-  "source": "https://theoriginaltinroof.com"
+  "source": "https://theoriginaltinroof.com/food-drinks/",
+  "verified": "2026-11-23"
  },
  {
   "id": "w-tin-roof-6",
@@ -1008,7 +1014,7 @@
   "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
   "type": "happy",
   "source": "https://www.sonnysnashville.com/drinks",
-  "verified": "2026-11-19"
+  "verified": "2026-11-23"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-1",
@@ -1160,7 +1166,7 @@
   "deals": "$2 off wine, wells & drafts",
   "type": "happy",
   "source": "https://www.sidecarbarnash.com/drinks",
-  "verified": "2026-11-19"
+  "verified": "2026-11-23"
  },
  {
   "id": "hh2-sidecar-bar-1",
@@ -1383,7 +1389,8 @@
   "title": "Happy hour (4–7 PM)",
   "deals": "$5 domestic beer, $5 wine, $7 house margaritas, $7 Holler & Swaller hard tea, half-off loaded fries",
   "type": "happy",
-  "source": "Odie's (via Google), shared by Pourcast"
+  "source": "https://www.odiesbar.com/happy-hour",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh2-happy-does-0",
@@ -1901,7 +1908,8 @@
   "time": "11:00",
   "source": "https://www.tailgatebeer.com/specials",
   "deals": "Half-priced pizzas, dine-in only",
-  "timeLabel": "All day"
+  "timeLabel": "All day",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh3-tailgate-east-0",
@@ -1915,7 +1923,8 @@
   "time": "11:00",
   "source": "https://www.tailgatebeer.com/specials",
   "deals": "Half-priced pizzas, dine-in only",
-  "timeLabel": "All day"
+  "timeLabel": "All day",
+  "verified": "2026-11-23"
  },
  {
   "id": "hh3-tailgate-germantown-0",
@@ -1929,7 +1938,8 @@
   "time": "11:00",
   "source": "https://www.tailgatebeer.com/specials",
   "deals": "Half-priced pizzas, dine-in only",
-  "timeLabel": "All day"
+  "timeLabel": "All day",
+  "verified": "2026-11-23"
  },
  {
   "id": "s-live-oak-fall-2026-11-05",
@@ -4767,5 +4777,131 @@
   "deals": "$6 house wines, $7 cocktails, $2 off all drafts",
   "source": "https://www.lcgoat.com/locations/germantown",
   "verified": "2026-11-22"
+ },
+ {
+  "id": "hh4-nobles-0",
+  "barId": "nobles",
+  "type": "happy",
+  "title": "All-day happy hour Wednesday",
+  "weekly": true,
+  "days": [
+   3
+  ],
+  "time": "11:00",
+  "deals": "2-for-1 wells, wine & drafts",
+  "source": "https://east.noblesbeerhall.com/nashville-east-nashville-noble-s-east-happy-hour",
+  "verified": "2026-11-23",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-nobles-1",
+  "barId": "nobles",
+  "type": "happy",
+  "title": "Monday late deal (6 PM–close)",
+  "weekly": true,
+  "days": [
+   1
+  ],
+  "time": "18:00",
+  "deals": "2-for-1 wells",
+  "source": "https://east.noblesbeerhall.com/nashville-east-nashville-noble-s-east-happy-hour",
+  "verified": "2026-11-23"
+ },
+ {
+  "id": "hh4-nobles-2",
+  "barId": "nobles",
+  "type": "happy",
+  "title": "Tuesday late deal (6 PM–close)",
+  "weekly": true,
+  "days": [
+   2
+  ],
+  "time": "18:00",
+  "deals": "$5 Fernet shots, $3 Miller Lite drafts",
+  "source": "https://east.noblesbeerhall.com/nashville-east-nashville-noble-s-east-happy-hour",
+  "verified": "2026-11-23"
+ },
+ {
+  "id": "hh4-nobles-3",
+  "barId": "nobles",
+  "type": "happy",
+  "title": "Saturday buckets",
+  "weekly": true,
+  "days": [
+   6
+  ],
+  "time": "11:00",
+  "deals": "$19 Coors Light buckets, $22 domestic buckets, $7.50 Modelo steins",
+  "source": "https://east.noblesbeerhall.com/nashville-east-nashville-noble-s-east-happy-hour",
+  "verified": "2026-11-23",
+  "timeLabel": "All day"
+ },
+ {
+  "id": "hh4-nobles-4",
+  "barId": "nobles",
+  "type": "happy",
+  "title": "Sunday buckets (11 AM–6 PM)",
+  "weekly": true,
+  "days": [
+   0
+  ],
+  "time": "11:00",
+  "deals": "$22 domestic buckets",
+  "source": "https://east.noblesbeerhall.com/nashville-east-nashville-noble-s-east-happy-hour",
+  "verified": "2026-11-23"
+ },
+ {
+  "id": "hh4-tailgate-demonbreun-0",
+  "barId": "tailgate-demonbreun",
+  "type": "happy",
+  "title": "Weekday lunch deal (11 AM–1 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "11:00",
+  "deals": "$7.99 small cheese pizza, $8.99 small pepperoni, $9.99 sandwiches (dine-in)",
+  "source": "https://www.tailgatebeer.com/specials",
+  "verified": "2026-11-23"
+ },
+ {
+  "id": "hh4-tailgate-east-0",
+  "barId": "tailgate-east",
+  "type": "happy",
+  "title": "Weekday lunch deal (11 AM–1 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "11:00",
+  "deals": "$7.99 small cheese pizza, $8.99 small pepperoni, $9.99 sandwiches (dine-in)",
+  "source": "https://www.tailgatebeer.com/specials",
+  "verified": "2026-11-23"
+ },
+ {
+  "id": "hh4-tailgate-germantown-0",
+  "barId": "tailgate-germantown",
+  "type": "happy",
+  "title": "Weekday lunch deal (11 AM–1 PM)",
+  "weekly": true,
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "time": "11:00",
+  "deals": "$7.99 small cheese pizza, $8.99 small pepperoni, $9.99 sandwiches (dine-in)",
+  "source": "https://www.tailgatebeer.com/specials",
+  "verified": "2026-11-23"
  }
 ]
