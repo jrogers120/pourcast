@@ -142,5 +142,11 @@
   "barId": "rosemary-beauty-queen",
   "desc": "Coffee liqueur, coconut rum, cachaça, pineapple, coconut and lime",
   "source": "https://www.rosemaryandbeautyqueen.com/menu"
+ },
+ {
+  "name": "The Alley Ghost",
+  "barId": "skull-s-rainbow-room",
+  "desc": "Mezcal, Chambord and lemon",
+  "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_2ef5b8422dc74fa39b05179433999e9a.pdf"
  }
 ]

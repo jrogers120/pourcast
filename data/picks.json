@@ -1,14 +1,4 @@
 {
-  "2026-11-08": {
-    "good": "Broncos at Panthers",
-    "goodWhy": "Line: Broncos -2.5. Mile High front stalls in Charlotte.",
-    "drink": {
-      "name": "Maya Bay",
-      "barId": "pearl-diver",
-      "desc": "Reposado tequila, red curry, ginger beer, mango and lime",
-      "source": "https://www.visitmusiccity.com/media/press-release/2026/pearl-diver-announces-next-chapter-after-brief-reset-bringing-fresh-energy"
-    }
-  },
   "2026-11-09": {
     "good": "Bills at Vikings",
     "goodWhy": "Line: Bills -3. Lake-effect snow meets a Purple Haze.",
@@ -253,6 +243,19 @@
       "desc": "Coffee liqueur, coconut rum, cachaça, pineapple, coconut and lime",
       "source": "https://www.rosemaryandbeautyqueen.com/menu",
       "verified": "2026-11-22"
+    }
+  },
+  "2026-11-23": {
+    "good": "Bengals at Commanders",
+    "goodWhy": "Line: Bengals -6.5. Tiger storm swirls over the capital.",
+    "goodTime": "19:15",
+    "goodTv": "ESPN",
+    "drink": {
+      "name": "The Alley Ghost",
+      "barId": "skull-s-rainbow-room",
+      "desc": "Mezcal, Chambord and lemon",
+      "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_2ef5b8422dc74fa39b05179433999e9a.pdf",
+      "verified": "2026-11-23"
     }
   }
 }
