@@ -203,3 +203,10 @@
 - Checked, nothing found on bar sources: Lakeside Lounge (own site has no HH; $2 frosty stays Nashville Scene-sourced), Sports & Social Green Hills (own page has no HH; stays OpenTable-sourced), Crow's Nest, Rosie's Twin Kegs, TNT's Billiards (Toast lunch menu only).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4; specials are images, one named "Martini & Fry"), Sonny's (3; specials and brunch drinks are images), Never Never (4–8 PM time confirmed, days/deals not), Embers Ski Lodge (2), Aladdin's (2), Game Terminal (deals), The Treehouse, Crazy Gnome.
 - Needs a look: Aladdin's may run HH on weekdays only (we have daily; guide hint, the bar's site was blocked). Crazy Gnome's hours differ between listings.
+
+## 2026-11-24
+
+- Confirmed again with no change: hh2-sidecar-bar-0 (https://www.sidecarbarnash.com/drinks, "Monday-Friday 4PM-7PM $2 off wines, wells & drafts"), hh2-sonny-s-patio-pub-refuge-0 (https://www.sonnysnashville.com/drinks, "Monday - Friday 3PM - 6PM"); verified updated.
+- Checked, nothing found on bar sources: The Stillery Midtown, The Basement, The Local (menu is an image), Dierks Bentley's Whiskey Row (happy-hour section on menus page shows no days/times/deals), Dino's, Duck Blind, East Nashville Beer Works, Broadcast Brewing, AJ's Good Time Bar, The Bluebird Cafe (menus are images), 3rd & Lindsley.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village (own site doubledogs.biz lists no HH), Golden Sound (site timed out), Live Oak (3; hours fit), Sidecar (4; own drinks page lists only the weekday HH), Sonny's (3; specials and brunch drinks are images), Never Never (4–8 PM confirmed, days/deals not), Embers Ski Lodge (2, redirect loop), Aladdin's (2, redirect loop), Game Terminal (deals image-only), The Treehouse (own HH page errors), Crazy Gnome (own site lists no HH).
+- Needs a look: Golden Sound may run a daily 5–7 PM HH with cocktail discounts (third-party hint) vs our Sun, Wed–Sat 25% off.
