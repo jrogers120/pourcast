@@ -1,14 +1,4 @@
 {
-  "2026-11-09": {
-    "good": "Bills at Vikings",
-    "goodWhy": "Line: Bills -3. Lake-effect snow meets a Purple Haze.",
-    "drink": {
-      "name": "Melon Paloma",
-      "barId": "folk",
-      "desc": "Tequila, melon, pineapple and sparkling wine",
-      "source": "https://www.goodasfolk.com/menu"
-    }
-  },
   "2026-11-10": {
     "drink": {
       "name": "Blackberry Cobbler",
@@ -256,6 +246,23 @@
       "desc": "Mezcal, Chambord and lemon",
       "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_2ef5b8422dc74fa39b05179433999e9a.pdf",
       "verified": "2026-11-23"
+    }
+  },
+  "2026-11-24": {
+    "good": "Dancing with the Stars",
+    "goodWhy": "Finale forecast: Mirrorball showers and a perfect 10.",
+    "goodTime": "19:00",
+    "goodTv": "ABC",
+    "bad": "Celtics at Wizards",
+    "badWhy": "Line: Celtics -10. Green nor'easter swamps Capital One.",
+    "badTime": "19:00",
+    "badTv": "Peacock",
+    "drink": {
+      "name": "Apple Ember",
+      "barId": "commons-club",
+      "desc": "Walnut-infused rum, apple brandy, cinnamon apple, lemon and bitters",
+      "source": "https://virginhotels.com/Nashville/dine-and-drink/the-commons-club",
+      "verified": "2026-11-24"
     }
   }
 }
