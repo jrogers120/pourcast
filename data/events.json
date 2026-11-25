@@ -262,7 +262,7 @@
   "time": "15:00",
   "deals": "Happy hour specials (bar lists no prices)",
   "source": "https://borchettaspirits.com/pages/berry-hill",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh-strega-0",
@@ -443,6 +443,8 @@
   "barId": "game-terminal",
   "weekly": true,
   "days": [
+   1,
+   2,
    3,
    4,
    5
@@ -451,7 +453,8 @@
   "title": "Happy hour (4–7 PM)",
   "deals": "$4–$5 drafts, $8 canned beer, $9–$11 cocktails, $3 Jell-O shots",
   "type": "happy",
-  "source": "https://nashvilleguru.com/best-nashville-happy-hours-and-specials"
+  "source": "https://game-terminal.squarespace.com/blog-page/game-terminal-your-nashville-arcade-bar",
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-bottle-cap-0",
@@ -468,7 +471,7 @@
   "deals": "$1 off drafts, $15 domestic buckets (5), $7 mules & crushes",
   "type": "happy",
   "source": "https://bottlecapnashville.com/special-events/",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-bottle-cap-1",
@@ -483,7 +486,7 @@
   "type": "happy",
   "source": "https://bottlecapnashville.com/special-events/",
   "timeLabel": "All day",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-bottle-cap-2",
@@ -497,7 +500,7 @@
   "deals": "$10 burger, fries & domestic draft",
   "type": "happy",
   "source": "https://bottlecapnashville.com/special-events/",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-bottle-cap-3",
@@ -511,7 +514,7 @@
   "deals": "2-for-1 bottles & cans",
   "type": "happy",
   "source": "https://bottlecapnashville.com/special-events/",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-germantown-pub-0",
@@ -729,7 +732,7 @@
   "deals": "$7 teeny martinis, $5 house wine, $1 off drafts & wells",
   "type": "happy",
   "source": "https://www.ottosnashville.com/",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-ottos-bar-1",
@@ -743,7 +746,7 @@
   "deals": "$7 teeny martinis, $5 house wine, $1 off drafts & wells",
   "type": "happy",
   "source": "https://www.ottosnashville.com/",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-ottos-bar-2",
@@ -758,7 +761,7 @@
   "type": "happy",
   "source": "https://www.ottosnashville.com/",
   "timeLabel": "All day",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-slider-house-0",
@@ -1014,7 +1017,7 @@
   "deals": "$6 Sonny's selects, $5 drafts, $4 wine, $5 food",
   "type": "happy",
   "source": "https://www.sonnysnashville.com/drinks",
-  "verified": "2026-11-24"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-sonny-s-patio-pub-refuge-1",
@@ -1166,7 +1169,7 @@
   "deals": "$2 off wine, wells & drafts",
   "type": "happy",
   "source": "https://www.sidecarbarnash.com/drinks",
-  "verified": "2026-11-24"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh2-sidecar-bar-1",
@@ -1879,7 +1882,7 @@
   "source": "https://www.ottosnashville.com/",
   "deals": "$7 teeny martinis all day",
   "timeLabel": "All day",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh3-ottos-bar-1",
@@ -1894,7 +1897,7 @@
   "source": "https://www.ottosnashville.com/",
   "deals": "$5 house wines all day",
   "timeLabel": "All day",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "id": "hh3-tailgate-demonbreun-0",
@@ -2024,7 +2027,7 @@
   "deals": "Half-price alternators all day",
   "timeLabel": "All day",
   "source": "https://www.ottosnashville.com/",
-  "verified": "2026-11-06"
+  "verified": "2026-11-25"
  },
  {
   "barId": "skull-s-rainbow-room",
