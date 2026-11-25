@@ -154,5 +154,11 @@
   "barId": "commons-club",
   "desc": "Walnut-infused rum, apple brandy, cinnamon apple, lemon and bitters",
   "source": "https://virginhotels.com/Nashville/dine-and-drink/the-commons-club"
+ },
+ {
+  "name": "Southern Peach",
+  "barId": "the-stillery-midtown",
+  "desc": "Dixie moonshine, peach liqueur, sweet tea and sour",
+  "source": "https://www.thestillery.com/menu/midtown-nashville/"
  }
 ]

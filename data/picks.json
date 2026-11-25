@@ -1,12 +1,4 @@
 {
-  "2026-11-10": {
-    "drink": {
-      "name": "Blackberry Cobbler",
-      "barId": "loves-alibi",
-      "desc": "Tennessee whiskey, blackberry, lemon, génépy and Twisted Tea",
-      "source": "https://www.lovesalibinashville.com/menu"
-    }
-  },
   "2026-11-11": {
     "good": "Thunder at Trail Blazers",
     "goodWhy": "Line: Thunder -1.5. Thunder rolls into rainy Rip City.",
@@ -263,6 +255,19 @@
       "desc": "Walnut-infused rum, apple brandy, cinnamon apple, lemon and bitters",
       "source": "https://virginhotels.com/Nashville/dine-and-drink/the-commons-club",
       "verified": "2026-11-24"
+    }
+  },
+  "2026-11-25": {
+    "good": "Nets at Bucks",
+    "goodWhy": "Line: Bucks -1.5. Lake Michigan squall stalls over Fiserv.",
+    "goodTime": "19:00",
+    "goodTv": "Bucks+ / YES",
+    "drink": {
+      "name": "Southern Peach",
+      "barId": "the-stillery-midtown",
+      "desc": "Dixie moonshine, peach liqueur, sweet tea and sour",
+      "source": "https://www.thestillery.com/menu/midtown-nashville/",
+      "verified": "2026-11-25"
     }
   }
 }
