@@ -219,3 +219,10 @@
 - Checked, bar site blocked or no HH text: Five Points Pizza East, Fogg Street, Germantown Pub, Hops & Crafts, The Slider House, Puckett's Downtown (/nashville page blocked; /visit and /home list no HH).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound (closed Mon–Tue, matches our days), Live Oak (3), Sidecar (4; own drinks page lists only the weekday HH), Sonny's (3; brunch Sat–Sun 10 AM–2 PM confirmed, prices are images), Never Never (4–8 PM confirmed, days/deals not), Embers Ski Lodge (2), Aladdin's (2, redirect loop), The Treehouse, Crazy Gnome (own site lists no HH).
 - Needs a look: Crazy Gnome may have moved/expanded (directory hints at a new Inglewood location). Live Oak address may be 1530 Demonbreun (MapQuest), we have 1522.
+
+## 2026-11-26
+
+- No changes.
+- Partly confirmed, left as is: The Treehouse Mon–Fri 4–6 PM ("Patio Happy Hour Mon–Fri 4:00 pm–6:00 pm" on its OpenTable listing, https://www.opentable.com/r/the-treehouse-nashville-2); deals not shown, so source stays guide.
+- Checked, nothing found on bar sources: Edley's East (Toast page, no HH), Fleet Street Pub (Toast page, no HH), Kid Rock's (own site, no HH), Frankie J's, Bobby's Garage, Honky Tonk Central, Jason Aldean's, John Daly's, Legends Corner, Living Waters West, Losers, The Lost Paddy (searches returned only guide/listing pages).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), The Treehouse, Crazy Gnome.
