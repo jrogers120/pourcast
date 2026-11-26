@@ -1,18 +1,4 @@
 {
-  "2026-11-11": {
-    "good": "Thunder at Trail Blazers",
-    "goodWhy": "Line: Thunder -1.5. Thunder rolls into rainy Rip City.",
-    "goodTime": "21:00",
-    "bad": "Spurs at Bulls",
-    "badWhy": "Line: Spurs -14.5. Texas heat wave hits the Windy City.",
-    "badTime": "19:00",
-    "drink": {
-      "name": "Yuzu Lemon Drop",
-      "barId": "folk",
-      "desc": "Vodka, yuzu sake, dry vermouth, yuzu curaçao and citrus",
-      "source": "https://www.goodasfolk.com/menu"
-    }
-  },
   "2026-11-12": {
     "good": "Commanders at Giants",
     "goodWhy": "Line: Giants -2. Nor'easter stalls over MetLife.",
@@ -268,6 +254,19 @@
       "desc": "Dixie moonshine, peach liqueur, sweet tea and sour",
       "source": "https://www.thestillery.com/menu/midtown-nashville/",
       "verified": "2026-11-25"
+    }
+  },
+  "2026-11-26": {
+    "good": "Bears at Lions",
+    "goodWhy": "Line: Bears -2.5. Windy City front stalls over Ford Field.",
+    "goodTime": "12:00",
+    "goodTv": "CBS",
+    "drink": {
+      "name": "Club Aqua",
+      "barId": "marsh-house",
+      "desc": "Blanco tequila, Strega, raspberry, lemon, grapefruit and absinthe",
+      "source": "https://qedhg-marshhouse.squarespace.com/drink",
+      "verified": "2026-11-26"
     }
   }
 }
