@@ -226,3 +226,12 @@
 - Partly confirmed, left as is: The Treehouse Mon–Fri 4–6 PM ("Patio Happy Hour Mon–Fri 4:00 pm–6:00 pm" on its OpenTable listing, https://www.opentable.com/r/the-treehouse-nashville-2); deals not shown, so source stays guide.
 - Checked, nothing found on bar sources: Edley's East (Toast page, no HH), Fleet Street Pub (Toast page, no HH), Kid Rock's (own site, no HH), Frankie J's, Bobby's Garage, Honky Tonk Central, Jason Aldean's, John Daly's, Legends Corner, Living Waters West, Losers, The Lost Paddy (searches returned only guide/listing pages).
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), The Treehouse, Crazy Gnome.
+
+## 2026-11-27
+
+- No changes.
+- Partly confirmed, left as is: The Treehouse Mon–Fri 4–6 PM ("Patio Happy Hour Mon–Fri 4:00 pm–6:00 pm", OpenTable listing https://www.opentable.com/r/the-treehouse-nashville-2); deals not shown, source stays guide.
+- Checked, nothing found on bar sources: Luke's 32 Bridge, Mickey's Tavern, Noble's Central (Toast page lists no HH), Nudie's, Old Glory, Ole Red (OpenTable listing shows no HH), Red Door Saloon, Rippy's, Robert's Western World, Roy's Tavern, Rudy's Jazz Room, Santa's Pub (searches returned only guide/listing pages).
+- Bar sites blocked this run: Sidecar, Sonny's, Noble's East.
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), The Treehouse, Crazy Gnome.
+- Needs a look: Noble's Central address — Toast lists 2222 Rosa Parks Blvd, we have 2292.
