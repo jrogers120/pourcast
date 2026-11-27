@@ -1,17 +1,4 @@
 {
-  "2026-11-12": {
-    "good": "Commanders at Giants",
-    "goodWhy": "Line: Giants -2. Nor'easter stalls over MetLife.",
-    "bad": "Louisiana at UL Monroe",
-    "badWhy": "Line: Louisiana -10.5. Cajun heat wave floods Monroe.",
-    "badTime": "20:00",
-    "drink": {
-      "name": "Tipsy Jitters",
-      "barId": "martha-my-dear",
-      "desc": "Vodka, coffee liqueur, amaro, Licor 43, cold brew and cream",
-      "source": "https://www.marketwatchmag.com/serious-but-light-hearted/"
-    }
-  },
   "2026-11-13": {
     "good": "Florida State at Pitt",
     "goodWhy": "Line: Pitt -3.5. Florida heat meets a Steel City chill.",
@@ -267,6 +254,23 @@
       "desc": "Blanco tequila, Strega, raspberry, lemon, grapefruit and absinthe",
       "source": "https://qedhg-marshhouse.squarespace.com/drink",
       "verified": "2026-11-26"
+    }
+  },
+  "2026-11-27": {
+    "good": "Tulsa at UTSA",
+    "goodWhy": "Line: Tulsa -1.5. Two fronts collide over the Alamodome.",
+    "goodTime": "11:00",
+    "goodTv": "ESPN",
+    "bad": "West Virginia at Utah",
+    "badWhy": "Line: Utah -26. Wasatch avalanche buries the Mountaineers.",
+    "badTime": "20:00",
+    "badTv": "FOX",
+    "drink": {
+      "name": "Blood Money",
+      "barId": "nobles-central",
+      "desc": "Jack Daniel's, blood orange liqueur, orange bitters and simple syrup",
+      "source": "https://central.noblesbeerhall.com/nashville-metro-center-noble-s-central-drink-menu",
+      "verified": "2026-11-27"
     }
   }
 }

@@ -166,5 +166,11 @@
   "barId": "marsh-house",
   "desc": "Blanco tequila, Strega, raspberry, lemon, grapefruit and absinthe",
   "source": "https://qedhg-marshhouse.squarespace.com/drink"
+ },
+ {
+  "name": "Blood Money",
+  "barId": "nobles-central",
+  "desc": "Jack Daniel's, blood orange liqueur, orange bitters and simple syrup",
+  "source": "https://central.noblesbeerhall.com/nashville-metro-center-noble-s-central-drink-menu"
  }
 ]
