@@ -235,3 +235,11 @@
 - Bar sites blocked this run: Sidecar, Sonny's, Noble's East.
 - Still guide-only (not found on bar sources): Double Dogs Hillsboro Village, Golden Sound, Live Oak (3), Sidecar (4), Sonny's (3), Never Never, Embers Ski Lodge (2), Aladdin's (2), The Treehouse, Crazy Gnome.
 - Needs a look: Noble's Central address — Toast lists 2222 Rosa Parks Blvd, we have 2292.
+
+## 2026-11-28
+
+- Live Oak: removed hh3-live-oak-0 (Mon–Tue 4–6 PM happy hour). The bar's own site lists "Mon-Tue: Closed" (https://liveoaknashville.com/). The Sun, Wed–Sat 11 AM–6 PM entry and weekend champagne deal fit its hours and stay (still guide-only).
+- Checked, nothing found on bar sources: Scoreboard, Skull's Rainbow Room (own site blocked), Springwater Supper Club, Station Inn (bar serves beer, no specials), Tee Line (own /event/happy-hour/ page exists but would not load), The 5 Spot, The Basement East, Harding House, Jackalope, Lonnie's Western Room (open Thu–Sat 6 PM–close), Marble Fox, Ms. Kelli's.
+- Own site unreadable: Aladdin's and Embers Ski Lodge (redirect loop).
+- Still guide-only (not found on bar sources): Double Dogs Hillsboro Village (own site lists no HH), Golden Sound (open Wed–Sun 5–11 PM, fits), Live Oak (2), Sidecar (4; own site lists no weekly specials), Sonny's (3; specials are images; brunch Sat–Sun 10 AM–2 PM confirmed), Never Never (hours fit), Embers Ski Lodge (2), Aladdin's (2), The Treehouse, Crazy Gnome (open Wed–Thu 4–10, Fri–Sun noon–10; fits).
+- Needs a look: Tee Line has a "Happy Hour" event page on teelinenash.com that could not be loaded.

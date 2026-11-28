@@ -1720,20 +1720,6 @@
   "source": "https://www.happydoesnash.com/specials"
  },
  {
-  "id": "hh3-live-oak-0",
-  "barId": "live-oak",
-  "type": "happy",
-  "title": "Happy hour (4–6 PM)",
-  "weekly": true,
-  "days": [
-   1,
-   2
-  ],
-  "time": "16:00",
-  "source": "https://nashvilleguru.com/businesses/live-oak",
-  "deals": "$5 Tito's, Rumpleminz & Fireball, $4 green/white tea shots, $3 domestics, $1 off 16oz drafts, $3 Jell-O shots"
- },
- {
   "id": "hh3-live-oak-1",
   "barId": "live-oak",
   "type": "happy",
