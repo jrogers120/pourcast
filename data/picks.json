@@ -1,18 +1,4 @@
 {
-  "2026-11-13": {
-    "good": "Florida State at Pitt",
-    "goodWhy": "Line: Pitt -3.5. Florida heat meets a Steel City chill.",
-    "bad": "Illinois at UCLA",
-    "badWhy": "Line: UCLA -10. Pasadena heat wave scorches the Illini.",
-    "badTime": "20:00",
-    "badTv": "FOX",
-    "drink": {
-      "name": "¡Oh Bruno!",
-      "barId": "skull-s-rainbow-room",
-      "desc": "Tequila, strawberry, vanilla and lemon",
-      "source": "https://www.skullsrainbowroom.com/_files/ugd/88a28e_1d68f4b197ea4eb694a9304211b26f57.pdf"
-    }
-  },
   "2026-11-14": {
     "good": "Tennessee at Texas A&M",
     "goodWhy": "Line: Tennessee -1.5. Smoky haze settles over Kyle Field.",
@@ -272,5 +258,15 @@
       "source": "https://central.noblesbeerhall.com/nashville-metro-center-noble-s-central-drink-menu",
       "verified": "2026-11-27"
     }
+  },
+  "2026-11-28": {
+    "good": "Oklahoma at Missouri",
+    "goodWhy": "Line: Missouri -1.5. Sooner front stalls over Faurot Field.",
+    "goodTime": "15:15",
+    "goodTv": "SEC Network",
+    "bad": "Georgia Tech at Georgia",
+    "badWhy": "Line: Georgia -35.5. Red tide floods Sanford Stadium.",
+    "badTime": "14:30",
+    "badTv": "ABC"
   }
 }
